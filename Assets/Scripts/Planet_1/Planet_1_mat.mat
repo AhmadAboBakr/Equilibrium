@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Planet_1_mat
+  m_Shader: {fileID: 4800000, guid: bc19ceb447cfbd54c9398cce75bc0fc8, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 7c402c9a6e7554627b3b8ad8f35a45ca, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MaskTex
+        second:
+          m_Texture: {fileID: 2800000, guid: c06f070bd693b0641995f7a2d555f9b9, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: Radius
+        second: 189.630035
+    m_Colors:
+      data:
+        first:
+          name: _SkyColor
+        second: {r: .717647076, g: .878431439, b: .749019623, a: 1}
+      data:
+        first:
+          name: _ShellColor
+        second: {r: .0667711943, g: .477941155, b: .0667711943, a: 1}

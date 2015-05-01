@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: d167c523e06f13948b7523d6109d0f61
+timeCreated: 1429047626
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: trees 2-04_0
+    21300002: trees 2-04_1
+    21300004: trees 2-04_2
+    21300006: trees 2-04_3
+    21300008: trees 2-04_4
+    21300010: trees 2-04_5
+    21300012: trees 2-04_6
+    21300014: trees 2-04_7
+    21300016: trees 2-04_8
+    21300018: trees 2-04_9
+    21300020: trees 2-04_10
+    21300022: trees 2-04_11
+    21300024: trees 2-04_12
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 35
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: trees 2-04_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 550
+        width: 241
+        height: 434
+      alignment: 9
+      pivot: {x: .367626399, y: .0799602717}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: trees 2-04_1
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 856
+        width: 225
+        height: 149
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: trees 2-04_2
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 660
+        width: 169
+        height: 345
+      alignment: 9
+      pivot: {x: .638477564, y: .446446866}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: trees 2-04_3
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 688
+        width: 232
+        height: 302
+      alignment: 9
+      pivot: {x: .186760738, y: .243051693}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: trees 2-04_4
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 628
+        width: 196
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: trees 2-04_5
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 486
+        width: 230
+        height: 145
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: trees 2-04_6
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 9
+        width: 170
+        height: 630
+      alignment: 9
+      pivot: {x: .413055062, y: .0503244437}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: trees 2-04_7
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 21
+        width: 263
+        height: 508
+      alignment: 9
+      pivot: {x: .488447517, y: .0783479288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: trees 2-04_8
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 432
+        width: 34
+        height: 160
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: trees 2-04_9
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 19
+        width: 160
+        height: 444
+      alignment: 9
+      pivot: {x: .698911309, y: .0561369546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: trees 2-04_10
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 11
+        width: 103
+        height: 460
+      alignment: 9
+      pivot: {x: .392373681, y: .0662203655}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: trees 2-04_11
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 91
+        width: 48
+        height: 195
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: trees 2-04_12
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 253
+        width: 31
+        height: 139
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

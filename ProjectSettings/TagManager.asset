@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Planet
+  - Enemy
+  - PlanetButton
+  - ShockWave
+  - PlanetCore
+  - Tree
+  - HealthBar
+  - ManaBar
+  - StaminaBar
+  - Building
+  - Rubble
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - planetSegments
+  - Spells
+  - Player
+  - Enemy
+  - PlayerBody
+  - Tree
+  - Rubble
+  - Buildings
+  - EnemyProjectile
+  - OuterProjectile
+  - FlyingShit
+  - Birds
+  - EnemyMelee
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 4110927403
+    locked: 0
+  - name: TreeInner
+    uniqueID: 3008742131
+    locked: 0
+  - name: mOUNT
+    uniqueID: 4119840637
+    locked: 0
+  - name: PlanetInner
+    uniqueID: 165293067
+    locked: 0
+  - name: PlanetOuter
+    uniqueID: 1815798195
+    locked: 0
+  - name: ForGround
+    uniqueID: 1941165527
+    locked: 0
+  - name: Buildings
+    uniqueID: 4123341103
+    locked: 0
+  - name: Enemies
+    uniqueID: 2845810151
+    locked: 0
+  - name: Spells
+    uniqueID: 172857785
+    locked: 0
+  - name: Player
+    uniqueID: 2679403801
+    locked: 0
+  - name: UI
+    uniqueID: 88529493
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0

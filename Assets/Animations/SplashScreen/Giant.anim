@@ -1,0 +1,1112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Giant
+  serializedVersion: 6
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1.66999996, y: -9.01000023, z: -11}
+        inSlope: {x: 0, y: -.199653134, z: 0}
+        outSlope: {x: 0, y: -.199653134, z: 0}
+        tangentMode: 0
+      - time: 1.91666663
+        value: {x: 1.66999996, y: -9.39266872, z: -11}
+        inSlope: {x: 0, y: 2.1961832, z: 65.9999695}
+        outSlope: {x: 0, y: 2.1961832, z: 65.9999695}
+        tangentMode: 0
+      - time: 2
+        value: {x: 1.66999996, y: -9.01000023, z: 0}
+        inSlope: {x: 0, y: 7.29601002, z: 65.9999695}
+        outSlope: {x: 0, y: 7.29601002, z: 65.9999695}
+        tangentMode: 0
+      - time: 2.5
+        value: {x: 1.66999996, y: -4.01000023, z: 0}
+        inSlope: {x: 0, y: 5, z: 0}
+        outSlope: {x: 0, y: 5, z: 0}
+        tangentMode: 0
+      - time: 3.5333333
+        value: {x: 1.66999996, y: -4.01000023, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: 
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -8.03999996, y: -2.97000003, z: -11}
+        inSlope: {x: .255156487, y: -.279713392, z: 0}
+        outSlope: {x: .255156487, y: -.279713392, z: 0}
+        tangentMode: 0
+      - time: 1.91666663
+        value: {x: -7.55095005, y: -3.50611734, z: -11}
+        inSlope: {x: -2.80671978, y: 3.07684565, z: 65.9999695}
+        outSlope: {x: -2.80671978, y: 3.07684565, z: 65.9999695}
+        tangentMode: 0
+      - time: 2
+        value: {x: -8.03999996, y: -2.97000003, z: 0}
+        inSlope: {x: -9.32429695, y: 10.2217016, z: 65.9999695}
+        outSlope: {x: -9.32429695, y: 10.2217016, z: 65.9999695}
+        tangentMode: 0
+      - time: 2.66666675
+        value: {x: -16.5599995, y: 6.36999989, z: 0}
+        inSlope: {x: -3.58999896, y: 4.08146954, z: 0}
+        outSlope: {x: -3.58999896, y: 4.08146954, z: 0}
+        tangentMode: 0
+      - time: 3.51666665
+        value: {x: -11.8000002, y: 1.39999998, z: 0}
+        inSlope: {x: 2.79999995, y: -2.92352962, z: 0}
+        outSlope: {x: 2.79999995, y: -2.92352962, z: 0}
+        tangentMode: 0
+      - time: 3.5333333
+        value: {x: -11.8000002, y: 1.39999998, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: GiantIKNigger/IK/LeftHandBone_IK
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -6.57999992, y: -3.00999999, z: -11}
+        inSlope: {x: .160520807, y: -.545650959, z: 0}
+        outSlope: {x: .160520807, y: -.545650959, z: 0}
+        tangentMode: 0
+      - time: 1.91666663
+        value: {x: -6.27233505, y: -4.05583096, z: -11}
+        inSlope: {x: -1.765728, y: 6.00215721, z: 65.9999695}
+        outSlope: {x: -1.765728, y: 6.00215721, z: 65.9999695}
+        tangentMode: 0
+      - time: 2
+        value: {x: -6.57999992, y: -3.00999999, z: 0}
+        inSlope: {x: -5.8659873, y: 19.9399815, z: 65.9999695}
+        outSlope: {x: -5.8659873, y: 19.9399815, z: 65.9999695}
+        tangentMode: 0
+      - time: 2.66666675
+        value: {x: -11.9399996, y: 15.21, z: 0}
+        inSlope: {x: 26.460001, y: 26.4650002, z: 0}
+        outSlope: {x: 26.460001, y: 26.4650002, z: 0}
+        tangentMode: 0
+      - time: 2.91666675
+        value: {x: 3.29999995, y: 21.6100006, z: 0}
+        inSlope: {x: 2.76570702, y: -4.07143211, z: 0}
+        outSlope: {x: 2.76570702, y: -4.07143211, z: 0}
+        tangentMode: 0
+      - time: 3.26666665
+        value: {x: -16.1000004, y: 9.80000019, z: 0}
+        inSlope: {x: -17.5142918, y: -36.071434, z: 0}
+        outSlope: {x: -17.5142918, y: -36.071434, z: 0}
+        tangentMode: 0
+      - time: 3.51666665
+        value: {x: -11, y: .200000003, z: 0}
+        inSlope: {x: 10.2000008, y: -19.2000008, z: 0}
+        outSlope: {x: 10.2000008, y: -19.2000008, z: 0}
+        tangentMode: 0
+      - time: 3.5333333
+        value: {x: -11, y: .200000003, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: GiantIKNigger/IK/RightHandBone_IK
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -2.93000007, y: 16.5100002, z: -11}
+        inSlope: {x: .0381155424, y: -.0496593975, z: 0}
+        outSlope: {x: .0381155424, y: -.0496593975, z: 0}
+        tangentMode: 0
+      - time: 1.91666663
+        value: {x: -2.85694528, y: 16.4148197, z: -11}
+        inSlope: {x: -.419270754, y: .546253085, z: 65.9999695}
+        outSlope: {x: -.419270754, y: .546253085, z: 65.9999695}
+        tangentMode: 0
+      - time: 2
+        value: {x: -2.93000007, y: 16.5100002, z: 0}
+        inSlope: {x: -1.39287376, y: 1.81471944, z: 65.9999695}
+        outSlope: {x: -1.39287376, y: 1.81471944, z: 65.9999695}
+        tangentMode: 0
+      - time: 2.91666675
+        value: {x: -4.67999983, y: 18.7900009, z: 0}
+        inSlope: {x: -.954545259, y: 1.24363661, z: 0}
+        outSlope: {x: -.954545259, y: 1.24363661, z: 0}
+        tangentMode: 0
+      - time: 3.5333333
+        value: {x: -4.67999983, y: 18.7900009, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: GiantIKNigger/IK/UpperBodyBone_IK
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 2.27999997, y: -3, z: -11}
+        inSlope: {x: .0406660847, y: -.0346765928, z: 0}
+        outSlope: {x: .0406660847, y: -.0346765928, z: 0}
+        tangentMode: 0
+      - time: 1.91666663
+        value: {x: 2.3579433, y: -3.06646347, z: -11}
+        inSlope: {x: -.44732669, y: .381442338, z: 65.9999695}
+        outSlope: {x: -.44732669, y: .381442338, z: 65.9999695}
+        tangentMode: 0
+      - time: 2
+        value: {x: 2.27999997, y: -3, z: 0}
+        inSlope: {x: -1.48608077, y: 1.26720166, z: 65.9999695}
+        outSlope: {x: -1.48608077, y: 1.26720166, z: 65.9999695}
+        tangentMode: 0
+      - time: 3.26666665
+        value: {x: -.300000012, y: -.800000012, z: 0}
+        inSlope: {x: -11.218421, y: 7.06842089, z: 0}
+        outSlope: {x: -11.218421, y: 7.06842089, z: 0}
+        tangentMode: 0
+      - time: 3.51666665
+        value: {x: -5.4000001, y: 2.29999995, z: 0}
+        inSlope: {x: -10.1999998, y: 6.19999981, z: 0}
+        outSlope: {x: -10.1999998, y: 6.19999981, z: 0}
+        tangentMode: 0
+      - time: 3.5333333
+        value: {x: -5.4000001, y: 2.29999995, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: GiantIKNigger/RightForearmBone_IK
+  m_ScaleCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 3.26666665
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: GiantIKNigger/WaistBone/UpperBodyBone/RightShoulderBone/RightForearmBone/RightHandBone/RightHand
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 3.26666665
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: GiantIKNigger/WaistBone/UpperBodyBone/RightShoulderBone/RightForearmBone/RightHandBone/RightHand
+      1
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 3.26666665
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: GiantIKNigger/WaistBone/UpperBodyBone/RightShoulderBone/RightForearmBone/RightForearm
+      1
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 3.26666665
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: GiantIKNigger/WaistBone/UpperBodyBone/RightShoulderBone/RightForearmBone/RightForearm
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 3.26666665
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: GiantIKNigger/WaistBone/UpperBodyBone/RightShoulderBone/RightShoulder
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 3.26666665
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: GiantIKNigger/WaistBone/UpperBodyBone/RightShoulderBone/RightShoulder 1
+    classID: 212
+    script: {fileID: 0}
+  m_PPtrCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - path: 0
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1941228958
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 67735013
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 4000868561
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 959026206
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2431274723
+      attribute: 3305885265
+      script: {fileID: 0}
+      classID: 212
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1639213621
+      attribute: 3305885265
+      script: {fileID: 0}
+      classID: 212
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3255887691
+      attribute: 3305885265
+      script: {fileID: 0}
+      classID: 212
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2863094580
+      attribute: 3305885265
+      script: {fileID: 0}
+      classID: 212
+      customType: 0
+      isPPtrCurve: 0
+    - path: 4248214669
+      attribute: 3305885265
+      script: {fileID: 0}
+      classID: 212
+      customType: 0
+      isPPtrCurve: 0
+    - path: 4061655608
+      attribute: 3305885265
+      script: {fileID: 0}
+      classID: 212
+      customType: 0
+      isPPtrCurve: 0
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_StartTime: 0
+    m_StopTime: 3.5333333
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1.66999996
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.91666663
+        value: 1.66999996
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 2
+        value: 1.66999996
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 2.5
+        value: 1.66999996
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 3.5333333
+        value: 1.66999996
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -9.01000023
+        inSlope: -.199653134
+        outSlope: -.199653134
+        tangentMode: 10
+      - time: 1.91666663
+        value: -9.39266872
+        inSlope: 2.1961832
+        outSlope: 2.1961832
+        tangentMode: 10
+      - time: 2
+        value: -9.01000023
+        inSlope: 7.29601002
+        outSlope: 7.29601002
+        tangentMode: 10
+      - time: 2.5
+        value: -4.01000023
+        inSlope: 5
+        outSlope: 5
+        tangentMode: 10
+      - time: 3.5333333
+        value: -4.01000023
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -11
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.91666663
+        value: -11
+        inSlope: 65.9999695
+        outSlope: 65.9999695
+        tangentMode: 10
+      - time: 2
+        value: 0
+        inSlope: 65.9999695
+        outSlope: 65.9999695
+        tangentMode: 10
+      - time: 2.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 3.5333333
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -8.03999996
+        inSlope: .255156487
+        outSlope: .255156487
+        tangentMode: 10
+      - time: 1.91666663
+        value: -7.55095005
+        inSlope: -2.80671978
+        outSlope: -2.80671978
+        tangentMode: 10
+      - time: 2
+        value: -8.03999996
+        inSlope: -9.32429695
+        outSlope: -9.32429695
+        tangentMode: 10
+      - time: 2.66666675
+        value: -16.5599995
+        inSlope: -3.58999896
+        outSlope: -3.58999896
+        tangentMode: 10
+      - time: 3.51666665
+        value: -11.8000002
+        inSlope: 2.79999995
+        outSlope: 2.79999995
+        tangentMode: 10
+      - time: 3.5333333
+        value: -11.8000002
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: GiantIKNigger/IK/LeftHandBone_IK
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -2.97000003
+        inSlope: -.279713392
+        outSlope: -.279713392
+        tangentMode: 10
+      - time: 1.91666663
+        value: -3.50611734
+        inSlope: 3.07684565
+        outSlope: 3.07684565
+        tangentMode: 10
+      - time: 2
+        value: -2.97000003
+        inSlope: 10.2217016
+        outSlope: 10.2217016
+        tangentMode: 10
+      - time: 2.66666675
+        value: 6.36999989
+        inSlope: 4.08146954
+        outSlope: 4.08146954
+        tangentMode: 10
+      - time: 3.51666665
+        value: 1.39999998
+        inSlope: -2.92352962
+        outSlope: -2.92352962
+        tangentMode: 10
+      - time: 3.5333333
+        value: 1.39999998
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: GiantIKNigger/IK/LeftHandBone_IK
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -11
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.91666663
+        value: -11
+        inSlope: 65.9999695
+        outSlope: 65.9999695
+        tangentMode: 10
+      - time: 2
+        value: 0
+        inSlope: 65.9999695
+        outSlope: 65.9999695
+        tangentMode: 10
+      - time: 2.66666675
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 3.51666665
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 3.5333333
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: GiantIKNigger/IK/LeftHandBone_IK
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -6.57999992
+        inSlope: .160520807
+        outSlope: .160520807
+        tangentMode: 10
+      - time: 1.91666663
+        value: -6.27233505
+        inSlope: -1.765728
+        outSlope: -1.765728
+        tangentMode: 10
+      - time: 2
+        value: -6.57999992
+        inSlope: -5.8659873
+        outSlope: -5.8659873
+        tangentMode: 10
+      - time: 2.66666675
+        value: -11.9399996
+        inSlope: 26.460001
+        outSlope: 26.460001
+        tangentMode: 10
+      - time: 2.91666675
+        value: 3.29999995
+        inSlope: 2.76570702
+        outSlope: 2.76570702
+        tangentMode: 10
+      - time: 3.26666665
+        value: -16.1000004
+        inSlope: -17.5142918
+        outSlope: -17.5142918
+        tangentMode: 10
+      - time: 3.51666665
+        value: -11
+        inSlope: 10.2000008
+        outSlope: 10.2000008
+        tangentMode: 10
+      - time: 3.5333333
+        value: -11
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: GiantIKNigger/IK/RightHandBone_IK
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -3.00999999
+        inSlope: -.545650959
+        outSlope: -.545650959
+        tangentMode: 10
+      - time: 1.91666663
+        value: -4.05583096
+        inSlope: 6.00215721
+        outSlope: 6.00215721
+        tangentMode: 10
+      - time: 2
+        value: -3.00999999
+        inSlope: 19.9399815
+        outSlope: 19.9399815
+        tangentMode: 10
+      - time: 2.66666675
+        value: 15.21
+        inSlope: 26.4650002
+        outSlope: 26.4650002
+        tangentMode: 10
+      - time: 2.91666675
+        value: 21.6100006
+        inSlope: -4.07143211
+        outSlope: -4.07143211
+        tangentMode: 10
+      - time: 3.26666665
+        value: 9.80000019
+        inSlope: -36.071434
+        outSlope: -36.071434
+        tangentMode: 10
+      - time: 3.51666665
+        value: .200000003
+        inSlope: -19.2000008
+        outSlope: -19.2000008
+        tangentMode: 10
+      - time: 3.5333333
+        value: .200000003
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: GiantIKNigger/IK/RightHandBone_IK
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -11
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.91666663
+        value: -11
+        inSlope: 65.9999695
+        outSlope: 65.9999695
+        tangentMode: 10
+      - time: 2
+        value: 0
+        inSlope: 65.9999695
+        outSlope: 65.9999695
+        tangentMode: 10
+      - time: 2.66666675
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 2.91666675
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 3.26666665
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 3.51666665
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 3.5333333
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: GiantIKNigger/IK/RightHandBone_IK
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -2.93000007
+        inSlope: .0381155424
+        outSlope: .0381155424
+        tangentMode: 10
+      - time: 1.91666663
+        value: -2.85694528
+        inSlope: -.419270754
+        outSlope: -.419270754
+        tangentMode: 10
+      - time: 2
+        value: -2.93000007
+        inSlope: -1.39287376
+        outSlope: -1.39287376
+        tangentMode: 10
+      - time: 2.91666675
+        value: -4.67999983
+        inSlope: -.954545259
+        outSlope: -.954545259
+        tangentMode: 10
+      - time: 3.5333333
+        value: -4.67999983
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: GiantIKNigger/IK/UpperBodyBone_IK
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 16.5100002
+        inSlope: -.0496593975
+        outSlope: -.0496593975
+        tangentMode: 10
+      - time: 1.91666663
+        value: 16.4148197
+        inSlope: .546253085
+        outSlope: .546253085
+        tangentMode: 10
+      - time: 2
+        value: 16.5100002
+        inSlope: 1.81471944
+        outSlope: 1.81471944
+        tangentMode: 10
+      - time: 2.91666675
+        value: 18.7900009
+        inSlope: 1.24363661
+        outSlope: 1.24363661
+        tangentMode: 10
+      - time: 3.5333333
+        value: 18.7900009
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: GiantIKNigger/IK/UpperBodyBone_IK
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -11
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.91666663
+        value: -11
+        inSlope: 65.9999695
+        outSlope: 65.9999695
+        tangentMode: 10
+      - time: 2
+        value: 0
+        inSlope: 65.9999695
+        outSlope: 65.9999695
+        tangentMode: 10
+      - time: 2.91666675
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 3.5333333
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: GiantIKNigger/IK/UpperBodyBone_IK
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 2.27999997
+        inSlope: .0406660847
+        outSlope: .0406660847
+        tangentMode: 10
+      - time: 1.91666663
+        value: 2.3579433
+        inSlope: -.44732669
+        outSlope: -.44732669
+        tangentMode: 10
+      - time: 2
+        value: 2.27999997
+        inSlope: -1.48608077
+        outSlope: -1.48608077
+        tangentMode: 10
+      - time: 3.26666665
+        value: -.300000012
+        inSlope: -11.218421
+        outSlope: -11.218421
+        tangentMode: 10
+      - time: 3.51666665
+        value: -5.4000001
+        inSlope: -10.1999998
+        outSlope: -10.1999998
+        tangentMode: 10
+      - time: 3.5333333
+        value: -5.4000001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: GiantIKNigger/RightForearmBone_IK
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -3
+        inSlope: -.0346765928
+        outSlope: -.0346765928
+        tangentMode: 10
+      - time: 1.91666663
+        value: -3.06646347
+        inSlope: .381442338
+        outSlope: .381442338
+        tangentMode: 10
+      - time: 2
+        value: -3
+        inSlope: 1.26720166
+        outSlope: 1.26720166
+        tangentMode: 10
+      - time: 3.26666665
+        value: -.800000012
+        inSlope: 7.06842089
+        outSlope: 7.06842089
+        tangentMode: 10
+      - time: 3.51666665
+        value: 2.29999995
+        inSlope: 6.19999981
+        outSlope: 6.19999981
+        tangentMode: 10
+      - time: 3.5333333
+        value: 2.29999995
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: GiantIKNigger/RightForearmBone_IK
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -11
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.91666663
+        value: -11
+        inSlope: 65.9999695
+        outSlope: 65.9999695
+        tangentMode: 10
+      - time: 2
+        value: 0
+        inSlope: 65.9999695
+        outSlope: 65.9999695
+        tangentMode: 10
+      - time: 3.26666665
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 3.51666665
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 3.5333333
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: GiantIKNigger/RightForearmBone_IK
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 3.26666665
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: GiantIKNigger/WaistBone/UpperBodyBone/RightShoulderBone/RightForearmBone/RightHandBone/RightHand
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 3.26666665
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: GiantIKNigger/WaistBone/UpperBodyBone/RightShoulderBone/RightForearmBone/RightHandBone/RightHand
+      1
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 3.26666665
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: GiantIKNigger/WaistBone/UpperBodyBone/RightShoulderBone/RightForearmBone/RightForearm
+      1
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 3.26666665
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: GiantIKNigger/WaistBone/UpperBodyBone/RightShoulderBone/RightForearmBone/RightForearm
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 3.26666665
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: GiantIKNigger/WaistBone/UpperBodyBone/RightShoulderBone/RightShoulder
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 3.26666665
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: GiantIKNigger/WaistBone/UpperBodyBone/RightShoulderBone/RightShoulder 1
+    classID: 212
+    script: {fileID: 0}
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 1
+  m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
+  m_Events: []

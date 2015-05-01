@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72db0e9c8cd9fe845aaf3f204a7a70d0, type: 3}
+  m_Name: inTheAir
+  m_EditorClassIdentifier: 
+  rotations:
+  - name: WaistBone
+    rotation: {x: 0, y: 0, z: .173476309, w: .984838068}
+  - name: RightThighBone
+    rotation: {x: 0, y: 0, z: .976795077, w: .214175984}
+  - name: RightSemanaBone
+    rotation: {x: 0, y: 0, z: .209593937, w: .977788508}
+  - name: RightFootBone
+    rotation: {x: 0, y: 0, z: .582123041, w: -.813100696}
+  - name: LeftThighBone
+    rotation: {x: 0, y: 0, z: .916216314, w: .400683969}
+  - name: LeftSemanaBone
+    rotation: {x: 0, y: 0, z: .226465166, w: .974019289}
+  - name: LeftFootBone
+    rotation: {x: 0, y: 0, z: .764359117, w: -.644790828}
+  - name: UpperBodyBone
+    rotation: {x: 0, y: 0, z: .0680152923, w: .9976843}
+  - name: RightShoulderBone
+    rotation: {x: 0, y: 0, z: .901508868, w: .432760626}
+  - name: RightForearmBone
+    rotation: {x: 0, y: 0, z: .778511107, w: -.627630889}
+  - name: RightHandBone
+    rotation: {x: 0, y: 0, z: .273119986, w: -.961979985}
+  - name: LeftShoulderBone
+    rotation: {x: 0, y: 0, z: .619328797, w: .785131752}
+  - name: LeftForearmBone
+    rotation: {x: 0, y: 0, z: .74503231, w: -.667028427}
+  - name: LeftHandBone
+    rotation: {x: 0, y: 0, z: .243530378, w: .969893277}
+  positions:
+  - name: WaistBone
+    position: {x: .200000003, y: 1.5, z: 0}
+  - name: RightThighBone
+    position: {x: .800000012, y: 1.16999996, z: 0}
+  - name: RightSemanaBone
+    position: {x: -3.57627869e-07, y: 2.35873199, z: 0}
+  - name: RightFootBone
+    position: {x: .0700000003, y: 3.67000008, z: 0}
+  - name: LeftThighBone
+    position: {x: -.939999998, y: 1.17999995, z: 0}
+  - name: LeftSemanaBone
+    position: {x: 0, y: 2.96481609, z: 0}
+  - name: LeftFootBone
+    position: {x: 1.1920929e-07, y: 3.68002868, z: 0}
+  - name: UpperBodyBone
+    position: {x: 0, y: 2.74089527, z: 0}
+  - name: RightShoulderBone
+    position: {x: 2.08999991, y: 6.09000015, z: 0}
+  - name: RightForearmBone
+    position: {x: 7.15255737e-07, y: 5.84251595, z: 0}
+  - name: RightHandBone
+    position: {x: -1.1920929e-06, y: 7.21423721, z: 0}
+  - name: LeftShoulderBone
+    position: {x: -2.50999999, y: 7.94000006, z: 0}
+  - name: LeftForearmBone
+    position: {x: -2.8014183e-06, y: 6.15081167, z: 0}
+  - name: LeftHandBone
+    position: {x: -2.38418579e-07, y: 5.94258308, z: 0}
+  controlPoints: []
+  targets:
+  - name: RightFootBone
+    position: {x: .00999999978, y: -4.78000021, z: 0}
+  - name: LeftFootBone
+    position: {x: -4.11000013, y: -3.8900001, z: 0}
+  - name: UpperBodyBone
+    position: {x: -2.93000007, y: 16.5100002, z: 0}
+  - name: RightForearmBone
+    position: {x: -1.91999996, y: -1.25, z: 0}
+  - name: RightHandBone
+    position: {x: -10.6999998, y: 11.1999998, z: 0}
+  - name: LeftForearmBone
+    position: {x: -8.60999966, y: .920000017, z: 0}
+  - name: LeftHandBone
+    position: {x: -14.3999996, y: 15.6000004, z: 0}

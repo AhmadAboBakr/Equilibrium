@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: 6d4814d4fc89edf4a801e4fdf256fe70
+timeCreated: 1427631798
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: UpperBody
+    21300002: UpperBody
+    21300004: LeftUpperArm
+    21300006: LeftForearm
+    21300008: Waist
+    21300010: RightForearm
+    21300012: RightHand
+    21300014: LeftHand
+    21300016: RightHand
+    21300018: LeftThigh
+    21300020: giant_modular_rock_14
+    21300022: Semana
+    21300024: RightFoot
+    21300026: LeftFoot
+    21300028: giant_modular_rock_18
+    21300030: RightUpperArm
+    21300032: LeftForearm
+    21300034: LowerBody
+    21300036: RightThigh
+    21300038: LeftShoulder
+    21300040: RightForearm
+    21300042: LeftHand
+    21300044: LeftThigh
+    21300046: RightThigh
+    21300048: Semana
+    21300050: RightFoot
+    21300052: LeftFoot
+    21300054: RightShoulder
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 35
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: LeftShoulder
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 702
+        width: 206
+        height: 298
+      alignment: 9
+      pivot: {x: .512625694, y: .607643306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: UpperBody
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 604
+        width: 307
+        height: 405
+      alignment: 9
+      pivot: {x: .531831741, y: .172532216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LeftForearm
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 395
+        width: 155
+        height: 261
+      alignment: 9
+      pivot: {x: .664677858, y: .824290991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Waist
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 391
+        width: 231
+        height: 202
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RightForearm
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 319
+        width: 154
+        height: 321
+      alignment: 9
+      pivot: {x: .543305218, y: .778986156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LeftHand
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 114
+        width: 169
+        height: 155
+      alignment: 9
+      pivot: {x: .557824492, y: .788215756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LeftThigh
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 249
+        width: 129
+        height: 142
+      alignment: 9
+      pivot: {x: .628865898, y: .617975593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RightThigh
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 245
+        width: 128
+        height: 135
+      alignment: 9
+      pivot: {x: .587253094, y: .634433746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RightHand
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 102
+        width: 189
+        height: 181
+      alignment: 9
+      pivot: {x: .559092045, y: .836596012}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Semana
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 108
+        width: 92
+        height: 133
+      alignment: 9
+      pivot: {x: .500000358, y: .825394034}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RightFoot
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 0
+        width: 150
+        height: 98
+      alignment: 9
+      pivot: {x: .546535015, y: .756416261}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LeftFoot
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 11
+        width: 140
+        height: 80
+      alignment: 9
+      pivot: {x: .599717736, y: .744307637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RightShoulder
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 681
+        width: 237
+        height: 301
+      alignment: 9
+      pivot: {x: .496342003, y: .672816873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

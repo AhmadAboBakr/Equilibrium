@@ -1,0 +1,211 @@
+fileFormatVersion: 2
+guid: bf1f5087ace709a46a7b2d66178dd939
+timeCreated: 1428219028
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cntf 1_0
+    21300002: cntf 1_1
+    21300004: cntf 1_2
+    21300006: cntf 1_3
+    21300008: cntf 1_4
+    21300010: cntf 1_5
+    21300012: cntf 1_6
+    21300014: cntf 1_7
+    21300016: cntf 1_8
+    21300018: cntf 1_9
+    21300020: cntf 1_10
+    21300022: cntf 1_11
+    21300024: cntf 1_12
+    21300026: Shield
+    21300028: Bow
+    21300030: Arrow
+    21300032: WarHammer
+    21300034: axe
+    21300036: axe2
+    21300038: WarAxe
+    21300040: WarAxe2
+    21300042: DuelSidedAxe
+    21300044: GiantSword
+    21300046: knife
+    21300048: dagger
+    21300050: Mace
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 35
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Shield
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 30
+        width: 49
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bow
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 6
+        width: 18
+        height: 117
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Arrow
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 18
+        width: 6
+        height: 93
+      alignment: 2
+      pivot: {x: .5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WarHammer
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 19
+        width: 34
+        height: 92
+      alignment: 9
+      pivot: {x: .664610267, y: .128234982}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axe
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 24
+        width: 28
+        height: 89
+      alignment: 9
+      pivot: {x: .81093055, y: .0807675794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: axe2
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 31
+        width: 29
+        height: 72
+      alignment: 9
+      pivot: {x: .757322133, y: .137247562}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WarAxe
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 12
+        width: 45
+        height: 114
+      alignment: 9
+      pivot: {x: .582914889, y: .0745157301}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WarAxe2
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 8
+        width: 35
+        height: 118
+      alignment: 9
+      pivot: {x: .624372184, y: .0731290057}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DuelSidedAxe
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 8
+        width: 62
+        height: 105
+      alignment: 9
+      pivot: {x: .520059884, y: .126883164}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GiantSword
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 3
+        width: 31
+        height: 125
+      alignment: 9
+      pivot: {x: .339518875, y: .0771342218}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: knife
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 21
+        width: 21
+        height: 78
+      alignment: 9
+      pivot: {x: .5, y: .874711573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dagger
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 14
+        width: 33
+        height: 97
+      alignment: 9
+      pivot: {x: .518844128, y: .102521427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mace
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 16
+        width: 30
+        height: 108
+      alignment: 9
+      pivot: {x: .728016138, y: .0796676949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
