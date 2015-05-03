@@ -12,9 +12,9 @@ public class PlanetEditorWindow : EditorWindow
 {
 
 
-    float PlanetRadius = 10;
-    float shellThickness = 0.25f;
-    int numberOfSegments = 10;
+    float PlanetRadius = 182;
+    float shellThickness = 6;
+    int numberOfSegments = 20;
     string PlanetName = "Planet_1";
     int resolutionScale = 10000;
     Material PlanetMat;
@@ -105,10 +105,10 @@ public class PlanetEditorWindow : EditorWindow
             PlanetOuterContour = points;
             PlanetUtils.PrintArray(PlanetOuterContour);
             UpdateShell();
-
+            int segmentDivider = PlanetOuterContour.Length / numberOfSegments;
             for (int i = 0; i < points.Length; ++i)
             {
-                int segment = (int)(i/((float)numberOfSegments));
+                int segment = (int)(i/((float)segmentDivider));
                 if (segment != 0 && pointsForCollider[segment].Count == 1)
                 {
                     pointsForCollider[segment-1].Add(points[i]);

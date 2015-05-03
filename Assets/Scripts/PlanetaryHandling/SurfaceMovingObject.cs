@@ -10,43 +10,52 @@ public class SurfaceMovingObject : MonoBehaviour
     public float moveForce = 0;
     private Rigidbody2D myRigidBody;
     public bool stopped;
-    
-     void Start()
+
+    void Start()
     {
         myRigidBody = this.GetComponent<Rigidbody2D>();
-        //StartCoroutine("ShouldAddForce");
+        StartCoroutine("UpdateCouroutine");
     }
 
-    protected void Update()
+    void Update()
     {
         this.transform.up = this.transform.position;
 
-        RaycastHit2D right = Physics2D.Raycast(transform.position, transform.right,.5f);
-        if (right.collider != null)
-        {
-
-
-            this.myRigidBody.AddForce(this.transform.up * 2,ForceMode2D.Impulse);
-            RaycastHit2D down = Physics2D.Raycast(transform.position, transform.up, .5f, 5);
-
-        }
-        else
-        {
-
-
-            //RaycastHit2D down = Physics2D.Raycast(transform.position, -transform.up, 1.5f, 5);
-            //if (down.collider != null)
-            //{
-            //    this.transform.up = down.normal;
-            //}
-            //else
-            //{
-            //    this.transform.up = this.transform.position;
-            //}
-            
-        }
-        
     }
+    IEnumerator UpdateCouroutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(.1f);
+
+            RaycastHit2D right = Physics2D.Raycast(transform.position, transform.right, .5f);
+            if (right.collider != null)
+            {
+                this.myRigidBody.AddForce(this.transform.up, ForceMode2D.Impulse);
+                RaycastHit2D down = Physics2D.Raycast(transform.position, transform.up, .5f, 5);
+
+            }
+
+        }
+    }
+    //protected void Update()
+    //{
+    //    //else
+    //    //{
+
+    //    //    //RaycastHit2D down = Physics2D.Raycast(transform.position, -transform.up, 1.5f, 5);
+    //    //    //if (down.collider != null)
+    //    //    //{
+    //    //    //    this.transform.up = down.normal;
+    //    //    //}
+    //    //    //else
+    //    //    //{
+    //    //    //    this.transform.up = this.transform.position;
+    //    //    //}
+
+    //    //}
+
+    //}
     /*
      * this functions takes the force that should be used to move the object and set it to moveForce variable
      *  ----------------------------------------------------------------------
@@ -62,34 +71,36 @@ public class SurfaceMovingObject : MonoBehaviour
     {
         //this.myRigidBody.AddForce(this.transform.right*force,ForceMode2D.Impulse);
         //this.transform.up = this.transform.position;
-       if (grounded )
+        if (grounded)
         {
             stopped = false;
-           //to make the object face the direction it's moving to
-            if (force<0)
+            //to make the object face the direction it's moving to
+            if (force < 0)
             {
                 this.transform.localScale = new Vector3(1, 1, 1);
             }
-            else 
+            else
             {
                 this.transform.localScale = new Vector3(-1, 1, 1);
             }
             //moveForce = force;
-            this.myRigidBody.AddForce(this.transform.right*force,ForceMode2D.Impulse);
+            if (Vector2.Dot(this.transform.right, this.myRigidBody.velocity) < 0) 
+                this.myRigidBody.velocity = Vector2.zero;
+            this.myRigidBody.AddForce(this.transform.right * force, ForceMode2D.Impulse);
+            
             //myRigidBody.velocity = truncate(myRigidBody.velocity);
         }
-       this.GetComponent<Animator>().SetBool("Running", true);
-        
+        this.GetComponent<Animator>().SetBool("Running", true);
+
     }
     public void StopMoving()
     {
 
-       
         stopped = true;
         this.GetComponent<Animator>().SetBool("Running", false);
     }
 
-    
+
     Vector2 truncate(Vector2 vec2)
     {
         if (vec2.magnitude > maxSpeed)
