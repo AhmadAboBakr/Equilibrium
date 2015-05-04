@@ -6,7 +6,7 @@ public class SurfaceMovingObject : MonoBehaviour
     //your Script is bad and you should feel bad
     public bool grounded = true;
     public float jumpForce = 10;
-    public float maxSpeed = 3;
+    public float maxSpeed = 5;
     public float moveForce = 0;
     private Rigidbody2D myRigidBody;
     public bool stopped;
@@ -87,8 +87,7 @@ public class SurfaceMovingObject : MonoBehaviour
             if (Vector2.Dot(this.transform.right, this.myRigidBody.velocity) < 0) 
                 this.myRigidBody.velocity = Vector2.zero;
             this.myRigidBody.AddForce(this.transform.right * force, ForceMode2D.Impulse);
-            
-            //myRigidBody.velocity = truncate(myRigidBody.velocity);
+            this.myRigidBody.velocity = truncate(this.myRigidBody.velocity);            
         }
         this.GetComponent<Animator>().SetBool("Running", true);
 
