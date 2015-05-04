@@ -79,7 +79,7 @@ public class RangedGroundEnemy : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.1f);
             if (isInRange)
             {
                 this.transform.localScale = new Vector3(-PlanetMath.ShortestDirection(this.transform.position, Player.player.transform.position), 1, 1);

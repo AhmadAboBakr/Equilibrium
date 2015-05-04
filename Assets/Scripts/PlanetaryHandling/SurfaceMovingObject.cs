@@ -10,7 +10,7 @@ public class SurfaceMovingObject : MonoBehaviour
     public float moveForce = 0;
     private Rigidbody2D myRigidBody;
     public bool stopped;
-
+    public bool needsToGoUp=false;
     void Start()
     {
         myRigidBody = this.GetComponent<Rigidbody2D>();
@@ -20,6 +20,10 @@ public class SurfaceMovingObject : MonoBehaviour
     void Update()
     {
         this.transform.up = this.transform.position;
+        if (needsToGoUp)
+        {
+            this.myRigidBody.AddForce(this.transform.up * 2, ForceMode2D.Impulse);
+        }
 
     }
     IEnumerator UpdateCouroutine()
@@ -31,9 +35,13 @@ public class SurfaceMovingObject : MonoBehaviour
             RaycastHit2D right = Physics2D.Raycast(transform.position, transform.right, .5f);
             if (right.collider != null)
             {
-                this.myRigidBody.AddForce(this.transform.up, ForceMode2D.Impulse);
-                RaycastHit2D down = Physics2D.Raycast(transform.position, transform.up, .5f, 5);
+                needsToGoUp = true;
+                this.GetComponent<SpriteRenderer>().color = Color.black;
 
+            }
+            else
+            {
+                needsToGoUp = false;
             }
 
         }
@@ -83,11 +91,13 @@ public class SurfaceMovingObject : MonoBehaviour
             {
                 this.transform.localScale = new Vector3(-1, 1, 1);
             }
-            //moveForce = force;
-            if (Vector2.Dot(this.transform.right, this.myRigidBody.velocity) < 0) 
-                this.myRigidBody.velocity = Vector2.zero;
+            var tangentForce=Vector2.Dot(this.transform.right, this.myRigidBody.velocity);
+            if (tangentForce > 0)
+            {
+                //this.myRigidBody.velocity /= 10;
+            }
             this.myRigidBody.AddForce(this.transform.right * force, ForceMode2D.Impulse);
-            this.myRigidBody.velocity = truncate(this.myRigidBody.velocity);            
+            this.myRigidBody.velocity = truncate(this.myRigidBody.velocity);
         }
         this.GetComponent<Animator>().SetBool("Running", true);
 
@@ -122,10 +132,7 @@ public class SurfaceMovingObject : MonoBehaviour
     {
         if (other.gameObject.tag == "Planet")
         {
-            if (!this.CompareTag("Player"))
-            {
-                grounded = false;
-            }
+            grounded = false;
         }
     }
 }
