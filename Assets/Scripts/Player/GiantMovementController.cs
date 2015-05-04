@@ -49,6 +49,7 @@ public class GiantMovementController : MonoBehaviour {
              Move(force);
         }
     }
+
     public void MoveRight()
     {
         if (movingLeft == true)
@@ -61,8 +62,8 @@ public class GiantMovementController : MonoBehaviour {
             movingRight = true;
             Player.player.animator.SetBool("isRunning", true);
         }
-
     }
+    
     public void MoveLeft()
     {
 
@@ -113,11 +114,10 @@ public class GiantMovementController : MonoBehaviour {
             }
             //moveForce = force;
             myRigidbody.velocity = this.transform.right * force;
-            //myRigidBody.velocity = truncate(myRigidBody.velocity);
-            
-            
+            //myRigidBody.velocity = truncate(myRigidBody.velocity); 
         }
     }
+
     public void Jump()
     {
         if (grounded)
@@ -125,11 +125,10 @@ public class GiantMovementController : MonoBehaviour {
             myRigidbody.velocity += (Vector2)(this.transform.up * jumpForce);
             grounded = false;
             jumping = true;
-            Player.player.animator.SetTrigger("Jumped");
-
-            
+            Player.player.animator.SetTrigger("Jumped"); 
         }
     }
+
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Planet")
@@ -148,6 +147,14 @@ public class GiantMovementController : MonoBehaviour {
                 
             }
 
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Planet")
+        {
+            grounded = false;
         }
     }
     
