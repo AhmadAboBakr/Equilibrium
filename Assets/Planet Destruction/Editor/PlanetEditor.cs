@@ -551,10 +551,11 @@ public class PlanetEditor : Editor {
             collisionVertices.Add(Vector2.zero);
             pointsForCollider.Add(collisionVertices);
         }
+        int segment = 0;
         int segmentDivider = PlanetOuterContour.Length / planetColliders.Length;
         for (int i = 0; i < PlanetOuterContour.Length; ++i)
         {
-            int segment = (int)(i / ((float)segmentDivider));
+            segment = (int)(i / ((float)segmentDivider));
             if (segment == planetColliders.Length) segment--;
             if (segment != 0 && pointsForCollider[segment].Count == 1)
             {
@@ -562,6 +563,8 @@ public class PlanetEditor : Editor {
             }
             pointsForCollider[segment].Add(PlanetOuterContour[i]);
         }
+        pointsForCollider[segment].Add(points[0]);
+
         for (int i = 0; i < planetColliders.Length; ++i)
         {
             planetColliders[i].points = pointsForCollider[i].ToArray();
