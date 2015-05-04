@@ -7,14 +7,14 @@ public class MeleeGroundEnemy : MonoBehaviour
     public float damage;
     public bool GiantInAttackArea = false;
     Animator myAnimator;
+    SurfaceMovingObject mySurfaceMovingObject;
     void Start()
     {
+        mySurfaceMovingObject=this.GetComponent<SurfaceMovingObject>();
         myAnimator = this.GetComponent<Animator>();
+        StartCoroutine("Seek");
     }
-    void Update()
-    {
-        Seek();
-    }
+    
     IEnumerator attack()
     {
         while (true)
@@ -50,16 +50,20 @@ public class MeleeGroundEnemy : MonoBehaviour
             GiantInAttackArea = false;
         }
     }
-    
-    void Seek()
+
+    IEnumerator Seek()
     {
-        if (GiantInAttackArea)
+        while (true)
         {
-            this.GetComponent<SurfaceMovingObject>().StopMoving();
-        }
-        else
-        {
-            this.GetComponent<SurfaceMovingObject>().Move(PlanetMath.ShortestDirection(this.transform.position, Player.player.transform.position));
+            yield return new WaitForSeconds(0.1f);
+            if (GiantInAttackArea)
+            {
+                mySurfaceMovingObject.StopMoving();
+            }
+            else
+            {
+                mySurfaceMovingObject.Move(PlanetMath.ShortestDirection(this.transform.position, Player.player.transform.position));
+            }
         }
     }
 
