@@ -11,8 +11,9 @@ using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
 using System.IO;
 [CustomEditor(typeof(PlanetClass))]
-public class PlanetEditor : Editor {
-    public static bool  EditorEnabled=true;
+public class PlanetEditor : Editor
+{
+    public static bool EditorEnabled = true;
     float timer = 0;
     static Vector3[] ClippingPoly;// = new Vector3[] { new Vector3(-0.25f, -0.25f, 0), new Vector3(0.25f, -0.25f, 0), new Vector3(0, 0.25f, 0), new Vector3(-0.25f, -0.25f, 0) };
     static Vector3[] EditorClippingPoly;
@@ -42,7 +43,7 @@ public class PlanetEditor : Editor {
         UpdateClippingPoly();
         timer = Time.realtimeSinceStartup;
         //uvMap = new Bitmap("Assets\\uvMap.png");
-        
+
     }
     bool mouseDown = false;
     static float UserDefinedSize = 0.25f;
@@ -50,7 +51,7 @@ public class PlanetEditor : Editor {
     Vector2 lastMousPos;
     public void OnSceneGUI()
     {
-        
+
         PlanetClass planet = target as PlanetClass;
         if (EditorEnabled)
         {
@@ -75,11 +76,11 @@ public class PlanetEditor : Editor {
                 //Debug.Log("Need redraw");
 
             }
-            if (Event.current.type == EventType.MouseDrag&& Event.current.button==0)
+            if (Event.current.type == EventType.MouseDrag && Event.current.button == 0)
             {
                 if (Event.current.mousePosition != lastMousPos)
                 {
-                    
+
                     if (Time.realtimeSinceStartup - timer > 0.3f)
                     {
                         Add();
@@ -87,8 +88,8 @@ public class PlanetEditor : Editor {
                         UpdateUVMap();
                         timer = Time.realtimeSinceStartup;
                     }
-                    
-                    
+
+
                 }
                 NeadRedraw = true;
                 //Debug.Log("Need redraw");
@@ -149,18 +150,18 @@ public class PlanetEditor : Editor {
             if (PlanetOuterShell != null) Handles.DrawPolyLine(PlanetUtils.Vec2ToVec3Arr(PlanetOuterShell));
             Handles.color = new UnityEngine.Color(1, 0, 0, 0.3f);
             //Handles.DrawSolidDisc(mousePos, Vector3.forward, handleSize * UserDefinedSize);
-            Handles.DrawSolidDisc(mousePos, Vector3.forward,  UserDefinedSize);
+            Handles.DrawSolidDisc(mousePos, Vector3.forward, UserDefinedSize);
             if (NeadRedraw)
                 SceneView.RepaintAll();
         }
 
     }
 
-    
+
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
-        
+
         #region Generate
         /*
         if (GUILayout.Button("Generate"))
@@ -205,7 +206,7 @@ public class PlanetEditor : Editor {
             //AssetDatabase.ImportAsset("Assets\\uvMap.png");
         }*/
         #endregion
-         
+
         #region Smooth Map
         if (GUILayout.Button("Smooth UVMap"))
         {
@@ -250,8 +251,8 @@ public class PlanetEditor : Editor {
         PointF[] innerContour = Vec2ArrToPoint(PlanetOuterShell);
         float scale = GetScale(outerContour);
         //UnityEngine.Debug.Log("Scale:"+scale);
-        gfx.ScaleTransform(uvMap.Width/ scale, - uvMap.Height/scale);
-        planet.GetComponent<Renderer>().sharedMaterial.SetFloat("Radius", scale/2);
+        gfx.ScaleTransform(uvMap.Width / scale, -uvMap.Height / scale);
+        planet.GetComponent<Renderer>().sharedMaterial.SetFloat("Radius", scale / 2);
         //PathGradientBrush brush = new PathGradientBrush(outerContour);
         //brush.CenterColor = System.Drawing.Color.Wheat;
         //brush.SurroundColors = new System.Drawing.Color[] { System.Drawing.Color.Red, System.Drawing.Color.Magenta, System.Drawing.Color.Blue};
@@ -283,8 +284,9 @@ public class PlanetEditor : Editor {
     }
     public static float GetScale(PointF[] outerContour)
     {
-        PointF min = outerContour[0], max=outerContour[0];
-        for(int i=0;i<outerContour.Length;i++){
+        PointF min = outerContour[0], max = outerContour[0];
+        for (int i = 0; i < outerContour.Length; i++)
+        {
             if (outerContour[i].X > max.X) max.X = outerContour[i].X;
             if (outerContour[i].Y > max.Y) max.Y = outerContour[i].Y;
             if (outerContour[i].X < min.X) min.X = outerContour[i].X;
@@ -299,7 +301,7 @@ public class PlanetEditor : Editor {
         //}
         //else
         //    return  boundstHeight;
-        return 2* Mathf.Max(Mathf.Abs(min.X), Mathf.Abs(min.Y), Mathf.Abs(max.X), Mathf.Abs(max.Y))*1.01f;
+        return 2 * Mathf.Max(Mathf.Abs(min.X), Mathf.Abs(min.Y), Mathf.Abs(max.X), Mathf.Abs(max.Y)) * 1.01f;
     }
     public static byte[] ImageToByte2(Image img)
     {
@@ -318,10 +320,10 @@ public class PlanetEditor : Editor {
     {
         //UnityEngine.Debug.Log("Updating clipping area with " + vertCount + " verts");
         ClippingPoly = new Vector3[vertCount];
-        EditorClippingPoly = new Vector3[vertCount+1];
+        EditorClippingPoly = new Vector3[vertCount + 1];
         for (int i = 0; i < vertCount; i++)
         {
-            float degree =360- (i*1.0f /(vertCount))* 360.0f;
+            float degree = 360 - (i * 1.0f / (vertCount)) * 360.0f;
             ClippingPoly[i] = new Vector3(
                 UserDefinedSize * Mathf.Cos(degree * Mathf.Deg2Rad),
                 UserDefinedSize * Mathf.Sin(degree * Mathf.Deg2Rad),
@@ -346,17 +348,17 @@ public class PlanetEditor : Editor {
         //clipping point should be translated to mouse position relative to planet space
         //assume the planet in (0,0,0)
         Vector3 mousePos = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition).origin + SceneView.GetAllSceneCameras()[0].transform.forward;
-        Vector3[] clippingPoints = PlanetUtils.TranslateArray(ClippingPoly, mousePos.x-planet.transform.position.x, mousePos.y-planet.transform.position.y, 0);
+        Vector3[] clippingPoints = PlanetUtils.TranslateArray(ClippingPoly, mousePos.x - planet.transform.position.x, mousePos.y - planet.transform.position.y, 0);
         List<IntPoint> orignalPoly = PlanetUtils.Vec2ArrtoPolygon(PlanetOuterContour, Scale);
         List<IntPoint> clipPoly = PlanetUtils.Vec3ArrtoPolygon(clippingPoints, Scale);
         Clipper c = new Clipper();
-        
+
         c.AddPath(orignalPoly, PolyType.ptSubject, true);
         c.AddPath(clipPoly, PolyType.ptClip, true);
         List<List<IntPoint>> result = new List<List<IntPoint>>();
         c.Execute(ClipType.ctUnion, result);
         long clippingTime = sw.ElapsedMilliseconds;
-        UpdatePlanetMesh( result);
+        UpdatePlanetMesh(result);
         long timeafterTriangluation = sw.ElapsedMilliseconds;
         PlanetOuterContour = PlanetUtils.PolygonTovec2Arr(result[0], Scale);
         ColliderNeedToUpdate = true;
@@ -367,22 +369,23 @@ public class PlanetEditor : Editor {
     {
         Mesh planetMesh = planet.GetComponent<MeshFilter>().sharedMesh;
         planetMesh.triangles = null;
-        UnityEngine.Debug.Log(result.Count);
 
-        if (result.Count >1)
+
+        if (result.Count > 1)
         {
-            
+
             if (result[0].Count > result[1].Count)
             {
                 planetMesh.vertices = PlanetUtils.PolyToVector3Arr(result[0], Scale);
-            
+
             }
             else
             {
                 planetMesh.vertices = PlanetUtils.PolyToVector3Arr(result[1], Scale);
             }
         }
-        else {
+        else
+        {
             planetMesh.vertices = PlanetUtils.PolyToVector3Arr(result[0], Scale);
         }
         planetMesh.uv = PlanetUtils.UvsFromVertices(planetMesh.vertices, 10);
@@ -413,7 +416,7 @@ public class PlanetEditor : Editor {
         for (int i = 1; i < PlanetOuterContour.Length - 1; i++)
         {
             Vector2 leftMidPoint = (PlanetOuterContour[i - 1] + PlanetOuterContour[i]) / 2;
-            Vector2 rightMidPoint = (PlanetOuterContour[i] + PlanetOuterContour[i+1]) / 2;
+            Vector2 rightMidPoint = (PlanetOuterContour[i] + PlanetOuterContour[i + 1]) / 2;
             PlanetOuterContour[i] = (leftMidPoint + rightMidPoint) / 2;
         }
     }
@@ -476,7 +479,7 @@ public class PlanetEditor : Editor {
                 NormalizeColorComponent(ref newPixelBValue);
                 image.SetPixel(x, y, System.Drawing.Color.FromArgb(newPixelRValue, newPixelGValue, newPixelBValue));
             }
-            
+
             EditorUtility.DisplayProgressBar("Applying mean filter on UVMap image", "Please Wait...", colIndex * 1.0f / width);
         }
         EditorUtility.ClearProgressBar();
@@ -499,7 +502,7 @@ public class PlanetEditor : Editor {
                 float newPixelRValue = 0;
                 float newPixelGValue = 0;
                 float newPixelBValue = 0;
-                 counter++;
+                counter++;
                 for (int i = 0; i < kernelSize; i++)
                 {
                     for (int j = 0; j < kernelSize; j++)
@@ -513,11 +516,11 @@ public class PlanetEditor : Editor {
                 NormalizeColorComponent(ref newPixelRValue);
                 NormalizeColorComponent(ref newPixelGValue);
                 NormalizeColorComponent(ref newPixelBValue);
-                
-                image.SetPixel(x, y,new UnityEngine.Color(newPixelRValue, newPixelGValue, newPixelBValue));
+
+                image.SetPixel(x, y, new UnityEngine.Color(newPixelRValue, newPixelGValue, newPixelBValue));
             }
             float progress = colIndex * 1.0f / width;
-            EditorUtility.DisplayProgressBar("Applying mean filter on UVMap image ", "Please Wait..." +Mathf.Round(progress*100)+"%", progress);
+            EditorUtility.DisplayProgressBar("Applying mean filter on UVMap image ", "Please Wait..." + Mathf.Round(progress * 100) + "%", progress);
         }
         image.Apply();
         EditorUtility.ClearProgressBar();
@@ -542,7 +545,7 @@ public class PlanetEditor : Editor {
     }
     void UpdateCollider()
     {
-        
+
         var points = planet.GetComponent<MeshFilter>().sharedMesh.vertices;
         List<List<Vector2>> pointsForCollider = new List<List<Vector2>>();
         for (int i = 0; i < planetColliders.Length; i++)
@@ -552,18 +555,31 @@ public class PlanetEditor : Editor {
             pointsForCollider.Add(collisionVertices);
         }
         int segment = 0;
-        int segmentDivider = PlanetOuterContour.Length / planetColliders.Length;
+        float segmentDivider = Mathf.Round((float)PlanetOuterContour.Length / (float)(planetColliders.Length));
+
+        
         for (int i = 0; i < PlanetOuterContour.Length; ++i)
         {
-            segment = (int)(i / ((float)segmentDivider));
-            if (segment == planetColliders.Length) segment--;
-            if (segment != 0 && pointsForCollider[segment].Count == 1)
+
+            segment = (int)(i / segmentDivider);
+            if (segment < planetColliders.Length)
             {
-                pointsForCollider[segment - 1].Add(PlanetOuterContour[i]);
+                //segment--;
+                if (segment != 0 && pointsForCollider[segment].Count == 1)
+                {
+                    pointsForCollider[segment - 1].Add(PlanetOuterContour[i]);
+                }
+                pointsForCollider[segment].Add(PlanetOuterContour[i]);
             }
-            pointsForCollider[segment].Add(PlanetOuterContour[i]);
+            else
+            {
+                //UnityEngine.Debug.Log(segment +" : "+i+" / "+segmentDivider);
+                pointsForCollider[planetColliders.Length-1].Add(PlanetOuterContour[i]);
+
+            }
         }
-        pointsForCollider[segment].Add(points[0]);
+
+        pointsForCollider[planetColliders.Length-1].Add(points[0]);
 
         for (int i = 0; i < planetColliders.Length; ++i)
         {
@@ -573,3 +589,4 @@ public class PlanetEditor : Editor {
         planet.points = PlanetOuterContour;
     }
 }
+

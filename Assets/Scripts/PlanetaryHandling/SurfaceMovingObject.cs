@@ -5,16 +5,28 @@ public class SurfaceMovingObject : MonoBehaviour
 {
     //your Script is bad and you should feel bad
     public bool grounded = true;
+    public int layer;
     public float jumpForce = 10;
     public float maxSpeed = 5;
     public float moveForce = 0;
+    public bool movingRight, MovingLeft;
+    public bool needsToGoUp = false;
+    public Transform rayCaster;
+
     private Rigidbody2D myRigidBody;
-    public bool stopped;
-    public bool needsToGoUp=false;
+    private Animator myAnimator;
+    private string[] collisionLayer;
+    
     void Start()
     {
         myRigidBody = this.GetComponent<Rigidbody2D>();
         StartCoroutine("UpdateCouroutine");
+        movingRight = MovingLeft = false;
+        myAnimator= this.GetComponent<Animator>();
+        grounded = false;
+        collisionLayer = new string[1];
+        collisionLayer[0] = "planetSegments";
+
     }
 
     void Update()
@@ -23,6 +35,7 @@ public class SurfaceMovingObject : MonoBehaviour
         if (needsToGoUp)
         {
             this.myRigidBody.AddForce(this.transform.up * 2, ForceMode2D.Impulse);
+            Move(-this.transform.localScale.x);
         }
 
     }
@@ -31,16 +44,17 @@ public class SurfaceMovingObject : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(.1f);
+            RaycastHit2D right = Physics2D.Raycast(transform.position, rayCaster.localPosition, 1f,LayerMask.GetMask(collisionLayer));
 
-            RaycastHit2D right = Physics2D.Raycast(transform.position, transform.right, .5f);
             if (right.collider != null)
             {
+
                 needsToGoUp = true;
-                this.GetComponent<SpriteRenderer>().color = Color.black;
 
             }
             else
             {
+                
                 needsToGoUp = false;
             }
 
@@ -77,36 +91,44 @@ public class SurfaceMovingObject : MonoBehaviour
      */
     public void Move(float force)
     {
-        //this.myRigidBody.AddForce(this.transform.right*force,ForceMode2D.Impulse);
-        //this.transform.up = this.transform.position;
         if (grounded)
         {
-            stopped = false;
             //to make the object face the direction it's moving to
             if (force < 0)
             {
+                if (MovingLeft)
+                {
+                    this.myRigidBody.velocity = Vector2.zero;
+                }
+                movingRight = true;
+                MovingLeft = false;
                 this.transform.localScale = new Vector3(1, 1, 1);
             }
             else
             {
+                if (movingRight)
+                {
+                    this.myRigidBody.velocity = Vector2.zero;
+
+                }
+                movingRight = false;
+                MovingLeft = true;
                 this.transform.localScale = new Vector3(-1, 1, 1);
             }
-            var tangentForce=Vector2.Dot(this.transform.right, this.myRigidBody.velocity);
-            if (tangentForce > 0)
-            {
-                //this.myRigidBody.velocity /= 10;
-            }
-            this.myRigidBody.AddForce(this.transform.right * force, ForceMode2D.Impulse);
+            this.myRigidBody.velocity = Vector3.zero;
+            this.myRigidBody.AddForce(this.transform.right * force*10, ForceMode2D.Impulse);
             this.myRigidBody.velocity = truncate(this.myRigidBody.velocity);
+
+            //This is needed to stop the Object Momentum
+            //var angle = Vector3.Angle(this.transform.right);
+            
         }
-        this.GetComponent<Animator>().SetBool("Running", true);
+        myAnimator.SetBool("Running", true);
 
     }
     public void StopMoving()
     {
-
-        stopped = true;
-        this.GetComponent<Animator>().SetBool("Running", false);
+        myAnimator.SetBool("Running", false);
     }
 
 

@@ -65,6 +65,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &112912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 492300}
+  m_Layer: 10
+  m_Name: CameraFollow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &116028
 GameObject:
   m_ObjectHideFlags: 1
@@ -840,7 +855,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 187632}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.26000023, z: 0}
+  m_LocalPosition: {x: .610000014, y: 6.76999998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 475704}
@@ -895,10 +910,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.96000004, y: 182.070007, z: 0}
+  m_LocalPosition: {x: -3.70000005, y: 189.399994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 444108}
+  - {fileID: 492300}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &455272
@@ -1135,6 +1151,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 424768}
   m_RootOrder: 0
+--- !u!4 &492300
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112912}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.13999987, y: 15.9200001, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 454524}
+  m_RootOrder: 1
 --- !u!4 &492592
 Transform:
   m_ObjectHideFlags: 1
@@ -1222,7 +1250,7 @@ Animator:
   m_GameObject: {fileID: 187632}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0c0f5aab91869d849a4b70e486a40f8c, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3f3fd161b1ca65d4c984f8d6cf75e772, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2037,7 +2065,7 @@ SpriteRenderer:
   m_SortingLayerID: -1615563495
   m_SortingOrder: -5
   m_Sprite: {fileID: 21300012, guid: 0e1b46dfde98de147a0af201b48449ac, type: 3}
-  m_Color: {r: .904411793, g: .924362063, b: .924362063, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21223276
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -2063,7 +2091,7 @@ SpriteRenderer:
   m_SortingLayerID: -1615563495
   m_SortingOrder: -3
   m_Sprite: {fileID: 21300006, guid: 0e1b46dfde98de147a0af201b48449ac, type: 3}
-  m_Color: {r: .904411793, g: .924362063, b: .924362063, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21225540
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -2141,7 +2169,7 @@ SpriteRenderer:
   m_SortingLayerID: -1615563495
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300014, guid: 0e1b46dfde98de147a0af201b48449ac, type: 3}
-  m_Color: {r: .904411793, g: .924362063, b: .924362063, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21245286
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -2167,7 +2195,7 @@ SpriteRenderer:
   m_SortingLayerID: -1615563495
   m_SortingOrder: -11
   m_Sprite: {fileID: 21300024, guid: 0e1b46dfde98de147a0af201b48449ac, type: 3}
-  m_Color: {r: .904411793, g: .924362063, b: .924362063, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21249120
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -2219,7 +2247,7 @@ SpriteRenderer:
   m_SortingLayerID: -1615563495
   m_SortingOrder: -3
   m_Sprite: {fileID: 21300016, guid: 0e1b46dfde98de147a0af201b48449ac, type: 3}
-  m_Color: {r: .904411793, g: .924362063, b: .924362063, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21265024
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -2349,7 +2377,7 @@ SpriteRenderer:
   m_SortingLayerID: -1615563495
   m_SortingOrder: -10
   m_Sprite: {fileID: 21300026, guid: 0e1b46dfde98de147a0af201b48449ac, type: 3}
-  m_Color: {r: .904411793, g: .924362063, b: .924362063, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -33,7 +33,7 @@ public class GiantMovementController : MonoBehaviour {
             StoppedMovingRight();
         }
 
-        this.transform.up = this.transform.position;
+        this.transform.up = this.transform.position.normalized;
 
         if (movingLeft == true)
         {
@@ -150,12 +150,12 @@ public class GiantMovementController : MonoBehaviour {
         }
     }
 
-    void OnCollisionExit2D(Collision2D other)
-    {
-        if(other.gameObject.tag == "Planet")
-        {
-            grounded = false;
-        }
-    }
+    //void OnCollisionExit2D(Collision2D other)
+    //{
+    //    if(other.gameObject.tag == "Planet")
+    //    {
+    //        grounded = false;
+    //    }
+    //}
     
 }

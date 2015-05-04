@@ -55,7 +55,7 @@ public class MeleeGroundEnemy : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.08f);
             if (GiantInAttackArea)
             {
                 mySurfaceMovingObject.StopMoving();
