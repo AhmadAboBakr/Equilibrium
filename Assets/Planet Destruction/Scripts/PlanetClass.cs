@@ -8,9 +8,10 @@ public class PlanetClass : MonoBehaviour {
     public float shellThickness = 0.25f;
     public int DiggingResolutionScale = 100;
     public Vector2[] points;
+    public PolygonCollider2D []planetColliders;
 	// Use this for initialization
 	void Start () {
-	
+	    planetColliders= this.GetComponents<PolygonCollider2D>();
 	}
 	
 	// Update is called once per frame
@@ -22,12 +23,12 @@ public class PlanetClass : MonoBehaviour {
         PlanetUtils.PrintArray(collider.points);
 
 
-        PolygonCollider2D planetCollider = GetComponent<PolygonCollider2D>();
-        Vector2[] points = collider.points;
+        //PolygonCollider2D planetCollider = GetComponent<PolygonCollider2D>();
+        //Vector2[] points = collider.points;
         //clipping point should be translated to mouse position relative to planet space
         //assume the planet in (0,0,0)
         Vector2[] clippingPoints = TranslateArray(collider.points, position.x - transform.position.x, position.y-transform.position.y);
-        List<IntPoint> orignalPoly = Vec2ArrtoPolygon(planetCollider.points, DiggingResolutionScale);
+        List<IntPoint> orignalPoly = Vec2ArrtoPolygon(points, DiggingResolutionScale);
         List<IntPoint> clipPoly = Vec2ArrtoPolygon(clippingPoints, DiggingResolutionScale);
         Clipper c = new Clipper();
         c.AddPath(orignalPoly, PolyType.ptSubject, true);
@@ -39,7 +40,8 @@ public class PlanetClass : MonoBehaviour {
         planetMesh.vertices = PolyToVector3Arr(result[0], DiggingResolutionScale);
         Triangulator3 tri = new Triangulator3(planetMesh.vertices);
         planetMesh.triangles = tri.Triangulate();
-        planetCollider.points = PolygonTovec2Arr(result[0], DiggingResolutionScale);
+        points = PolygonTovec2Arr(result[0], DiggingResolutionScale);
+        UpdateCollider();
 
     }
     private Vector3[] TranslateArray(Vector3[] data, float dx, float dy, float dz)
@@ -153,5 +155,32 @@ public class PlanetClass : MonoBehaviour {
         }
         return points;
 
+    }
+    void UpdateCollider()
+    {
+
+        List<List<Vector2>> pointsForCollider = new List<List<Vector2>>();
+        for (int i = 0; i < planetColliders.Length; i++)
+        {
+            var collisionVertices = new List<Vector2>();
+            collisionVertices.Add(Vector2.zero);
+            pointsForCollider.Add(collisionVertices);
+        }
+        int segmentDivider = points.Length / planetColliders.Length;
+        for (int i = 0; i < points.Length; ++i)
+        {
+            int segment = (int)(i / ((float)segmentDivider));
+            if (segment == planetColliders.Length) segment--;
+            if (segment != 0 && pointsForCollider[segment].Count == 1)
+            {
+                pointsForCollider[segment - 1].Add(points[i]);
+            }
+            pointsForCollider[segment].Add(points[i]);
+        }
+        for (int i = 0; i < planetColliders.Length; ++i)
+        {
+            planetColliders[i].points = pointsForCollider[i].ToArray();
+            //UnityEngine.Debug.Log(planetColliders[i].points.Length);
+        }
     }
 }
