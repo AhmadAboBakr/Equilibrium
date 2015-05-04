@@ -10,10 +10,12 @@ public class SurfaceMovingObject : MonoBehaviour
     public float moveForce = 0;
     private Rigidbody2D myRigidBody;
     public bool stopped;
+    public Animator myanim;
     
      void Start()
     {
         myRigidBody = this.GetComponent<Rigidbody2D>();
+        myanim = gameObject.GetComponent<Animator>();
         //StartCoroutine("ShouldAddForce");
     }
 
@@ -118,4 +120,6 @@ public class SurfaceMovingObject : MonoBehaviour
             }
         }
     }
+
+   
 }

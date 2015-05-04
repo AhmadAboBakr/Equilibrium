@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &175378
 GameObject:
   m_ObjectHideFlags: 1
@@ -566,6 +566,7 @@ MonoBehaviour:
   maxSpeed: 1.5
   moveForce: 0
   stopped: 0
+  myanim: {fileID: 0}
 --- !u!212 &21200024
 SpriteRenderer:
   m_ObjectHideFlags: 1

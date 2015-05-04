@@ -152,6 +152,7 @@ GameObject:
   - 114: {fileID: 11414024}
   - 114: {fileID: 11427896}
   - 50: {fileID: 5076980}
+  - 212: {fileID: 21249686}
   m_Layer: 20
   m_Name: LargeDoubleEdgedAxeMan
   m_TagString: Enemy
@@ -473,7 +474,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 4a41a1007d1d50147b59fc648b7766ac, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -521,6 +522,7 @@ MonoBehaviour:
   maxSpeed: 3
   moveForce: 0
   stopped: 0
+  myanim: {fileID: 0}
 --- !u!114 &11484252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -666,6 +668,32 @@ SpriteRenderer:
   m_SortingLayerID: -1449157145
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300054, guid: d09209296c8780e4988c3f3b90134ed0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!212 &21249686
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178164}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21271624
 SpriteRenderer:
