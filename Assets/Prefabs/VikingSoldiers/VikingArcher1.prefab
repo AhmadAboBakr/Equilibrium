@@ -455,6 +455,7 @@ MonoBehaviour:
   projectile: {fileID: 184010, guid: a39c7e92248bea044abcdff315b1f931, type: 2}
   launchingDevice: {fileID: 402468}
   enemyAccuracy: 0
+  mySurfaceMovingObject: {fileID: 0}
 --- !u!114 &11448816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -471,7 +472,6 @@ MonoBehaviour:
   maxSpeed: 3
   moveForce: 0
   stopped: 0
-  myanim: {fileID: 0}
 --- !u!114 &11463954
 MonoBehaviour:
   m_ObjectHideFlags: 1
