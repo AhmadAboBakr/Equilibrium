@@ -3,6 +3,7 @@ using System.Collections;
 
 public class RangedGroundEnemy : MonoBehaviour
 {
+    public GeneralPooling pooler;
     public Vector2 ArrotVelocity;
     public float attacksEvery = 2f;
     public float range = 4f;
@@ -38,7 +39,7 @@ public class RangedGroundEnemy : MonoBehaviour
         Vector2 gravity = -((Vector2)this.transform.position).normalized * GameState.gravity;
         float vx = x / timeToReachTarget - .5f * gravity.x * timeToReachTarget;
         float vy = y / timeToReachTarget - .5f * gravity.y * timeToReachTarget;
-        var instance = Instantiate(projectile, launchingDevice.transform.position, Quaternion.LookRotation(new Vector2(vx,vy))) as GameObject;
+        var instance = pooler.CreateObject(launchingDevice.transform.position, Quaternion.LookRotation(new Vector2(vx, vy))) as GameObject;
         ArrotVelocity.x = vx;
         ArrotVelocity.y = vy;
         myanimator.SetTrigger("Attack");

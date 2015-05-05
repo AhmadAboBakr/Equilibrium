@@ -22,4 +22,7 @@ public class EnemyProjectileDamage : MonoBehaviour {
         }
         hit = true;
     }
+    void OnDisable(){
+        hit=false;
+    }
 }

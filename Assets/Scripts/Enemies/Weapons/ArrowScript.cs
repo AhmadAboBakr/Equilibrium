@@ -3,11 +3,15 @@ using System.Collections;
 
 public class ArrowScript : MonoBehaviour {
     Rigidbody2D myRigidBody;
-
+    public GeneralPooling pooler;
     
 	// Use this for initialization
     public bool hit;
+    void Awake()
+    {
+    }
 	void Start () {
+        pooler = this.transform.parent.GetComponent<GeneralPooling>();
         myRigidBody = GetComponent<Rigidbody2D>();
         hit = false;
 	}
@@ -25,6 +29,7 @@ public class ArrowScript : MonoBehaviour {
     }
     IEnumerator destoyAfterTime(){
         yield return new WaitForSeconds(0.5f);
-        Destroy(this.gameObject);
+        hit = false;
+        pooler.ReturnObjectToPool(this.gameObject);
     }
 }
