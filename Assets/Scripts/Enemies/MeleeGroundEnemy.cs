@@ -8,11 +8,22 @@ public class MeleeGroundEnemy : MonoBehaviour
     public bool GiantInAttackArea = false;
     Animator myAnimator;
     SurfaceMovingObject mySurfaceMovingObject;
+    bool firstSeek= true;
     void Start()
     {
         mySurfaceMovingObject=this.GetComponent<SurfaceMovingObject>();
         myAnimator = this.GetComponent<Animator>();
+        firstSeek = false;
+        OnEnable();
+    }
+    void OnEnable()
+    {
         StartCoroutine("Seek");
+    }
+    void OnDisable()
+    {
+        StopAllCoroutines();
+        GiantInAttackArea = false;
     }
     
     IEnumerator attack()
@@ -35,6 +46,7 @@ public class MeleeGroundEnemy : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        
         if (other.gameObject.CompareTag("Player"))
         {
             StartCoroutine("attack");
@@ -43,7 +55,6 @@ public class MeleeGroundEnemy : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D other)
     {
-
         if (other.gameObject.CompareTag("Player"))
         {
             StopCoroutine("attack");
@@ -55,6 +66,7 @@ public class MeleeGroundEnemy : MonoBehaviour
     {
         while (true)
         {
+            Debug.Log("lool");
             yield return new WaitForSeconds(0.08f);
             if (GiantInAttackArea)
             {

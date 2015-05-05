@@ -51,6 +51,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &141428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 427052}
+  - 114: {fileID: 11478288}
+  m_Layer: 11
+  m_Name: ArrowPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &142114
 GameObject:
   m_ObjectHideFlags: 1
@@ -80,6 +96,21 @@ GameObject:
   - 61: {fileID: 6171102}
   m_Layer: 14
   m_Name: Leg2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &148196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 418094}
+  m_Layer: 11
+  m_Name: RayCaster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,6 +202,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 433188}
   m_RootOrder: 0
+--- !u!4 &418094
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.24100006, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 453116}
+  m_RootOrder: 3
 --- !u!4 &423116
 Transform:
   m_ObjectHideFlags: 1
@@ -183,6 +226,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 442134}
   m_RootOrder: 3
+--- !u!4 &427052
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141428}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 453116}
+  m_RootOrder: 2
 --- !u!4 &433188
 Transform:
   m_ObjectHideFlags: 1
@@ -244,11 +299,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -90.5106201, y: 180.613541, z: 0}
+  m_LocalPosition: {x: -21.5289993, y: 195.546005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 443982}
   - {fileID: 442134}
+  - {fileID: 427052}
+  - {fileID: 418094}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &458408
@@ -446,6 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b19b9e4e2ecf8645ac703a1b9444fae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pooler: {fileID: 11478288}
   ArrotVelocity: {x: 0, y: 0}
   attacksEvery: 2
   range: 35
@@ -468,11 +526,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grounded: 0
+  layer: 0
   jumpForce: 10
   maxSpeed: 5
   moveForce: 0
-  stopped: 0
+  movingRight: 0
+  MovingLeft: 0
   needsToGoUp: 0
+  rayCaster: {fileID: 418094}
 --- !u!114 &11463954
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -489,6 +550,21 @@ MonoBehaviour:
   myAnim: {fileID: 0}
   myRigidbody: {fileID: 0}
   myArtGrav: {fileID: 0}
+--- !u!114 &11478288
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ebfae17cdf943f4da7655dd70cddc2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToPool:
+  - {fileID: 184010, guid: a39c7e92248bea044abcdff315b1f931, type: 2}
+  parentObject: {fileID: 0}
+  numberOfObjects: 4
 --- !u!212 &21216672
 SpriteRenderer:
   m_ObjectHideFlags: 1

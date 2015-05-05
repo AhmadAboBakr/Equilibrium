@@ -4,16 +4,17 @@ using System.Collections.Generic;
 public class GeneralPooling : MonoBehaviour {
     List<GameObject> pooledObjects;
     public GameObject [] objectsToPool;
+    public Transform parentObject;
     public int numberOfObjects;
-    void Start () {
+    void Awake () {
         pooledObjects = new List<GameObject>();
         for (int i = 0; i < numberOfObjects; ++i)
         {
             int random =Random.Range(0,objectsToPool.Length);
-            Debug.Log(random);
             var  pooledObject= GameObject.Instantiate(objectsToPool[random]) as GameObject;
             pooledObjects.Add(pooledObject);
             pooledObject.transform.parent = this.transform;
+
             pooledObject.SetActive(false);
         }
 	}
@@ -29,7 +30,9 @@ public class GeneralPooling : MonoBehaviour {
         }
         else
         {
-            pooledObject = GameObject.Instantiate(objectsToPool[Random.Range(0, objectsToPool.Length)]) as GameObject;
+            //pooledObject = GameObject.Instantiate(objectsToPool[Random.Range(0, objectsToPool.Length)]) as GameObject;
+            //pooledObject.transform.parent = (parentObject) ? parentObject : this.transform;
+            return null;
         }
         return pooledObject;
     }

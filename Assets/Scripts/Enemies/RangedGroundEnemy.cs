@@ -17,15 +17,28 @@ public class RangedGroundEnemy : MonoBehaviour
     public Transform launchingDevice;
     //Random range around the player that the enemy will shoot towards 0 is very accurate the higher the number the less accurate the enemy.
     public float enemyAccuracy;
-
+    bool firsttime = true;
     public SurfaceMovingObject mySurfaceMovingObject;
     Animator myanimator;
     void Start(){
+        pooler = GameObject.FindGameObjectWithTag("ArrowPool").GetComponent<GeneralPooling>();
         mySurfaceMovingObject = this.GetComponent<SurfaceMovingObject>();
         myanimator = GetComponent<Animator>();
-        StartCoroutine("CheckForGaint");
-        StartCoroutine("attack");
-        StartCoroutine("Seek");
+        firsttime = false;
+        OnEnable();
+    }
+    void OnEnable()
+    {
+        if (!firsttime)
+        {
+            StartCoroutine("CheckForGaint");
+            StartCoroutine("attack");
+            StartCoroutine("Seek");
+        }
+    }
+    void OnDisable()
+    {
+        StopAllCoroutines();
     }
 
     public void shootGiant()
@@ -55,7 +68,8 @@ public class RangedGroundEnemy : MonoBehaviour
         while (true)
         {
             if (Vector2.Distance(Player.player.transform.position, this.transform.position) < range) {
-                isInRange = true; ;
+                isInRange = true; 
+
             }
             else
             {
@@ -72,6 +86,7 @@ public class RangedGroundEnemy : MonoBehaviour
             if (isInRange)
             {
                 shootGiant();
+                mySurfaceMovingObject.StopMoving();
             }
             yield return new WaitForSeconds(attacksEvery);
         }
@@ -90,6 +105,8 @@ public class RangedGroundEnemy : MonoBehaviour
             {
                 mySurfaceMovingObject.Move(PlanetMath.ShortestDirection(this.transform.position, Player.player.transform.position));
             }
+            Debug.Log("lol");
+
         }
     }
 }

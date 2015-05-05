@@ -129,6 +129,10 @@ public class SurfaceMovingObject : MonoBehaviour
     public void StopMoving()
     {
         myAnimator.SetBool("Running", false);
+        if (grounded)
+        {
+            this.myRigidBody.velocity = Vector2.zero ;
+        }
     }
 
 

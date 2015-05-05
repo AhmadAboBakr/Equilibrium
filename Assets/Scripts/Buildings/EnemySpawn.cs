@@ -4,15 +4,16 @@ using System.Collections.Generic;
 
 public class EnemySpawn : MonoBehaviour {
     public List<GameObject> enemies;
-    public float timer;
+    public GeneralPooling pooler;
+
 	// Use this for initialization
 	void Start () {
+        pooler = GameObject.FindGameObjectWithTag("EnemyPool").GetComponent<GeneralPooling>();
         StartCoroutine("EnemySpawning");
-        timer = 0;
+
 	}
     void Update()
     {
-        timer += Time.deltaTime;
         
     }
 	
@@ -21,9 +22,9 @@ public class EnemySpawn : MonoBehaviour {
         while (true)
         {
             
-            if (GameState.CurrentNumberOfEnemies < GameState.maxAllowedEnemies && timer > 0)
+            if (GameState.CurrentNumberOfEnemies < GameState.maxAllowedEnemies )
             {
-                Instantiate(enemies[Random.Range(0, enemies.Count)], transform.position, transform.rotation);
+                pooler.CreateObject(transform.position, transform.rotation);
                 GameState.CurrentNumberOfEnemies++;
             }
             yield return new WaitForSeconds(1f);
