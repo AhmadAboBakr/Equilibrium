@@ -166,11 +166,11 @@ public class PlanetClass : MonoBehaviour {
             collisionVertices.Add(Vector2.zero);
             pointsForCollider.Add(collisionVertices);
         }
-        int segmentDivider = points.Length / planetColliders.Length;
-        int segment=0;
+        float segmentDivider = Mathf.Round((float)points.Length / (float)(planetColliders.Length));
+        int segment = 0;
         for (int i = 0; i < points.Length; ++i)
         {
-            segment = (int)(i / ((float)segmentDivider));
+            segment = (int)(i / segmentDivider);
             if (segment == planetColliders.Length) segment--;
             if (segment != 0 && pointsForCollider[segment].Count == 1)
             {
