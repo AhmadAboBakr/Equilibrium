@@ -9,8 +9,19 @@ public class GameManager : MonoBehaviour {
     int buildings;
     int totalBuildings;
     int totalEnemies;
+    public Objective[] objectives;
+    public static GameManager instance;
+    public int enemyKillCount;
+    void Awake()
+    {
+        instance = this;
+        objectives = transform.GetComponentsInChildren<Objective>();
+    }
    void Start()
     {
+        enemyKillCount = 0;
+        
+        
         totalBuildings = GameObject.FindGameObjectsWithTag("Building").Length;
         
         StartCoroutine("checkBuildings");
@@ -28,11 +39,16 @@ public class GameManager : MonoBehaviour {
 
                 if(enemies <=0)
                 {
-                    //win condition
-                    Debug.Log("you win");
+                    //win state
+                    InGameObjectiveUI.instance.gameObject.SetActive(true);
                 }
             }
             UpdateCounter();
+            //Check Player health for loss condition
+            if(Player.player.HealthPoints <=0)
+            {
+                LossUI.instance.gameObject.SetActive(true);
+            }
             yield return new WaitForSeconds(0.5f);
         }
     }

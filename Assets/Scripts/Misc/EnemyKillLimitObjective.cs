@@ -7,4 +7,9 @@ public class EnemyKillLimitObjective : Objective {
     {
         return "Kill less than " + enemyKillCount + " enemies";
     }
+
+    public override bool checkObjective()
+    {
+        throw new System.NotImplementedException();
+    }
 }

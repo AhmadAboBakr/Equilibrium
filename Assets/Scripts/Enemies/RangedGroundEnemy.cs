@@ -105,7 +105,6 @@ public class RangedGroundEnemy : MonoBehaviour
             {
                 mySurfaceMovingObject.Move(PlanetMath.ShortestDirection(this.transform.position, Player.player.transform.position));
             }
-            Debug.Log("lol");
 
         }
     }

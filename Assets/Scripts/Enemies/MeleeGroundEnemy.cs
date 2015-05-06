@@ -66,7 +66,7 @@ public class MeleeGroundEnemy : MonoBehaviour
     {
         while (true)
         {
-            Debug.Log("lool");
+
             yield return new WaitForSeconds(0.08f);
             if (GiantInAttackArea)
             {

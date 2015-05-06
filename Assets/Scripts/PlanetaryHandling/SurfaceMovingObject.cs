@@ -16,13 +16,15 @@ public class SurfaceMovingObject : MonoBehaviour
     private Rigidbody2D myRigidBody;
     private Animator myAnimator;
     private string[] collisionLayer;
-    
+    void Awake()
+    {
+        myAnimator = this.GetComponent<Animator>();
+    }
     void Start()
     {
         myRigidBody = this.GetComponent<Rigidbody2D>();
         StartCoroutine("UpdateCouroutine");
         movingRight = MovingLeft = false;
-        myAnimator= this.GetComponent<Animator>();
         grounded = false;
         collisionLayer = new string[1];
         collisionLayer[0] = "planetSegments";

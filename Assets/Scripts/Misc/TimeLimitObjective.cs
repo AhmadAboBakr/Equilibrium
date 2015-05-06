@@ -7,4 +7,9 @@ public class TimeLimitObjective : Objective {
     {
         return "finish the level in less than "+ timeLimit + " seconds";
      }
+
+    public override bool checkObjective()
+    {
+        throw new System.NotImplementedException();
+    }
 }

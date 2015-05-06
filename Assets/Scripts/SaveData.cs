@@ -41,7 +41,7 @@ using System.Text;
             else
             {
                 
-                value = StringToBinary(encryptData(value));
+                //value = StringToBinary(encryptData(value));
                 XmlDocument doc = new XmlDocument();
                 doc.Load("Saved.bin");
                 var myNode = doc.SelectSingleNode("Game");
@@ -60,7 +60,7 @@ using System.Text;
             }
             else
             {
-
+                
                 XmlDocument doc = new XmlDocument();
                 doc.Load("Saved.bin");
                 var node = doc.SelectSingleNode("Game");
@@ -68,7 +68,7 @@ using System.Text;
                 for (int i = 0; i < Items.Count; i++)
                 {
                     if (Items[i].Name == key)
-                        return decryptData(BinaryToString(Items[i].Value));
+                        return Items[i].Value;//return decryptData(BinaryToString(Items[i].Value));
                 }
             }
             return null;

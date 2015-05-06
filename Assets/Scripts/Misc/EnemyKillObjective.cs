@@ -7,4 +7,18 @@ public class EnemyKillObjective : Objective {
     {
         return "Kill " + enemyKillCount + " enemies";
     }
+    public override bool checkObjective()
+    {
+        if (status)
+            return status;
+        if(GameManager.instance.enemyKillCount >= enemyKillCount)
+        {
+            status = true;
+        }
+        else
+        {
+            status = false;
+        }
+        return status;
+    }
 }

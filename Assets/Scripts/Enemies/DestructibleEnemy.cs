@@ -10,7 +10,7 @@ public class DestructibleEnemy : MonoBehaviour
     public Rigidbody2D myRigidbody;
     public ArtifitialGravity myArtGrav;
     public GeneralPooling pooler;
-
+    
     // Use this for initialization
     void OnEnable()
     {
@@ -86,6 +86,7 @@ public class DestructibleEnemy : MonoBehaviour
         health = 1;
         dead = false;
         pooler.ReturnObjectToPool(this.gameObject);
+        GameManager.instance.enemyKillCount++;
 
     }
 }
