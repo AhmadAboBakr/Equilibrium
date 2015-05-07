@@ -21,12 +21,29 @@ public class Level : MonoBehaviour {
     public Difficulty difficulty;
     public string name;
     public Objective[] objectives;
-
+    public SaveData saveFile;
+    void Awake()
+    {
+        saveFile = new SaveData();
+        saveFile.CreateSaveFile();
+    }
     void Start()
     {
-
+        
         objectives = transform.GetComponentsInChildren<Objective>();
         
+
+        for (int i = 0; i < objectives.Length; i++)
+        {
+            string state = saveFile.GetItem(name + i);
+            if (state == "True")
+                objectives[i].status = true;
+            else
+                objectives[i].status = false;
+            
+        }
+
+
         switch (status)
         {
             case levelStatus.locked:

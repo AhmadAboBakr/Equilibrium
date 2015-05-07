@@ -2,7 +2,7 @@
 using System.Collections;
 
 public abstract class Objective : MonoBehaviour {
-
+ 
 
     public bool status;
 

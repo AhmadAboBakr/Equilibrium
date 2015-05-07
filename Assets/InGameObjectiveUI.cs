@@ -15,6 +15,20 @@ public class InGameObjectiveUI : MonoBehaviour {
         instance.gameObject.SetActive(false);
         saveFile = new SaveData();
         saveFile.CreateSaveFile();
+
+        for (int i = 0; i < GameManager.instance.objectives.Length; i++)
+        {
+            string save = saveFile.GetItem(Application.loadedLevelName + i);
+            Debug.Log(save);
+            if (save == "True")
+            {
+                GameManager.instance.objectives[i].status = true;
+            }
+            else
+            {
+                GameManager.instance.objectives[i].status = false;
+            }
+        }
     }
     void OnEnable()
     {
@@ -39,20 +53,8 @@ public class InGameObjectiveUI : MonoBehaviour {
 
 	void Start () 
     {
+        Debug.Log("start");
         
-        for (int i = 0; i < GameManager.instance.objectives.Length; i++)
-        {
-            string save = saveFile.GetItem(Application.loadedLevelName + i);
-            Debug.Log(save);
-            if(save == "True")
-            {
-                GameManager.instance.objectives[i].status = true;
-            }
-            else
-            {
-                GameManager.instance.objectives[i].status = false;
-            }
-        }
 
 	}
 	
