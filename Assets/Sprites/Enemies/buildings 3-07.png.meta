@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 guid: f0bddc23c1f148948bf9081d83039773
-timeCreated: 1429031278
-licenseType: Pro
+timeCreated: 1431001600
+licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: buildings 3-07_0
+    21300002: buildings 3-07_1
+    21300004: buildings 3-07_2
+    21300006: buildings 3-07_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +34,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +52,47 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: buildings 3-07_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 321
+        width: 148
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: buildings 3-07_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 102
+        width: 257
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: buildings 3-07_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 27
+        width: 62
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: buildings 3-07_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 26
+        width: 62
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
