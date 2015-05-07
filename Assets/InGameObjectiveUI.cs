@@ -7,6 +7,15 @@ public class InGameObjectiveUI : MonoBehaviour {
     public Image[] objectivesImages;
     public static InGameObjectiveUI instance;
     public SaveData saveFile;
+
+
+    void Awake()
+    {
+        instance = this;
+        instance.gameObject.SetActive(false);
+        saveFile = new SaveData();
+        saveFile.CreateSaveFile();
+    }
     void OnEnable()
     {
         if (GameManager.instance)
@@ -30,11 +39,7 @@ public class InGameObjectiveUI : MonoBehaviour {
 
 	void Start () 
     {
-        Debug.Log("kjasdfh");
-        instance = this;
-        instance.gameObject.SetActive(false);
-        saveFile = new SaveData();
-        saveFile.CreateSaveFile();
+        
         for (int i = 0; i < GameManager.instance.objectives.Length; i++)
         {
             string save = saveFile.GetItem(Application.loadedLevelName + i);
@@ -42,12 +47,10 @@ public class InGameObjectiveUI : MonoBehaviour {
             if(save == "True")
             {
                 GameManager.instance.objectives[i].status = true;
-                Debug.Log(true.ToString());
             }
             else
             {
                 GameManager.instance.objectives[i].status = false;
-                Debug.Log(false.ToString());
             }
         }
 
@@ -77,7 +80,6 @@ public class InGameObjectiveUI : MonoBehaviour {
 
     public void saveObjectiveStatus()
     {
-        
         for (int i = 0; i < GameManager.instance.objectives.Length; i++)
 			{
                 saveFile.SaveItem(Application.loadedLevelName + i, GameManager.instance.objectives[i].status.ToString()); 

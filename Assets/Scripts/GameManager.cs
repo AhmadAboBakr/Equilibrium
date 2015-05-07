@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
     public Objective[] objectives;
     public static GameManager instance;
     public int enemyKillCount;
+    public float gameElapsedTime;
     void Awake()
     {
         instance = this;
@@ -20,7 +21,7 @@ public class GameManager : MonoBehaviour {
    void Start()
     {
         enemyKillCount = 0;
-        
+        gameElapsedTime = 0;
         
         totalBuildings = GameObject.FindGameObjectsWithTag("Building").Length;
         
@@ -49,6 +50,7 @@ public class GameManager : MonoBehaviour {
             {
                 LossUI.instance.gameObject.SetActive(true);
             }
+            gameElapsedTime += 0.5f;
             yield return new WaitForSeconds(0.5f);
         }
     }
