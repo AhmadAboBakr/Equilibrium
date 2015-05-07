@@ -10,6 +10,16 @@ public class TimeLimitObjective : Objective {
 
     public override bool checkObjective()
     {
-        throw new System.NotImplementedException();
+        if (status)
+            return status;
+        if(GameManager.instance.gameElapsedTime <= timeLimit)
+        {
+            status = true;
+        }
+        else
+        {
+            status = false;
+        }
+        return status;
     }
 }

@@ -11,11 +11,14 @@ using System.Text;
 
 
 
-	 public class SaveData : MonoBehaviour
+	 public class SaveData
     {
-
+        
+         
         public void CreateSaveFile()
         {
+            Debug.Log("created save file");
+
             if (!File.Exists("Saved.bin"))
             {
                 XmlWriterSettings settings = new XmlWriterSettings();

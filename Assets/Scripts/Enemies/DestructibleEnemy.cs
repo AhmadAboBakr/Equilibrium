@@ -87,6 +87,5 @@ public class DestructibleEnemy : MonoBehaviour
         dead = false;
         pooler.ReturnObjectToPool(this.gameObject);
         GameManager.instance.enemyKillCount++;
-
     }
 }

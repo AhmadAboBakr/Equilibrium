@@ -15,10 +15,7 @@ public class EnemyKillObjective : Objective {
         {
             status = true;
         }
-        else
-        {
-            status = false;
-        }
+        
         return status;
     }
 }

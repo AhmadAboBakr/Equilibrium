@@ -10,6 +10,16 @@ public class EnemyKillLimitObjective : Objective {
 
     public override bool checkObjective()
     {
-        throw new System.NotImplementedException();
+        if (status)
+            return status;
+        if (GameManager.instance.enemyKillCount < enemyKillCount)
+        {
+            status = true;
+        }
+        else
+        {
+            status = false;
+        }
+        return status;
     }
 }
