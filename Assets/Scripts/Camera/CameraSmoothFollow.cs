@@ -2,25 +2,30 @@
 using System.Collections;
 
 public class CameraSmoothFollow : MonoBehaviour {
-    public float dampTime = 0.15f;
-    private Vector3 velocity = Vector3.zero;
-    public Transform target;
+    float interpVelocity;
+    public GameObject target;
+    public Vector3 offset;
+    Vector3 targetPos;
+    public float dampTime = 15f;
+    // Use this for initialization
+    void Start()
+    {
+        targetPos = transform.position;
+    }
 
-	// Use this for initialization
-	void Start () {
-        //target = GameObject.FindGameObjectWithTag("Player").transform;
-	}
-	
-	// Update is called once per frame
-	void LateUpdate () 
+    // Update is called once per frame
+    void FixedUpdate()
     {
         if (target)
         {
-            Vector3 point = GetComponent<Camera>().WorldToViewportPoint(target.position);
-            Vector3 delta = (Vector3)target.position - GetComponent<Camera>().ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z)); 
-            Vector3 destination = transform.position + delta;
-            transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
-            transform.rotation = target.transform.rotation;
+            Vector3 posNoZ = transform.position;
+            posNoZ.z = target.transform.position.z;
+            Vector3 targetDirection = (target.transform.position - posNoZ);
+            interpVelocity = targetDirection.magnitude * dampTime;
+            targetPos = transform.position + (targetDirection.normalized * interpVelocity * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, targetPos + offset, 0.25f);
+            transform.up = Vector3.Lerp(transform.up, target.transform.up + offset, 0.25f) ;
+
         }
-	}
+    }
 }
