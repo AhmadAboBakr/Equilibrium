@@ -17,7 +17,6 @@ using System.Text;
          
         public void CreateSaveFile()
         {
-            Debug.Log("created save file");
 
             if (!File.Exists("Saved.bin"))
             {

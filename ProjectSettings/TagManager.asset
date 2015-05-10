@@ -18,6 +18,11 @@ TagManager:
   - EnemyPool
   - ArrowPool
   - GameManager
+  - SpellUpgrade
+  - Spell
+  - UpgradeName
+  - UpgradeDescription
+  - UpgradeCost
   layers:
   - Default
   - TransparentFX
