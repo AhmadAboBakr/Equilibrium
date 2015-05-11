@@ -3465,8 +3465,8 @@ RectTransform:
   m_Father: {fileID: 1682415899}
   m_RootOrder: 2
   m_AnchorMin: {x: .434000015, y: .251626462}
-  m_AnchorMax: {x: .567839682, y: .464609891}
-  m_AnchoredPosition: {x: -.195254236, y: .0167772472}
+  m_AnchorMax: {x: .694736362, y: .587189913}
+  m_AnchoredPosition: {x: -26.8999996, y: 19.5}
   m_SizeDelta: {x: .574333131, y: -.0995612741}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1103681857
@@ -5723,7 +5723,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300000, guid: 7c30281b3ee25fc45b78ca7479855061, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
