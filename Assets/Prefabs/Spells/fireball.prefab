@@ -15,7 +15,7 @@ GameObject:
   - 96: {fileID: 9694364}
   - 114: {fileID: 11498878}
   - 58: {fileID: 5815910}
-  - 60: {fileID: 6054098}
+  - 60: {fileID: 6050932}
   m_Layer: 9
   m_Name: fireball
   m_TagString: Untagged
@@ -30,7 +30,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117244}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.5168037, y: 190.518311, z: 0}
+  m_LocalPosition: {x: -99.9000015, y: 188.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -62,7 +62,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .49118042
+  m_Radius: .0146179199
 --- !u!58 &5832748
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -75,8 +75,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 18.250248
---- !u!60 &6054098
+  m_Radius: 30.004303
+--- !u!60 &6050932
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -89,34 +89,15 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: .504999995, y: -.409999996}
-      - {x: .694999993, y: -.159999996}
-      - {x: .694999993, y: -.0399999991}
-      - {x: .665000021, y: .00999999978}
-      - {x: .335000008, y: .270000011}
-      - {x: .485000014, y: .419999987}
-      - {x: .605000019, y: .660000026}
-      - {x: .595000029, y: .680000007}
-      - {x: .555000007, y: .680000007}
-      - {x: .344999999, y: .479999989}
-      - {x: .0250000004, y: .439999998}
-      - {x: -.0250000004, y: .50999999}
-      - {x: -.204999998, y: .479999989}
-      - {x: -.324999988, y: .370000005}
-      - {x: -.375, y: .150000006}
-      - {x: -.375, y: -.0500000007}
-      - {x: -.504999995, y: -.270000011}
-      - {x: -.694999993, y: -.409999996}
-      - {x: -.694999993, y: -.550000012}
-      - {x: -.63499999, y: -.649999976}
-      - {x: -.504999995, y: -.680000007}
-      - {x: -.275000006, y: -.680000007}
-      - {x: -.215000004, y: -.720000029}
-      - {x: -.104999997, y: -.720000029}
-      - {x: -.0649999976, y: -.709999979}
-      - {x: .00499999989, y: -.649999976}
-      - {x: .224999994, y: -.660000026}
-      - {x: .38499999, y: -.579999983}
+    - - {x: 1.53139544, y: 2.8981154}
+      - {x: -2.37504983, y: 2.8981154}
+      - {x: -2.76569438, y: 1.85639656}
+      - {x: -2.76569438, y: -2.05004883}
+      - {x: -1.72397566, y: -2.57090807}
+      - {x: 1.66161025, y: -2.57090807}
+      - {x: 2.70332909, y: -1.52918947}
+      - {x: 2.83354378, y: -1.26875973}
+      - {x: 2.83354378, y: 1.46575201}
 --- !u!96 &9694364
 TrailRenderer:
   m_ObjectHideFlags: 1
@@ -184,8 +165,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 454476c787545974a90a88d75cb7a04d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spellPower: 0
-  damage: 0
+  spellPower: .119999997
+  damage: .699999988
 --- !u!212 &21289668
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -210,7 +191,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 172857785
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: a399f687747e1034e950aa58f8ae71ef, type: 3}
+  m_Sprite: {fileID: 21300012, guid: 8c9ba7bd145931142aa825220cbe6d7a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

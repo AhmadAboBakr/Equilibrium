@@ -186,3 +186,9 @@ public class PlanetClass : MonoBehaviour {
         }
     }
 }
+//ArgumentOutOfRangeException: Argument is out of range.
+//Parameter name: index
+//System.Collections.Generic.List`1[System.Collections.Generic.List`1[UnityEngine.Vector2]].get_Item (Int32 index) (at /Users/builduser/buildslave/mono-runtime-and-classlibs/build/mcs/class/corlib/System.Collections.Generic/List.cs:633)
+//PlanetClass.UpdateCollider () (at Assets/Planet Destruction/Scripts/PlanetClass.cs:175)
+//PlanetClass.Dig (UnityEngine.PolygonCollider2D collider, Vector3 position) (at Assets/Planet Destruction/Scripts/PlanetClass.cs:44)
+//AOEprojectile.OnCollisionEnter2D (UnityEngine.Collision2D other) (at Assets/Scripts/Projectiles/AOEprojectile.cs:66)

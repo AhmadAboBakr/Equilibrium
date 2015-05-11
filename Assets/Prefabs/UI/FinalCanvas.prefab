@@ -240,7 +240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &121684
 GameObject:
   m_ObjectHideFlags: 1
@@ -1120,7 +1120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: 0
-  enemyKillCount: 115
+  enemyKillCount: 10
 --- !u!114 &11405460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1474,7 +1474,10 @@ MonoBehaviour:
   - {fileID: 11453952}
   - {fileID: 11484206}
   - {fileID: 11456792}
-  instance: {fileID: 0}
+  objectivesImages:
+  - {fileID: 11450184}
+  - {fileID: 11403444}
+  - {fileID: 11492298}
 --- !u!114 &11417524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1602,7 +1605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: 0
-  enemyKillCount: 115
+  enemyKillCount: 5
 --- !u!114 &11422662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1662,7 +1665,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11443714}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11416144}
+        m_MethodName: Retry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &11425272
@@ -1847,7 +1862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: 0
-  enemyKillCount: 115
+  enemyKillCount: 1
 --- !u!114 &11444524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2458,7 +2473,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11457890}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11416144}
+        m_MethodName: GoToLevelSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &11476240
@@ -2563,6 +2590,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winCounter: {fileID: 11481068}
   objectives: []
+  enemyKillCount: 0
+  gameElapsedTime: 0
 --- !u!114 &11481068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2728,17 +2757,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allSpells:
   - spellPrefab: {fileID: 194146, guid: b48395b8af428a64d85fd6e0b97dea24, type: 2}
-    manaCost: 1
+    manaCost: 0
     totalCooldown: 0
     currentCooldown: 0
+    name: 
+    description: 
+    cost: 0
+    spellUpgrades: 
+    isUnlocked: 0
   - spellPrefab: {fileID: 120036, guid: fb01a93a380ef5e4f82a2e847be9dd69, type: 2}
-    manaCost: 6
-    totalCooldown: 5
+    manaCost: 0
+    totalCooldown: 0
     currentCooldown: 0
+    name: 
+    description: 
+    cost: 0
+    spellUpgrades: 
+    isUnlocked: 0
   - spellPrefab: {fileID: 117244, guid: 0e4ad83dcbab2244aa46c8597b9bcbe7, type: 2}
-    manaCost: 2
-    totalCooldown: 2
+    manaCost: 0
+    totalCooldown: 0
     currentCooldown: 0
+    name: 
+    description: 
+    cost: 0
+    spellUpgrades: 
+    isUnlocked: 0
 --- !u!114 &11492298
 MonoBehaviour:
   m_ObjectHideFlags: 1
