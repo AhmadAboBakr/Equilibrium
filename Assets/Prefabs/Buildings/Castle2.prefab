@@ -61,7 +61,7 @@ GameObject:
   - 4: {fileID: 456104}
   - 212: {fileID: 21256580}
   - 61: {fileID: 6182336}
-  - 114: {fileID: 11444624}
+  - 114: {fileID: 11430560}
   m_Layer: 14
   m_Name: buildings FINL-03_10
   m_TagString: Untagged
@@ -199,6 +199,7 @@ GameObject:
   - 212: {fileID: 21226832}
   - 61: {fileID: 6146456}
   - 114: {fileID: 11425064}
+  - 114: {fileID: 11423726}
   m_Layer: 15
   m_Name: Castle2
   m_TagString: Building
@@ -333,8 +334,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166442}
-  m_LocalRotation: {x: 0, y: 0, z: .999993563, w: .00359705277}
-  m_LocalPosition: {x: -1.39999998, y: -194.600006, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: .346155286, w: .938177228}
+  m_LocalPosition: {x: -129.5, y: 151.600006, z: 0}
   m_LocalScale: {x: .276473105, y: .276473105, z: .276473105}
   m_Children:
   - {fileID: 470946}
@@ -732,6 +733,17 @@ BoxCollider2D:
   m_Offset: {x: 6.67572021e-06, y: 3.05175781e-05}
   serializedVersion: 2
   m_Size: {x: 4.94285917, y: 6.31428814}
+--- !u!114 &11423726
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166442}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2b131f76f8a2694f995a71d76fb9d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11425064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -743,10 +755,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45a78643f537e354e8fae72dd0f72a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 1
   dead: 0
   isInGiantMeleeList: 0
-  timeToDestroy: 3
---- !u!114 &11444624
+  timeToStartFade: 4
+  fadeRate: .100000001
+--- !u!114 &11430560
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -754,11 +768,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 105506}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56b2c52f78dbaca4f9a986702d6629ed, type: 3}
+  m_Script: {fileID: 11500000, guid: d2ef81fab96c5c541a85e4345e4389ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: .699999988
-  isSpawning: 1
+  enemies:
+  - {fileID: 166750, guid: 658e559c8e8992d4bbd000894e63f907, type: 2}
+  - {fileID: 172956, guid: 5acb37a55b7e57f4ba4bab16d744106a, type: 2}
+  - {fileID: 178164, guid: 31476d09b024e9245923eeff9e4a47a5, type: 2}
+  pooler: {fileID: 0}
 --- !u!212 &21209558
 SpriteRenderer:
   m_ObjectHideFlags: 1

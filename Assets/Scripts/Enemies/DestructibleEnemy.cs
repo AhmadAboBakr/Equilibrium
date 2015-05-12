@@ -14,7 +14,7 @@ public class DestructibleEnemy : MonoBehaviour
     // Use this for initialization
     void OnEnable()
     {
-
+        dead = false;
     }
     void OnDisable()
     {

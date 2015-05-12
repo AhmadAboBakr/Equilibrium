@@ -28,13 +28,14 @@ public class Player : MonoBehaviour
         {
             player = this;
         }
+        healthPoints = maxHealthPoints;
+        mana = maxMana;
+        stamina = maxStamina;
  
     }
     public void Start()
     {
-        healthPoints = maxHealthPoints;
-        mana = maxMana;
-        stamina = maxStamina;
+        
         healthBar = GameObject.FindGameObjectWithTag("HealthBar").GetComponent<Slider>();
         manaBar = GameObject.FindGameObjectWithTag("ManaBar").GetComponent<Slider>();
         staminaBar = GameObject.FindGameObjectWithTag("StaminaBar").GetComponent<Slider>();

@@ -70,9 +70,9 @@ public class AOEprojectile : MonoBehaviour {
         {
             ThrowableObjectsInTrigger[i].GetComponent<SurfaceMovingObject>().grounded = false;
             ThrowableObjectsInTrigger[i].GetComponent<Rigidbody2D>().AddForce((ThrowableObjectsInTrigger[i].transform.position - this.transform.position).normalized * 70, ForceMode2D.Impulse);
-            Debug.Log(ThrowableObjectsInTrigger[i].name);
+
         }
-        Debug.Log(ThrowableObjectsInTrigger.Count);
+
         Destroy(gameObject);
     }
 }

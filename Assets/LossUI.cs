@@ -8,10 +8,12 @@ public class LossUI : MonoBehaviour {
     void Awake()
     {
         instance = this;
+        this.gameObject.SetActive(false);
+        Debug.Log("this");
     }
 	void Start()
     {
-        this.gameObject.SetActive(false);
+        
     }
     void OnEnable()
     {
@@ -21,12 +23,14 @@ public class LossUI : MonoBehaviour {
     public void BackToLevelSelect()
     {
         instance.gameObject.SetActive(false);
+        Player.player.HealthPoints = Player.player.maxHealthPoints;
         Application.LoadLevel("Level Selection Screen");
     }
 
     public void Retry()
     {
         instance.gameObject.SetActive(false);
+        Player.player.HealthPoints = Player.player.maxHealthPoints;
         Application.LoadLevel(Application.loadedLevel);
     }
 }

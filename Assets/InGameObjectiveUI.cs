@@ -19,7 +19,7 @@ public class InGameObjectiveUI : MonoBehaviour {
         for (int i = 0; i < GameManager.instance.objectives.Length; i++)
         {
             string save = saveFile.GetItem(Application.loadedLevelName + i);
-            Debug.Log(save);
+
             if (save == "True")
             {
                 GameManager.instance.objectives[i].status = true;
