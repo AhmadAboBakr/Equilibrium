@@ -8,6 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 421324}
+  - 114: {fileID: 11492224}
   m_Layer: 0
   m_Name: Mountain1New
   m_TagString: Untagged
@@ -193,8 +194,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124066}
-  m_LocalRotation: {x: 0, y: 0, z: -.278970301, w: .96029973}
-  m_LocalPosition: {x: 103.599998, y: 255.600006, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: .717827201, w: .696221292}
+  m_LocalPosition: {x: -293.647919, y: -8.9756546, z: 0}
   m_LocalScale: {x: .647300601, y: .647300482, z: .647300482}
   m_Children:
   - {fileID: 434332}
@@ -317,6 +318,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 421324}
   m_RootOrder: 1
+--- !u!114 &11492224
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2b131f76f8a2694f995a71d76fb9d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21200264
 SpriteRenderer:
   m_ObjectHideFlags: 1
