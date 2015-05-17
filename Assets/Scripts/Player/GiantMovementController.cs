@@ -16,6 +16,17 @@ public class GiantMovementController : MonoBehaviour {
 
     void Update()
     {
+
+        //Your code is bad and you should feel bad
+        //very fucking bad
+        this.transform.up = this.transform.position.normalized;
+
+        if(this.transform.rotation.eulerAngles.z == 180)
+        {
+            this.transform.rotation = Quaternion.Euler(0, 0, 180.01f);
+        }
+
+
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             MoveLeft();
@@ -33,7 +44,6 @@ public class GiantMovementController : MonoBehaviour {
             StoppedMovingRight();
         }
 
-        this.transform.up = this.transform.position.normalized;
 
         if (movingLeft == true)
         {
@@ -152,7 +162,7 @@ public class GiantMovementController : MonoBehaviour {
 
     //void OnCollisionExit2D(Collision2D other)
     //{
-    //    if(other.gameObject.tag == "Planet")
+    //    if (other.gameObject.tag == "Planet")
     //    {
     //        grounded = false;
     //    }

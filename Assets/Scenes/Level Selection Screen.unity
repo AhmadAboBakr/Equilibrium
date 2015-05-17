@@ -305,6 +305,35 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 22bd5b87d5406d24b9f0e30d5fc5fc1a,
         type: 3}
+    - target: {fileID: 11407528, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
+      propertyPath: name
+      value: Omar2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426580, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 99cdb8a1e38c07a4190f754c309affca,
+        type: 3}
+    - target: {fileID: 22410394, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 32.2000008
+      objectReference: {fileID: 0}
+    - target: {fileID: 22410394, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -17.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22410394, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 55.4000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 22410394, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 68.0999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426580, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
   m_IsPrefabParent: 0

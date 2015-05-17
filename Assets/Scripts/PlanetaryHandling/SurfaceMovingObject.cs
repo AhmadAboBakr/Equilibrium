@@ -34,6 +34,10 @@ public class SurfaceMovingObject : MonoBehaviour
     void Update()
     {
         this.transform.up = this.transform.position;
+        if (this.transform.rotation.eulerAngles.z == 180)
+        {
+            this.transform.rotation = Quaternion.Euler(0, 0, 180.01f);
+        }
         if (needsToGoUp)
         {
             this.myRigidBody.AddForce(this.transform.up * 2, ForceMode2D.Impulse);

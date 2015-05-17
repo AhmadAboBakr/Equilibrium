@@ -8,6 +8,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 426910}
+  - 114: {fileID: 11450136}
+  - 61: {fileID: 6140306}
   m_Layer: 13
   m_Name: Tree
   m_TagString: Tree
@@ -109,7 +111,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 451098}
-  - 114: {fileID: 11428404}
   m_Layer: 13
   m_Name: Tree
   m_TagString: Untagged
@@ -233,6 +234,19 @@ BoxCollider2D:
   m_Offset: {x: .0217545312, y: .0156628285}
   serializedVersion: 2
   m_Size: {x: 1.19822752, y: .784388781}
+--- !u!61 &6140306
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113384}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 19.4166965, y: 3.81435847}
+  serializedVersion: 2
+  m_Size: {x: 1.036726, y: 5.3796649}
 --- !u!61 &6143560
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -289,12 +303,12 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11428404
+--- !u!114 &11450136
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 197494}
+  m_GameObject: {fileID: 113384}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45a78643f537e354e8fae72dd0f72a5b, type: 3}

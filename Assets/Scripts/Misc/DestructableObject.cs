@@ -34,7 +34,7 @@ public class DestructableObject : MonoBehaviour {
                 this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 //only trees have animators so must disable their animator for the trees to fall 
                 if(this.gameObject.tag == "Tree")
-                    this.gameObject.GetComponent<Animator>().enabled = false;
+                    this.transform.GetChild(0).gameObject.GetComponent<Animator>().enabled = false;
                 for (int i = 0; i < transform.childCount; i++)
                 {
                     while (this.transform.GetChild(i).childCount > 0)

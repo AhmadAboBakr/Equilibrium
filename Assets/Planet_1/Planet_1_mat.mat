@@ -19,14 +19,14 @@ Material:
           name: _MainTex
         second:
           m_Texture: {fileID: 2800000, guid: 595a318aa9c9ace41911301b4f49b38b, type: 3}
-          m_Scale: {x: 1, y: 1}
+          m_Scale: {x: .0500000007, y: .0500000007}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _CoreTex
         second:
           m_Texture: {fileID: 2800000, guid: 595a318aa9c9ace41911301b4f49b38b, type: 3}
-          m_Scale: {x: 1, y: 1}
+          m_Scale: {x: .0500000007, y: .0500000007}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -39,7 +39,7 @@ Material:
       data:
         first:
           name: Radius
-        second: 183.819992
+        second: 189.284103
       data:
         first:
           name: CoreRadius
@@ -48,8 +48,8 @@ Material:
       data:
         first:
           name: _SkyColor
-        second: {r: .0431372561, g: .454901993, b: .0431372561, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _ShellColor
-        second: {r: .0435769781, g: .45588237, b: .0435769781, a: 1}
+        second: {r: 0, g: 1, b: 0, a: 1}

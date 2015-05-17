@@ -11,7 +11,7 @@ public class SplashScreen : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         timer += Time.deltaTime;
-        Debug.Log(timer);
+
         if(timer > 5.8f)
         {
             Application.LoadLevel(1);
