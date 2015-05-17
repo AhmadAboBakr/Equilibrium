@@ -12,7 +12,7 @@ public class SurfaceMovingObject : MonoBehaviour
     public bool movingRight, MovingLeft;
     public bool needsToGoUp = false;
     public Transform rayCaster;
-
+    public int counter;
     private Rigidbody2D myRigidBody;
     private Animator myAnimator;
     private string[] collisionLayer;
@@ -158,6 +158,12 @@ public class SurfaceMovingObject : MonoBehaviour
         {
 
             grounded = true;
+            counter++;
+            if (counter > 1 || counter < 0)
+            {
+                StartCoroutine("DisableEnableCollider");
+                counter = 0;
+            }
         }
     }
     void OnCollisionExit2D(Collision2D other)
@@ -165,6 +171,13 @@ public class SurfaceMovingObject : MonoBehaviour
         if (other.gameObject.tag == "Planet")
         {
             grounded = false;
+            counter--;
         }
+    }
+    public IEnumerator DisableEnableCollider()
+    {
+        this.GetComponent<CircleCollider2D>().enabled = false;
+        yield return null;
+        this.GetComponent<CircleCollider2D>().enabled = true;
     }
 }
