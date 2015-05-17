@@ -9,6 +9,7 @@ public class MeleeGroundEnemy : MonoBehaviour
     Animator myAnimator;
     SurfaceMovingObject mySurfaceMovingObject;
     bool firstSeek= true;
+    
     void Start()
     {
         mySurfaceMovingObject=this.GetComponent<SurfaceMovingObject>();
@@ -52,6 +53,7 @@ public class MeleeGroundEnemy : MonoBehaviour
             StartCoroutine("attack");
             GiantInAttackArea=true;
         }
+       
     }
     void OnTriggerExit2D(Collider2D other)
     {
@@ -60,6 +62,7 @@ public class MeleeGroundEnemy : MonoBehaviour
             StopCoroutine("attack");
             GiantInAttackArea = false;
         }
+        
     }
 
     IEnumerator Seek()

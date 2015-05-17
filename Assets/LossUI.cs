@@ -9,7 +9,7 @@ public class LossUI : MonoBehaviour {
     {
         instance = this;
         this.gameObject.SetActive(false);
-        Debug.Log("this");
+
     }
 	void Start()
     {

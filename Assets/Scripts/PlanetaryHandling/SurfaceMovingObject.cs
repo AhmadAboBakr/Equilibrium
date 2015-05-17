@@ -13,9 +13,11 @@ public class SurfaceMovingObject : MonoBehaviour
     public bool needsToGoUp = false;
     public Transform rayCaster;
     public int counter;
-    private Rigidbody2D myRigidBody;
+    public Rigidbody2D myRigidBody;
     private Animator myAnimator;
+    public float upForce;
     private string[] collisionLayer;
+    public LayerMask planet;
     void Awake()
     {
         myAnimator = this.GetComponent<Animator>();
@@ -23,7 +25,7 @@ public class SurfaceMovingObject : MonoBehaviour
     void Start()
     {
         myRigidBody = this.GetComponent<Rigidbody2D>();
-        StartCoroutine("UpdateCouroutine");
+        //StartCoroutine("UpdateCouroutine");
         movingRight = MovingLeft = false;
         grounded = false;
         collisionLayer = new string[1];
@@ -33,6 +35,7 @@ public class SurfaceMovingObject : MonoBehaviour
 
     void Update()
     {
+
         this.transform.up = this.transform.position;
         if (this.transform.rotation.eulerAngles.z == 180)
         {
@@ -40,32 +43,36 @@ public class SurfaceMovingObject : MonoBehaviour
         }
         if (needsToGoUp)
         {
-            this.myRigidBody.AddForce(this.transform.up * 2, ForceMode2D.Impulse);
-            Move(-this.transform.localScale.x);
+            this.myRigidBody.AddForce(this.transform.up * upForce, ForceMode2D.Impulse);
+
         }
 
     }
-    IEnumerator UpdateCouroutine()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(.1f);
-            RaycastHit2D right = Physics2D.Raycast(transform.position, rayCaster.localPosition, 1f,LayerMask.GetMask(collisionLayer));
+    //IEnumerator UpdateCouroutine()
+    //{
+    //    while (true)
+    //    {
+    //        yield return new WaitForSeconds(.2f);
+    //        RaycastHit2D right = Physics2D.Raycast(transform.position, rayCaster.localPosition, 1f,planet);//LayerMask.GetMask(collisionLayer));
 
-            if (right.collider != null)
-            {
 
-                needsToGoUp = true;
+    //        if (right.collider != null)
+    //        {
+    //            Debug.Log(right.collider.gameObject.name);
 
-            }
-            else
-            {
-                
-                needsToGoUp = false;
-            }
+    //            needsToGoUp = true;
+    //        }
+    //        else
+    //        {
+    //            if(needsToGoUp)
+    //            {
+    //                this.myRigidBody.AddForce(this.transform.right * this.transform.localScale.x * 3, ForceMode2D.Impulse);
+    //            }
+    //            //needsToGoUp = false;
+    //        }
 
-        }
-    }
+    //    }
+    //}
     //protected void Update()
     //{
     //    //else
@@ -122,12 +129,12 @@ public class SurfaceMovingObject : MonoBehaviour
                 this.transform.localScale = new Vector3(-1, 1, 1);
             }
             this.myRigidBody.velocity = Vector3.zero;
-            this.myRigidBody.AddForce(this.transform.right * force*10, ForceMode2D.Impulse);
+            this.myRigidBody.AddForce(this.transform.right * force * 10, ForceMode2D.Impulse);
             this.myRigidBody.velocity = truncate(this.myRigidBody.velocity);
 
             //This is needed to stop the Object Momentum
             //var angle = Vector3.Angle(this.transform.right);
-            
+
         }
         myAnimator.SetBool("Running", true);
 
@@ -137,7 +144,7 @@ public class SurfaceMovingObject : MonoBehaviour
         myAnimator.SetBool("Running", false);
         if (grounded)
         {
-            this.myRigidBody.velocity = Vector2.zero ;
+            this.myRigidBody.velocity = Vector2.zero;
         }
     }
 
@@ -172,8 +179,29 @@ public class SurfaceMovingObject : MonoBehaviour
         {
             grounded = false;
             counter--;
+            if (needsToGoUp)
+            {
+                needsToGoUp = false;
+            }
         }
     }
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Planet"))
+        {
+
+            needsToGoUp = true;
+        }
+    }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Planet") && needsToGoUp)
+        {
+            myRigidBody.AddForce(this.transform.right *- this.transform.localScale.x * 3, ForceMode2D.Impulse);
+            needsToGoUp = false;
+        }
+    }
+
     public IEnumerator DisableEnableCollider()
     {
         this.GetComponent<CircleCollider2D>().enabled = false;

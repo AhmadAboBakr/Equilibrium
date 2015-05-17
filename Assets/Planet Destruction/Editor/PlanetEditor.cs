@@ -13,7 +13,7 @@ using System.IO;
 [CustomEditor(typeof(PlanetClass))]
 public class PlanetEditor : Editor
 {
-    public static bool EditorEnabled = true;
+    public static bool EditorEnabled = false;
     float timer = 0;
     static Vector3[] ClippingPoly;// = new Vector3[] { new Vector3(-0.25f, -0.25f, 0), new Vector3(0.25f, -0.25f, 0), new Vector3(0, 0.25f, 0), new Vector3(-0.25f, -0.25f, 0) };
     static Vector3[] EditorClippingPoly;

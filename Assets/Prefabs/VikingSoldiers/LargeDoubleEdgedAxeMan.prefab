@@ -34,21 +34,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &119484
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 480848}
-  m_Layer: 20
-  m_Name: RayCaster
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &120302
 GameObject:
   m_ObjectHideFlags: 1
@@ -160,7 +145,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 487518}
   - 95: {fileID: 9586666}
-  - 61: {fileID: 6134686}
   - 58: {fileID: 5828696}
   - 114: {fileID: 11484252}
   - 114: {fileID: 11443836}
@@ -168,6 +152,7 @@ GameObject:
   - 114: {fileID: 11427896}
   - 50: {fileID: 5076980}
   - 212: {fileID: 21249686}
+  - 61: {fileID: 6145914}
   m_Layer: 20
   m_Name: LargeDoubleEdgedAxeMan
   m_TagString: Enemy
@@ -282,18 +267,6 @@ Transform:
   - {fileID: 483792}
   m_Father: {fileID: 487518}
   m_RootOrder: 0
---- !u!4 &480848
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 119484}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.71000004, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 487518}
-  m_RootOrder: 1
 --- !u!4 &483792
 Transform:
   m_ObjectHideFlags: 1
@@ -314,11 +287,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 116.800003, y: -10.54, z: 0}
+  m_LocalPosition: {x: 14.5080357, y: 185.515259, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 476124}
-  - {fileID: 480848}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &488378
@@ -414,7 +386,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: .971428573, y: 1.88571429}
---- !u!61 &6134686
+--- !u!61 &6145914
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -424,9 +396,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: -1.46000004, y: 1.69000006}
+  m_Offset: {x: -1.69425583, y: .957901001}
   serializedVersion: 2
-  m_Size: {x: 1.46000004, y: 3.73000002}
+  m_Size: {x: 1.43924809, y: 1.56693792}
 --- !u!61 &6149620
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -553,7 +525,13 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 480848}
+  rayCaster: {fileID: 0}
+  counter: 0
+  myRigidBody: {fileID: 0}
+  upForce: 1
+  planet:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &11484252
 MonoBehaviour:
   m_ObjectHideFlags: 1

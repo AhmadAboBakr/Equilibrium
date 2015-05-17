@@ -145,7 +145,7 @@ public class GiantMovementController : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D other)
     {
 
-        Debug.Log(counter);
+
         if (other.gameObject.tag == "Planet")
         {
             
@@ -177,6 +177,11 @@ public class GiantMovementController : MonoBehaviour {
         {
             grounded = false;
             counter--;
+            if (counter > 1 || counter < 0)
+            {
+                StartCoroutine("DisableEnableCollider");
+                counter = 0;
+            }
         }
     }
 

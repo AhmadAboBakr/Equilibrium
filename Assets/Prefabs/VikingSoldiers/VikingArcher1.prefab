@@ -150,6 +150,7 @@ GameObject:
   - 114: {fileID: 11448816}
   - 114: {fileID: 11463954}
   - 212: {fileID: 21216672}
+  - 61: {fileID: 6124470}
   m_Layer: 11
   m_Name: VikingArcher1
   m_TagString: Enemy
@@ -272,7 +273,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 133.539993, y: -7.36000013, z: 0}
+  m_LocalPosition: {x: -82.4456863, y: 196.839554, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 442134}
@@ -344,6 +345,19 @@ BoxCollider2D:
   m_Offset: {x: -.296610028, y: -.256526828}
   serializedVersion: 2
   m_Size: {x: .857142866, y: .799999952}
+--- !u!61 &6124470
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166750}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -1.36872101, y: 1.20353699}
+  serializedVersion: 2
+  m_Size: {x: .929192781, y: 1.63718915}
 --- !u!61 &6132802
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -505,6 +519,12 @@ MonoBehaviour:
   MovingLeft: 0
   needsToGoUp: 0
   rayCaster: {fileID: 418094}
+  counter: 0
+  myRigidBody: {fileID: 0}
+  upForce: 1
+  planet:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &11463954
 MonoBehaviour:
   m_ObjectHideFlags: 1
