@@ -8,8 +8,10 @@ public class GiantMovementController : MonoBehaviour {
     Rigidbody2D myRigidbody;
     public float jumpForce;
     public bool grounded;
+    public int counter;
     void Start()
     {
+        counter = 0;
         grounded = false;
         myRigidbody = GetComponent<Rigidbody2D>();
     }
@@ -58,6 +60,7 @@ public class GiantMovementController : MonoBehaviour {
             //Right Movement Function
              Move(force);
         }
+        
     }
 
     public void MoveRight()
@@ -141,8 +144,11 @@ public class GiantMovementController : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D other)
     {
+
+        Debug.Log(counter);
         if (other.gameObject.tag == "Planet")
         {
+            
             if (!grounded)
             {
                 jumping = false;
@@ -156,16 +162,28 @@ public class GiantMovementController : MonoBehaviour {
                 }
                 
             }
-
+            counter++;
+            if (counter > 1 || counter < 0)
+            {
+                StartCoroutine("DisableEnableCollider");
+                counter = 0;
+            }
         }
     }
 
-    //void OnCollisionExit2D(Collision2D other)
-    //{
-    //    if (other.gameObject.tag == "Planet")
-    //    {
-    //        grounded = false;
-    //    }
-    //}
-    
+    void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Planet")
+        {
+            grounded = false;
+            counter--;
+        }
+    }
+
+    public IEnumerator DisableEnableCollider()
+    {
+        this.GetComponent<CircleCollider2D>().enabled = false;
+        yield return null;
+        this.GetComponent<CircleCollider2D>().enabled = true;
+    }
 }
