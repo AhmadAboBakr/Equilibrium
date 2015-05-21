@@ -511,6 +511,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  prerequisiteLevels:
+  - {fileID: 1029460692}
+  - {fileID: 955723948}
 --- !u!114 &110214814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -831,7 +834,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &367910026
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1254,6 +1257,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  prerequisiteLevels: []
 --- !u!114 &511743947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1374,6 +1378,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  prerequisiteLevels:
+  - {fileID: 1170898641}
 --- !u!114 &568954680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1566,6 +1572,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  prerequisiteLevels: []
 --- !u!114 &657841021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2014,7 +2021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78dc47e9a2a852b42a0b0ec00f59bca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  status: 1
+  status: 0
   description: A lone planet orbited by a single solitary moon. It's a green planet
     fille dwith lush forests
   difficulty: 0
@@ -2023,6 +2030,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  prerequisiteLevels:
+  - {fileID: 1745842702}
 --- !u!114 &955723949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2249,6 +2258,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  prerequisiteLevels:
+  - {fileID: 955723948}
+  - {fileID: 110214813}
 --- !u!114 &1029460693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2411,6 +2423,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  prerequisiteLevels:
+  - {fileID: 110214813}
 --- !u!114 &1170898642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2627,6 +2641,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  prerequisiteLevels: []
 --- !u!114 &1187783292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3174,13 +3189,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: 2
-  description: 7alaweyyat w Fawakeh
+  description: The barren moon where we awoke
   difficulty: 0
-  name: Esraa
+  name: The Moon
   objectives:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  prerequisiteLevels: []
 --- !u!114 &1745842703
 MonoBehaviour:
   m_ObjectHideFlags: 0
