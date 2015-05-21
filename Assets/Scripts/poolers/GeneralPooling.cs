@@ -7,6 +7,8 @@ public class GeneralPooling : MonoBehaviour {
     public Transform parentObject;
     public int numberOfObjects;
     void Awake () {
+
+        
         pooledObjects = new List<GameObject>();
         for (int i = 0; i < numberOfObjects; ++i)
         {
@@ -19,6 +21,7 @@ public class GeneralPooling : MonoBehaviour {
         }
 	}
 	virtual public GameObject CreateObject(Vector3 position,Quaternion angle){
+        
         GameObject pooledObject;
         if(pooledObjects.Count>0){
             pooledObject = pooledObjects[0];

@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour {
     {
         instance = this;
         objectives = transform.GetComponentsInChildren<Objective>();
+        GameState.CurrentNumberOfEnemies = 0;
     }
    void Start()
     {
