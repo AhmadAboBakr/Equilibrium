@@ -307,7 +307,7 @@ Prefab:
         type: 3}
     - target: {fileID: 11407528, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
       propertyPath: name
-      value: Omar2
+      value: Luna
       objectReference: {fileID: 0}
     - target: {fileID: 11426580, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
       propertyPath: m_Sprite
@@ -333,6 +333,35 @@ Prefab:
     - target: {fileID: 11426580, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
       propertyPath: m_PreserveAspect
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11407528, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
+      propertyPath: difficulty
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11407528, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
+      propertyPath: description
+      value: A lone planet orbited by a single solitary moon. It's a green planet
+        fille dwith lush forests
+      objectReference: {fileID: 0}
+    - target: {fileID: 22474806, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -245.899994
+      objectReference: {fileID: 0}
+    - target: {fileID: 22474806, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -30.1000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 11407528, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
+      propertyPath: objectives.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11418776, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
+      propertyPath: enemyKillCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 11418776, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
+      propertyPath: status
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
@@ -451,6 +480,23 @@ Transform:
   - {fileID: 3470860}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!1 &955723945
+GameObject:
+  m_PrefabParentObject: {fileID: 155624, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
+  m_PrefabInternal: {fileID: 83714848}
+--- !u!114 &955723946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 955723945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c281a9b412b51fe428498463a21eb153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  status: 0
+  timeLimit: 0
 --- !u!224 &1248444906
 RectTransform:
   m_PrefabParentObject: {fileID: 22480800, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd,
