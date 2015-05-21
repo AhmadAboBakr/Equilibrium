@@ -162,12 +162,12 @@ public class GiantMovementController : MonoBehaviour {
                 }
                 
             }
-            counter++;
-            if (counter > 1 || counter < 0)
-            {
-                StartCoroutine("DisableEnableCollider");
-                counter = 0;
-            }
+            //counter++;
+            //if (counter > 1 || counter < 0)
+            //{
+            //    StartCoroutine("DisableEnableCollider");
+            //    counter = 0;
+            //}
         }
     }
 
@@ -175,20 +175,22 @@ public class GiantMovementController : MonoBehaviour {
     {
         if (other.gameObject.tag == "Planet")
         {
+            
             grounded = false;
-            counter--;
-            if (counter > 1 || counter < 0)
-            {
-                StartCoroutine("DisableEnableCollider");
-                counter = 0;
-            }
+            StartCoroutine("DisableEnableCollider");
+            //counter--;
+            //if (counter > 1 || counter < 0)
+            //{
+            //    StartCoroutine("DisableEnableCollider");
+            //    counter = 0;
+            //}
         }
     }
 
     public IEnumerator DisableEnableCollider()
     {
         this.GetComponent<CircleCollider2D>().enabled = false;
-        yield return null;
+        yield return new WaitForEndOfFrame();
         this.GetComponent<CircleCollider2D>().enabled = true;
     }
 }
