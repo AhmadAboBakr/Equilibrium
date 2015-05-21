@@ -29,7 +29,7 @@ public class FirstTutorialText : MonoBehaviour {
     }
     IEnumerator Start()
     {
-        async = Application.LoadLevelAsync(3);
+        async = Application.LoadLevelAsync("Level Selection Screen");
         async.allowSceneActivation = false;
         yield return async;
 

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class DestructibleEnemy : MonoBehaviour
 {
-    private float health = 1;
+    public float health = 1;
     public bool dead = false;
     public float timeToDestroy = 2f;
     public Animator myAnim;
@@ -18,7 +18,7 @@ public class DestructibleEnemy : MonoBehaviour
     }
     void OnDisable()
     {
-
+        dead = false;
     }
     void Start()
     {
