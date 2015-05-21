@@ -22,6 +22,7 @@ public class Level : MonoBehaviour {
     public string name;
     public Objective[] objectives;
     public SaveData saveFile;
+    public List<Level> prerequisiteLevels;
     void Awake()
     {
         saveFile = new SaveData();
@@ -41,6 +42,16 @@ public class Level : MonoBehaviour {
             else
                 objectives[i].status = false;
             
+        }
+        if(status == levelStatus.locked)
+        {
+            for (int i = 0; i < prerequisiteLevels.Count; i++)
+            {
+                if(prerequisiteLevels[i].status == levelStatus.destroyed)
+                {
+                    status = levelStatus.unlocked;
+                }
+            }
         }
 
 

@@ -38,7 +38,7 @@ public class MainMenuFunctions : MonoBehaviour {
     }
     IEnumerator Start()
     {
-        async = Application.LoadLevelAsync(2);
+        async = Application.LoadLevelAsync("FirstTutorial");
         async.allowSceneActivation = false;
         yield return async;
         
