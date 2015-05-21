@@ -53,7 +53,6 @@ public class InGameObjectiveUI : MonoBehaviour {
 
 	void Start () 
     {
-        Debug.Log("start");
         
 
 	}
@@ -70,12 +69,14 @@ public class InGameObjectiveUI : MonoBehaviour {
 
     public void GoToLevelSelect()
     {
+        
         instance.gameObject.SetActive(false);
         Application.LoadLevel("Level Selection Screen");
     }
 
     public void Retry()
     {
+        
         instance.gameObject.SetActive(false);
         Application.LoadLevel(Application.loadedLevel);
     }

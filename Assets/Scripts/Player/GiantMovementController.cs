@@ -65,10 +65,14 @@ public class GiantMovementController : MonoBehaviour {
 
     public void MoveRight()
     {
-        if (movingLeft == true)
+        if (movingLeft == true && grounded)
         {
              Jump();
             jumping = true;
+        }
+        else if (movingLeft)
+        {
+            //this is so the giant does not jump when a false jump occurs as well as not switching direction when it doesnt
         }
         else
         {
@@ -80,10 +84,14 @@ public class GiantMovementController : MonoBehaviour {
     public void MoveLeft()
     {
 
-        if (movingRight == true)
+        if (movingRight == true && grounded)
         {
-             Jump();
+            Jump();
             jumping = true;
+        }
+        else if(movingRight)
+        {
+            //this is so the giant does not jump when a false jump occurs as well as not switching direction when it doesnt
         }
         else
         {
@@ -151,23 +159,27 @@ public class GiantMovementController : MonoBehaviour {
             
             if (!grounded)
             {
+                if (jumping)
+                {
+                    Player.player.animator.SetTrigger("Landed");
+                    Debug.Log("Landed");
+                }
                 jumping = false;
                 grounded = true;
 
-
-                Player.player.animator.SetTrigger("Landed");
+                
                 if (movingLeft == true || movingRight == true)
                 {
                     Player.player.animator.SetBool("isRunning", true);
                 }
                 
             }
-            counter++;
-            if (counter > 1 || counter < 0)
-            {
-                StartCoroutine("DisableEnableCollider");
-                counter = 0;
-            }
+            //counter++;
+            //if (counter > 1 || counter < 0)
+            //{
+            //    StartCoroutine("DisableEnableCollider");
+            //    counter = 0;
+            //}
         }
     }
 
@@ -175,20 +187,22 @@ public class GiantMovementController : MonoBehaviour {
     {
         if (other.gameObject.tag == "Planet")
         {
+            
             grounded = false;
-            counter--;
-            if (counter > 1 || counter < 0)
-            {
-                StartCoroutine("DisableEnableCollider");
-                counter = 0;
-            }
+            StartCoroutine("DisableEnableCollider");
+            //counter--;
+            //if (counter > 1 || counter < 0)
+            //{
+            //    StartCoroutine("DisableEnableCollider");
+            //    counter = 0;
+            //}
         }
     }
 
     public IEnumerator DisableEnableCollider()
     {
         this.GetComponent<CircleCollider2D>().enabled = false;
-        yield return null;
+        yield return new WaitForEndOfFrame();
         this.GetComponent<CircleCollider2D>().enabled = true;
     }
 }

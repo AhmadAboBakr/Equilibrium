@@ -374,6 +374,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &161592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 482928}
+  - 20: {fileID: 2018000}
+  - 92: {fileID: 9206260}
+  - 124: {fileID: 12411140}
+  - 81: {fileID: 8144742}
+  - 114: {fileID: 11489346}
+  - 82: {fileID: 8246484}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &163236
 GameObject:
   m_ObjectHideFlags: 1
@@ -565,7 +586,7 @@ GameObject:
   - 61: {fileID: 6152804}
   - 114: {fileID: 11462044}
   - 114: {fileID: 11484366}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: GiantIKNigger
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -910,11 +931,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.70000005, y: 189.399994, z: 0}
+  m_LocalPosition: {x: 30.8999996, y: 187, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 444108}
   - {fileID: 492300}
+  - {fileID: 482928}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &455272
@@ -1091,6 +1113,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 475704}
   m_RootOrder: 3
+--- !u!4 &482928
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161592}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 13, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 454524}
+  m_RootOrder: 2
 --- !u!4 &484562
 Transform:
   m_ObjectHideFlags: 1
@@ -1200,6 +1234,38 @@ Transform:
   - {fileID: 488558}
   m_Father: {fileID: 412602}
   m_RootOrder: 2
+--- !u!20 &2018000
+Camera:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161592}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: .525490224, g: .815686345, b: .815686345, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 27.0107059
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
 --- !u!50 &5009544
 Rigidbody2D:
   m_ObjectHideFlags: 1
@@ -1241,6 +1307,89 @@ BoxCollider2D:
   m_Offset: {x: -5.67247629, y: 3.41543007}
   serializedVersion: 2
   m_Size: {x: 15.3454828, y: 18.3127289}
+--- !u!81 &8144742
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161592}
+  m_Enabled: 1
+--- !u!82 &8246484
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161592}
+  m_Enabled: 0
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 61e2c05c448eaef4cbc574e36f36ae3a, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!92 &9206260
+Behaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161592}
+  m_Enabled: 1
 --- !u!95 &9588986
 Animator:
   serializedVersion: 3
@@ -1518,6 +1667,7 @@ MonoBehaviour:
   force: 35
   jumpForce: 35
   grounded: 0
+  counter: 0
 --- !u!114 &11446598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1868,7 +2018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cb6792a5805f744d96a7dc823949283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealthPoints: 15
+  maxHealthPoints: 20
   mana: 0
   maxMana: 10
   stamina: 0
@@ -1899,6 +2049,20 @@ MonoBehaviour:
   polygonSides: 3
   freezeSize: 0
   color: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &11489346
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161592}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d67afe2999b4824caabf077fc6109eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 492300}
+  offset: {x: 0, y: 0, z: 0}
+  dampTime: .150000006
 --- !u!114 &11490356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1962,6 +2126,13 @@ MonoBehaviour:
   - Transform: {fileID: 422214}
     from: 303.700012
     to: 28.1900005
+--- !u!124 &12411140
+Behaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161592}
+  m_Enabled: 1
 --- !u!212 &21210744
 SpriteRenderer:
   m_ObjectHideFlags: 1

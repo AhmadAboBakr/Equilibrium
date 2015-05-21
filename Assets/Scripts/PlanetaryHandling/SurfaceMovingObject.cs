@@ -204,6 +204,7 @@ public class SurfaceMovingObject : MonoBehaviour
 
     public IEnumerator DisableEnableCollider()
     {
+        grounded = false;
         this.GetComponent<CircleCollider2D>().enabled = false;
         yield return null;
         this.GetComponent<CircleCollider2D>().enabled = true;
