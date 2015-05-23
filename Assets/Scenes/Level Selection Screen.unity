@@ -506,7 +506,7 @@ MonoBehaviour:
   status: 0
   description: 7alaweyyat w Fawakeh
   difficulty: 0
-  name: Esraa
+  name: Hamada
   objectives:
   - {fileID: 0}
   - {fileID: 0}
@@ -514,7 +514,6 @@ MonoBehaviour:
   prerequisiteLevels:
   - {fileID: 1029460692}
   - {fileID: 955723948}
-  console: {fileID: 0}
 --- !u!114 &110214814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1259,7 +1258,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   prerequisiteLevels: []
-  console: {fileID: 0}
 --- !u!114 &511743947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1382,7 +1380,6 @@ MonoBehaviour:
   - {fileID: 0}
   prerequisiteLevels:
   - {fileID: 1170898641}
-  console: {fileID: 0}
 --- !u!114 &568954680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1576,7 +1573,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   prerequisiteLevels: []
-  console: {fileID: 0}
 --- !u!114 &657841021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2036,7 +2032,6 @@ MonoBehaviour:
   - {fileID: 0}
   prerequisiteLevels:
   - {fileID: 1745842702}
-  console: {fileID: 0}
 --- !u!114 &955723949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2258,7 +2253,7 @@ MonoBehaviour:
   status: 0
   description: 7alaweyyat w Fawakeh
   difficulty: 0
-  name: Esraa
+  name: '!Esraa'
   objectives:
   - {fileID: 0}
   - {fileID: 0}
@@ -2266,7 +2261,6 @@ MonoBehaviour:
   prerequisiteLevels:
   - {fileID: 955723948}
   - {fileID: 110214813}
-  console: {fileID: 0}
 --- !u!114 &1029460693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2431,7 +2425,6 @@ MonoBehaviour:
   - {fileID: 0}
   prerequisiteLevels:
   - {fileID: 110214813}
-  console: {fileID: 0}
 --- !u!114 &1170898642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2649,7 +2642,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   prerequisiteLevels: []
-  console: {fileID: 0}
 --- !u!114 &1187783292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2854,7 +2846,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1343096283
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3272,7 +3264,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   prerequisiteLevels: []
-  console: {fileID: 0}
 --- !u!114 &1745842703
 MonoBehaviour:
   m_ObjectHideFlags: 0

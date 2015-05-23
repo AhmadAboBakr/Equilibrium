@@ -24,45 +24,46 @@ public class Level : MonoBehaviour {
     public SaveData saveFile;
     public List<Level> prerequisiteLevels;
 
-    public Text console;
+    //public Text console;
     void Awake()
     {
-        console = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Text>();
-        console.text = "hamada";
+        //console = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Text>();
+        
         saveFile = new SaveData();
         saveFile.CreateSaveFile();
-        console.text += "2";    
+        string loadedLevel = saveFile.GetItem("level_" + name);
+        if (loadedLevel == "Destroyed")
+        {
+            status = levelStatus.destroyed;
+        }
     }
     void Start()
     {
-        console.text = "1";
         objectives = transform.GetComponentsInChildren<Objective>();
-        console.text = "2";
-
+        
         for (int i = 0; i < objectives.Length; i++)
         {
-            console.text = "3";
             string state = saveFile.GetItem(name + i);
-            console.text = "4";
             if (state == "True")
                 objectives[i].status = true;
             else
                 objectives[i].status = false;
         }
 
-        console.text = "5";
         if(status == levelStatus.locked)
         {
             for (int i = 0; i < prerequisiteLevels.Count; i++)
             {
+                if(name == "Hamada")
+
                 if(prerequisiteLevels[i].status == levelStatus.destroyed)
                 {
                     status = levelStatus.unlocked;
                 }
             }
         }
-       
 
+       
         switch (status)
         {
             case levelStatus.locked:
@@ -77,6 +78,5 @@ public class Level : MonoBehaviour {
             default:
                 break;
         }
-        console.text += "2";
     }
 }

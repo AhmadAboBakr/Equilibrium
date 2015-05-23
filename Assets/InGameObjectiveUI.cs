@@ -69,7 +69,7 @@ public class InGameObjectiveUI : MonoBehaviour {
 
     public void GoToLevelSelect()
     {
-        
+        saveFile.SaveItem("level_" + Application.loadedLevelName,"Destroyed");
         instance.gameObject.SetActive(false);
         Application.LoadLevel("Level Selection Screen");
     }
