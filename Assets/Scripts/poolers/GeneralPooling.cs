@@ -1,29 +1,41 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-public class GeneralPooling : MonoBehaviour {
-    List<GameObject> pooledObjects;
-    public GameObject [] objectsToPool;
-    public Transform parentObject;
+public class GeneralPooling : MonoBehaviour
+{
+    public List<GameObject> pooledObjects;
+    //public GameObject [] objectsToPool;
     public int numberOfObjects;
-    void Awake () {
-
-        
+    
+    public void Build(pooledObjectData[] objectsToPool)
+    {
         pooledObjects = new List<GameObject>();
-        for (int i = 0; i < numberOfObjects; ++i)
+        for (int i = 0; i < objectsToPool.Length; i++)
         {
-            int random =Random.Range(0,objectsToPool.Length);
-            var  pooledObject= GameObject.Instantiate(objectsToPool[random]) as GameObject;
-            pooledObjects.Add(pooledObject);
-            pooledObject.transform.parent = this.transform;
-
-            pooledObject.SetActive(false);
+            for (int j = 0; j < objectsToPool[i].count; j++)
+            {
+                var pooledObject = GameObject.Instantiate(objectsToPool[i].pooledObject) as GameObject;
+                pooledObject.transform.parent = this.transform;
+                pooledObject.SetActive(false);
+                pooledObjects.Add(pooledObject);
+            }
         }
-	}
-	virtual public GameObject CreateObject(Vector3 position,Quaternion angle){
-        
+        pooledObjects.Sort((x, y) => Random.Range(-7, 8));
+        pooledObjects.Sort((x, y) => Random.Range(-7, 8));
+        pooledObjects.Sort((x, y) => Random.Range(-7, 8));
+        pooledObjects.Sort((x, y) => Random.Range(-7, 8));
+        pooledObjects.Sort((x, y) => Random.Range(-7, 8));
+    }
+    public void Clear()
+    {
+
+    }
+    virtual public GameObject CreateObject(Vector3 position, Quaternion angle)
+    {
+
         GameObject pooledObject;
-        if(pooledObjects.Count>0){
+        if (pooledObjects.Count > 0)
+        {
             pooledObject = pooledObjects[0];
             pooledObjects.Remove(pooledObject);
             pooledObject.SetActive(true);
@@ -41,7 +53,7 @@ public class GeneralPooling : MonoBehaviour {
     }
     virtual public GameObject ReturnObjectToPool(GameObject pooledObject)
     {
-        pooledObject.transform.parent=this.transform;
+        pooledObject.transform.parent = this.transform;
         pooledObject.SetActive(false);
         pooledObjects.Add(pooledObject);
         return pooledObject;
