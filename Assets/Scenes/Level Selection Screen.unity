@@ -514,6 +514,7 @@ MonoBehaviour:
   prerequisiteLevels:
   - {fileID: 1029460692}
   - {fileID: 955723948}
+  console: {fileID: 0}
 --- !u!114 &110214814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1258,6 +1259,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   prerequisiteLevels: []
+  console: {fileID: 0}
 --- !u!114 &511743947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1380,6 +1382,7 @@ MonoBehaviour:
   - {fileID: 0}
   prerequisiteLevels:
   - {fileID: 1170898641}
+  console: {fileID: 0}
 --- !u!114 &568954680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1573,6 +1576,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   prerequisiteLevels: []
+  console: {fileID: 0}
 --- !u!114 &657841021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2032,6 +2036,7 @@ MonoBehaviour:
   - {fileID: 0}
   prerequisiteLevels:
   - {fileID: 1745842702}
+  console: {fileID: 0}
 --- !u!114 &955723949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2261,6 +2266,7 @@ MonoBehaviour:
   prerequisiteLevels:
   - {fileID: 955723948}
   - {fileID: 110214813}
+  console: {fileID: 0}
 --- !u!114 &1029460693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2425,6 +2431,7 @@ MonoBehaviour:
   - {fileID: 0}
   prerequisiteLevels:
   - {fileID: 110214813}
+  console: {fileID: 0}
 --- !u!114 &1170898642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2642,6 +2649,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   prerequisiteLevels: []
+  console: {fileID: 0}
 --- !u!114 &1187783292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2716,6 +2724,7 @@ RectTransform:
   - {fileID: 1869775498}
   - {fileID: 1557965381}
   - {fileID: 1187360203}
+  - {fileID: 1343096283}
   m_Father: {fileID: 616804198}
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
@@ -2829,6 +2838,72 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   status: 0
   enemyKillCount: 115
+--- !u!1 &1343096282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1343096283}
+  - 222: {fileID: 1343096285}
+  - 114: {fileID: 1343096284}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Respawn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1343096283
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1343096282}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1248444906}
+  m_RootOrder: 3
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: -3.81469999e-06, y: 186.399994}
+  m_SizeDelta: {x: 800, y: 75.8000031}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &1343096284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1343096282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4f92353d49d1e6a4c9de6d52ad23ba9b, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &1343096285
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1343096282}
 --- !u!1 &1389552484
 GameObject:
   m_ObjectHideFlags: 0
@@ -3197,6 +3272,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   prerequisiteLevels: []
+  console: {fileID: 0}
 --- !u!114 &1745842703
 MonoBehaviour:
   m_ObjectHideFlags: 0
