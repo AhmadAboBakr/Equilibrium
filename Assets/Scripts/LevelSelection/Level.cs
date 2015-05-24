@@ -54,8 +54,6 @@ public class Level : MonoBehaviour {
         {
             for (int i = 0; i < prerequisiteLevels.Count; i++)
             {
-                if(name == "Hamada")
-
                 if(prerequisiteLevels[i].status == levelStatus.destroyed)
                 {
                     status = levelStatus.unlocked;
