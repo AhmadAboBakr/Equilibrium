@@ -46,7 +46,7 @@ public class PlanetEditor : Editor
 
     }
     bool mouseDown = false;
-    static float UserDefinedSize = 0.25f;
+    static float UserDefinedSize = 9f;
     static int vertCount = 5;
     Vector2 lastMousPos;
     public void OnSceneGUI()
@@ -127,7 +127,7 @@ public class PlanetEditor : Editor
             }
             if (Event.current.control && Event.current.type == EventType.ScrollWheel)
             {
-                UserDefinedSize -= Event.current.delta.y * 0.01f;
+                UserDefinedSize -= Event.current.delta.y * 0.1f;
                 UpdateClippingPoly();
                 Event.current.Use();
                 NeadRedraw = true;
@@ -228,7 +228,16 @@ public class PlanetEditor : Editor
         //(target as Planet).renderer.sortingLayerName = GUILayout.TextField((target as Planet).renderer.sortingLayerName);
 
         //(target as Planet).renderer.sortingOrder = int.Parse(GUILayout.TextField((target as Planet).renderer.sortingOrder.ToString()));
+        if (GUILayout.Button("Smooth Outer Contour"))
+        {
+            for (int i = 0; i < 1; i++)
+                SmoothOuterContour();
 
+            UpdatePlanetMesh(PlanetOuterContour);
+            UpdateShell((target as PlanetClass).shellThickness);
+            UpdateCollider();
+            UpdateUVMap();
+        }
     }
     private void UpdateUVMap()
     {
