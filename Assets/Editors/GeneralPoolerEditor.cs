@@ -2,11 +2,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEditor;
-public struct pooledObjectData
-{
-    public int count;
-    public GameObject pooledObject;
-}
+
 [CanEditMultipleObjects]
 [CustomEditor(typeof(GeneralPooling))]
 public class GeneralPoolerEditor : Editor

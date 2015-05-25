@@ -507,7 +507,7 @@ MonoBehaviour:
   description: ough extremely violent, this planet holds many resources which could
     be of the utmost importance to some species. With the right technology, battling
     the elements on this planet shouldn't be too much of a challenge.
-  difficulty: 0
+  difficulty: 1
   name: Saemundr
   objectives:
   - {fileID: 0}
@@ -2253,9 +2253,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: 0
-  description: 7alaweyyat w Fawakeh
-  difficulty: 0
-  name: '!Esraa'
+  description: The planet Vilgeror, named so by its discoverer, is a rogue planet
+    in a small solar system with eight other planets. Endor is about 2.6 times bigger
+    than Earth and its gravity is about 1.36 times that of Earth.
+  difficulty: 2
+  name: Vilgeror
   objectives:
   - {fileID: 0}
   - {fileID: 0}
@@ -3258,9 +3260,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: 2
-  description: The barren moon where we awoke
+  description: Extreme weather conditions and violent tectonic plate movement make
+    this planet unsuitable for any life. But this planet is still fairly young, so
+    perhaps once it has aged and calmed down a bit, life might find its way to this
+    world.
   difficulty: 0
-  name: The Moon
+  name: Adils
   objectives:
   - {fileID: 0}
   - {fileID: 0}

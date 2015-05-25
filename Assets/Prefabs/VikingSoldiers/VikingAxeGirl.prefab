@@ -26,7 +26,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 479182}
   - 50: {fileID: 5015938}
-  - 114: {fileID: 11451368}
   - 95: {fileID: 9526340}
   - 114: {fileID: 11447628}
   - 58: {fileID: 5836736}
@@ -504,6 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f22c92f761f9f148b5c08cc19ffd94d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 1
   dead: 0
   timeToDestroy: 2
   myAnim: {fileID: 0}
@@ -521,28 +521,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c6e90d7d701cf9489779edf847bc478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11451368
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 123476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b19b9e4e2ecf8645ac703a1b9444fae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooler: {fileID: 0}
-  ArrotVelocity: {x: 0, y: 0}
-  attacksEvery: 2
-  range: 35
-  checkRangeEvery: .5
-  isInRange: 0
-  timeToReachTarget: 2
-  projectile: {fileID: 184010, guid: a39c7e92248bea044abcdff315b1f931, type: 2}
-  launchingDevice: {fileID: 0}
-  enemyAccuracy: 0
-  mySurfaceMovingObject: {fileID: 0}
 --- !u!212 &21211706
 SpriteRenderer:
   m_ObjectHideFlags: 1
