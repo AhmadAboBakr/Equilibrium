@@ -497,7 +497,7 @@ MonoBehaviour:
   timeToReachTarget: 2
   projectile: {fileID: 184010, guid: a39c7e92248bea044abcdff315b1f931, type: 2}
   launchingDevice: {fileID: 402468}
-  enemyAccuracy: 0
+  enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
 --- !u!114 &11448816
 MonoBehaviour:
@@ -536,6 +536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f22c92f761f9f148b5c08cc19ffd94d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 1
   dead: 0
   timeToDestroy: 2
   myAnim: {fileID: 0}

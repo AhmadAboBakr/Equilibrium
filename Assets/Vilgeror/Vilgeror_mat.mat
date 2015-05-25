@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Saemundr_mat
+  m_Name: Vilgeror_mat
   m_Shader: {fileID: 4800000, guid: 226f3fae1ce806e4aa9c67d0b401dc3b, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -32,14 +32,14 @@ Material:
         first:
           name: _MaskTex
         second:
-          m_Texture: {fileID: 2800000, guid: 81832d1f0ce350e4797c98b4a4584eb0, type: 3}
+          m_Texture: {fileID: 2800000, guid: e910b638e016ae649b3d83fb84a96c47, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: Radius
-        second: 201.747498
+        second: 207.851715
       data:
         first:
           name: CoreRadius
@@ -48,8 +48,8 @@ Material:
       data:
         first:
           name: _SkyColor
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: .170523375, g: .610294104, b: .170523375, a: 1}
       data:
         first:
           name: _ShellColor
-        second: {r: .713235259, g: .713235259, b: .713235259, a: 1}
+        second: {r: .10899654, g: .411764681, b: .10899654, a: 1}

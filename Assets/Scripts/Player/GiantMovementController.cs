@@ -23,9 +23,9 @@ public class GiantMovementController : MonoBehaviour {
         //very fucking bad
         this.transform.up = this.transform.position.normalized;
 
-        if(this.transform.rotation.eulerAngles.z == 180)
+        if ((int)(this.transform.rotation.eulerAngles.z + 0.5f) <= 180 && (this.transform.rotation.eulerAngles.z + 0.5f) >= 178f)
         {
-            this.transform.rotation = Quaternion.Euler(0, 0, 180.01f);
+            this.transform.rotation = Quaternion.Euler(0, 0, 180.5f);
         }
 
 

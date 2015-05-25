@@ -109,7 +109,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 433732}
   - 50: {fileID: 5058030}
-  - 114: {fileID: 11427252}
   - 95: {fileID: 9595224}
   - 114: {fileID: 11495422}
   - 58: {fileID: 5880078}
@@ -464,6 +463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f22c92f761f9f148b5c08cc19ffd94d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 1
   dead: 0
   timeToDestroy: 2
   myAnim: {fileID: 0}
@@ -496,28 +496,6 @@ MonoBehaviour:
   planet:
     serializedVersion: 2
     m_Bits: 0
---- !u!114 &11427252
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 187812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b19b9e4e2ecf8645ac703a1b9444fae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooler: {fileID: 0}
-  ArrotVelocity: {x: 0, y: 0}
-  attacksEvery: 2
-  range: 35
-  checkRangeEvery: .5
-  isInRange: 0
-  timeToReachTarget: 2
-  projectile: {fileID: 184010, guid: a39c7e92248bea044abcdff315b1f931, type: 2}
-  launchingDevice: {fileID: 0}
-  enemyAccuracy: 0
-  mySurfaceMovingObject: {fileID: 0}
 --- !u!114 &11479586
 MonoBehaviour:
   m_ObjectHideFlags: 1

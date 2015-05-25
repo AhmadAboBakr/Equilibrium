@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+public struct pooledObjectData
+{
+    public int count;
+    public GameObject pooledObject;
+}
 public class GeneralPooling : MonoBehaviour
 {
     public List<GameObject> pooledObjects;
