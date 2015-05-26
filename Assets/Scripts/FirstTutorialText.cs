@@ -32,6 +32,5 @@ public class FirstTutorialText : MonoBehaviour {
         async = Application.LoadLevelAsync("Level Selection Screen");
         async.allowSceneActivation = false;
         yield return async;
-
     }
 }

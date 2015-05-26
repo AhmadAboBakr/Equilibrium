@@ -3,8 +3,9 @@ using System.Collections;
 
 public class TutorialStage : MonoBehaviour {
     public GameObject CompanioinUIElement;
-    void OnEneable()
+    void OnEnable()
     {
+        Debug.Log(CompanioinUIElement);
         if (CompanioinUIElement)
         {
             CompanioinUIElement.SetActive(true);
