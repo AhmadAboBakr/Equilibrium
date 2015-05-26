@@ -39,7 +39,7 @@ Material:
       data:
         first:
           name: Radius
-        second: 191.162704
+        second: 191.108856
       data:
         first:
           name: CoreRadius
@@ -47,9 +47,9 @@ Material:
     m_Colors:
       data:
         first:
-          name: _SkyColor
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
           name: _ShellColor
         second: {r: 0, g: 1, b: 0, a: 1}
+      data:
+        first:
+          name: _SkyColor
+        second: {r: 1, g: 1, b: 1, a: 1}

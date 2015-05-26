@@ -1,0 +1,593 @@
+fileFormatVersion: 2
+guid: 29a439edfb022624bba51de5e9b8b246
+timeCreated: 1432674750
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: enimies-01_0
+    21300002: enimies-01_1
+    21300004: enimies-01_2
+    21300006: enimies-01_3
+    21300008: enimies-01_4
+    21300010: enimies-01_5
+    21300012: enimies-01_6
+    21300014: enimies-01_7
+    21300016: enimies-01_8
+    21300018: enimies-01_9
+    21300020: enimies-01_10
+    21300022: enimies-01_11
+    21300024: enimies-01_12
+    21300026: enimies-01_13
+    21300028: enimies-01_14
+    21300030: enimies-01_15
+    21300032: enimies-01_16
+    21300034: enimies-01_17
+    21300036: enimies-01_18
+    21300038: enimies-01_19
+    21300040: enimies-01_20
+    21300042: enimies-01_21
+    21300044: enimies-01_22
+    21300046: enimies-01_23
+    21300048: enimies-01_24
+    21300050: enimies-01_25
+    21300052: enimies-01_26
+    21300054: enimies-01_27
+    21300056: enimies-01_28
+    21300058: enimies-01_29
+    21300060: enimies-01_30
+    21300062: enimies-01_31
+    21300064: enimies-01_32
+    21300066: enimies-01_33
+    21300068: enimies-01_34
+    21300070: enimies-01_35
+    21300072: enimies-01_36
+    21300074: enimies-01_37
+    21300076: enimies-01_38
+    21300078: enimies-01_39
+    21300080: enimies-01_40
+    21300082: enimies-01_41
+    21300084: enimies-01_42
+    21300086: enimies-01_43
+    21300088: enimies-01_44
+    21300090: enimies-01_45
+    21300092: enimies-01_46
+    21300094: enimies-01_47
+    21300096: enimies-01_48
+    21300098: enimies-01_49
+    21300100: enimies-01_50
+    21300102: enimies-01_51
+    21300104: enimies-01_52
+    21300106: enimies-01_53
+    21300108: enimies-01_54
+    21300110: enimies-01_55
+    21300112: enimies-01_56
+    21300114: enimies-01_57
+    21300116: enimies-01_58
+    21300118: enimies-01_59
+    21300120: enimies-01_60
+    21300122: enimies-01_61
+    21300124: enimies-01_62
+    21300126: enimies-01_63
+    21300128: enimies-01_64
+    21300130: enimies-01_65
+    21300132: enimies-01_66
+    21300134: enimies-01_67
+    21300136: enimies-01_68
+    21300138: enimies-01_69
+    21300140: enimies-01_70
+    21300142: enimies-01_71
+    21300144: enimies-01_72
+    21300146: enimies-01_73
+    21300148: enimies-01_74
+    21300150: enimies-01_75
+    21300152: enimies-01_76
+    21300154: enimies-01_77
+    21300156: enimies-01_78
+    21300158: enimies-01_79
+    21300160: enimies-01_80
+    21300162: enimies-01_81
+    21300164: enimies-01_82
+    21300166: enimies-01_83
+    21300168: enimies-01_84
+    21300170: enimies-01_85
+    21300172: enimies-01_86
+    21300174: enimies-01_87
+    21300176: enimies-01_88
+    21300178: enimies-01_89
+    21300180: enimies-01_90
+    21300182: enimies-01_91
+    21300184: enimies-01_92
+    21300186: enimies-01_93
+    21300188: enimies-01_94
+    21300190: enimies-01_95
+    21300192: enimies-01_96
+    21300194: enimies-01_97
+    21300196: enimies-01_98
+    21300198: enimies-01_99
+    21300200: enimies-01_100
+    21300202: enimies-01_101
+    21300204: enimies-01_102
+    21300206: enimies-01_103
+    21300208: enimies-01_104
+    21300210: enimies-01_105
+    21300212: enimies-01_106
+    21300214: enimies-01_107
+    21300216: enimies-01_108
+    21300218: enimies-01_109
+    21300220: enimies-01_110
+    21300222: enimies-01_111
+    21300224: enimies-01_112
+    21300226: enimies-01_113
+    21300228: enimies-01_114
+    21300230: enimies-01_115
+    21300232: enimies-01_116
+    21300234: enimies-01_117
+    21300236: enimies-01_118
+    21300238: enimies-01_119
+    21300240: enimies-01_120
+    21300242: enimies-01_121
+    21300244: enimies-01_122
+    21300246: enimies-01_123
+    21300248: enimies-01_124
+    21300250: enimies-01_125
+    21300252: enimies-01_126
+    21300254: enimies-01_127
+    21300256: enimies-01_128
+    21300258: enimies-01_129
+    21300260: enimies-01_130
+    21300262: enimies-01_131
+    21300264: enimies-01_132
+    21300266: enimies-01_133
+    21300268: enimies-01_134
+    21300270: enimies-01_135
+    21300272: enimies-01_136
+    21300274: enimies-01_137
+    21300276: enimies-01_138
+    21300278: enimies-01_139
+    21300280: enimies-01_140
+    21300282: enimies-01_141
+    21300284: enimies-01_142
+    21300286: enimies-01_143
+    21300288: enimies-01_144
+    21300290: enimies-01_145
+    21300292: enimies-01_146
+    21300294: enimies-01_147
+    21300296: enimies-01_148
+    21300298: enimies-01_149
+    21300300: enimies-01_150
+    21300302: enimies-01_151
+    21300304: enimies-01_152
+    21300306: enimies-01_153
+    21300308: enimies-01_154
+    21300310: enimies-01_155
+    21300312: enimies-01_156
+    21300314: enimies-01_157
+    21300316: enimies-01_158
+    21300318: enimies-01_159
+    21300320: enimies-01_160
+    21300322: enimies-01_161
+    21300324: enimies-01_162
+    21300326: enimies-01_163
+    21300328: enimies-01_164
+    21300330: enimies-01_165
+    21300332: enimies-01_166
+    21300334: enimies-01_167
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: enimies-01_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 970
+        width: 269
+        height: 147
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_1
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 892
+        width: 206
+        height: 128
+      alignment: 9
+      pivot: {x: .0881443918, y: .344983578}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_2
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 949
+        width: 76
+        height: 73
+      alignment: 9
+      pivot: {x: .553041935, y: .2238895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_3
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 962
+        width: 46
+        height: 60
+      alignment: 9
+      pivot: {x: .474960983, y: .807140112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_4
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 841
+        width: 49
+        height: 184
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_5
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 956
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_6
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 962
+        width: 29
+        height: 69
+      alignment: 9
+      pivot: {x: .560210109, y: .154136762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 852
+        width: 29
+        height: 51
+      alignment: 9
+      pivot: {x: .500001192, y: .869620502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_8
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 858
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_9
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 852
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_10
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 862
+        width: 51
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_11
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 854
+        width: 51
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_12
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 822
+        width: 48
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_13
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 836
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_14
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 861
+        width: 42
+        height: 53
+      alignment: 9
+      pivot: {x: .846464634, y: .818486035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_15
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 862
+        width: 44
+        height: 55
+      alignment: 9
+      pivot: {x: .843944192, y: .849236488}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_19
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 763
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: .862898827, y: .892323315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_20
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 761
+        width: 67
+        height: 84
+      alignment: 9
+      pivot: {x: .856019914, y: .828804374}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_45
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 396
+        width: 188
+        height: 179
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_46
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 573
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_47
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 493
+        width: 94
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_48
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 415
+        width: 61
+        height: 183
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_49
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 539
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_50
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 514
+        width: 48
+        height: 68
+      alignment: 9
+      pivot: {x: .294413239, y: .762331784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_51
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 450
+        width: 137
+        height: 136
+      alignment: 9
+      pivot: {x: .763319016, y: .0958020836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_52
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 519
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_53
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 530
+        width: 66
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_54
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 486
+        width: 75
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_55
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 444
+        width: 53
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_56
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 451
+        width: 75
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_57
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 430
+        width: 99
+        height: 41
+      alignment: 9
+      pivot: {x: .797923088, y: .7213462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_58
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 424
+        width: 46
+        height: 54
+      alignment: 9
+      pivot: {x: .813534915, y: .844401062}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_60
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 339
+        width: 35
+        height: 42
+      alignment: 9
+      pivot: {x: .171690151, y: .815043867}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_61
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 302
+        width: 146
+        height: 107
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_16
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 700
+        width: 91
+        height: 116
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 658
+        width: 236
+        height: 158
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enimies-01_18
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 133
+        width: 203
+        height: 219
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
