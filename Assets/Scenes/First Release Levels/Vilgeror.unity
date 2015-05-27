@@ -10704,7 +10704,7 @@ Transform:
   - {fileID: 1083669136}
   - {fileID: 847100038}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 21
 --- !u!1 &436226985
 GameObject:
   m_ObjectHideFlags: 0
@@ -26485,6 +26485,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 153174, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8246484, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9f7587e31c9371140a3ebe60177591b9, type: 3}
+    - target: {fileID: 8246484, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

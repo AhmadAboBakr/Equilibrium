@@ -13399,10 +13399,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ef81fab96c5c541a85e4345e4389ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 166750, guid: 658e559c8e8992d4bbd000894e63f907, type: 2}
-  - {fileID: 0}
-  - {fileID: 178164, guid: 31476d09b024e9245923eeff9e4a47a5, type: 2}
   pooler: {fileID: 0}
 --- !u!1 &515549878
 GameObject:
@@ -26382,7 +26378,7 @@ Transform:
   m_PrefabParentObject: {fileID: 483330, guid: 1ce54408eccf3664da4a5b1ed99752a6, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 948520669}
-  m_LocalRotation: {x: 0, y: 0, z: .997353017, w: .0727120787}
+  m_LocalRotation: {x: 0, y: 0, z: .997352958, w: .0727120712}
   m_LocalPosition: {x: -30.2999992, y: -206.699997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -28247,6 +28243,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8246484, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8246484, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9f7587e31c9371140a3ebe60177591b9, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
   m_IsPrefabParent: 0
