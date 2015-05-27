@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class EnemySpawn : MonoBehaviour {
-    public List<GameObject> enemies;
     public GeneralPooling pooler;
 
 	// Use this for initialization

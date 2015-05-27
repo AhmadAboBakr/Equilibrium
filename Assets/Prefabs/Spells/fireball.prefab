@@ -15,7 +15,9 @@ GameObject:
   - 96: {fileID: 9694364}
   - 114: {fileID: 11498878}
   - 58: {fileID: 5815910}
-  - 60: {fileID: 6050932}
+  - 60: {fileID: 6016302}
+  - 114: {fileID: 11425322}
+  - 114: {fileID: 11424042}
   m_Layer: 9
   m_Name: fireball
   m_TagString: Untagged
@@ -29,8 +31,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117244}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -99.9000015, y: 188.5, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: .606845558, w: .794819772}
+  m_LocalPosition: {x: -181.600006, y: 49.5999985, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -62,7 +64,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .0146179199
+  m_Radius: .693786561
 --- !u!58 &5832748
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -76,7 +78,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 30.004303
---- !u!60 &6050932
+--- !u!60 &6016302
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -89,15 +91,39 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: 1.53139544, y: 2.8981154}
-      - {x: -2.37504983, y: 2.8981154}
-      - {x: -2.76569438, y: 1.85639656}
-      - {x: -2.76569438, y: -2.05004883}
-      - {x: -1.72397566, y: -2.57090807}
-      - {x: 1.66161025, y: -2.57090807}
-      - {x: 2.70332909, y: -1.52918947}
-      - {x: 2.83354378, y: -1.26875973}
-      - {x: 2.83354378, y: 1.46575201}
+    - - {x: .479999989, y: -.910000026}
+      - {x: .600000024, y: -.829999983}
+      - {x: .709999979, y: -.74000001}
+      - {x: .860000014, y: -.560000002}
+      - {x: .970000029, y: -.330000013}
+      - {x: .99000001, y: -.25}
+      - {x: .99000001, y: .100000001}
+      - {x: .970000029, y: .230000004}
+      - {x: .879999995, y: .439999998}
+      - {x: .779999971, y: .569999993}
+      - {x: .720000029, y: .639999986}
+      - {x: .629999995, y: .730000019}
+      - {x: .379999995, y: .879999995}
+      - {x: .219999999, y: .930000007}
+      - {x: .109999999, y: .939999998}
+      - {x: -.170000002, y: .939999998}
+      - {x: -.379999995, y: .879999995}
+      - {x: -.529999971, y: .810000002}
+      - {x: -.74000001, y: .629999995}
+      - {x: -.879999995, y: .439999998}
+      - {x: -.970000029, y: .230000004}
+      - {x: -.99000001, y: .100000001}
+      - {x: -.99000001, y: -.239999995}
+      - {x: -.959999979, y: -.379999995}
+      - {x: -.879999995, y: -.529999971}
+      - {x: -.819999993, y: -.610000014}
+      - {x: -.75999999, y: -.680000007}
+      - {x: -.589999974, y: -.850000024}
+      - {x: -.379999995, y: -.970000029}
+      - {x: -.150000006, y: -1.02999997}
+      - {x: .140000001, y: -1.02999997}
+      - {x: .289999992, y: -1}
+      - {x: .340000004, y: -.970000029}
 --- !u!96 &9694364
 TrailRenderer:
   m_ObjectHideFlags: 1
@@ -143,6 +169,28 @@ TrailRenderer:
       rgba: 12237567
   m_MinVertexDistance: .100000001
   m_Autodestruct: 0
+--- !u!114 &11424042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9b79edf149081458cb1c092b09a305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11425322
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9b79edf149081458cb1c092b09a305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11468966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -191,7 +239,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 172857785
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300012, guid: 8c9ba7bd145931142aa825220cbe6d7a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1124719c83ed1f042a95e5d46c43d0a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
