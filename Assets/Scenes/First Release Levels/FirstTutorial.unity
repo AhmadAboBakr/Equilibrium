@@ -87,7 +87,7 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &32408343 stripped
+--- !u!1 &32408343
 GameObject:
   m_PrefabParentObject: {fileID: 112912, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
   m_PrefabInternal: {fileID: 1573983775}
@@ -3232,7 +3232,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 921905448}
---- !u!114 &945935106 stripped
+--- !u!114 &945935106
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11443870, guid: 76fd1ff867a8e6244be153af35a47c97,
     type: 2}
@@ -7319,11 +7319,11 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 429.980011, y: 600}
+  m_ScreenMatchMode: 2
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
