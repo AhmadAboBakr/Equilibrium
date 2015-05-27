@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 29a439edfb022624bba51de5e9b8b246
-timeCreated: 1432676712
+timeCreated: 1432725363
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -25,7 +25,7 @@ TextureImporter:
     21300036: enimies-01_18
     21300038: enimies-01_19
     21300040: enimies-01_20
-    21300042: enimies-01_21
+    21300042: Projectile For Weired ass Enemy
     21300044: enimies-01_22
     21300046: enimies-01_23
     21300048: enimies-01_24
@@ -175,7 +175,7 @@ TextureImporter:
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -194,7 +194,7 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
@@ -235,7 +235,7 @@ TextureImporter:
         width: 206
         height: 128
       alignment: 9
-      pivot: {x: .0881443918, y: .344983578}
+      pivot: {x: .269840866, y: .357167721}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enimies-01_2
       rect:
@@ -284,8 +284,8 @@ TextureImporter:
         y: 962
         width: 29
         height: 69
-      alignment: 9
-      pivot: {x: .560210109, y: .154136762}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: enimies-01_7
       rect:
@@ -420,10 +420,10 @@ TextureImporter:
     - name: enimies-01_47
       rect:
         serializedVersion: 2
-        x: 623
+        x: 639
         y: 493
-        width: 94
-        height: 119
+        width: 60
+        height: 85
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -584,6 +584,16 @@ TextureImporter:
         y: 133
         width: 203
         height: 219
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Projectile For Weired ass Enemy
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 606
+        width: 13
+        height: 36
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

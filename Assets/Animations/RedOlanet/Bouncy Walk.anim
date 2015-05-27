@@ -1,0 +1,1715 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Bouncy Walk
+  serializedVersion: 6
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.00200000009, y: -.312999994, z: 0}
+        inSlope: {x: 0, y: .0874999911, z: 0}
+        outSlope: {x: 0, y: .0874999911, z: 0}
+        tangentMode: 0
+      - time: .400000006
+        value: {x: -.00200000009, y: -.277999997, z: 0}
+        inSlope: {x: 0, y: -.00699999556, z: 0}
+        outSlope: {x: -0, y: -.0839999914, z: -0}
+        tangentMode: 0
+      - time: .816666663
+        value: {x: -.00200000009, y: -.312999994, z: 0}
+        inSlope: {x: 0, y: -.0839999914, z: 0}
+        outSlope: {x: -0, y: -0, z: -0}
+        tangentMode: 0
+      - time: .949999988
+        value: {x: -.00200000009, y: -.312999994, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: enimies-01_48/enimies-01_56
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .00200000009, y: -.13800019, z: 0}
+        inSlope: {x: 0, y: .140000463, z: 0}
+        outSlope: {x: 0, y: .140000463, z: 0}
+        tangentMode: 0
+      - time: .400000006
+        value: {x: .00200000009, y: -.0820000023, z: 0}
+        inSlope: {x: 0, y: -.0112000331, z: 0}
+        outSlope: {x: -0, y: -.134400457, z: -0}
+        tangentMode: 0
+      - time: .816666663
+        value: {x: .00200000009, y: -.13800019, z: 0}
+        inSlope: {x: 0, y: -.134400457, z: 0}
+        outSlope: {x: -0, y: -0, z: -0}
+        tangentMode: 0
+      - time: .949999988
+        value: {x: .00200000009, y: -.13800019, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: enimies-01_48/enimies-01_56/enimies-01_53
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.0109999999, y: -.0850000009, z: 0}
+        inSlope: {x: 0, y: .0349999964, z: 0}
+        outSlope: {x: 0, y: .0349999964, z: 0}
+        tangentMode: 0
+      - time: .400000006
+        value: {x: -.0109999999, y: -.0710000023, z: 0}
+        inSlope: {x: 0, y: -.00279999897, z: 0}
+        outSlope: {x: -0, y: -.0335999988, z: -0}
+        tangentMode: 0
+      - time: .816666663
+        value: {x: -.0109999999, y: -.0850000009, z: 0}
+        inSlope: {x: 0, y: -.0335999988, z: 0}
+        outSlope: {x: -0, y: -0, z: -0}
+        tangentMode: 0
+      - time: .949999988
+        value: {x: -.0109999999, y: -.0850000009, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: enimies-01_48/enimies-01_56/enimies-01_53/enimies-01_54
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .0209999997, y: -.104999997, z: 0}
+        inSlope: {x: 0, y: .209999993, z: 0}
+        outSlope: {x: 0, y: .209999993, z: 0}
+        tangentMode: 0
+      - time: .400000006
+        value: {x: .0209999997, y: -.0209999997, z: 0}
+        inSlope: {x: 0, y: -.0167999938, z: 0}
+        outSlope: {x: -0, y: -.2016, z: -0}
+        tangentMode: 0
+      - time: .816666663
+        value: {x: .0209999997, y: -.104999997, z: 0}
+        inSlope: {x: 0, y: -.2016, z: 0}
+        outSlope: {x: -0, y: -0, z: -0}
+        tangentMode: 0
+      - time: .949999988
+        value: {x: .0209999997, y: -.104999997, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: enimies-01_48/enimies-01_56/enimies-01_53/enimies-01_54/enimies-01_57
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.00999999978, y: -.103, z: 0}
+        inSlope: {x: 0, y: .0174999982, z: 0}
+        outSlope: {x: 0, y: .0174999982, z: 0}
+        tangentMode: 0
+      - time: .400000006
+        value: {x: -.00999999978, y: -.0960000008, z: 0}
+        inSlope: {x: 0, y: -.00139999948, z: 0}
+        outSlope: {x: -0, y: -.0167999994, z: -0}
+        tangentMode: 0
+      - time: .816666663
+        value: {x: -.00999999978, y: -.103, z: 0}
+        inSlope: {x: 0, y: -.0167999994, z: 0}
+        outSlope: {x: -0, y: -0, z: -0}
+        tangentMode: 0
+      - time: .949999988
+        value: {x: -.00999999978, y: -.103, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: enimies-01_48/enimies-01_56/enimies-01_53/enimies-01_54/enimies-01_57/enimies-01_55
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: -.0900008678, z: 0}
+        inSlope: {x: 0, y: .192502171, z: 0}
+        outSlope: {x: 0, y: .192502171, z: 0}
+        tangentMode: 0
+      - time: .400000006
+        value: {x: 0, y: -.0130000003, z: 0}
+        inSlope: {x: 0, y: -.0154001713, z: 0}
+        outSlope: {x: -0, y: -.184802085, z: -0}
+        tangentMode: 0
+      - time: .816666663
+        value: {x: 0, y: -.0900008678, z: 0}
+        inSlope: {x: 0, y: -.184802085, z: 0}
+        outSlope: {x: -0, y: -0, z: -0}
+        tangentMode: 0
+      - time: .949999988
+        value: {x: 0, y: -.0900008678, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: enimies-01_48/enimies-01_56/enimies-01_53/enimies-01_54/enimies-01_57/enimies-01_55/enimies-01_58
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .0159912109, y: .0629997253, z: 0}
+        inSlope: {x: .0100219715, y: -.717499316, z: 0}
+        outSlope: {x: .0100219715, y: -.717499316, z: 0}
+        tangentMode: 0
+      - time: .400000006
+        value: {x: .0199999996, y: -.224000007, z: 0}
+        inSlope: {x: .00400878862, y: .603000283, z: 0}
+        outSlope: {x: -0, y: 1.9776001, z: -0}
+        tangentMode: 0
+      - time: .816666663
+        value: {x: .0199999996, y: .600000024, z: 0}
+        inSlope: {x: 0, y: 1.9776001, z: 0}
+        outSlope: {x: -.0300659165, y: -4.02750254, z: -0}
+        tangentMode: 0
+      - time: .949999988
+        value: {x: .0159912109, y: .0629997253, z: 0}
+        inSlope: {x: -.0300659165, y: -4.02750254, z: 0}
+        outSlope: {x: -.0300659165, y: -4.02750254, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: enimies-01_48
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .385001481, y: .3190009, z: 0}
+        inSlope: {x: -.127503723, y: -.0675022602, z: 0}
+        outSlope: {x: -.127503723, y: -.0675022602, z: 0}
+        tangentMode: 0
+      - time: .400000006
+        value: {x: .333999991, y: .291999996, z: 0}
+        inSlope: {x: .0102002956, y: .00540018082, z: 0}
+        outSlope: {x: .122403577, y: .0648021698, z: -0}
+        tangentMode: 0
+      - time: .816666663
+        value: {x: .385001481, y: .3190009, z: 0}
+        inSlope: {x: .0612017885, y: .0324010849, z: 0}
+        outSlope: {x: .0612017885, y: .0324010849, z: 0}
+        tangentMode: 0
+      - time: .949999988
+        value: {x: .385001481, y: .3190009, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 5
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .286000013, y: .446999997, z: 0}
+        inSlope: {x: -.13500005, y: -.124999955, z: 0}
+        outSlope: {x: -.13500005, y: -.124999955, z: 0}
+        tangentMode: 0
+      - time: .400000006
+        value: {x: .231999993, y: .397000015, z: 0}
+        inSlope: {x: .010800004, y: .00999999419, z: 0}
+        outSlope: {x: .129600048, y: .11999996, z: -0}
+        tangentMode: 0
+      - time: .816666663
+        value: {x: .286000013, y: .446999997, z: 0}
+        inSlope: {x: .064800024, y: .05999998, z: 0}
+        outSlope: {x: .064800024, y: .05999998, z: 0}
+        tangentMode: 0
+      - time: .949999988
+        value: {x: .286000013, y: .446999997, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .149000004, y: .537999988, z: 0}
+        inSlope: {x: -.0575000048, y: -.167500004, z: 0}
+        outSlope: {x: -.0575000048, y: -.167500004, z: 0}
+        tangentMode: 0
+      - time: .400000006
+        value: {x: .126000002, y: .470999986, z: 0}
+        inSlope: {x: .00459999964, y: .0133999959, z: 0}
+        outSlope: {x: .0552000068, y: .16080001, z: -0}
+        tangentMode: 0
+      - time: .816666663
+        value: {x: .149000004, y: .537999988, z: 0}
+        inSlope: {x: .0276000034, y: .080400005, z: 0}
+        outSlope: {x: .0276000034, y: .080400005, z: 0}
+        tangentMode: 0
+      - time: .949999988
+        value: {x: .149000004, y: .537999988, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.0120000001, y: .569000006, z: 0}
+        inSlope: {x: .0274999999, y: -.247500017, z: 0}
+        outSlope: {x: .0274999999, y: -.247500017, z: 0}
+        tangentMode: 0
+      - time: .400000006
+        value: {x: -.00100000005, y: .469999999, z: 0}
+        inSlope: {x: -.00219999906, y: .0197999924, z: 0}
+        outSlope: {x: -.0263999999, y: .237600029, z: -0}
+        tangentMode: 0
+      - time: .816666663
+        value: {x: -.0120000001, y: .569000006, z: 0}
+        inSlope: {x: -.0131999999, y: .118800014, z: 0}
+        outSlope: {x: -.0131999999, y: .118800014, z: 0}
+        tangentMode: 0
+      - time: .949999988
+        value: {x: -.0120000001, y: .569000006, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.172999993, y: .531000018, z: 0}
+        inSlope: {x: .0899999961, y: -.202500075, z: 0}
+        outSlope: {x: .0899999961, y: -.202500075, z: 0}
+        tangentMode: 0
+      - time: .400000006
+        value: {x: -.136999995, y: .449999988, z: 0}
+        inSlope: {x: -.00719999894, y: .0161999986, z: 0}
+        outSlope: {x: -.0863999948, y: .194400072, z: -0}
+        tangentMode: 0
+      - time: .816666663
+        value: {x: -.172999993, y: .531000018, z: 0}
+        inSlope: {x: -.0431999974, y: .097200036, z: 0}
+        outSlope: {x: -.0431999974, y: .097200036, z: 0}
+        tangentMode: 0
+      - time: .949999988
+        value: {x: -.172999993, y: .531000018, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.316000015, y: .381999999, z: 0}
+        inSlope: {x: .13500005, y: -.132500008, z: 0}
+        outSlope: {x: .13500005, y: -.132500008, z: 0}
+        tangentMode: 0
+      - time: .400000006
+        value: {x: -.261999995, y: .328999996, z: 0}
+        inSlope: {x: -.010800004, y: .0106000006, z: 0}
+        outSlope: {x: -.129600048, y: .127200007, z: -0}
+        tangentMode: 0
+      - time: .816666663
+        value: {x: -.316000015, y: .381999999, z: 0}
+        inSlope: {x: -.064800024, y: .0636000037, z: 0}
+        outSlope: {x: -.064800024, y: .0636000037, z: 0}
+        tangentMode: 0
+      - time: .949999988
+        value: {x: -.316000015, y: .381999999, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.425000012, y: .219999999, z: 0}
+        inSlope: {x: .247500017, y: -.102499984, z: 0}
+        outSlope: {x: .247500017, y: -.102499984, z: 0}
+        tangentMode: 0
+      - time: .400000006
+        value: {x: -.326000005, y: .179000005, z: 0}
+        inSlope: {x: -.0197999924, y: .00819999725, z: 0}
+        outSlope: {x: -.237600029, y: .0983999893, z: -0}
+        tangentMode: 0
+      - time: .816666663
+        value: {x: -.425000012, y: .219999999, z: 0}
+        inSlope: {x: -.118800014, y: .0491999947, z: 0}
+        outSlope: {x: -.118800014, y: .0491999947, z: 0}
+        tangentMode: 0
+      - time: .949999988
+        value: {x: -.425000012, y: .219999999, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 6
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - path: 2296998963
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1364853687
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 184591532
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2579082720
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 4082273048
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1329678406
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3243046780
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3202508165
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3387249939
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1468121264
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 545714214
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3113197980
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1943212105
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 669725759
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_StartTime: 0
+    m_StopTime: .949999988
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_LoopTime: 1
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.00200000009
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: -.00200000009
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: -.00200000009
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: -.00200000009
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: enimies-01_48/enimies-01_56
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.312999994
+        inSlope: .0874999911
+        outSlope: .0874999911
+        tangentMode: 10
+      - time: .400000006
+        value: -.277999997
+        inSlope: -.00699999556
+        outSlope: -.0839999914
+        tangentMode: 17
+      - time: .816666663
+        value: -.312999994
+        inSlope: -.0839999914
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: -.312999994
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: enimies-01_48/enimies-01_56
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: enimies-01_48/enimies-01_56
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .00200000009
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: .00200000009
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: .00200000009
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: .00200000009
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: enimies-01_48/enimies-01_56/enimies-01_53
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.13800019
+        inSlope: .140000463
+        outSlope: .140000463
+        tangentMode: 10
+      - time: .400000006
+        value: -.0820000023
+        inSlope: -.0112000331
+        outSlope: -.134400457
+        tangentMode: 17
+      - time: .816666663
+        value: -.13800019
+        inSlope: -.134400457
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: -.13800019
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: enimies-01_48/enimies-01_56/enimies-01_53
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: enimies-01_48/enimies-01_56/enimies-01_53
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.0109999999
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: -.0109999999
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: -.0109999999
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: -.0109999999
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: enimies-01_48/enimies-01_56/enimies-01_53/enimies-01_54
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.0850000009
+        inSlope: .0349999964
+        outSlope: .0349999964
+        tangentMode: 10
+      - time: .400000006
+        value: -.0710000023
+        inSlope: -.00279999897
+        outSlope: -.0335999988
+        tangentMode: 17
+      - time: .816666663
+        value: -.0850000009
+        inSlope: -.0335999988
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: -.0850000009
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: enimies-01_48/enimies-01_56/enimies-01_53/enimies-01_54
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: enimies-01_48/enimies-01_56/enimies-01_53/enimies-01_54
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0209999997
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: .0209999997
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: .0209999997
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: .0209999997
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: enimies-01_48/enimies-01_56/enimies-01_53/enimies-01_54/enimies-01_57
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.104999997
+        inSlope: .209999993
+        outSlope: .209999993
+        tangentMode: 10
+      - time: .400000006
+        value: -.0209999997
+        inSlope: -.0167999938
+        outSlope: -.2016
+        tangentMode: 17
+      - time: .816666663
+        value: -.104999997
+        inSlope: -.2016
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: -.104999997
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: enimies-01_48/enimies-01_56/enimies-01_53/enimies-01_54/enimies-01_57
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: enimies-01_48/enimies-01_56/enimies-01_53/enimies-01_54/enimies-01_57
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.00999999978
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: -.00999999978
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: -.00999999978
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: -.00999999978
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: enimies-01_48/enimies-01_56/enimies-01_53/enimies-01_54/enimies-01_57/enimies-01_55
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.103
+        inSlope: .0174999982
+        outSlope: .0174999982
+        tangentMode: 10
+      - time: .400000006
+        value: -.0960000008
+        inSlope: -.00139999948
+        outSlope: -.0167999994
+        tangentMode: 17
+      - time: .816666663
+        value: -.103
+        inSlope: -.0167999994
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: -.103
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: enimies-01_48/enimies-01_56/enimies-01_53/enimies-01_54/enimies-01_57/enimies-01_55
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: enimies-01_48/enimies-01_56/enimies-01_53/enimies-01_54/enimies-01_57/enimies-01_55
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: enimies-01_48/enimies-01_56/enimies-01_53/enimies-01_54/enimies-01_57/enimies-01_55/enimies-01_58
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.0900008678
+        inSlope: .192502171
+        outSlope: .192502171
+        tangentMode: 10
+      - time: .400000006
+        value: -.0130000003
+        inSlope: -.0154001713
+        outSlope: -.184802085
+        tangentMode: 17
+      - time: .816666663
+        value: -.0900008678
+        inSlope: -.184802085
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: -.0900008678
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: enimies-01_48/enimies-01_56/enimies-01_53/enimies-01_54/enimies-01_57/enimies-01_55/enimies-01_58
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: enimies-01_48/enimies-01_56/enimies-01_53/enimies-01_54/enimies-01_57/enimies-01_55/enimies-01_58
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0159912109
+        inSlope: .0100219715
+        outSlope: .0100219715
+        tangentMode: 10
+      - time: .400000006
+        value: .0199999996
+        inSlope: .00400878862
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: .0199999996
+        inSlope: 0
+        outSlope: -.0300659165
+        tangentMode: 21
+      - time: .949999988
+        value: .0159912109
+        inSlope: -.0300659165
+        outSlope: -.0300659165
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: enimies-01_48
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0629997253
+        inSlope: -.717499316
+        outSlope: -.717499316
+        tangentMode: 10
+      - time: .400000006
+        value: -.224000007
+        inSlope: .603000283
+        outSlope: 1.9776001
+        tangentMode: 17
+      - time: .816666663
+        value: .600000024
+        inSlope: 1.9776001
+        outSlope: -4.02750254
+        tangentMode: 21
+      - time: .949999988
+        value: .0629997253
+        inSlope: -4.02750254
+        outSlope: -4.02750254
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: enimies-01_48
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 21
+      - time: .949999988
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: enimies-01_48
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .385001481
+        inSlope: -.127503723
+        outSlope: -.127503723
+        tangentMode: 10
+      - time: .400000006
+        value: .333999991
+        inSlope: .0102002956
+        outSlope: .122403577
+        tangentMode: 17
+      - time: .816666663
+        value: .385001481
+        inSlope: .0612017885
+        outSlope: .0612017885
+        tangentMode: 10
+      - time: .949999988
+        value: .385001481
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 5
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .3190009
+        inSlope: -.0675022602
+        outSlope: -.0675022602
+        tangentMode: 10
+      - time: .400000006
+        value: .291999996
+        inSlope: .00540018082
+        outSlope: .0648021698
+        tangentMode: 17
+      - time: .816666663
+        value: .3190009
+        inSlope: .0324010849
+        outSlope: .0324010849
+        tangentMode: 10
+      - time: .949999988
+        value: .3190009
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 5
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .949999988
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 5
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .286000013
+        inSlope: -.13500005
+        outSlope: -.13500005
+        tangentMode: 10
+      - time: .400000006
+        value: .231999993
+        inSlope: .010800004
+        outSlope: .129600048
+        tangentMode: 17
+      - time: .816666663
+        value: .286000013
+        inSlope: .064800024
+        outSlope: .064800024
+        tangentMode: 10
+      - time: .949999988
+        value: .286000013
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 4
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .446999997
+        inSlope: -.124999955
+        outSlope: -.124999955
+        tangentMode: 10
+      - time: .400000006
+        value: .397000015
+        inSlope: .00999999419
+        outSlope: .11999996
+        tangentMode: 17
+      - time: .816666663
+        value: .446999997
+        inSlope: .05999998
+        outSlope: .05999998
+        tangentMode: 10
+      - time: .949999988
+        value: .446999997
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 4
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .949999988
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 4
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .149000004
+        inSlope: -.0575000048
+        outSlope: -.0575000048
+        tangentMode: 10
+      - time: .400000006
+        value: .126000002
+        inSlope: .00459999964
+        outSlope: .0552000068
+        tangentMode: 17
+      - time: .816666663
+        value: .149000004
+        inSlope: .0276000034
+        outSlope: .0276000034
+        tangentMode: 10
+      - time: .949999988
+        value: .149000004
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 3
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .537999988
+        inSlope: -.167500004
+        outSlope: -.167500004
+        tangentMode: 10
+      - time: .400000006
+        value: .470999986
+        inSlope: .0133999959
+        outSlope: .16080001
+        tangentMode: 17
+      - time: .816666663
+        value: .537999988
+        inSlope: .080400005
+        outSlope: .080400005
+        tangentMode: 10
+      - time: .949999988
+        value: .537999988
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 3
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .949999988
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 3
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.0120000001
+        inSlope: .0274999999
+        outSlope: .0274999999
+        tangentMode: 10
+      - time: .400000006
+        value: -.00100000005
+        inSlope: -.00219999906
+        outSlope: -.0263999999
+        tangentMode: 17
+      - time: .816666663
+        value: -.0120000001
+        inSlope: -.0131999999
+        outSlope: -.0131999999
+        tangentMode: 10
+      - time: .949999988
+        value: -.0120000001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 2
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .569000006
+        inSlope: -.247500017
+        outSlope: -.247500017
+        tangentMode: 10
+      - time: .400000006
+        value: .469999999
+        inSlope: .0197999924
+        outSlope: .237600029
+        tangentMode: 17
+      - time: .816666663
+        value: .569000006
+        inSlope: .118800014
+        outSlope: .118800014
+        tangentMode: 10
+      - time: .949999988
+        value: .569000006
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 2
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .949999988
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 2
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.172999993
+        inSlope: .0899999961
+        outSlope: .0899999961
+        tangentMode: 10
+      - time: .400000006
+        value: -.136999995
+        inSlope: -.00719999894
+        outSlope: -.0863999948
+        tangentMode: 17
+      - time: .816666663
+        value: -.172999993
+        inSlope: -.0431999974
+        outSlope: -.0431999974
+        tangentMode: 10
+      - time: .949999988
+        value: -.172999993
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .531000018
+        inSlope: -.202500075
+        outSlope: -.202500075
+        tangentMode: 10
+      - time: .400000006
+        value: .449999988
+        inSlope: .0161999986
+        outSlope: .194400072
+        tangentMode: 17
+      - time: .816666663
+        value: .531000018
+        inSlope: .097200036
+        outSlope: .097200036
+        tangentMode: 10
+      - time: .949999988
+        value: .531000018
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .949999988
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 1
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.316000015
+        inSlope: .13500005
+        outSlope: .13500005
+        tangentMode: 10
+      - time: .400000006
+        value: -.261999995
+        inSlope: -.010800004
+        outSlope: -.129600048
+        tangentMode: 17
+      - time: .816666663
+        value: -.316000015
+        inSlope: -.064800024
+        outSlope: -.064800024
+        tangentMode: 10
+      - time: .949999988
+        value: -.316000015
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .381999999
+        inSlope: -.132500008
+        outSlope: -.132500008
+        tangentMode: 10
+      - time: .400000006
+        value: .328999996
+        inSlope: .0106000006
+        outSlope: .127200007
+        tangentMode: 17
+      - time: .816666663
+        value: .381999999
+        inSlope: .0636000037
+        outSlope: .0636000037
+        tangentMode: 10
+      - time: .949999988
+        value: .381999999
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .949999988
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.425000012
+        inSlope: .247500017
+        outSlope: .247500017
+        tangentMode: 10
+      - time: .400000006
+        value: -.326000005
+        inSlope: -.0197999924
+        outSlope: -.237600029
+        tangentMode: 17
+      - time: .816666663
+        value: -.425000012
+        inSlope: -.118800014
+        outSlope: -.118800014
+        tangentMode: 10
+      - time: .949999988
+        value: -.425000012
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 6
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .219999999
+        inSlope: -.102499984
+        outSlope: -.102499984
+        tangentMode: 10
+      - time: .400000006
+        value: .179000005
+        inSlope: .00819999725
+        outSlope: .0983999893
+        tangentMode: 17
+      - time: .816666663
+        value: .219999999
+        inSlope: .0491999947
+        outSlope: .0491999947
+        tangentMode: 10
+      - time: .949999988
+        value: .219999999
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 6
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .400000006
+        value: 0
+        inSlope: 0
+        outSlope: -0
+        tangentMode: 17
+      - time: .816666663
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .949999988
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: enimies-01_48/enimies-01_47/Projectile For Weired ass Enemy 6
+    classID: 4
+    script: {fileID: 0}
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
+  m_Events: []
