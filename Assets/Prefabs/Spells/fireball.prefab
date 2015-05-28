@@ -15,9 +15,9 @@ GameObject:
   - 96: {fileID: 9694364}
   - 114: {fileID: 11498878}
   - 58: {fileID: 5815910}
-  - 60: {fileID: 6016302}
   - 114: {fileID: 11425322}
   - 114: {fileID: 11424042}
+  - 60: {fileID: 6063914}
   m_Layer: 9
   m_Name: fireball
   m_TagString: Untagged
@@ -32,8 +32,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117244}
   m_LocalRotation: {x: 0, y: 0, z: .606845558, w: .794819772}
-  m_LocalPosition: {x: -181.600006, y: 49.5999985, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -625.599976, y: 131.570007, z: 0}
+  m_LocalScale: {x: 2.1660254, y: 2.16602588, z: 2.16602588}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -64,7 +64,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .693786561
+  m_Radius: .579784751
 --- !u!58 &5832748
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -78,7 +78,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 30.004303
---- !u!60 &6016302
+--- !u!60 &6063914
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

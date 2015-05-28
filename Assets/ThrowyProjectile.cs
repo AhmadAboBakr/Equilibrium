@@ -9,4 +9,6 @@ public class ThrowyProjectile : MonoBehaviour {
         //myRigidbody = this.GetComponent<Rigidbody2D>();
         //myRigidbody.AddForce(new Vector2(-1, 1) * 20, ForceMode2D.Impulse);
 	}
+
+
 }
