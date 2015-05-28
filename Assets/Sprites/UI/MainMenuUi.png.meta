@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 8c9ba7bd145931142aa825220cbe6d7a
-timeCreated: 1428681404
-licenseType: Free
+timeCreated: 1432820812
+licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
     21300000: MainMenuUi_0
@@ -65,17 +65,17 @@ TextureImporter:
         width: 4518
         height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainMenuUi_1
       rect:
         serializedVersion: 2
-        x: 342
-        y: 1065
-        width: 1217
-        height: 1210
+        x: 0
+        y: 745
+        width: 2043
+        height: 1640
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainMenuUi_2
       rect:
@@ -85,17 +85,17 @@ TextureImporter:
         width: 358
         height: 345
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainMenuUi_3
       rect:
         serializedVersion: 2
-        x: 4411
-        y: 1286
-        width: 299
-        height: 306
+        x: 4211
+        y: 1162
+        width: 856
+        height: 700
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainMenuUi_4
       rect:
@@ -105,7 +105,7 @@ TextureImporter:
         width: 365
         height: 319
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainMenuUi_5
       rect:
@@ -115,17 +115,17 @@ TextureImporter:
         width: 287
         height: 378
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainMenuUi_6
       rect:
         serializedVersion: 2
-        x: 3402
-        y: 101
-        width: 735
-        height: 729
+        x: 3118
+        y: 0
+        width: 1316
+        height: 1023
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainMenuUi_7
       rect:
@@ -135,7 +135,7 @@ TextureImporter:
         width: 488
         height: 430
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
