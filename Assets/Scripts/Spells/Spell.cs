@@ -12,7 +12,7 @@ public class Spell{
     public int cost;
     public spell[] spellUpgrades;
     public bool isUnlocked;
-    
+
     //void Start()
     //{
     //    string data = Bank.instance.saveFile.GetItem("Spell_" + this.name);

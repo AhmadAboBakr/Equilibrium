@@ -14,10 +14,7 @@ public class PlanetClass : MonoBehaviour {
 	    planetColliders= this.GetComponents<PolygonCollider2D>();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
     public void Dig(PolygonCollider2D collider, Vector3 position)
     {
         PlanetUtils.PrintArray(collider.points);
@@ -41,6 +38,8 @@ public class PlanetClass : MonoBehaviour {
         Triangulator3 tri = new Triangulator3(planetMesh.vertices);
         planetMesh.triangles = tri.Triangulate();
         points = PolygonTovec2Arr(result[0], DiggingResolutionScale);
+        for (int i = 0; i < 3; i++)
+            SmoothOuterContour();
         UpdateCollider();
 
     }
@@ -185,10 +184,17 @@ public class PlanetClass : MonoBehaviour {
             //UnityEngine.Debug.Log(planetColliders[i].points.Length);
         }
     }
+
+
+
+    private void SmoothOuterContour()
+    {
+        for (int i = 1; i < points.Length - 1; i++)
+        {
+            Vector2 leftMidPoint = (points[i - 1] + points[i]) / 2;
+            Vector2 rightMidPoint = (points[i] + points[i + 1]) / 2;
+            points[i] = (leftMidPoint + rightMidPoint) / 2;
+        }
+    }
+
 }
-//ArgumentOutOfRangeException: Argument is out of range.
-//Parameter name: index
-//System.Collections.Generic.List`1[System.Collections.Generic.List`1[UnityEngine.Vector2]].get_Item (Int32 index) (at /Users/builduser/buildslave/mono-runtime-and-classlibs/build/mcs/class/corlib/System.Collections.Generic/List.cs:633)
-//PlanetClass.UpdateCollider () (at Assets/Planet Destruction/Scripts/PlanetClass.cs:175)
-//PlanetClass.Dig (UnityEngine.PolygonCollider2D collider, Vector3 position) (at Assets/Planet Destruction/Scripts/PlanetClass.cs:44)
-//AOEprojectile.OnCollisionEnter2D (UnityEngine.Collision2D other) (at Assets/Scripts/Projectiles/AOEprojectile.cs:66)

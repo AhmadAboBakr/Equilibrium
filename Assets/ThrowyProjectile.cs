@@ -15,4 +15,6 @@ public class ThrowyProjectile : MonoBehaviour {
     {
 	
 	}
+
+
 }

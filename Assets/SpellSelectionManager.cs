@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class SpellSelectionManager : MonoBehaviour {
     public GameObject scaleFactor;
@@ -19,8 +20,8 @@ public class SpellSelectionManager : MonoBehaviour {
         spellCost = GameObject.FindGameObjectWithTag("UpgradeCost").GetComponent<Text>();
         spellButtons = GameObject.FindGameObjectsWithTag("Spell");
         spellUpgrades = transform.GetComponentsInChildren<SpellUpgrade>();
-        startScale = 0.03f;
-        endScale = 0.14f;
+        startScale = 0.05f;
+        endScale = 0.159f;
         maxDistance = 364;
         minDistance = 1;
 	}

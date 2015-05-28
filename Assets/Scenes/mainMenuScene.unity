@@ -1205,7 +1205,7 @@ RectTransform:
   m_GameObject: {fileID: 316930758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.74938297, y: 1.74938214, z: 1.74938214}
   m_Children:
   - {fileID: 1451609571}
   m_Father: {fileID: 1151804151}
@@ -1233,7 +1233,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1682415900}
-          m_MethodName: CreditsButton
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1272,10 +1272,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: .41911763, g: .41911763, b: .41911763, a: 1}
   m_Sprite: {fileID: 21300012, guid: 8c9ba7bd145931142aa825220cbe6d7a, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -2903,7 +2903,7 @@ RectTransform:
   m_GameObject: {fileID: 974644212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.73421478, y: 1.73421526, z: 1.73421526}
   m_Children:
   - {fileID: 1421190558}
   m_Father: {fileID: 2064008158}
@@ -2973,7 +2973,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300012, guid: 8c9ba7bd145931142aa825220cbe6d7a, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -4350,7 +4350,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Sprite: {fileID: 21300004, guid: 8c9ba7bd145931142aa825220cbe6d7a, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -4441,10 +4441,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: .827450991}
+  m_Color: {r: .529411793, g: .529411793, b: .529411793, a: .827450991}
   m_Sprite: {fileID: 21300010, guid: 8c9ba7bd145931142aa825220cbe6d7a, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
