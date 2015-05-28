@@ -37,7 +37,6 @@ public class GeneralPooling : MonoBehaviour
     }
     virtual public GameObject CreateObject(Vector3 position, Quaternion angle)
     {
-
         GameObject pooledObject;
         if (pooledObjects.Count > 0)
         {
