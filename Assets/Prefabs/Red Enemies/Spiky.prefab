@@ -73,6 +73,13 @@ GameObject:
   m_Component:
   - 4: {fileID: 461852}
   - 95: {fileID: 9570202}
+  - 114: {fileID: 11459402}
+  - 50: {fileID: 5058652}
+  - 114: {fileID: 11416758}
+  - 114: {fileID: 11491056}
+  - 58: {fileID: 5805514}
+  - 61: {fileID: 6184454}
+  - 114: {fileID: 11473640}
   m_Layer: 0
   m_Name: Spiky
   m_TagString: Untagged
@@ -136,7 +143,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -418.029999, y: 26.1599998, z: 0}
+  m_LocalPosition: {x: -416.190002, y: 28.1499996, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 418248}
@@ -202,6 +209,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 418248}
   m_RootOrder: 1
+--- !u!50 &5058652
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178468}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!58 &5805514
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178468}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: .0900000036}
+  serializedVersion: 2
+  m_Radius: .25
+--- !u!61 &6184454
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178468}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.530609131, y: .298174858}
+  serializedVersion: 2
+  m_Size: {x: .477358073, y: .750925303}
 --- !u!95 &9570202
 Animator:
   serializedVersion: 3
@@ -219,6 +267,83 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11416758
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c6e90d7d701cf9489779edf847bc478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11459402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 252409b72f6d2fd4293f4612df79e856, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grounded: 1
+  layer: 0
+  jumpForce: 10
+  maxSpeed: 5
+  moveForce: 0
+  movingRight: 0
+  MovingLeft: 0
+  needsToGoUp: 0
+  rayCaster: {fileID: 0}
+  counter: 0
+  myRigidBody: {fileID: 0}
+  upForce: 0
+  planet:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &11473640
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f22c92f761f9f148b5c08cc19ffd94d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  dead: 0
+  timeToDestroy: 2
+  myAnim: {fileID: 0}
+  myRigidbody: {fileID: 0}
+  myArtGrav: {fileID: 0}
+  pooler: {fileID: 0}
+--- !u!114 &11491056
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c5be9fcdcd85d42af6a0d37878d1d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooler: {fileID: 0}
+  ArrotVelocity: {x: 0, y: 0}
+  attacksEvery: 2
+  range: 35
+  checkRangeEvery: 1
+  isInRange: 1
+  timeToReachTarget: 1
+  projectile: {fileID: 180070, guid: 8850b9e76e94d814fb60c72ca6d4b506, type: 2}
+  launchingDevice: {fileID: 473506}
+  enemyAccuracy: 0
+  mySurfaceMovingObject: {fileID: 0}
 --- !u!212 &21201842
 SpriteRenderer:
   m_ObjectHideFlags: 1
