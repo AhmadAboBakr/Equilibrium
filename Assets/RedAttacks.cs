@@ -2,34 +2,70 @@
 using System.Collections;
 
 public class RedAttacks : MonoBehaviour {
-    public GameObject launchingDevice;
-    public float launchForce;
-    public GameObject projectilePrefab;
-    public bool isInRange;
-    public float checkRangeEvery;
-    public float range;
-    public float enemyAccuracy;
-    public float timeToReachTarget;
     public GeneralPooling pooler;
-    public Vector2 velocity;
-    public Animator myAnimator;
-	// Use this for initialization
-	void Start () 
+    public Vector2 ArrotVelocity;
+    public float attacksEvery = 2f;
+    public float range = 4f;
+    //Coroutine checks if player is in range every number of seconds so that check doesnt happen in update.
+    public float checkRangeEvery = .5f;
+    public bool isInRange = false;
+    //The ammount of time for the projectile to reach the player from the enemy.
+    public float timeToReachTarget = 2;
+    public GameObject projectile;
+    //Position of the object that will instantiate the projectile i.e. Bow, Hand, Cannon, etc...
+    public Transform launchingDevice;
+    //Random range around the player that the enemy will shoot towards 0 is very accurate the higher the number the less accurate the enemy.
+    public float enemyAccuracy;
+    bool firsttime = true;
+    public SurfaceMovingObject mySurfaceMovingObject;
+    Animator myanimator;
+    void Start()
     {
-        myAnimator = this.GetComponent<Animator>();
-	}
-	
-	// Update is called once per frame
-	void Update () 
+        pooler = GameObject.FindGameObjectWithTag("ArrowPool").GetComponent<GeneralPooling>();
+        mySurfaceMovingObject = this.GetComponent<SurfaceMovingObject>();
+        myanimator = GetComponent<Animator>();
+        firsttime = false;
+        OnEnable();
+    }
+    void OnEnable()
     {
-	    
-	}
-
-    public void ThrowyAttack()
+        if (!firsttime)
+        {
+            StartCoroutine("CheckForGaint");
+            StartCoroutine("attack");
+            StartCoroutine("Seek");
+        }
+    }
+    void OnDisable()
     {
-       GameObject prefab = Instantiate(projectilePrefab, launchingDevice.transform.position, Quaternion.identity) as GameObject;
+        StopAllCoroutines();
     }
 
+    public void shootGiant()
+    {
+        float x = (Player.player.transform.position.x - this.transform.position.x) + Random.Range(-enemyAccuracy, enemyAccuracy);
+        float y = (Player.player.transform.position.y - this.transform.position.y);
+        Debug.Log(x); ;
+        Debug.Log(y); ;
+
+        //float x = (Player.player.gameObject.GetComponent<CircleCollider2D>().radius*0.5f - this.transform.position.x) + Random.Range(-enemyAccuracy, enemyAccuracy);
+        //float y = (Player.player.gameObject.GetComponent<CircleCollider2D>().radius * 0.5f - this.transform.position.y);
+
+        Vector2 gravity = -((Vector2)this.transform.position).normalized * GameState.gravity;
+        float vx = x / timeToReachTarget - .5f * gravity.x * timeToReachTarget;
+        float vy = y / timeToReachTarget - .5f * gravity.y * timeToReachTarget;
+        Debug.Log(vx); ;
+        Debug.Log(vy); ;
+
+        var instance = pooler.CreateObject(launchingDevice.transform.position, Quaternion.identity) as GameObject;
+        ArrotVelocity.x = vx;
+        ArrotVelocity.y = vy;
+        instance.GetComponent<Rigidbody2D>().velocity = (new Vector2(vx, vy));
+    }
+
+    /*
+     * This function checks if the player is in range every checksRangeEvery:float seconds
+     */
     IEnumerator CheckForGaint()
     {
 
@@ -47,23 +83,35 @@ public class RedAttacks : MonoBehaviour {
             yield return new WaitForSeconds(checkRangeEvery);
         }
     }
-
-    public void shootGiant()
+    // This function attacks the player every attackevery:float seconds.
+    IEnumerator attack()
     {
+        while (true)
+        {
+            if (isInRange)
+            {
+                myanimator.SetTrigger("Attack");
+                mySurfaceMovingObject.StopMoving();
+            }
+            yield return new WaitForSeconds(attacksEvery);
+        }
+    }
+    IEnumerator Seek()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(0.08f);
+            if (isInRange)
+            {
+                this.transform.localScale = new Vector3(-PlanetMath.ShortestDirection(this.transform.position, Player.player.transform.position), 1, 1);
+                mySurfaceMovingObject.StopMoving();
+            }
+            else
+            {
+                mySurfaceMovingObject.Move(PlanetMath.ShortestDirection(this.transform.position, Player.player.transform.position));
+            }
 
-        float x = (Player.player.transform.position.x - this.transform.position.x) + Random.Range(-enemyAccuracy, enemyAccuracy);
-        float y = (Player.player.transform.position.y - this.transform.position.y);
-        //float x = (Player.player.gameObject.GetComponent<CircleCollider2D>().radius*0.5f - this.transform.position.x) + Random.Range(-enemyAccuracy, enemyAccuracy);
-        //float y = (Player.player.gameObject.GetComponent<CircleCollider2D>().radius * 0.5f - this.transform.position.y);
-
-        Vector2 gravity = -((Vector2)this.transform.position).normalized * GameState.gravity;
-        float vx = x / timeToReachTarget - .5f * gravity.x * timeToReachTarget;
-        float vy = y / timeToReachTarget - .5f * gravity.y * timeToReachTarget;
-        var instance = pooler.CreateObject(launchingDevice.transform.position, Quaternion.LookRotation(new Vector2(vx, vy))) as GameObject;
-        velocity.x = vx;
-        velocity.y = vy;
-        myAnimator.SetTrigger("Attack");
-        instance.GetComponent<Rigidbody2D>().velocity = (new Vector2(vx, vy));
+        }
     }
 
 }

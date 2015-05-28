@@ -6,14 +6,8 @@ public class ThrowyProjectile : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
     {
-        myRigidbody = this.GetComponent<Rigidbody2D>();
-        myRigidbody.AddForce(new Vector2(-1, 1) * 20, ForceMode2D.Impulse);
-	}
-	
-	// Update is called once per frame
-	void Update () 
-    {
-	
+        //myRigidbody = this.GetComponent<Rigidbody2D>();
+        //myRigidbody.AddForce(new Vector2(-1, 1) * 20, ForceMode2D.Impulse);
 	}
 
 
