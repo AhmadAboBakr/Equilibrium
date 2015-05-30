@@ -34,6 +34,7 @@ public class DestructibleEnemy : MonoBehaviour
         if (dead && GiantMeleeAttack.player.attackables.Contains(this.gameObject))
         {
             GiantMeleeAttack.player.attackables.Remove(this.gameObject);
+
         }
     }
 
