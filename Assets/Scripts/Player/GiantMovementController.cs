@@ -162,7 +162,6 @@ public class GiantMovementController : MonoBehaviour {
                 if (jumping)
                 {
                     Player.player.animator.SetTrigger("Landed");
-                    Debug.Log("Landed");
                 }
                 jumping = false;
                 grounded = true;
