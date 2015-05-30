@@ -104,6 +104,7 @@ public class SurfaceMovingObject : MonoBehaviour
      */
     public void Move(float force)
     {
+
         if (grounded)
         {
             //to make the object face the direction it's moving to

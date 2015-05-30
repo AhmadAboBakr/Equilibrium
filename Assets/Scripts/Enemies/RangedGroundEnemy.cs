@@ -21,7 +21,7 @@ public class RangedGroundEnemy : MonoBehaviour
     public SurfaceMovingObject mySurfaceMovingObject;
     Animator myanimator;
     void Start(){
-        pooler = GameObject.FindGameObjectWithTag("ArrowPool").GetComponent<GeneralPooling>();
+        //pooler = GameObject.FindGameObjectWithTag("ArrowPool").GetComponent<GeneralPooling>();
         mySurfaceMovingObject = this.GetComponent<SurfaceMovingObject>();
         myanimator = GetComponent<Animator>();
         firsttime = false;
