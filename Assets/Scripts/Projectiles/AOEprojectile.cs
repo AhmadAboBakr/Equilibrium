@@ -31,12 +31,18 @@ public class AOEprojectile : MonoBehaviour {
             //If the object is an enemy or rubble then it is added to the list ThrowableObjectsInTrigger:gameobject
             if (other.CompareTag("Enemy"))
             {
+
                 counter++;
                 other.GetComponent<Rigidbody2D>().AddForce((other.transform.position - this.transform.position).normalized * spellPower, ForceMode2D.Impulse);
                 other.GetComponent<DestructibleEnemy>().Health--;
+                
             }
+        if(other.CompareTag("Plane"))
+        {
+            other.GetComponent<PlaneScript>().Health -= damage;
+        }
 
-            Debug.Log(other.gameObject.name);
+
             StartCoroutine("DestroyAfterFinishing");
             //Destroy(gameObject);
     }
