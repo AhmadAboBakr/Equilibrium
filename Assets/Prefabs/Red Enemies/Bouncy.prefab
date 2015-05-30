@@ -144,7 +144,8 @@ GameObject:
   - 114: {fileID: 11478662}
   - 114: {fileID: 11493978}
   - 114: {fileID: 11400244}
-  m_Layer: 0
+  - 61: {fileID: 6102328}
+  m_Layer: 11
   m_Name: Bouncy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -507,7 +508,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 141552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -423.040009, y: 27.7099991, z: 0}
+  m_LocalPosition: {x: -51.5900116, y: 187.815353, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 497218}
@@ -555,7 +556,20 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -.769999981}
   serializedVersion: 2
-  m_Radius: .140000001
+  m_Radius: .576416016
+--- !u!61 &6102328
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141552}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 1.21058655}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.77412868}
 --- !u!61 &6162170
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -566,9 +580,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: -.649658203, y: -.149204254}
+  m_Offset: {x: -1.06570435, y: -.359863281}
   serializedVersion: 2
-  m_Size: {x: .793424129, y: 1.29840541}
+  m_Size: {x: .888200283, y: 1.7197541}
 --- !u!95 &9579296
 Animator:
   serializedVersion: 3

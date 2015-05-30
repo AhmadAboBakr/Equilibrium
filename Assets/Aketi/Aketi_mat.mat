@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Planet_1_mat
+  m_Name: Aketi_mat
   m_Shader: {fileID: 4800000, guid: 226f3fae1ce806e4aa9c67d0b401dc3b, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -32,14 +32,14 @@ Material:
         first:
           name: _MaskTex
         second:
-          m_Texture: {fileID: 2800000, guid: 0b44d8e3eb8c87b44a9d96dc3d68e558, type: 3}
+          m_Texture: {fileID: 2800000, guid: 3ea37600e611b324cb416fc051b3a13d, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: Radius
-        second: 191.102112
+        second: 194.586609
       data:
         first:
           name: CoreRadius
@@ -48,8 +48,8 @@ Material:
       data:
         first:
           name: _SkyColor
-        second: {r: .0711314008, g: .389705896, b: .0286548492, a: 1}
+        second: {r: .705882311, g: .2439446, b: .2439446, a: 1}
       data:
         first:
           name: _ShellColor
-        second: {r: .0957791433, g: .566176474, b: .0333044976, a: 1}
+        second: {r: .79411763, g: .309472322, b: .309472322, a: 1}

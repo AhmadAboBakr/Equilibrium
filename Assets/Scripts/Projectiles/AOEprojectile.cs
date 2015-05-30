@@ -7,29 +7,38 @@ public class AOEprojectile : MonoBehaviour {
     public float spellPower;
     private List<GameObject> ThrowableObjectsInTrigger;
     public float damage;
+    public float counter;
 
     void Start()
     {
+        counter = 0;
         ThrowableObjectsInTrigger = new List<GameObject>();
     }
 	
    
-
+   
     void OnTriggerEnter2D(Collider2D other)
     {
         
             //If the object in the trigger is a static object such as a tree or a building, then it only decreases its health
-            if (this.CompareTag("Tree") || this.CompareTag("Building"))
+            if (other.CompareTag("Building"))
             {
                 other.GetComponent<DestructableObject>().Health -= damage;
-                Debug.Log(other.gameObject.name);
+
+                counter++;
+                
             }
             //If the object is an enemy or rubble then it is added to the list ThrowableObjectsInTrigger:gameobject
-            if (other.CompareTag("Enemy") || other.CompareTag("Rubble"))
+            if (other.CompareTag("Enemy"))
             {
-                ThrowableObjectsInTrigger.Add(other.gameObject);
+                counter++;
+                other.GetComponent<Rigidbody2D>().AddForce((other.transform.position - this.transform.position).normalized * spellPower, ForceMode2D.Impulse);
+                other.GetComponent<DestructibleEnemy>().Health--;
             }
-        
+
+            Debug.Log(other.gameObject.name);
+            StartCoroutine("DestroyAfterFinishing");
+            //Destroy(gameObject);
     }
 
 
@@ -59,20 +68,25 @@ public class AOEprojectile : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D other)
     {
+        collided = true;
+        this.GetComponent<CircleCollider2D>().enabled = true;
+
         if (other.gameObject.tag == "Planet")
         {
-            collided = true;
+            
             PlanetClass planet = other.gameObject.GetComponent<PlanetClass>();
             planet.Dig(GetComponent<PolygonCollider2D>(), transform.position+Vector3.down);
-            
-        }
-        for (int i = 0; i < ThrowableObjectsInTrigger.Count; i++)
-        {
-            ThrowableObjectsInTrigger[i].GetComponent<SurfaceMovingObject>().grounded = false;
-            ThrowableObjectsInTrigger[i].GetComponent<Rigidbody2D>().AddForce((ThrowableObjectsInTrigger[i].transform.position - this.transform.position).normalized * 70, ForceMode2D.Impulse);
-
         }
 
-        Destroy(gameObject);
+
+        
+
+        
+    }
+
+    public IEnumerator DestroyAfterFinishing()
+    {
+        yield return new WaitForEndOfFrame();
+        Destroy(this.gameObject);
     }
 }

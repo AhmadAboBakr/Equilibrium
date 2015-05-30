@@ -43,8 +43,6 @@ public class RedAttacks : MonoBehaviour {
 
     public void shootGiant()
     {
-        Debug.Log("shooting");
-        Debug.Log(Player.player.transform.position);
         float x = (Player.player.transform.position.x - this.transform.position.x) + Random.Range(-enemyAccuracy, enemyAccuracy);
         float y = (Player.player.transform.position.y - this.transform.position.y);
 

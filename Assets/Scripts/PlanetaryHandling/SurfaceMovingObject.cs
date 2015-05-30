@@ -130,7 +130,7 @@ public class SurfaceMovingObject : MonoBehaviour
                 this.transform.localScale = new Vector3(-1, 1, 1);
             }
             this.myRigidBody.velocity = Vector3.zero;
-            this.myRigidBody.AddForce(this.transform.right * force * 10, ForceMode2D.Impulse);
+            this.myRigidBody.AddForce(this.transform.right * force * moveForce, ForceMode2D.Impulse);
             this.myRigidBody.velocity = truncate(this.myRigidBody.velocity);
 
             //This is needed to stop the Object Momentum
@@ -180,10 +180,10 @@ public class SurfaceMovingObject : MonoBehaviour
         {
             grounded = false;
             counter--;
-            if (needsToGoUp)
-            {
-                needsToGoUp = false;
-            }
+            //if (needsToGoUp)
+            //{
+            //    needsToGoUp = false;
+            //}
         }
     }
     void OnTriggerStay2D(Collider2D other)

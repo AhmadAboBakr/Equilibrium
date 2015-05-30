@@ -80,7 +80,8 @@ GameObject:
   - 58: {fileID: 5805514}
   - 61: {fileID: 6184454}
   - 114: {fileID: 11473640}
-  m_Layer: 0
+  - 61: {fileID: 6189576}
+  m_Layer: 11
   m_Name: Spiky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +144,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -122.807869, y: -175.302231, z: 0}
+  m_LocalPosition: {x: -46.0506096, y: 187.240814, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 418248}
@@ -236,7 +237,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: .0900000036}
   serializedVersion: 2
-  m_Radius: .25
+  m_Radius: .515304565
 --- !u!61 &6184454
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -247,9 +248,22 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -.530609131, y: .298174858}
+  m_Offset: {x: -.88873291, y: .693161011}
   serializedVersion: 2
-  m_Size: {x: .477358073, y: .750925303}
+  m_Size: {x: .603777409, y: 1.94121122}
+--- !u!61 &6189576
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178468}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 2.03489685}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.7963109}
 --- !u!95 &9570202
 Animator:
   serializedVersion: 3
