@@ -9,7 +9,10 @@ public class DestructableObject : MonoBehaviour {
     public float fadeRate = 0.1f;
     void Start()
     {
-
+        foreach (var component in this.transform.GetComponentsInChildren<DestructableComponent>())
+        {
+            component.SelfDestruct(this.transform);
+        }
     }
     void Update()
     {
@@ -33,35 +36,39 @@ public class DestructableObject : MonoBehaviour {
                 //Disable Box Collider of parent Object
                 this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 //only trees have animators so must disable their animator for the trees to fall 
-                if(this.gameObject.tag == "Tree")
-                    this.transform.GetChild(0).gameObject.GetComponent<Animator>().enabled = false;
-                for (int i = 0; i < transform.childCount; i++)
+                if (this.gameObject.tag == "Tree")
                 {
-                    while (this.transform.GetChild(i).childCount > 0)
-                    {
-                        this.transform.GetChild(i).GetChild(0).parent = this.transform;
-
-                    }
+                    this.transform.GetComponentInChildren<Animator>().enabled = false;
+                }
+                foreach(var component in this.transform.GetComponentsInChildren<DestructableComponent>()){
+                    component.SelfDestruct(this.transform);
                 }
 
-                for (int i = 0; i < transform.childCount; i++)
-                {
-                    //Add Rigid body to all rubble objects and enable their disabled box colliders and add Gravity so they fall
-                    transform.GetChild(i).gameObject.AddComponent<Rigidbody2D>();
-                    transform.GetChild(i).gameObject.GetComponent<BoxCollider2D>().enabled = true;
-                    
-                    transform.GetChild(i).gameObject.AddComponent<ArtifitialGravity>();
-                    //Add force to rubble objects 
-                    transform.GetChild(i).gameObject.GetComponent<Rigidbody2D>().AddForce((transform.GetChild(i).position - Player.player.transform.position) * 40);
-                    
+                //for (int i = 0; i < transform.childCount; i++)
+                //{
+                //    while (this.transform.GetChild(i).childCount > 0)
+                //    {
+                //        this.transform.GetChild(i).GetChild(0).parent = this.transform;
 
-                }
-                //Remove the gameobject from the attackables list they enter ontriggerenter with the player
-                //(GameObject.FindGameObjectWithTag("Player") as GameObject).GetComponent<GiantMeleeAttack>().RemoveSelfFromAttackableList(this.gameObject);
-                //GiantMeleeAttack.player.RemoveSelfFromAttackableList(this.gameObject);
-                //GiantMeleeAttack.player.attackables.Remove(this.gameObject);
-                //Destroy rubble after time
-                StartCoroutine("DestroyAfterTime");
+                //    }
+                //}
+
+                //for (int i = 0; i < transform.childCount; i++)
+                //{
+                //    //Add Rigid body to all rubble objects and enable their disabled box colliders and add Gravity so they fall
+                //    transform.GetChild(i).gameObject.AddComponent<Rigidbody2D>();
+                //    transform.GetChild(i).gameObject.GetComponent<BoxCollider2D>().enabled = true;
+                    
+                //    transform.GetChild(i).gameObject.AddComponent<ArtifitialGravity>();
+                //    //Add force to rubble objects 
+                //    transform.GetChild(i).gameObject.GetComponent<Rigidbody2D>().AddForce((transform.GetChild(i).position - Player.player.transform.position) * 40);
+                //}
+                ////Remove the gameobject from the attackables list they enter ontriggerenter with the player
+                ////(GameObject.FindGameObjectWithTag("Player") as GameObject).GetComponent<GiantMeleeAttack>().RemoveSelfFromAttackableList(this.gameObject);
+                ////GiantMeleeAttack.player.RemoveSelfFromAttackableList(this.gameObject);
+                ////GiantMeleeAttack.player.attackables.Remove(this.gameObject);
+                ////Destroy rubble after time
+                //StartCoroutine("DestroyAfterTime");
             }
 
         }

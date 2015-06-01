@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a8ceae53db70f0346a5db7daa2c99ab2
-timeCreated: 1432994598
+timeCreated: 1433160586
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -99,7 +99,7 @@ TextureImporter:
         width: 120
         height: 228
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_1
       rect:
@@ -109,17 +109,17 @@ TextureImporter:
         width: 208
         height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_4
       rect:
         serializedVersion: 2
         x: 1010
-        y: 1826
+        y: 1820
         width: 212
-        height: 138
+        height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_5
       rect:
@@ -129,7 +129,7 @@ TextureImporter:
         width: 354
         height: 146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_6
       rect:
@@ -139,7 +139,7 @@ TextureImporter:
         width: 9
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_7
       rect:
@@ -149,7 +149,7 @@ TextureImporter:
         width: 4
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_8
       rect:
@@ -159,7 +159,7 @@ TextureImporter:
         width: 5
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_9
       rect:
@@ -169,7 +169,7 @@ TextureImporter:
         width: 17
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_10
       rect:
@@ -179,7 +179,7 @@ TextureImporter:
         width: 96
         height: 198
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_12
       rect:
@@ -199,7 +199,7 @@ TextureImporter:
         width: 126
         height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_14
       rect:
@@ -209,7 +209,7 @@ TextureImporter:
         width: 348
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_15
       rect:
@@ -219,7 +219,7 @@ TextureImporter:
         width: 245
         height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_18
       rect:
@@ -229,7 +229,7 @@ TextureImporter:
         width: 90
         height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_19
       rect:
@@ -239,7 +239,7 @@ TextureImporter:
         width: 122
         height: 98
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_22
       rect:
@@ -249,7 +249,7 @@ TextureImporter:
         width: 314
         height: 357
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_24
       rect:
@@ -259,7 +259,7 @@ TextureImporter:
         width: 108
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_25
       rect:
@@ -269,7 +269,7 @@ TextureImporter:
         width: 110
         height: 237
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_26
       rect:
@@ -279,7 +279,7 @@ TextureImporter:
         width: 211
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_27
       rect:
@@ -289,7 +289,7 @@ TextureImporter:
         width: 124
         height: 182
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_28
       rect:
@@ -299,7 +299,7 @@ TextureImporter:
         width: 66
         height: 83
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_29
       rect:
@@ -309,7 +309,7 @@ TextureImporter:
         width: 68
         height: 94
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_30
       rect:
@@ -319,7 +319,7 @@ TextureImporter:
         width: 168
         height: 216
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_31
       rect:
@@ -329,7 +329,7 @@ TextureImporter:
         width: 284
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_32
       rect:
@@ -339,7 +339,7 @@ TextureImporter:
         width: 147
         height: 124
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_33
       rect:
@@ -349,7 +349,7 @@ TextureImporter:
         width: 286
         height: 352
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_34
       rect:
@@ -359,7 +359,7 @@ TextureImporter:
         width: 133
         height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_36
       rect:
@@ -369,7 +369,7 @@ TextureImporter:
         width: 132
         height: 118
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_37
       rect:
@@ -379,7 +379,7 @@ TextureImporter:
         width: 116
         height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_38
       rect:
@@ -389,7 +389,7 @@ TextureImporter:
         width: 262
         height: 98
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_42
       rect:
@@ -399,7 +399,7 @@ TextureImporter:
         width: 290
         height: 280
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_43
       rect:
@@ -409,7 +409,7 @@ TextureImporter:
         width: 148
         height: 222
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_44
       rect:
@@ -419,7 +419,7 @@ TextureImporter:
         width: 176
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_45
       rect:
@@ -439,7 +439,7 @@ TextureImporter:
         width: 294
         height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_49
       rect:
@@ -449,7 +449,7 @@ TextureImporter:
         width: 99
         height: 190
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_50
       rect:
@@ -459,7 +459,7 @@ TextureImporter:
         width: 152
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 3_51
       rect:
