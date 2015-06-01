@@ -61,6 +61,7 @@ GameObject:
   - 4: {fileID: 446572}
   - 61: {fileID: 6144448}
   - 114: {fileID: 11415358}
+  - 114: {fileID: 11476190}
   m_Layer: 15
   m_Name: Medium Castle
   m_TagString: Building
@@ -385,8 +386,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 109594}
-  m_LocalRotation: {x: 0, y: 0, z: -.153696179, w: .988118172}
-  m_LocalPosition: {x: 66.6999969, y: 182.199997, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: .863389671, w: .504537821}
+  m_LocalPosition: {x: -171.399994, y: -84.0999985, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 473778}
@@ -785,9 +786,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45a78643f537e354e8fae72dd0f72a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 7
   dead: 0
   isInGiantMeleeList: 0
-  timeToDestroy: 3
+  timeToStartFade: 4
+  fadeRate: .100000001
+  debris: {fileID: 166518, guid: 460edfb6e0e551b44975033dae510708, type: 2}
+--- !u!114 &11476190
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109594}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2b131f76f8a2694f995a71d76fb9d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11490236
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -799,10 +814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ef81fab96c5c541a85e4345e4389ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 166750, guid: 658e559c8e8992d4bbd000894e63f907, type: 2}
-  - {fileID: 172956, guid: 5acb37a55b7e57f4ba4bab16d744106a, type: 2}
-  - {fileID: 178164, guid: 31476d09b024e9245923eeff9e4a47a5, type: 2}
+  pooler: {fileID: 0}
 --- !u!212 &21204738
 SpriteRenderer:
   m_ObjectHideFlags: 1

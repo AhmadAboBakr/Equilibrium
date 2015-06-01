@@ -7,6 +7,7 @@ public class DestructableObject : MonoBehaviour {
     public bool isInGiantMeleeList = false;
     public float timeToStartFade = 4;
     public float fadeRate = 0.1f;
+    public GameObject debris;
     void Start()
     {
 
@@ -25,7 +26,10 @@ public class DestructableObject : MonoBehaviour {
         get { return health; }
         set { 
             health = value;
-            
+            if(this.gameObject.CompareTag("Building"))
+            {
+                Instantiate(debris, this.transform.position, Quaternion.identity);
+            }
             //GetComponent<Animator>().SetTrigger("Hit");
             if (health <= 0 && !dead)
             {
@@ -40,7 +44,6 @@ public class DestructableObject : MonoBehaviour {
                     while (this.transform.GetChild(i).childCount > 0)
                     {
                         this.transform.GetChild(i).GetChild(0).parent = this.transform;
-
                     }
                 }
 

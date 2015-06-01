@@ -513,8 +513,8 @@ MonoBehaviour:
   grounded: 0
   layer: 0
   jumpForce: 10
-  maxSpeed: 10
-  moveForce: 10
+  maxSpeed: 15
+  moveForce: 15
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
@@ -543,6 +543,8 @@ MonoBehaviour:
   myRigidbody: {fileID: 0}
   myArtGrav: {fileID: 0}
   pooler: {fileID: 0}
+  animationCalled: 0
+  deathTimer: 0
 --- !u!212 &21216672
 SpriteRenderer:
   m_ObjectHideFlags: 1

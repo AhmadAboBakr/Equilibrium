@@ -464,7 +464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attacksEvery: 1.5
-  damage: .200000003
+  damage: .600000024
   GiantInAttackArea: 0
 --- !u!114 &11444110
 MonoBehaviour:
@@ -510,6 +510,8 @@ MonoBehaviour:
   myRigidbody: {fileID: 0}
   myArtGrav: {fileID: 0}
   pooler: {fileID: 0}
+  animationCalled: 0
+  deathTimer: 0
 --- !u!114 &11463678
 MonoBehaviour:
   m_ObjectHideFlags: 1
