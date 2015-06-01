@@ -9,9 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 427580}
   - 212: {fileID: 21299242}
-  m_Layer: 0
+  - 61: {fileID: 6190108}
+  m_Layer: 14
   m_Name: red planet TREES-01 (1)_20
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,9 +26,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 452370}
   - 212: {fileID: 21296128}
-  m_Layer: 0
+  - 61: {fileID: 6116882}
+  m_Layer: 14
   m_Name: red planet TREES-01 (1)_0
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,9 +43,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 494606}
   - 212: {fileID: 21229984}
-  m_Layer: 0
+  - 61: {fileID: 6154470}
+  m_Layer: 14
   m_Name: red planet TREES-01 (1)_0
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,9 +60,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 421890}
   - 212: {fileID: 21269650}
-  m_Layer: 0
+  - 61: {fileID: 6119816}
+  m_Layer: 14
   m_Name: red planet TREES-01 (1)_20
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,9 +78,10 @@ GameObject:
   - 4: {fileID: 439452}
   - 212: {fileID: 21218132}
   - 95: {fileID: 9510320}
-  m_Layer: 0
+  - 61: {fileID: 6172380}
+  m_Layer: 14
   m_Name: red planet TREES-01 (1)_54
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,9 +95,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 414890}
   - 212: {fileID: 21267308}
-  m_Layer: 0
+  - 61: {fileID: 6150674}
+  m_Layer: 14
   m_Name: red planet TREES-01 (1)_40
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,9 +112,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 403538}
   - 212: {fileID: 21237428}
-  m_Layer: 0
+  - 61: {fileID: 6192284}
+  m_Layer: 14
   m_Name: red planet TREES-01 (1)_43
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,9 +129,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 487952}
   - 212: {fileID: 21272210}
-  m_Layer: 0
+  - 61: {fileID: 6126958}
+  m_Layer: 14
   m_Name: red planet TREES-01 (1)_20
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,9 +146,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 447802}
   - 212: {fileID: 21210236}
-  m_Layer: 0
+  - 61: {fileID: 6186294}
+  m_Layer: 14
   m_Name: red planet TREES-01 (1)_41
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,9 +163,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 467036}
   - 212: {fileID: 21234362}
-  m_Layer: 0
+  - 61: {fileID: 6115840}
+  m_Layer: 14
   m_Name: red planet TREES-01 (1)_0
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,9 +180,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 484814}
   - 212: {fileID: 21298104}
-  m_Layer: 0
+  - 61: {fileID: 6195310}
+  m_Layer: 14
   m_Name: red planet TREES-01 (1)_0
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185,9 +196,11 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 448376}
-  m_Layer: 0
+  - 61: {fileID: 6198480}
+  - 114: {fileID: 11418210}
+  m_Layer: 13
   m_Name: Tree 2
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -201,9 +214,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 430834}
   - 212: {fileID: 21273612}
-  m_Layer: 0
+  - 61: {fileID: 6136176}
+  m_Layer: 14
   m_Name: red planet TREES-01 (1)_20
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -217,9 +231,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 486524}
   - 212: {fileID: 21218342}
-  m_Layer: 0
+  - 61: {fileID: 6197048}
+  m_Layer: 14
   m_Name: red planet TREES-01 (1)_42
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -324,9 +339,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178734}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -492.970001, y: 33.6500015, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: .256582022, w: .966522515}
+  m_LocalPosition: {x: -122.110001, y: 144.279999, z: 0}
+  m_LocalScale: {x: 2.23950148, y: 2.23950315, z: 2.23950315}
   m_Children:
   - {fileID: 439452}
   m_Father: {fileID: 0}
@@ -405,6 +420,188 @@ Transform:
   m_Children: []
   m_Father: {fileID: 487952}
   m_RootOrder: 0
+--- !u!61 &6115840
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162774}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.0696727857, y: .487731755}
+  serializedVersion: 2
+  m_Size: {x: 1.1700002, y: 1.63}
+--- !u!61 &6116882
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107440}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.0696689636, y: .487739444}
+  serializedVersion: 2
+  m_Size: {x: 1.1700002, y: 1.63000035}
+--- !u!61 &6119816
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 143420}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: .04355615, y: .505166233}
+  serializedVersion: 2
+  m_Size: {x: 1.75000024, y: 1.57000029}
+--- !u!61 &6126958
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153768}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: .043553289, y: .505158603}
+  serializedVersion: 2
+  m_Size: {x: 1.74999988, y: 1.57000017}
+--- !u!61 &6136176
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184256}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: .0435370803, y: .505166233}
+  serializedVersion: 2
+  m_Size: {x: 1.75, y: 1.57000017}
+--- !u!61 &6150674
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144544}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.0522540361, y: .304832637}
+  serializedVersion: 2
+  m_Size: {x: 1.66000032, y: .990000188}
+--- !u!61 &6154470
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120068}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.0696718022, y: .487747073}
+  serializedVersion: 2
+  m_Size: {x: 1.16999996, y: 1.63000023}
+--- !u!61 &6172380
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144136}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -2.86102295e-06, y: .505151093}
+  serializedVersion: 2
+  m_Size: {x: .560000002, y: 1.43000019}
+--- !u!61 &6186294
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159014}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.0522587858, y: .304836482}
+  serializedVersion: 2
+  m_Size: {x: 1.65999997, y: .990000248}
+--- !u!61 &6190108
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102850}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: .0435523279, y: .505150914}
+  serializedVersion: 2
+  m_Size: {x: 1.75000024, y: 1.56999993}
+--- !u!61 &6192284
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148258}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.0522540323, y: .304840297}
+  serializedVersion: 2
+  m_Size: {x: 1.66000032, y: .990000367}
+--- !u!61 &6195310
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172080}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.0696842074, y: .487747073}
+  serializedVersion: 2
+  m_Size: {x: 1.17000008, y: 1.63000023}
+--- !u!61 &6197048
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 198616}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.0522654653, y: .304844111}
+  serializedVersion: 2
+  m_Size: {x: 1.66000009, y: .990000308}
+--- !u!61 &6198480
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178734}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: .0117129507, y: 1.15893376}
+  serializedVersion: 2
+  m_Size: {x: .408221483, y: 2.68841028}
 --- !u!95 &9510320
 Animator:
   serializedVersion: 3
@@ -422,6 +619,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11418210
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a78643f537e354e8fae72dd0f72a5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  dead: 0
+  isInGiantMeleeList: 0
+  timeToStartFade: 4
+  fadeRate: .100000001
 --- !u!212 &21210236
 SpriteRenderer:
   m_ObjectHideFlags: 1
