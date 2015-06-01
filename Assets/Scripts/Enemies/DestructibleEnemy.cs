@@ -10,6 +10,8 @@ public class DestructibleEnemy : MonoBehaviour
     public Rigidbody2D myRigidbody;
     public ArtifitialGravity myArtGrav;
     public GeneralPooling pooler;
+    public bool animationCalled;
+    public float deathTimer;
     
     // Use this for initialization
     void OnEnable()
@@ -22,6 +24,7 @@ public class DestructibleEnemy : MonoBehaviour
     }
     void Start()
     {
+        deathTimer = 0;
         myAnim = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
         myArtGrav = GetComponent<ArtifitialGravity>();
@@ -34,7 +37,20 @@ public class DestructibleEnemy : MonoBehaviour
         if (dead && GiantMeleeAttack.player.attackables.Contains(this.gameObject))
         {
             GiantMeleeAttack.player.attackables.Remove(this.gameObject);
+            myAnim.SetTrigger("die");
 
+        }
+        if(health <= 0 && animationCalled == false)
+        {
+            dead = true;
+        }
+        if(dead)
+        {
+            deathTimer += Time.deltaTime;
+        }
+        if(deathTimer > 0.8f)
+        {
+            pooler.ReturnObjectToPool(this.gameObject);
         }
     }
 

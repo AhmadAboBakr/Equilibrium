@@ -495,8 +495,8 @@ MonoBehaviour:
   grounded: 0
   layer: 0
   jumpForce: 10
-  maxSpeed: 5
-  moveForce: 0
+  maxSpeed: 10
+  moveForce: 10
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
@@ -519,7 +519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attacksEvery: 1.5
-  damage: 0
+  damage: .200000003
   GiantInAttackArea: 0
 --- !u!212 &21217980
 SpriteRenderer:

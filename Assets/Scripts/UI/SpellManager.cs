@@ -84,6 +84,8 @@ public class SpellManager : MonoBehaviour {
                 {
                     allSpells[2].currentCooldown = allSpells[2].totalCooldown;
                     currentlyEnabledSpell = GameObject.Instantiate(allSpells[2].spellPrefab, playerPos, Quaternion.identity) as GameObject;
+                    currentlyEnabledSpell.GetComponent<Rigidbody2D>().velocity = Player.player.transform.parent.GetComponent<Rigidbody2D>().velocity;
+                    Debug.Log(Player.player.transform.parent.GetComponent<Rigidbody2D>().velocity);
                     currentlyEnabledSpell.GetComponent<Rigidbody2D>().AddForce((mousePosition - playerPos).normalized*40 ,ForceMode2D.Impulse);
                     Player.player.Mana -= allSpells[2].manaCost;
                 }

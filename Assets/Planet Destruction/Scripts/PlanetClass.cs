@@ -38,8 +38,8 @@ public class PlanetClass : MonoBehaviour {
         Triangulator3 tri = new Triangulator3(planetMesh.vertices);
         planetMesh.triangles = tri.Triangulate();
         points = PolygonTovec2Arr(result[0], DiggingResolutionScale);
-        for (int i = 0; i < 1; i++)
-            SmoothOuterContour();
+        //for (int i = 0; i < 1; i++)
+        //    SmoothOuterContour();
         UpdateCollider();
 
     }

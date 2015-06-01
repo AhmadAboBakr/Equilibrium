@@ -214,7 +214,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 130944}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -331.884247, y: 153.655243, z: 0}
+  m_LocalPosition: {x: -354.327637, y: 151.559555, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 402614}
@@ -357,7 +357,7 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: .109999999, y: 0}
+  m_Offset: {x: .109999999, y: .600000024}
   serializedVersion: 2
   m_Radius: .5
 --- !u!61 &6117818
@@ -383,7 +383,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: -1.69424438, y: .733444214}
+  m_Offset: {x: -1.69424438, y: 1.29999995}
   serializedVersion: 2
   m_Size: {x: 1.43924809, y: 2.01586008}
 --- !u!61 &6143986
@@ -493,7 +493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attacksEvery: 1.5
-  damage: .300000012
+  damage: .200000003
   GiantInAttackArea: 0
 --- !u!114 &11446024
 MonoBehaviour:
@@ -509,8 +509,8 @@ MonoBehaviour:
   grounded: 0
   layer: 0
   jumpForce: 10
-  maxSpeed: 5
-  moveForce: 0
+  maxSpeed: 10
+  moveForce: 10
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0

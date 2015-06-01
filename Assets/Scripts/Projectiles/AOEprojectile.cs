@@ -8,44 +8,46 @@ public class AOEprojectile : MonoBehaviour {
     private List<GameObject> ThrowableObjectsInTrigger;
     public float damage;
     public float counter;
+    public GameObject explosion;
 
     void Start()
     {
         counter = 0;
         ThrowableObjectsInTrigger = new List<GameObject>();
     }
+    
 	
    
    
-    void OnTriggerEnter2D(Collider2D other)
-    {
+    //void OnTriggerEnter2D(Collider2D other)
+    //{
         
-            //If the object in the trigger is a static object such as a tree or a building, then it only decreases its health
-            if (other.CompareTag("Building"))
-            {
-                other.GetComponent<DestructableObject>().Health -= damage;
+    //        //If the object in the trigger is a static object such as a tree or a building, then it only decreases its health
+    //        if (other.CompareTag("Building"))
+    //        {
+    //            other.GetComponent<DestructableObject>().Health -= damage;
 
-                counter++;
+    //            counter++;
                 
-            }
-            //If the object is an enemy or rubble then it is added to the list ThrowableObjectsInTrigger:gameobject
-            if (other.CompareTag("Enemy"))
-            {
+    //        }
+    //        //If the object is an enemy or rubble then it is added to the list ThrowableObjectsInTrigger:gameobject
+    //        if (other.CompareTag("Enemy"))
+    //        {
 
-                counter++;
-                other.GetComponent<Rigidbody2D>().AddForce((other.transform.position - this.transform.position).normalized * spellPower, ForceMode2D.Impulse);
-                other.GetComponent<DestructibleEnemy>().Health--;
+    //            counter++;
+    //            other.GetComponent<Rigidbody2D>().AddForce((other.transform.position - this.transform.position).normalized * spellPower, ForceMode2D.Impulse);
+    //            other.GetComponent<DestructibleEnemy>().Health--;
                 
-            }
-        if(other.CompareTag("Plane"))
-        {
-            other.GetComponent<PlaneScript>().Health -= damage;
-        }
+    //        }
+    //    if(other.CompareTag("Plane"))
+    //    {
+    //        other.GetComponent<PlaneScript>().Health -= damage;
+    //    }
 
 
-            StartCoroutine("DestroyAfterFinishing");
-            //Destroy(gameObject);
-    }
+    //        StartCoroutine("DestroyAfterFinishing");
+    //        //Destroy(gameObject);
+    //}
 
 
     //void OnTriggerExit2d(Collider2D other)
@@ -75,13 +77,14 @@ public class AOEprojectile : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D other)
     {
         collided = true;
-        this.GetComponent<CircleCollider2D>().enabled = true;
-
+        //this.GetComponent<CircleCollider2D>().enabled = true;
+        //this.transform.GetChild(1).GetComponent<CircleCollider2D>().enabled = true;
+        this.transform.GetComponentInChildren<BoxCollider2D>().enabled = true;
+        //Debug.Log(this.transform.GetComponentInChildren<CircleCollider2D>().name);
         if (other.gameObject.tag == "Planet")
         {
-            
             PlanetClass planet = other.gameObject.GetComponent<PlanetClass>();
-            planet.Dig(GetComponent<PolygonCollider2D>(), transform.position+Vector3.down);
+            planet.Dig(GetComponent<PolygonCollider2D>(), transform.position- this.transform.position.normalized);
         }
 
 
@@ -90,9 +93,14 @@ public class AOEprojectile : MonoBehaviour {
         
     }
 
-    public IEnumerator DestroyAfterFinishing()
+    //public IEnumerator DestroyAfterFinishing()
+    //{
+    //    yield return new WaitForEndOfFrame();
+    //    Destroy(this.gameObject);
+    //}
+
+    public void OnDestroy()
     {
-        yield return new WaitForEndOfFrame();
-        Destroy(this.gameObject);
+        Instantiate(explosion, this.transform.position, Quaternion.identity);
     }
 }

@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &107290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 489306}
+  - 114: {fileID: 11477152}
+  - 58: {fileID: 5854582}
+  - 61: {fileID: 6135992}
+  m_Layer: 9
+  m_Name: DamageMkr
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &150060
 GameObject:
   m_ObjectHideFlags: 1
@@ -27,12 +45,11 @@ GameObject:
   - 4: {fileID: 452444}
   - 50: {fileID: 5021954}
   - 114: {fileID: 11413022}
-  - 58: {fileID: 5884732}
   - 114: {fileID: 11481600}
-  - 61: {fileID: 6127570}
   - 60: {fileID: 6069508}
   - 114: {fileID: 11429338}
-  m_Layer: 9
+  - 58: {fileID: 5807612}
+  m_Layer: 22
   m_Name: BombaBoo
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -76,12 +93,25 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 187246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -104.713547, y: 192.963226, z: 0}
+  m_LocalPosition: {x: -427.320953, y: 149.523956, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 499470}
+  - {fileID: 489306}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!4 &489306
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 452444}
+  m_RootOrder: 1
 --- !u!4 &499470
 Transform:
   m_ObjectHideFlags: 1
@@ -110,12 +140,25 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!58 &5884732
+--- !u!58 &5807612
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 187246}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.10131836
+--- !u!58 &5854582
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107290}
   m_Enabled: 0
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -199,19 +242,19 @@ PolygonCollider2D:
       - {x: .0250000004, y: -2.90499997}
       - {x: .605000019, y: -2.875}
       - {x: .735000014, y: -2.85500002}
---- !u!61 &6127570
+--- !u!61 &6135992
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 187246}
-  m_Enabled: 1
+  m_GameObject: {fileID: 107290}
+  m_Enabled: 0
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: .211120605, y: .283913612}
+  m_Offset: {x: .0586547852, y: .935882568}
   serializedVersion: 2
-  m_Size: {x: 4.80880833, y: 4.4972477}
+  m_Size: {x: 38.5503769, y: 32.3508301}
 --- !u!114 &11413022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -250,6 +293,19 @@ MonoBehaviour:
   Title: 436172746f6f6e2046582034203a205370656369616c20536861646572
   HelpText: 5468697320656666656374207573657320436172746f6f6e20465820342773207370656369616c2073686164657220746f206d616b65206974206c6f6f6b206772656174206f76657220616e79206b696e64206f66206261636b67726f756e6420636f6c6f722c20696e636c7564696e67207665727920627269676874206261636b67726f756e647321
   MsgType: 1
+--- !u!114 &11477152
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a1933ed27d53f4da5b05b8dd1c1628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: 0
+  damage: 2
 --- !u!114 &11481600
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -263,6 +319,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellPower: 70
   damage: 2
+  counter: 0
+  explosion: {fileID: 171336, guid: 92c5b6bf82ba4344eaca3d4f3a1fdda1, type: 2}
 --- !u!198 &19825364
 ParticleSystem:
   m_ObjectHideFlags: 1
