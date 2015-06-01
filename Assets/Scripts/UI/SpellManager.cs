@@ -13,6 +13,7 @@ public class SpellManager : MonoBehaviour {
     spell currentSpell;
     public List<Spell> allSpells;
     GameObject currentlyEnabledSpell;
+    public GameObject giantHead;
 	// Use this for initialization
     void Awake()
     {
@@ -74,8 +75,8 @@ public class SpellManager : MonoBehaviour {
                 if (allSpells[1].currentCooldown==0 && Player.player.Mana>=allSpells[1].manaCost)
                 {
                     currentlyEnabledSpell = GameObject.Instantiate(allSpells[1].spellPrefab, playerPos, Quaternion.identity) as GameObject;
+                    
                     allSpells[1].currentCooldown = allSpells[1].totalCooldown;
-                    StartCoroutine("DestroySpell");
                     Player.player.Mana -= allSpells[1].manaCost;
                 }
                 break;
@@ -83,7 +84,9 @@ public class SpellManager : MonoBehaviour {
                 if (allSpells[2].currentCooldown == 0 && Player.player.Mana >= allSpells[2].manaCost)
                 {
                     allSpells[2].currentCooldown = allSpells[2].totalCooldown;
-                    currentlyEnabledSpell = GameObject.Instantiate(allSpells[2].spellPrefab, playerPos, Quaternion.identity) as GameObject;
+                    currentlyEnabledSpell = GameObject.Instantiate(allSpells[2].spellPrefab, giantHead.transform.position, Quaternion.identity) as GameObject;
+                    currentlyEnabledSpell.GetComponent<Rigidbody2D>().velocity = Player.player.transform.parent.GetComponent<Rigidbody2D>().velocity;
+
                     currentlyEnabledSpell.GetComponent<Rigidbody2D>().AddForce((mousePosition - playerPos).normalized*40 ,ForceMode2D.Impulse);
                     Player.player.Mana -= allSpells[2].manaCost;
                 }

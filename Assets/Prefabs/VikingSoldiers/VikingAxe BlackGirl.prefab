@@ -481,6 +481,8 @@ MonoBehaviour:
   myRigidbody: {fileID: 0}
   myArtGrav: {fileID: 0}
   pooler: {fileID: 0}
+  animationCalled: 0
+  deathTimer: 0
 --- !u!114 &11450824
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -495,8 +497,8 @@ MonoBehaviour:
   grounded: 0
   layer: 0
   jumpForce: 10
-  maxSpeed: 5
-  moveForce: 0
+  maxSpeed: 8
+  moveForce: 8
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
@@ -519,7 +521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attacksEvery: 1.5
-  damage: 0
+  damage: .300000012
   GiantInAttackArea: 0
 --- !u!212 &21217980
 SpriteRenderer:

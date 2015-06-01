@@ -504,7 +504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attacksEvery: 1.5
-  damage: .100000001
+  damage: .200000003
   GiantInAttackArea: 0
 --- !u!114 &11443836
 MonoBehaviour:
@@ -521,7 +521,7 @@ MonoBehaviour:
   layer: 0
   jumpForce: 10
   maxSpeed: 10
-  moveForce: 0
+  moveForce: 10
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
