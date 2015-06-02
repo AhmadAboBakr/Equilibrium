@@ -238,8 +238,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 198768}
-  m_LocalRotation: {x: 0, y: 0, z: -.631645679, w: .77525723}
-  m_LocalPosition: {x: 203.100006, y: 41.9000015, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: .581472516, w: .813566029}
+  m_LocalPosition: {x: -870.672485, y: 297.955963, z: 0}
   m_LocalScale: {x: .991576076, y: .991577387, z: .991577387}
   m_Children:
   - {fileID: 448656}
@@ -325,7 +325,7 @@ SpriteRenderer:
   m_SortingLayerID: -175126659
   m_SortingOrder: -436
   m_Sprite: {fileID: 21300006, guid: f3368a81c72ecd34ea0c93c34116936f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: .683823526, g: .683823526, b: .683823526, a: 1}
 --- !u!212 &21211468
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -351,7 +351,7 @@ SpriteRenderer:
   m_SortingLayerID: -175126659
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300006, guid: f3368a81c72ecd34ea0c93c34116936f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: .83088237, g: .83088237, b: .83088237, a: 1}
 --- !u!212 &21212110
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -377,7 +377,7 @@ SpriteRenderer:
   m_SortingLayerID: -175126659
   m_SortingOrder: -773
   m_Sprite: {fileID: 21300006, guid: f3368a81c72ecd34ea0c93c34116936f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: .867647052, g: .867647052, b: .867647052, a: 1}
 --- !u!212 &21218048
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -429,7 +429,7 @@ SpriteRenderer:
   m_SortingLayerID: -175126659
   m_SortingOrder: -443
   m_Sprite: {fileID: 21300006, guid: f3368a81c72ecd34ea0c93c34116936f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: .375, g: .375, b: .375, a: 1}
 --- !u!212 &21236946
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -507,7 +507,7 @@ SpriteRenderer:
   m_SortingLayerID: -175126659
   m_SortingOrder: 170
   m_Sprite: {fileID: 21300006, guid: f3368a81c72ecd34ea0c93c34116936f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: .852941155, g: .846669555, b: .846669555, a: 1}
 --- !u!212 &21299474
 SpriteRenderer:
   m_ObjectHideFlags: 1

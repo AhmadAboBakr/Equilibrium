@@ -250,8 +250,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106720}
-  m_LocalRotation: {x: 0, y: 0, z: .403250962, w: .915089428}
-  m_LocalPosition: {x: -141.199997, y: 129.100006, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: .643569291, w: .765387833}
+  m_LocalPosition: {x: -889.920654, y: 155.044266, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 429712}
@@ -325,7 +325,7 @@ SpriteRenderer:
   m_SortingLayerID: -1286225165
   m_SortingOrder: -42
   m_Sprite: {fileID: 21300004, guid: bd09df47ab5a92244b7e65d8c0bf8051, type: 3}
-  m_Color: {r: .661764741, g: .661764741, b: .661764741, a: 1}
+  m_Color: {r: .45588237, g: .45588237, b: .45588237, a: 1}
 --- !u!212 &21215720
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -351,7 +351,7 @@ SpriteRenderer:
   m_SortingLayerID: -1286225165
   m_SortingOrder: -145
   m_Sprite: {fileID: 21300004, guid: bd09df47ab5a92244b7e65d8c0bf8051, type: 3}
-  m_Color: {r: .5, g: .5, b: .5, a: 1}
+  m_Color: {r: .860294104, g: .860294104, b: .860294104, a: 1}
 --- !u!212 &21216840
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -403,7 +403,7 @@ SpriteRenderer:
   m_SortingLayerID: -1286225165
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300004, guid: bd09df47ab5a92244b7e65d8c0bf8051, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: .772058845, g: .772058845, b: .772058845, a: 1}
 --- !u!212 &21231674
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -507,7 +507,7 @@ SpriteRenderer:
   m_SortingLayerID: -1286225165
   m_SortingOrder: -60
   m_Sprite: {fileID: 21300004, guid: bd09df47ab5a92244b7e65d8c0bf8051, type: 3}
-  m_Color: {r: .558823526, g: .558823526, b: .558823526, a: 1}
+  m_Color: {r: .470588207, g: .470588207, b: .470588207, a: 1}
 --- !u!212 &21299342
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -533,7 +533,7 @@ SpriteRenderer:
   m_SortingLayerID: -1286225165
   m_SortingOrder: 105
   m_Sprite: {fileID: 21300004, guid: bd09df47ab5a92244b7e65d8c0bf8051, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: .823529422, g: .823529422, b: .823529422, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
