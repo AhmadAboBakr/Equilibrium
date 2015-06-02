@@ -8,6 +8,7 @@ public class MeleeGroundEnemy : MonoBehaviour
     public bool GiantInAttackArea = false;
     Animator myAnimator;
     SurfaceMovingObject mySurfaceMovingObject;
+    public AudioSource myAudioSource;
     bool firstSeek= true;
     
     void Start()
@@ -15,6 +16,7 @@ public class MeleeGroundEnemy : MonoBehaviour
         mySurfaceMovingObject=this.GetComponent<SurfaceMovingObject>();
         myAnimator = this.GetComponent<Animator>();
         firstSeek = false;
+        myAudioSource = this.GetComponent<AudioSource>();
         OnEnable();
     }
     void OnEnable()
@@ -80,6 +82,11 @@ public class MeleeGroundEnemy : MonoBehaviour
                 mySurfaceMovingObject.Move(PlanetMath.ShortestDirection(this.transform.position, Player.player.transform.position));
             }
         }
+    }
+
+    public void AttackSound()
+    {
+        myAudioSource.Play();
     }
 
 }

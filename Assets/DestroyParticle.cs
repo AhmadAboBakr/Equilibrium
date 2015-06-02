@@ -17,6 +17,7 @@ public class DestroyParticle : MonoBehaviour {
         if(timer>myParticle.startLifetime)
         {
             Destroy(this.gameObject);
+            
         }
 	}
 }

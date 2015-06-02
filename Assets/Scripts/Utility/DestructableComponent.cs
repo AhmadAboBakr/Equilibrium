@@ -24,7 +24,7 @@ public class DestructableComponent : MonoBehaviour {
         aGravity.enabled = true;
         collider.enabled = true;
         myRigidBody.isKinematic = false;
-        this.myRigidBody.AddForce((parent.position - this.transform.position).normalized*-8,ForceMode2D.Impulse);
+        this.myRigidBody.AddForce((parent.position - this.transform.position).normalized*-20,ForceMode2D.Impulse);
         this.transform.parent = null;
         StartCoroutine("DestroyAfterTime");
     }

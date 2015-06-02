@@ -7,12 +7,17 @@ public class DestructableObject : MonoBehaviour {
     public bool isInGiantMeleeList = false;
     public float timeToStartFade = 4;
     public float fadeRate = 0.1f;
+    public GameObject debris;
+    public AudioSource myAudioSource;
+
     void Start()
     {
-        foreach (var component in this.transform.GetComponentsInChildren<DestructableComponent>())
-        {
-            component.SelfDestruct(this.transform);
-        }
+        //foreach (var component in this.transform.GetComponentsInChildren<DestructableComponent>())
+        //{
+        //    component.SelfDestruct(this.transform);
+        //}
+        myAudioSource = this.GetComponent<AudioSource>();
+
     }
     void Update()
     {
@@ -28,7 +33,11 @@ public class DestructableObject : MonoBehaviour {
         get { return health; }
         set { 
             health = value;
-            
+            if (this.gameObject.CompareTag("Building"))
+            {
+                Instantiate(debris, this.transform.position, Quaternion.identity);
+                myAudioSource.Play();
+            }
             //GetComponent<Animator>().SetTrigger("Hit");
             if (health <= 0 && !dead)
             {

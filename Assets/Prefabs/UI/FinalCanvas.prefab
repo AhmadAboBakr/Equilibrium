@@ -2833,7 +2833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allSpells:
   - spellPrefab: {fileID: 194146, guid: b48395b8af428a64d85fd6e0b97dea24, type: 2}
-    manaCost: 0
+    manaCost: .5
     totalCooldown: 0
     currentCooldown: 0
     name: 
@@ -2842,21 +2842,21 @@ MonoBehaviour:
     spellUpgrades: 
     isUnlocked: 0
   - spellPrefab: {fileID: 120036, guid: fb01a93a380ef5e4f82a2e847be9dd69, type: 2}
-    manaCost: 0
+    manaCost: 7
     totalCooldown: 0
     currentCooldown: 0
     name: 
     description: 
-    cost: 0
+    cost: 7
     spellUpgrades: 
     isUnlocked: 0
   - spellPrefab: {fileID: 187246, guid: d1d81d67b33fb6e48b75e086200796ea, type: 2}
-    manaCost: 0
+    manaCost: 5
     totalCooldown: 0
     currentCooldown: 0
     name: 
     description: 
-    cost: 0
+    cost: 5
     spellUpgrades: 
     isUnlocked: 0
   giantHead: {fileID: 0}
@@ -3435,7 +3435,7 @@ RectTransform:
   m_RootOrder: 6
   m_AnchorMin: {x: .164166585, y: 0}
   m_AnchorMax: {x: .230000004, y: .102000006}
-  m_AnchoredPosition: {x: -.0999999046, y: -.300000191}
+  m_AnchoredPosition: {x: -.100000001, y: -22.7999992}
   m_SizeDelta: {x: 22, y: 23}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22431656

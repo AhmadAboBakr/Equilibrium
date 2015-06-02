@@ -153,6 +153,7 @@ GameObject:
   - 50: {fileID: 5076980}
   - 212: {fileID: 21249686}
   - 61: {fileID: 6145914}
+  - 82: {fileID: 8201230}
   m_Layer: 20
   m_Name: LargeDoubleEdgedAxeMan
   m_TagString: Enemy
@@ -464,6 +465,75 @@ BoxCollider2D:
   m_Offset: {x: -.223529905, y: -.281481504}
   serializedVersion: 2
   m_Size: {x: .857142866, y: .942857146}
+--- !u!82 &8201230
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178164}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e723c50f5743a694588d98f27d2daebd, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9586666
 Animator:
   serializedVersion: 3
@@ -506,6 +576,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .200000003
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!114 &11443836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -550,6 +621,8 @@ MonoBehaviour:
   myRigidbody: {fileID: 0}
   myArtGrav: {fileID: 0}
   pooler: {fileID: 0}
+  animationCalled: 0
+  deathTimer: 0
 --- !u!212 &21202118
 SpriteRenderer:
   m_ObjectHideFlags: 1

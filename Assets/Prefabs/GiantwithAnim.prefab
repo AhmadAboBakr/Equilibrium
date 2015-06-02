@@ -388,6 +388,7 @@ GameObject:
   - 81: {fileID: 8144742}
   - 114: {fileID: 11489346}
   - 82: {fileID: 8246484}
+  - 114: {fileID: 11463030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1254,7 +1255,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 27.0107059
+  orthographic size: 27
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1320,10 +1321,10 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161592}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 61e2c05c448eaef4cbc574e36f36ae3a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9f7587e31c9371140a3ebe60177591b9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1847,6 +1848,22 @@ MonoBehaviour:
   damagePerHit: 1
   attackForce: 0
   staminaPerHit: .100000001
+--- !u!114 &11463030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def8716c684fa5d48aafb957fb142795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startSize: 300
+  endSize: 27
+  myCamera: {fileID: 0}
+  start: 0
+  duration: 1.5
 --- !u!114 &11465024
 MonoBehaviour:
   m_ObjectHideFlags: 1

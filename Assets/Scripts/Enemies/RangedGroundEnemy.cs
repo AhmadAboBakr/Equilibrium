@@ -20,11 +20,15 @@ public class RangedGroundEnemy : MonoBehaviour
     bool firsttime = true;
     public SurfaceMovingObject mySurfaceMovingObject;
     Animator myanimator;
+    public AudioSource myAudioSource;
+
     void Start(){
         //pooler = GameObject.FindGameObjectWithTag("ArrowPool").GetComponent<GeneralPooling>();
         mySurfaceMovingObject = this.GetComponent<SurfaceMovingObject>();
         myanimator = GetComponent<Animator>();
         firsttime = false;
+        myAudioSource = this.GetComponent<AudioSource>();
+
         OnEnable();
     }
     void OnEnable()
@@ -107,5 +111,9 @@ public class RangedGroundEnemy : MonoBehaviour
             }
 
         }
+    }
+    public void AttackSound()
+    {
+        myAudioSource.Play();
     }
 }

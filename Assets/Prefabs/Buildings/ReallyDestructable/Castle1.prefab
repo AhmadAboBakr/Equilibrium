@@ -130,7 +130,7 @@ GameObject:
   - 4: {fileID: 472156}
   m_Layer: 14
   m_Name: border 8
-  m_TagString: Building
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -165,7 +165,7 @@ GameObject:
   - 4: {fileID: 465156}
   m_Layer: 14
   m_Name: tile 2
-  m_TagString: Building
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -521,7 +521,7 @@ GameObject:
   - 4: {fileID: 454790}
   m_Layer: 14
   m_Name: big crown 1
-  m_TagString: Building
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -578,6 +578,8 @@ GameObject:
   - 114: {fileID: 11477036}
   - 114: {fileID: 11402446}
   - 61: {fileID: 6134702}
+  - 114: {fileID: 11421544}
+  - 82: {fileID: 8241532}
   m_Layer: 15
   m_Name: Castle1
   m_TagString: Building
@@ -595,7 +597,7 @@ GameObject:
   - 4: {fileID: 437718}
   m_Layer: 14
   m_Name: Tower 1
-  m_TagString: Building
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -652,7 +654,7 @@ GameObject:
   - 114: {fileID: 11478596}
   m_Layer: 14
   m_Name: Window3
-  m_TagString: Building
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -728,7 +730,7 @@ GameObject:
   - 4: {fileID: 466462}
   m_Layer: 14
   m_Name: tile 1
-  m_TagString: Building
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -743,7 +745,7 @@ GameObject:
   - 4: {fileID: 451728}
   m_Layer: 14
   m_Name: crown 2
-  m_TagString: Building
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -798,7 +800,7 @@ GameObject:
   - 4: {fileID: 471462}
   m_Layer: 14
   m_Name: Tower2
-  m_TagString: Building
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -853,7 +855,7 @@ GameObject:
   - 4: {fileID: 497802}
   m_Layer: 14
   m_Name: tile 4
-  m_TagString: Building
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -868,7 +870,7 @@ GameObject:
   - 4: {fileID: 436854}
   m_Layer: 14
   m_Name: Tower
-  m_TagString: Building
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -904,7 +906,7 @@ GameObject:
   - 4: {fileID: 416164}
   m_Layer: 14
   m_Name: border 6
-  m_TagString: Building
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -999,7 +1001,7 @@ GameObject:
   - 4: {fileID: 444342}
   m_Layer: 14
   m_Name: border 4
-  m_TagString: Building
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1095,7 +1097,7 @@ GameObject:
   - 4: {fileID: 428466}
   m_Layer: 14
   m_Name: border 5
-  m_TagString: Building
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1151,7 +1153,7 @@ GameObject:
   - 114: {fileID: 11439122}
   m_Layer: 14
   m_Name: Window2
-  m_TagString: Building
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1186,7 +1188,7 @@ GameObject:
   - 4: {fileID: 475370}
   m_Layer: 14
   m_Name: border 7
-  m_TagString: Building
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1201,7 +1203,7 @@ GameObject:
   - 4: {fileID: 495880}
   m_Layer: 14
   m_Name: border 9
-  m_TagString: Building
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1259,7 +1261,7 @@ GameObject:
   - 114: {fileID: 11463508}
   m_Layer: 14
   m_Name: Door
-  m_TagString: Building
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1434,7 +1436,7 @@ GameObject:
   - 4: {fileID: 498542}
   m_Layer: 14
   m_Name: tile 3
-  m_TagString: Building
+  m_TagString: Rubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2228,8 +2230,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 130656}
-  m_LocalRotation: {x: 0, y: 0, z: -.106198452, w: .99434495}
-  m_LocalPosition: {x: 39.7999992, y: 184.199997, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: .75616616, w: .654379725}
+  m_LocalPosition: {x: -195.479996, y: -17.8999996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 482766}
@@ -3900,7 +3902,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 130656}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: -.221779764, y: 5.21742201}
   serializedVersion: 2
@@ -4464,6 +4466,75 @@ BoxCollider2D:
   m_Offset: {x: -.163571075, y: .354572773}
   serializedVersion: 2
   m_Size: {x: 1.83667839, y: .290868014}
+--- !u!82 &8241532
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130656}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4771b97387f531849b0a0c9f2ef220b5, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!114 &11401652
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4508,11 +4579,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45a78643f537e354e8fae72dd0f72a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 8
   dead: 0
   isInGiantMeleeList: 0
   timeToStartFade: 4
   fadeRate: .100000001
+  debris: {fileID: 166518, guid: 460edfb6e0e551b44975033dae510708, type: 2}
+  myAudioSource: {fileID: 0}
 --- !u!114 &11402614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4799,6 +4872,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c6e90d7d701cf9489779edf847bc478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11421544
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2ef81fab96c5c541a85e4345e4389ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooler: {fileID: 0}
 --- !u!114 &11422558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5652,7 +5737,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 130656}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2b131f76f8a2694f995a71d76fb9d4c, type: 3}
   m_Name: 
@@ -6090,7 +6175,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -171626193
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300010, guid: 40c56570f667f5e4cbd6f2bb5a481d92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6194,7 +6279,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -171626193
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300016, guid: 40c56570f667f5e4cbd6f2bb5a481d92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6376,7 +6461,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -171626193
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300006, guid: 40c56570f667f5e4cbd6f2bb5a481d92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6506,7 +6591,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -171626193
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300008, guid: 40c56570f667f5e4cbd6f2bb5a481d92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -7156,7 +7241,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -171626193
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300014, guid: 40c56570f667f5e4cbd6f2bb5a481d92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -7546,7 +7631,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -171626193
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 40c56570f667f5e4cbd6f2bb5a481d92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
