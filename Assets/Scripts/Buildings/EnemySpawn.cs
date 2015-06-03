@@ -10,7 +10,6 @@ public class EnemySpawn : MonoBehaviour {
     {
         pooler = GameObject.FindGameObjectWithTag("EnemyPool").GetComponent<GeneralPooling>();
         StartCoroutine("EnemySpawning");
-
 	}
     void Update()
     {

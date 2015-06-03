@@ -573,6 +573,7 @@ GameObject:
   - 212: {fileID: 12755963}
   - 61: {fileID: 12755962}
   - 82: {fileID: 12755961}
+  - 61: {fileID: 12755971}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -722,6 +723,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &12755965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -827,6 +829,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &12755971
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 12755959}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &13390855
 GameObject:
   m_ObjectHideFlags: 0
@@ -2135,6 +2150,7 @@ GameObject:
   - 114: {fileID: 95963945}
   - 61: {fileID: 95963944}
   - 82: {fileID: 95963943}
+  - 61: {fileID: 95963953}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -2299,6 +2315,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &95963948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2381,6 +2398,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &95963953
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 95963941}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &102741409
 GameObject:
   m_ObjectHideFlags: 0
@@ -5099,6 +5129,7 @@ GameObject:
   - 114: {fileID: 274810739}
   - 61: {fileID: 274810738}
   - 82: {fileID: 274810747}
+  - 61: {fileID: 274810748}
   m_Layer: 11
   m_Name: VikingAxe BlackGirl(Clone)
   m_TagString: Enemy
@@ -5194,6 +5225,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &274810742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5345,6 +5377,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &274810748
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 274810736}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &283965813
 GameObject:
   m_ObjectHideFlags: 0
@@ -5363,6 +5408,7 @@ GameObject:
   - 114: {fileID: 283965817}
   - 61: {fileID: 283965816}
   - 82: {fileID: 283965815}
+  - 61: {fileID: 283965825}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -5527,6 +5573,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &283965820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5609,6 +5656,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &283965825
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 283965813}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &284617973
 GameObject:
   m_ObjectHideFlags: 0
@@ -5763,6 +5823,7 @@ GameObject:
   - 114: {fileID: 314741636}
   - 61: {fileID: 314741635}
   - 82: {fileID: 314741634}
+  - 61: {fileID: 314741644}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -5927,6 +5988,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &314741639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6009,6 +6071,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &314741644
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 314741632}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &315711258
 GameObject:
   m_ObjectHideFlags: 0
@@ -7483,6 +7558,7 @@ GameObject:
   - 212: {fileID: 397500685}
   - 61: {fileID: 397500684}
   - 82: {fileID: 397500683}
+  - 61: {fileID: 397500693}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -7632,6 +7708,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &397500687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7737,6 +7814,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &397500693
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 397500681}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &402932886
 GameObject:
   m_ObjectHideFlags: 0
@@ -8593,6 +8683,7 @@ GameObject:
   - 212: {fileID: 427697520}
   - 61: {fileID: 427697519}
   - 82: {fileID: 427697518}
+  - 61: {fileID: 427697528}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -8742,6 +8833,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &427697522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8847,6 +8939,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &427697528
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 427697516}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &428715267
 GameObject:
   m_ObjectHideFlags: 0
@@ -9526,6 +9631,7 @@ GameObject:
   - 212: {fileID: 470374100}
   - 61: {fileID: 470374099}
   - 82: {fileID: 470374098}
+  - 61: {fileID: 470374108}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -9675,6 +9781,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &470374102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9780,6 +9887,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &470374108
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 470374096}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &473662592
 GameObject:
   m_ObjectHideFlags: 0
@@ -10326,6 +10446,7 @@ GameObject:
   - 212: {fileID: 500027976}
   - 61: {fileID: 500027975}
   - 82: {fileID: 500027974}
+  - 61: {fileID: 500027984}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -10475,6 +10596,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &500027978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10580,6 +10702,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &500027984
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 500027972}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &501769503
 GameObject:
   m_ObjectHideFlags: 0
@@ -11398,6 +11533,7 @@ GameObject:
   - 114: {fileID: 568956174}
   - 61: {fileID: 568956173}
   - 82: {fileID: 568956172}
+  - 61: {fileID: 568956182}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -11562,6 +11698,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &568956177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11644,6 +11781,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &568956182
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 568956170}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &574824884
 GameObject:
   m_ObjectHideFlags: 0
@@ -14521,6 +14671,7 @@ GameObject:
   - 114: {fileID: 636140028}
   - 61: {fileID: 636140027}
   - 82: {fileID: 636140026}
+  - 61: {fileID: 636140036}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -14685,6 +14836,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &636140031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14767,6 +14919,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &636140036
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636140024}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &636634023
 GameObject:
   m_ObjectHideFlags: 0
@@ -15702,6 +15867,7 @@ GameObject:
   - 212: {fileID: 691208379}
   - 61: {fileID: 691208378}
   - 82: {fileID: 691208377}
+  - 61: {fileID: 691208387}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -15851,6 +16017,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &691208381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15956,6 +16123,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &691208387
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 691208375}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &700452806
 GameObject:
   m_ObjectHideFlags: 0
@@ -16165,6 +16345,7 @@ GameObject:
   - 114: {fileID: 726286925}
   - 61: {fileID: 726286924}
   - 82: {fileID: 726286933}
+  - 61: {fileID: 726286934}
   m_Layer: 11
   m_Name: VikingAxe BlackGirl(Clone)
   m_TagString: Enemy
@@ -16260,6 +16441,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &726286928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16411,6 +16593,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &726286934
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 726286922}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &729600655
 GameObject:
   m_ObjectHideFlags: 0
@@ -16484,6 +16679,7 @@ GameObject:
   - 212: {fileID: 730260214}
   - 61: {fileID: 730260213}
   - 82: {fileID: 730260212}
+  - 61: {fileID: 730260222}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -16633,6 +16829,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &730260216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16738,6 +16935,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &730260222
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 730260210}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &739653940
 GameObject:
   m_ObjectHideFlags: 0
@@ -17755,6 +17965,7 @@ GameObject:
   - 114: {fileID: 802898945}
   - 61: {fileID: 802898944}
   - 82: {fileID: 802898953}
+  - 61: {fileID: 802898954}
   m_Layer: 11
   m_Name: VikingAxe BlackGirl(Clone)
   m_TagString: Enemy
@@ -17850,6 +18061,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &802898948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18001,6 +18213,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &802898954
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 802898942}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &803459528
 GameObject:
   m_ObjectHideFlags: 0
@@ -18408,6 +18633,7 @@ GameObject:
   - 114: {fileID: 815782863}
   - 61: {fileID: 815782862}
   - 82: {fileID: 815782871}
+  - 61: {fileID: 815782872}
   m_Layer: 11
   m_Name: VikingAxe BlackGirl(Clone)
   m_TagString: Enemy
@@ -18503,6 +18729,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &815782866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18654,6 +18881,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &815782872
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 815782860}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &815832071
 GameObject:
   m_ObjectHideFlags: 0
@@ -19135,6 +19375,7 @@ GameObject:
   - 114: {fileID: 839596509}
   - 61: {fileID: 839596508}
   - 82: {fileID: 839596517}
+  - 61: {fileID: 839596518}
   m_Layer: 11
   m_Name: VikingAxeGirl(Clone)
   m_TagString: Enemy
@@ -19230,6 +19471,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &839596512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19381,6 +19623,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &839596518
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 839596506}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &840286996
 GameObject:
   m_ObjectHideFlags: 0
@@ -20303,6 +20558,7 @@ GameObject:
   - 212: {fileID: 889725362}
   - 61: {fileID: 889725361}
   - 82: {fileID: 889725360}
+  - 61: {fileID: 889725370}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -20452,6 +20708,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &889725364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20557,6 +20814,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &889725370
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 889725358}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &890204315
 GameObject:
   m_ObjectHideFlags: 0
@@ -21405,6 +21675,7 @@ GameObject:
   - 212: {fileID: 959790884}
   - 61: {fileID: 959790883}
   - 82: {fileID: 959790882}
+  - 61: {fileID: 959790892}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -21554,6 +21825,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &959790886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21659,6 +21931,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &959790892
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 959790880}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &961691211
 GameObject:
   m_ObjectHideFlags: 0
@@ -24073,6 +24358,7 @@ GameObject:
   - 114: {fileID: 1096447966}
   - 61: {fileID: 1096447965}
   - 82: {fileID: 1096447964}
+  - 61: {fileID: 1096447974}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -24237,6 +24523,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1096447969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24319,6 +24606,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1096447974
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1096447962}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1104083902
 GameObject:
   m_ObjectHideFlags: 0
@@ -26362,6 +26662,7 @@ GameObject:
   - 114: {fileID: 1262848650}
   - 61: {fileID: 1262848649}
   - 82: {fileID: 1262848658}
+  - 61: {fileID: 1262848659}
   m_Layer: 11
   m_Name: VikingAxeGirl(Clone)
   m_TagString: Enemy
@@ -26457,6 +26758,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1262848653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26608,6 +26910,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1262848659
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1262848647}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1270943227
 GameObject:
   m_ObjectHideFlags: 0
@@ -27168,6 +27483,7 @@ GameObject:
   - 114: {fileID: 1306104978}
   - 61: {fileID: 1306104977}
   - 82: {fileID: 1306104986}
+  - 61: {fileID: 1306104987}
   m_Layer: 11
   m_Name: VikingAxeGirl(Clone)
   m_TagString: Enemy
@@ -27263,6 +27579,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1306104981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27414,6 +27731,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1306104987
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1306104975}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1309142677
 GameObject:
   m_ObjectHideFlags: 0
@@ -27500,6 +27830,7 @@ GameObject:
   - 114: {fileID: 1309845037}
   - 61: {fileID: 1309845036}
   - 82: {fileID: 1309845045}
+  - 61: {fileID: 1309845046}
   m_Layer: 11
   m_Name: VikingAxeGirl(Clone)
   m_TagString: Enemy
@@ -27595,6 +27926,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1309845040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27746,6 +28078,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1309845046
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1309845034}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1312259515
 GameObject:
   m_ObjectHideFlags: 0
@@ -29541,6 +29886,7 @@ GameObject:
   - 212: {fileID: 1453665564}
   - 61: {fileID: 1453665563}
   - 82: {fileID: 1453665562}
+  - 61: {fileID: 1453665572}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -29690,6 +30036,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1453665566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29795,6 +30142,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1453665572
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1453665560}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1458284364
 GameObject:
   m_ObjectHideFlags: 0
@@ -30660,6 +31020,7 @@ GameObject:
   - 212: {fileID: 1508474909}
   - 61: {fileID: 1508474908}
   - 82: {fileID: 1508474907}
+  - 61: {fileID: 1508474917}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -30809,6 +31170,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1508474911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30914,6 +31276,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1508474917
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1508474905}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1510102813
 GameObject:
   m_ObjectHideFlags: 0
@@ -31301,6 +31676,7 @@ GameObject:
   - 114: {fileID: 1570548334}
   - 61: {fileID: 1570548333}
   - 82: {fileID: 1570548342}
+  - 61: {fileID: 1570548343}
   m_Layer: 11
   m_Name: VikingAxeGirl(Clone)
   m_TagString: Enemy
@@ -31396,6 +31772,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1570548337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31547,6 +31924,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1570548343
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1570548331}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1570633550
 GameObject:
   m_ObjectHideFlags: 0
@@ -32541,6 +32931,7 @@ GameObject:
   - 114: {fileID: 1666130105}
   - 61: {fileID: 1666130104}
   - 82: {fileID: 1666130113}
+  - 61: {fileID: 1666130114}
   m_Layer: 11
   m_Name: VikingAxe BlackGirl(Clone)
   m_TagString: Enemy
@@ -32636,6 +33027,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1666130108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32787,6 +33179,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1666130114
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1666130102}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1670903775
 GameObject:
   m_ObjectHideFlags: 0
@@ -32805,6 +33210,7 @@ GameObject:
   - 212: {fileID: 1670903779}
   - 61: {fileID: 1670903778}
   - 82: {fileID: 1670903777}
+  - 61: {fileID: 1670903787}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -32954,6 +33360,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1670903781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33059,6 +33466,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1670903787
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1670903775}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1670998106
 GameObject:
   m_ObjectHideFlags: 0
@@ -33407,6 +33827,7 @@ GameObject:
   - 212: {fileID: 1695796821}
   - 61: {fileID: 1695796820}
   - 82: {fileID: 1695796819}
+  - 61: {fileID: 1695796829}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -33556,6 +33977,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1695796823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33661,6 +34083,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1695796829
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1695796817}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1697790442
 GameObject:
   m_ObjectHideFlags: 0
@@ -35655,6 +36090,7 @@ GameObject:
   - 114: {fileID: 1829759843}
   - 61: {fileID: 1829759842}
   - 82: {fileID: 1829759841}
+  - 61: {fileID: 1829759851}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -35819,6 +36255,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1829759846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35901,6 +36338,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1829759851
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1829759839}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1831895345
 GameObject:
   m_ObjectHideFlags: 0
@@ -36252,6 +36702,7 @@ GameObject:
   - 114: {fileID: 1843482976}
   - 61: {fileID: 1843482975}
   - 82: {fileID: 1843482984}
+  - 61: {fileID: 1843482985}
   m_Layer: 11
   m_Name: VikingAxe BlackGirl(Clone)
   m_TagString: Enemy
@@ -36347,6 +36798,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1843482979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36498,6 +36950,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1843482985
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1843482973}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1849213476
 GameObject:
   m_ObjectHideFlags: 0
@@ -36585,6 +37050,7 @@ GameObject:
   - 212: {fileID: 1853209628}
   - 61: {fileID: 1853209627}
   - 82: {fileID: 1853209626}
+  - 61: {fileID: 1853209636}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -36734,6 +37200,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1853209630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36839,6 +37306,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1853209636
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1853209624}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1854855648
 GameObject:
   m_ObjectHideFlags: 0
@@ -39035,6 +39515,7 @@ GameObject:
   - 114: {fileID: 1963303360}
   - 61: {fileID: 1963303359}
   - 82: {fileID: 1963303358}
+  - 61: {fileID: 1963303368}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -39199,6 +39680,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1963303363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39281,6 +39763,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1963303368
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1963303356}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1963790363
 GameObject:
   m_ObjectHideFlags: 0
@@ -40505,6 +41000,7 @@ GameObject:
   - 114: {fileID: 2022312183}
   - 61: {fileID: 2022312182}
   - 82: {fileID: 2022312191}
+  - 61: {fileID: 2022312192}
   m_Layer: 11
   m_Name: VikingAxe BlackGirl(Clone)
   m_TagString: Enemy
@@ -40600,6 +41096,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &2022312186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40751,6 +41248,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &2022312192
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2022312180}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &2022344538
 GameObject:
   m_ObjectHideFlags: 0
@@ -40824,6 +41334,7 @@ GameObject:
   - 114: {fileID: 2028792240}
   - 61: {fileID: 2028792239}
   - 82: {fileID: 2028792248}
+  - 61: {fileID: 2028792249}
   m_Layer: 11
   m_Name: VikingAxeGirl(Clone)
   m_TagString: Enemy
@@ -40919,6 +41430,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &2028792243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41070,6 +41582,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &2028792249
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2028792237}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &2030726477
 GameObject:
   m_ObjectHideFlags: 0
@@ -41311,6 +41836,7 @@ GameObject:
   - 212: {fileID: 2039640572}
   - 61: {fileID: 2039640571}
   - 82: {fileID: 2039640570}
+  - 61: {fileID: 2039640580}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -41460,6 +41986,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &2039640574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41565,6 +42092,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &2039640580
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2039640568}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &2047780611
 GameObject:
   m_ObjectHideFlags: 0
@@ -41746,6 +42286,7 @@ GameObject:
   - 114: {fileID: 2056414797}
   - 61: {fileID: 2056414796}
   - 82: {fileID: 2056414795}
+  - 61: {fileID: 2056414805}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -41910,6 +42451,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &2056414800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41992,6 +42534,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &2056414805
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2056414793}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &2060407069
 GameObject:
   m_ObjectHideFlags: 0
@@ -42461,6 +43016,7 @@ GameObject:
   - 114: {fileID: 2074713111}
   - 61: {fileID: 2074713110}
   - 82: {fileID: 2074713109}
+  - 61: {fileID: 2074713119}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -42625,6 +43181,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &2074713114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42707,6 +43264,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &2074713119
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2074713107}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &2075680097
 Prefab:
   m_ObjectHideFlags: 0
@@ -43755,6 +44325,7 @@ GameObject:
   - 114: {fileID: 2136145321}
   - 61: {fileID: 2136145320}
   - 82: {fileID: 2136145329}
+  - 61: {fileID: 2136145330}
   m_Layer: 11
   m_Name: VikingAxeGirl(Clone)
   m_TagString: Enemy
@@ -43850,6 +44421,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &2136145324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44001,6 +44573,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &2136145330
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136145318}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &2139707963
 Prefab:
   m_ObjectHideFlags: 0

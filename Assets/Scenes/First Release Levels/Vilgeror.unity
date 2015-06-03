@@ -965,6 +965,7 @@ GameObject:
   - 212: {fileID: 59668962}
   - 114: {fileID: 59668961}
   - 61: {fileID: 59668960}
+  - 61: {fileID: 59668969}
   m_Layer: 11
   m_Name: GiantVikingMan(Clone)
   m_TagString: Enemy
@@ -1060,6 +1061,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &59668964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1142,6 +1144,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &59668969
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 59668958}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &60721446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,7 +1505,7 @@ Transform:
   - {fileID: 1259343973}
   - {fileID: 25046135}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 23
 --- !u!1 &98707197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1576,6 +1591,7 @@ GameObject:
   - 114: {fileID: 101288732}
   - 212: {fileID: 101288731}
   - 61: {fileID: 101288730}
+  - 61: {fileID: 101288739}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -1656,6 +1672,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &101288733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1761,6 +1778,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &101288739
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 101288728}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!4 &103305125
 Transform:
   m_PrefabParentObject: {fileID: 426208, guid: 6d5807b6ad43e4e489ca93ec210ef9fb, type: 2}
@@ -2034,6 +2064,7 @@ GameObject:
   - 114: {fileID: 121146606}
   - 212: {fileID: 121146605}
   - 61: {fileID: 121146604}
+  - 61: {fileID: 121146613}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -2114,6 +2145,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &121146607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2219,6 +2251,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &121146613
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 121146602}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &121672783
 GameObject:
   m_ObjectHideFlags: 0
@@ -2236,6 +2281,7 @@ GameObject:
   - 212: {fileID: 121672787}
   - 114: {fileID: 121672786}
   - 61: {fileID: 121672785}
+  - 61: {fileID: 121672794}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -2331,6 +2377,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &121672789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2413,6 +2460,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &121672794
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 121672783}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &124181173
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,6 +3121,7 @@ GameObject:
   - 212: {fileID: 156818526}
   - 114: {fileID: 156818525}
   - 61: {fileID: 156818524}
+  - 61: {fileID: 156818533}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -3156,6 +3217,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &156818528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3238,6 +3300,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &156818533
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 156818522}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &158827600
 GameObject:
   m_ObjectHideFlags: 0
@@ -3531,7 +3606,7 @@ Transform:
   - {fileID: 726813482}
   - {fileID: 770157776}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 10
 --- !u!1001 &184703388
 Prefab:
   m_ObjectHideFlags: 0
@@ -3781,6 +3856,7 @@ GameObject:
   - 114: {fileID: 202702436}
   - 212: {fileID: 202702435}
   - 61: {fileID: 202702434}
+  - 61: {fileID: 202702443}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -3861,6 +3937,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &202702437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3966,6 +4043,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &202702443
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 202702432}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &203000117
 GameObject:
   m_ObjectHideFlags: 0
@@ -6040,6 +6130,7 @@ GameObject:
   - 212: {fileID: 278481125}
   - 114: {fileID: 278481124}
   - 61: {fileID: 278481123}
+  - 61: {fileID: 278481132}
   m_Layer: 11
   m_Name: VikingAxe BlackGirl(Clone)
   m_TagString: Enemy
@@ -6135,6 +6226,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &278481127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6217,6 +6309,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &278481132
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 278481121}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &278660641
 GameObject:
   m_ObjectHideFlags: 0
@@ -7139,7 +7244,7 @@ Transform:
   - {fileID: 1088035766}
   - {fileID: 772662926}
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 26
 --- !u!1001 &329440637
 Prefab:
   m_ObjectHideFlags: 0
@@ -8179,6 +8284,7 @@ GameObject:
   - 212: {fileID: 377143420}
   - 114: {fileID: 377143419}
   - 61: {fileID: 377143418}
+  - 61: {fileID: 377143427}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -8274,6 +8380,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &377143422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8356,6 +8463,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &377143427
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 377143416}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &378122943
 GameObject:
   m_ObjectHideFlags: 0
@@ -8954,7 +9074,7 @@ Transform:
   - {fileID: 1405528187}
   - {fileID: 1698968578}
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 27
 --- !u!114 &414724164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9371,7 +9491,7 @@ Transform:
   - {fileID: 1083669136}
   - {fileID: 847100038}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 15
 --- !u!1 &435835074
 GameObject:
   m_ObjectHideFlags: 0
@@ -9984,6 +10104,7 @@ GameObject:
   - 212: {fileID: 475453532}
   - 114: {fileID: 475453531}
   - 61: {fileID: 475453530}
+  - 61: {fileID: 475453539}
   m_Layer: 11
   m_Name: VikingAxe BlackGirl(Clone)
   m_TagString: Enemy
@@ -10079,6 +10200,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &475453534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10161,6 +10283,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &475453539
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 475453528}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &482104669
 GameObject:
   m_ObjectHideFlags: 0
@@ -10823,92 +10958,6 @@ SpriteRenderer:
   m_SortingOrder: -25
   m_Sprite: {fileID: 21300008, guid: f53fb7811aba6ba45bc042d98b85dd7c, type: 3}
   m_Color: {r: .33088237, g: .33088237, b: .33088237, a: 1}
---- !u!1001 &510497731
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 186.399994
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -71.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -.843715966
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: .536789954
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 169308, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_Name
-      value: castle4
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &510497732
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 169308, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-  m_PrefabInternal: {fileID: 510497731}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 510497734}
-  - 114: {fileID: 510497733}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &510497733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 510497732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2ef81fab96c5c541a85e4345e4389ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooler: {fileID: 633783426}
---- !u!4 &510497734
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 510497731}
-  m_GameObject: {fileID: 510497732}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1423668548}
-  m_RootOrder: 0
 --- !u!1 &511828230
 GameObject:
   m_ObjectHideFlags: 0
@@ -11352,6 +11401,7 @@ GameObject:
   - 212: {fileID: 518366597}
   - 114: {fileID: 518366596}
   - 61: {fileID: 518366595}
+  - 61: {fileID: 518366604}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -11447,6 +11497,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &518366599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11529,6 +11580,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &518366604
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 518366593}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &521360528
 GameObject:
   m_ObjectHideFlags: 0
@@ -11614,6 +11678,7 @@ GameObject:
   - 212: {fileID: 524916500}
   - 61: {fileID: 524916499}
   - 114: {fileID: 524916498}
+  - 61: {fileID: 524916507}
   m_Layer: 20
   m_Name: VikingHamerman1(Clone)
   m_TagString: Enemy
@@ -11709,6 +11774,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &524916502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11791,6 +11857,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &524916507
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 524916496}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &526936588
 GameObject:
   m_ObjectHideFlags: 0
@@ -12663,6 +12742,7 @@ GameObject:
   - 212: {fileID: 549072303}
   - 61: {fileID: 549072302}
   - 114: {fileID: 549072301}
+  - 61: {fileID: 549072310}
   m_Layer: 20
   m_Name: VikingHamerman1(Clone)
   m_TagString: Enemy
@@ -12758,6 +12838,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &549072305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12840,6 +12921,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &549072310
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 549072299}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &551508159
 Prefab:
   m_ObjectHideFlags: 0
@@ -13248,6 +13342,7 @@ GameObject:
   - 212: {fileID: 569053554}
   - 114: {fileID: 569053553}
   - 61: {fileID: 569053552}
+  - 61: {fileID: 569053561}
   m_Layer: 11
   m_Name: VikingAxe BlackGirl(Clone)
   m_TagString: Enemy
@@ -13343,6 +13438,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &569053556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13425,6 +13521,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &569053561
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 569053550}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &571789702
 GameObject:
   m_ObjectHideFlags: 0
@@ -13596,7 +13705,7 @@ Transform:
   - {fileID: 68596956}
   - {fileID: 2126041160}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 19
 --- !u!1 &580245929
 GameObject:
   m_ObjectHideFlags: 0
@@ -13738,52 +13847,6 @@ SpriteRenderer:
   m_SortingOrder: -25
   m_Sprite: {fileID: 21300036, guid: d09209296c8780e4988c3f3b90134ed0, type: 3}
   m_Color: {r: .33088237, g: .33088237, b: .33088237, a: 1}
---- !u!1001 &585643814
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -195.479996
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -17.8999996
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: .75616616
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: .654379725
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11421544, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: pooler
-      value: 
-      objectReference: {fileID: 633783426}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &587940729
 Prefab:
   m_ObjectHideFlags: 0
@@ -14432,6 +14495,7 @@ GameObject:
   - 212: {fileID: 612160549}
   - 114: {fileID: 612160548}
   - 61: {fileID: 612160547}
+  - 61: {fileID: 612160556}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -14527,6 +14591,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &612160551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14609,6 +14674,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &612160556
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 612160545}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &615348205
 GameObject:
   m_ObjectHideFlags: 0
@@ -14626,6 +14704,7 @@ GameObject:
   - 212: {fileID: 615348209}
   - 114: {fileID: 615348208}
   - 61: {fileID: 615348207}
+  - 61: {fileID: 615348216}
   m_Layer: 11
   m_Name: GiantVikingMan(Clone)
   m_TagString: Enemy
@@ -14721,6 +14800,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &615348211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14803,6 +14883,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &615348216
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 615348205}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &619087018
 GameObject:
   m_ObjectHideFlags: 0
@@ -15328,7 +15421,7 @@ Transform:
   - {fileID: 744314758}
   - {fileID: 121672784}
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 28
 --- !u!1 &635038032
 GameObject:
   m_ObjectHideFlags: 0
@@ -15416,6 +15509,7 @@ GameObject:
   - 114: {fileID: 635457730}
   - 212: {fileID: 635457729}
   - 61: {fileID: 635457728}
+  - 61: {fileID: 635457737}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -15496,6 +15590,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &635457731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15601,6 +15696,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &635457737
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 635457726}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &635724786
 GameObject:
   m_ObjectHideFlags: 0
@@ -15635,7 +15743,7 @@ Transform:
   - {fileID: 423156815}
   - {fileID: 995144501}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 14
 --- !u!1 &635750858
 GameObject:
   m_ObjectHideFlags: 0
@@ -18082,6 +18190,7 @@ GameObject:
   - 212: {fileID: 744314761}
   - 114: {fileID: 744314760}
   - 61: {fileID: 744314759}
+  - 61: {fileID: 744314768}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -18177,6 +18286,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &744314763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18259,6 +18369,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &744314768
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 744314757}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &748917355
 GameObject:
   m_ObjectHideFlags: 0
@@ -18429,7 +18552,7 @@ Transform:
   - {fileID: 203337039}
   - {fileID: 1446109719}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 16
 --- !u!1 &752869180
 GameObject:
   m_ObjectHideFlags: 0
@@ -20516,6 +20639,7 @@ GameObject:
   - 212: {fileID: 838368168}
   - 114: {fileID: 838368167}
   - 61: {fileID: 838368166}
+  - 61: {fileID: 838368175}
   m_Layer: 11
   m_Name: GiantVikingMan(Clone)
   m_TagString: Enemy
@@ -20611,6 +20735,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &838368170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20693,6 +20818,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &838368175
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 838368164}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &840137069
 GameObject:
   m_ObjectHideFlags: 0
@@ -20941,92 +21079,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 409824, guid: 825642b629969194aa9e0b8a7ddde6fa, type: 2}
   m_PrefabInternal: {fileID: 847100037}
---- !u!1001 &852538808
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 204.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -34.2999992
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -.843715966
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: .536789954
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 169308, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_Name
-      value: castle5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &852538809
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 169308, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-  m_PrefabInternal: {fileID: 852538808}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 852538811}
-  - 114: {fileID: 852538810}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &852538810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 852538809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2ef81fab96c5c541a85e4345e4389ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooler: {fileID: 633783426}
---- !u!4 &852538811
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 852538808}
-  m_GameObject: {fileID: 852538809}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1596439764}
-  m_RootOrder: 0
 --- !u!1001 &855909532
 Prefab:
   m_ObjectHideFlags: 0
@@ -22123,6 +22175,7 @@ GameObject:
   - 114: {fileID: 916497028}
   - 212: {fileID: 916497027}
   - 61: {fileID: 916497026}
+  - 61: {fileID: 916497035}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -22203,6 +22256,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &916497029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22308,6 +22362,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &916497035
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 916497024}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &917956862
 Prefab:
   m_ObjectHideFlags: 0
@@ -22677,7 +22744,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 25
 --- !u!95 &925863253
 Animator:
   serializedVersion: 3
@@ -23087,6 +23154,7 @@ GameObject:
   - 212: {fileID: 963274737}
   - 114: {fileID: 963274736}
   - 61: {fileID: 963274735}
+  - 61: {fileID: 963274744}
   m_Layer: 11
   m_Name: VikingAxe BlackGirl(Clone)
   m_TagString: Enemy
@@ -23182,6 +23250,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &963274739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23264,6 +23333,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &963274744
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 963274733}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &965668229
 GameObject:
   m_ObjectHideFlags: 0
@@ -23728,6 +23810,7 @@ GameObject:
   - 212: {fileID: 982653339}
   - 114: {fileID: 982653338}
   - 61: {fileID: 982653337}
+  - 61: {fileID: 982653346}
   m_Layer: 11
   m_Name: GiantVikingMan(Clone)
   m_TagString: Enemy
@@ -23823,6 +23906,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &982653341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23905,6 +23989,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &982653346
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 982653335}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &991894955
 GameObject:
   m_ObjectHideFlags: 0
@@ -23990,6 +24087,7 @@ GameObject:
   - 212: {fileID: 995029352}
   - 114: {fileID: 995029351}
   - 61: {fileID: 995029350}
+  - 61: {fileID: 995029359}
   m_Layer: 11
   m_Name: VikingAxe BlackGirl(Clone)
   m_TagString: Enemy
@@ -24085,6 +24183,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &995029354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24167,6 +24266,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &995029359
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 995029348}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &995144500
 Prefab:
   m_ObjectHideFlags: 0
@@ -24507,7 +24619,7 @@ Transform:
   - {fileID: 265731626}
   - {fileID: 1600617373}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
 --- !u!1 &1022026279
 GameObject:
   m_ObjectHideFlags: 0
@@ -25195,6 +25307,7 @@ GameObject:
   - 114: {fileID: 1049783599}
   - 212: {fileID: 1049783598}
   - 61: {fileID: 1049783597}
+  - 61: {fileID: 1049783606}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -25275,6 +25388,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1049783600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25380,6 +25494,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1049783606
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1049783595}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1052784392
 GameObject:
   m_ObjectHideFlags: 0
@@ -25759,6 +25886,7 @@ GameObject:
   - 212: {fileID: 1077485493}
   - 61: {fileID: 1077485492}
   - 114: {fileID: 1077485491}
+  - 61: {fileID: 1077485500}
   m_Layer: 20
   m_Name: VikingHamerman1(Clone)
   m_TagString: Enemy
@@ -25854,6 +25982,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1077485495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25936,6 +26065,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1077485500
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1077485489}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!4 &1079161320
 Transform:
   m_PrefabParentObject: {fileID: 408770, guid: d47070550ff65ef45a9f8cc97d1129a8, type: 2}
@@ -26807,7 +26949,7 @@ Transform:
   - {fileID: 241581303}
   - {fileID: 184703389}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 17
 --- !u!1 &1115467799
 GameObject:
   m_ObjectHideFlags: 0
@@ -27988,7 +28130,7 @@ Transform:
   m_LocalScale: {x: 11.7976198, y: 11.7976227, z: 11.7976227}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 22
 --- !u!1 &1174322659
 GameObject:
   m_ObjectHideFlags: 0
@@ -28432,7 +28574,7 @@ Transform:
   - {fileID: 1433694377}
   - {fileID: 1935279761}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 5
 --- !u!1 &1203971791
 GameObject:
   m_ObjectHideFlags: 0
@@ -28858,7 +29000,7 @@ Transform:
   - {fileID: 2120553213}
   - {fileID: 979247381}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 24
 --- !u!1001 &1219024112
 Prefab:
   m_ObjectHideFlags: 0
@@ -29113,7 +29255,7 @@ Transform:
   - {fileID: 1533190809}
   - {fileID: 1821842907}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 18
 --- !u!1001 &1231462244
 Prefab:
   m_ObjectHideFlags: 0
@@ -29391,6 +29533,7 @@ GameObject:
   - 212: {fileID: 1244531218}
   - 114: {fileID: 1244531217}
   - 61: {fileID: 1244531216}
+  - 61: {fileID: 1244531225}
   m_Layer: 11
   m_Name: GiantVikingMan(Clone)
   m_TagString: Enemy
@@ -29486,6 +29629,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1244531220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29568,6 +29712,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1244531225
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1244531214}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1246996782
 GameObject:
   m_ObjectHideFlags: 0
@@ -29951,6 +30108,7 @@ GameObject:
   - 212: {fileID: 1267737343}
   - 114: {fileID: 1267737342}
   - 61: {fileID: 1267737341}
+  - 61: {fileID: 1267737350}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -30046,6 +30204,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1267737345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30128,6 +30287,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1267737350
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1267737339}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1270242162
 GameObject:
   m_ObjectHideFlags: 0
@@ -30401,33 +30573,6 @@ SpriteRenderer:
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300010, guid: f53fb7811aba6ba45bc042d98b85dd7c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &1283543720
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 585643814}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1283543721}
-  m_Layer: 0
-  m_Name: Missing Prefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1283543721
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 585643814}
-  m_GameObject: {fileID: 1283543720}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
 --- !u!1 &1284339554
 GameObject:
   m_ObjectHideFlags: 0
@@ -30583,6 +30728,7 @@ GameObject:
   - 212: {fileID: 1288726313}
   - 114: {fileID: 1288726312}
   - 61: {fileID: 1288726311}
+  - 61: {fileID: 1288726320}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -30678,6 +30824,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1288726315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30760,6 +30907,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1288726320
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288726309}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1291047198
 GameObject:
   m_ObjectHideFlags: 0
@@ -30930,7 +31090,7 @@ Transform:
   - {fileID: 1847174814}
   - {fileID: 498246200}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 4
 --- !u!1001 &1295630983
 Prefab:
   m_ObjectHideFlags: 0
@@ -31010,6 +31170,7 @@ GameObject:
   - 114: {fileID: 1296730935}
   - 212: {fileID: 1296730934}
   - 61: {fileID: 1296730933}
+  - 61: {fileID: 1296730942}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -31090,6 +31251,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1296730936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31195,6 +31357,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1296730942
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1296730931}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1298241645
 GameObject:
   m_ObjectHideFlags: 0
@@ -32436,7 +32611,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 20
 --- !u!1001 &1310394085
 Prefab:
   m_ObjectHideFlags: 0
@@ -33630,92 +33805,6 @@ SpriteRenderer:
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300036, guid: d09209296c8780e4988c3f3b90134ed0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1001 &1373824451
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -130
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 135.899994
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: .265640527
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: .964072227
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 169308, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_Name
-      value: castle3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &1373824452
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 169308, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-  m_PrefabInternal: {fileID: 1373824451}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1373824454}
-  - 114: {fileID: 1373824453}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1373824453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1373824452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2ef81fab96c5c541a85e4345e4389ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooler: {fileID: 633783426}
---- !u!4 &1373824454
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1373824451}
-  m_GameObject: {fileID: 1373824452}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2013826258}
-  m_RootOrder: 0
 --- !u!1 &1377048223
 GameObject:
   m_ObjectHideFlags: 0
@@ -33733,6 +33822,7 @@ GameObject:
   - 114: {fileID: 1377048227}
   - 212: {fileID: 1377048226}
   - 61: {fileID: 1377048225}
+  - 61: {fileID: 1377048234}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -33813,6 +33903,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1377048228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33918,6 +34009,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1377048234
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1377048223}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1377606258
 GameObject:
   m_ObjectHideFlags: 0
@@ -34828,6 +34932,7 @@ GameObject:
   - 114: {fileID: 1419536284}
   - 212: {fileID: 1419536283}
   - 61: {fileID: 1419536282}
+  - 61: {fileID: 1419536291}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -34908,6 +35013,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1419536285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35013,6 +35119,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1419536291
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1419536280}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1422869144
 GameObject:
   m_ObjectHideFlags: 0
@@ -35069,34 +35188,6 @@ MonoBehaviour:
   damage: .0199999996
   explosion: {fileID: 0}
   hit: 0
---- !u!1 &1423668547
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 510497731}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1423668548}
-  m_Layer: 0
-  m_Name: Missing Prefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1423668548
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 510497731}
-  m_GameObject: {fileID: 1423668547}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 510497734}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
 --- !u!1001 &1433694376
 Prefab:
   m_ObjectHideFlags: 0
@@ -35535,7 +35626,7 @@ Transform:
   - {fileID: 1379571581}
   - {fileID: 855909533}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 2
 --- !u!1001 &1446109718
 Prefab:
   m_ObjectHideFlags: 0
@@ -35813,6 +35904,7 @@ GameObject:
   - 114: {fileID: 1459599119}
   - 212: {fileID: 1459599118}
   - 61: {fileID: 1459599117}
+  - 61: {fileID: 1459599126}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -35893,6 +35985,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1459599120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35998,6 +36091,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1459599126
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1459599115}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &1464589503
 Prefab:
   m_ObjectHideFlags: 0
@@ -36236,92 +36342,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 408770, guid: d47070550ff65ef45a9f8cc97d1129a8, type: 2}
   m_PrefabInternal: {fileID: 1473484825}
---- !u!1001 &1486679876
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 155.899994
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 131
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: .42757535
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: -.903979719
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 130656, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_Name
-      value: Castle3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &1486679877
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 130656, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-  m_PrefabInternal: {fileID: 1486679876}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1486679879}
-  - 114: {fileID: 1486679878}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1486679878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1486679877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2ef81fab96c5c541a85e4345e4389ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooler: {fileID: 633783426}
---- !u!4 &1486679879
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1486679876}
-  m_GameObject: {fileID: 1486679877}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2070492446}
-  m_RootOrder: 0
 --- !u!1 &1487288866
 GameObject:
   m_ObjectHideFlags: 0
@@ -36366,6 +36386,7 @@ GameObject:
   - 212: {fileID: 1498027701}
   - 114: {fileID: 1498027700}
   - 61: {fileID: 1498027699}
+  - 61: {fileID: 1498027708}
   m_Layer: 11
   m_Name: GiantVikingMan(Clone)
   m_TagString: Enemy
@@ -36461,6 +36482,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1498027703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36543,6 +36565,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1498027708
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1498027697}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &1500859857
 Prefab:
   m_ObjectHideFlags: 0
@@ -37552,92 +37587,6 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300050, guid: bf1f5087ace709a46a7b2d66178dd939, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1001 &1541627899
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -1.39999998
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -193.899994
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: .99694252
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: .078139171
-      objectReference: {fileID: 0}
-    - target: {fileID: 466602, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 130656, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-      propertyPath: m_Name
-      value: Castle2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &1541627900
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 130656, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
-  m_PrefabInternal: {fileID: 1541627899}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1541627902}
-  - 114: {fileID: 1541627901}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1541627901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1541627900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2ef81fab96c5c541a85e4345e4389ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooler: {fileID: 633783426}
---- !u!4 &1541627902
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1541627899}
-  m_GameObject: {fileID: 1541627900}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2046929744}
-  m_RootOrder: 0
 --- !u!1 &1550143816
 GameObject:
   m_ObjectHideFlags: 0
@@ -38026,6 +37975,7 @@ GameObject:
   - 114: {fileID: 1569435194}
   - 212: {fileID: 1569435193}
   - 61: {fileID: 1569435192}
+  - 61: {fileID: 1569435201}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -38106,6 +38056,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1569435195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38211,6 +38162,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1569435201
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1569435190}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1570921737
 GameObject:
   m_ObjectHideFlags: 0
@@ -38272,7 +38236,7 @@ Transform:
   - {fileID: 730922661}
   - {fileID: 1973900335}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 1
 --- !u!1 &1574497031
 GameObject:
   m_ObjectHideFlags: 0
@@ -38631,34 +38595,6 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300052, guid: d09209296c8780e4988c3f3b90134ed0, type: 3}
   m_Color: {r: .352941155, g: 0, b: 0, a: 1}
---- !u!1 &1596439763
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 852538808}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1596439764}
-  m_Layer: 0
-  m_Name: Missing Prefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1596439764
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 852538808}
-  m_GameObject: {fileID: 1596439763}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 852538811}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
 --- !u!1 &1599485105
 GameObject:
   m_ObjectHideFlags: 0
@@ -38811,6 +38747,7 @@ GameObject:
   - 212: {fileID: 1607234645}
   - 61: {fileID: 1607234644}
   - 114: {fileID: 1607234643}
+  - 61: {fileID: 1607234652}
   m_Layer: 20
   m_Name: VikingHamerman1(Clone)
   m_TagString: Enemy
@@ -38906,6 +38843,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1607234647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38988,6 +38926,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1607234652
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1607234641}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1608207215
 GameObject:
   m_ObjectHideFlags: 0
@@ -39127,6 +39078,7 @@ GameObject:
   - 212: {fileID: 1616654996}
   - 114: {fileID: 1616654995}
   - 61: {fileID: 1616654994}
+  - 61: {fileID: 1616655003}
   m_Layer: 11
   m_Name: GiantVikingMan(Clone)
   m_TagString: Enemy
@@ -39222,6 +39174,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1616654998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39304,6 +39257,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1616655003
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1616654992}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1616981409
 GameObject:
   m_ObjectHideFlags: 0
@@ -39348,6 +39314,7 @@ GameObject:
   - 114: {fileID: 1621743276}
   - 212: {fileID: 1621743275}
   - 61: {fileID: 1621743274}
+  - 61: {fileID: 1621743283}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -39428,6 +39395,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1621743277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39533,6 +39501,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1621743283
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1621743272}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1622305996
 GameObject:
   m_ObjectHideFlags: 0
@@ -40866,6 +40847,7 @@ GameObject:
   - 212: {fileID: 1682988769}
   - 114: {fileID: 1682988768}
   - 61: {fileID: 1682988767}
+  - 61: {fileID: 1682988776}
   m_Layer: 11
   m_Name: GiantVikingMan(Clone)
   m_TagString: Enemy
@@ -40961,6 +40943,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1682988771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41043,6 +41026,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1682988776
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1682988765}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1698968577
 GameObject:
   m_ObjectHideFlags: 0
@@ -41811,6 +41807,7 @@ GameObject:
   - 114: {fileID: 1721266895}
   - 212: {fileID: 1721266894}
   - 61: {fileID: 1721266893}
+  - 61: {fileID: 1721266902}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -41891,6 +41888,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1721266896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41996,6 +41994,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1721266902
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1721266891}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1724473426
 GameObject:
   m_ObjectHideFlags: 0
@@ -42548,7 +42559,7 @@ Transform:
   - {fileID: 1504952785}
   - {fileID: 329440638}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 6
 --- !u!1 &1763069325
 GameObject:
   m_ObjectHideFlags: 0
@@ -44099,6 +44110,7 @@ GameObject:
   - 212: {fileID: 1838171143}
   - 114: {fileID: 1838171142}
   - 61: {fileID: 1838171141}
+  - 61: {fileID: 1838171150}
   m_Layer: 11
   m_Name: GiantVikingMan(Clone)
   m_TagString: Enemy
@@ -44194,6 +44206,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1838171145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44276,6 +44289,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1838171150
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1838171139}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &1840630220
 Prefab:
   m_ObjectHideFlags: 0
@@ -45309,6 +45335,7 @@ GameObject:
   - 212: {fileID: 1886853455}
   - 114: {fileID: 1886853454}
   - 61: {fileID: 1886853453}
+  - 61: {fileID: 1886853462}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -45404,6 +45431,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1886853457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45486,6 +45514,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1886853462
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1886853451}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1887203099
 GameObject:
   m_ObjectHideFlags: 0
@@ -46444,52 +46485,6 @@ SpriteRenderer:
   m_SortingOrder: -25
   m_Sprite: {fileID: 21300038, guid: d09209296c8780e4988c3f3b90134ed0, type: 3}
   m_Color: {r: .257352948, g: .257352948, b: .257352948, a: 1}
---- !u!1001 &1930244261
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -30.2000008
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 187.300003
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: .128789246
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: .991671979
-      objectReference: {fileID: 0}
-    - target: {fileID: 493710, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11491194, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-      propertyPath: pooler
-      value: 
-      objectReference: {fileID: 633783426}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1935279760
 Prefab:
   m_ObjectHideFlags: 0
@@ -46625,6 +46620,7 @@ GameObject:
   - 212: {fileID: 1942563451}
   - 114: {fileID: 1942563450}
   - 61: {fileID: 1942563449}
+  - 61: {fileID: 1942563458}
   m_Layer: 11
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -46720,6 +46716,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1942563453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46802,6 +46799,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1942563458
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1942563447}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1948690972
 GameObject:
   m_ObjectHideFlags: 0
@@ -46819,6 +46829,7 @@ GameObject:
   - 212: {fileID: 1948690976}
   - 61: {fileID: 1948690975}
   - 114: {fileID: 1948690974}
+  - 61: {fileID: 1948690983}
   m_Layer: 20
   m_Name: VikingHamerman1(Clone)
   m_TagString: Enemy
@@ -46914,6 +46925,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1948690978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46996,6 +47008,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1948690983
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1948690972}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1950859490
 GameObject:
   m_ObjectHideFlags: 0
@@ -47524,6 +47549,7 @@ GameObject:
   - 114: {fileID: 1974756052}
   - 212: {fileID: 1974756051}
   - 61: {fileID: 1974756050}
+  - 61: {fileID: 1974756059}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -47604,6 +47630,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1974756053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47709,6 +47736,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1974756059
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1974756048}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1975184130
 GameObject:
   m_ObjectHideFlags: 0
@@ -48162,6 +48202,7 @@ GameObject:
   - 114: {fileID: 1987384887}
   - 212: {fileID: 1987384886}
   - 61: {fileID: 1987384885}
+  - 61: {fileID: 1987384894}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -48242,6 +48283,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1987384888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48347,6 +48389,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &1987384894
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1987384883}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1991017749
 GameObject:
   m_ObjectHideFlags: 0
@@ -48729,34 +48784,6 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300008, guid: d09209296c8780e4988c3f3b90134ed0, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
---- !u!1 &2013826257
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1373824451}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2013826258}
-  m_Layer: 0
-  m_Name: Missing Prefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2013826258
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1373824451}
-  m_GameObject: {fileID: 2013826257}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1373824454}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
 --- !u!1001 &2017901126
 Prefab:
   m_ObjectHideFlags: 0
@@ -49235,6 +49262,7 @@ GameObject:
   - 212: {fileID: 2029754610}
   - 114: {fileID: 2029754609}
   - 61: {fileID: 2029754608}
+  - 61: {fileID: 2029754617}
   m_Layer: 11
   m_Name: GiantVikingMan(Clone)
   m_TagString: Enemy
@@ -49330,6 +49358,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &2029754612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49412,6 +49441,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &2029754617
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2029754606}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &2037581123
 GameObject:
   m_ObjectHideFlags: 0
@@ -49536,34 +49578,6 @@ MonoBehaviour:
   damage: .0199999996
   explosion: {fileID: 0}
   hit: 0
---- !u!1 &2046929743
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1541627899}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2046929744}
-  m_Layer: 0
-  m_Name: Missing Prefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2046929744
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1541627899}
-  m_GameObject: {fileID: 2046929743}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1541627902}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
 --- !u!1 &2048823005
 GameObject:
   m_ObjectHideFlags: 0
@@ -49633,33 +49647,6 @@ SpriteRenderer:
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300012, guid: d09209296c8780e4988c3f3b90134ed0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &2049091437
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1930244261}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2049091438}
-  m_Layer: 0
-  m_Name: Missing Prefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2049091438
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1930244261}
-  m_GameObject: {fileID: 2049091437}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
 --- !u!1 &2052646162
 GameObject:
   m_ObjectHideFlags: 0
@@ -49886,34 +49873,6 @@ SpriteRenderer:
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300012, guid: d09209296c8780e4988c3f3b90134ed0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &2070492445
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1486679876}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2070492446}
-  m_Layer: 0
-  m_Name: Missing Prefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2070492446
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1486679876}
-  m_GameObject: {fileID: 2070492445}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1486679879}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
 --- !u!1 &2072932626
 GameObject:
   m_ObjectHideFlags: 0

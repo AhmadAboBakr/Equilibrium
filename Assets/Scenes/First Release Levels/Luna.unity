@@ -105,6 +105,7 @@ GameObject:
   - 114: {fileID: 5420023}
   - 61: {fileID: 5420022}
   - 82: {fileID: 5420031}
+  - 61: {fileID: 5420032}
   m_Layer: 20
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -352,6 +353,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &5420032
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 5420020}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &6072238
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,6 +567,7 @@ GameObject:
   - 212: {fileID: 6753935}
   - 61: {fileID: 6753934}
   - 82: {fileID: 6753943}
+  - 61: {fileID: 6753944}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -808,6 +823,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &6753944
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 6753932}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &8648512
 GameObject:
   m_ObjectHideFlags: 0
@@ -2408,6 +2436,7 @@ GameObject:
   - 212: {fileID: 54057933}
   - 61: {fileID: 54057932}
   - 82: {fileID: 54057941}
+  - 61: {fileID: 54057942}
   m_Layer: 20
   m_Name: Lady(Clone)
   m_TagString: Enemy
@@ -2552,7 +2581,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .100000001
+  m_Radius: .328765869
 --- !u!50 &54057939
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2654,6 +2683,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &54057942
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 54057930}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &55299233
 Prefab:
   m_ObjectHideFlags: 0
@@ -14943,6 +14985,7 @@ GameObject:
   - 212: {fileID: 406373821}
   - 61: {fileID: 406373820}
   - 82: {fileID: 406373829}
+  - 61: {fileID: 406373830}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -15198,6 +15241,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &406373830
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 406373818}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &408124104
 GameObject:
   m_ObjectHideFlags: 0
@@ -16760,6 +16816,7 @@ GameObject:
   - 114: {fileID: 441035930}
   - 61: {fileID: 441035929}
   - 82: {fileID: 441035938}
+  - 61: {fileID: 441035939}
   m_Layer: 20
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -17007,6 +17064,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &441035939
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 441035927}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &441589768
 Prefab:
   m_ObjectHideFlags: 0
@@ -17857,6 +17927,7 @@ GameObject:
   - 212: {fileID: 458582031}
   - 61: {fileID: 458582030}
   - 82: {fileID: 458582039}
+  - 61: {fileID: 458582040}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -18112,6 +18183,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &458582040
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 458582028}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &458582961
 GameObject:
   m_ObjectHideFlags: 0
@@ -20100,6 +20184,7 @@ GameObject:
   - 212: {fileID: 513226683}
   - 61: {fileID: 513226682}
   - 82: {fileID: 513226691}
+  - 61: {fileID: 513226692}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -20355,6 +20440,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &513226692
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 513226680}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &516717662
 Prefab:
   m_ObjectHideFlags: 0
@@ -20618,6 +20716,7 @@ GameObject:
   - 212: {fileID: 519605345}
   - 61: {fileID: 519605344}
   - 82: {fileID: 519605353}
+  - 61: {fileID: 519605354}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -20873,6 +20972,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &519605354
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519605342}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &521272860
 GameObject:
   m_ObjectHideFlags: 0
@@ -24414,6 +24526,7 @@ GameObject:
   - 114: {fileID: 582624613}
   - 61: {fileID: 582624612}
   - 82: {fileID: 582624621}
+  - 61: {fileID: 582624622}
   m_Layer: 20
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -24661,6 +24774,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &582624622
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 582624610}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &586254244
 GameObject:
   m_ObjectHideFlags: 0
@@ -24679,6 +24805,7 @@ GameObject:
   - 114: {fileID: 586254247}
   - 61: {fileID: 586254246}
   - 82: {fileID: 586254255}
+  - 61: {fileID: 586254256}
   m_Layer: 20
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -24926,6 +25053,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &586254256
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 586254244}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &587053849
 GameObject:
   m_ObjectHideFlags: 0
@@ -28192,6 +28332,7 @@ GameObject:
   - 114: {fileID: 660591963}
   - 61: {fileID: 660591962}
   - 82: {fileID: 660591971}
+  - 61: {fileID: 660591972}
   m_Layer: 20
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -28439,6 +28580,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &660591972
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660591960}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &660838908
 Prefab:
   m_ObjectHideFlags: 0
@@ -30139,6 +30293,7 @@ GameObject:
   - 212: {fileID: 726073537}
   - 61: {fileID: 726073536}
   - 82: {fileID: 726073545}
+  - 61: {fileID: 726073546}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -30394,6 +30549,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &726073546
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 726073534}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &727589619
 GameObject:
   m_ObjectHideFlags: 0
@@ -38608,6 +38776,7 @@ GameObject:
   - 212: {fileID: 897956885}
   - 61: {fileID: 897956884}
   - 82: {fileID: 897956893}
+  - 61: {fileID: 897956894}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -38863,6 +39032,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &897956894
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 897956882}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &898955439
 GameObject:
   m_ObjectHideFlags: 0
@@ -39809,6 +39991,7 @@ GameObject:
   - 212: {fileID: 913786694}
   - 61: {fileID: 913786693}
   - 82: {fileID: 913786702}
+  - 61: {fileID: 913786703}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -40064,6 +40247,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &913786703
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 913786691}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &914373318
 GameObject:
   m_PrefabParentObject: {fileID: 103068, guid: 68b14b3550a999d4f9b9879bdc467555, type: 2}
@@ -40353,6 +40549,7 @@ GameObject:
   - 212: {fileID: 923949506}
   - 61: {fileID: 923949505}
   - 82: {fileID: 923949514}
+  - 61: {fileID: 923949515}
   m_Layer: 20
   m_Name: Lady(Clone)
   m_TagString: Enemy
@@ -40497,7 +40694,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .100000001
+  m_Radius: .328765869
 --- !u!50 &923949512
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -40599,6 +40796,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &923949515
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 923949503}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &924765334
 GameObject:
   m_ObjectHideFlags: 0
@@ -43408,6 +43618,7 @@ GameObject:
   - 212: {fileID: 1003479889}
   - 61: {fileID: 1003479888}
   - 82: {fileID: 1003479897}
+  - 61: {fileID: 1003479898}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -43663,6 +43874,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1003479898
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1003479886}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &1004713305
 Prefab:
   m_ObjectHideFlags: 0
@@ -45225,6 +45449,7 @@ GameObject:
   - 114: {fileID: 1059147272}
   - 61: {fileID: 1059147271}
   - 82: {fileID: 1059147280}
+  - 61: {fileID: 1059147281}
   m_Layer: 20
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -45472,6 +45697,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1059147281
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1059147269}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1059255206
 GameObject:
   m_ObjectHideFlags: 0
@@ -52274,6 +52512,7 @@ GameObject:
   - 212: {fileID: 1210527672}
   - 61: {fileID: 1210527671}
   - 82: {fileID: 1210527680}
+  - 61: {fileID: 1210527681}
   m_Layer: 20
   m_Name: Lady(Clone)
   m_TagString: Enemy
@@ -52418,7 +52657,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .100000001
+  m_Radius: .328765869
 --- !u!50 &1210527678
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -52520,6 +52759,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1210527681
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1210527669}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &1216741686
 Prefab:
   m_ObjectHideFlags: 0
@@ -54267,6 +54519,7 @@ GameObject:
   - 212: {fileID: 1271636046}
   - 61: {fileID: 1271636045}
   - 82: {fileID: 1271636054}
+  - 61: {fileID: 1271636055}
   m_Layer: 20
   m_Name: Lady(Clone)
   m_TagString: Enemy
@@ -54411,7 +54664,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .100000001
+  m_Radius: .328765869
 --- !u!50 &1271636052
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -54513,6 +54766,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1271636055
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1271636043}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &1271824448
 Prefab:
   m_ObjectHideFlags: 0
@@ -56946,6 +57212,7 @@ GameObject:
   - 114: {fileID: 1344590171}
   - 61: {fileID: 1344590170}
   - 82: {fileID: 1344590179}
+  - 61: {fileID: 1344590180}
   m_Layer: 20
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -57193,6 +57460,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1344590180
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344590168}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1345720546
 GameObject:
   m_ObjectHideFlags: 0
@@ -58414,6 +58694,7 @@ GameObject:
   - 212: {fileID: 1401255487}
   - 61: {fileID: 1401255486}
   - 82: {fileID: 1401255495}
+  - 61: {fileID: 1401255496}
   m_Layer: 20
   m_Name: Lady(Clone)
   m_TagString: Enemy
@@ -58558,7 +58839,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .100000001
+  m_Radius: .328765869
 --- !u!50 &1401255493
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -58660,6 +58941,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1401255496
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1401255484}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1404615472
 GameObject:
   m_ObjectHideFlags: 0
@@ -60833,6 +61127,7 @@ GameObject:
   - 114: {fileID: 1476675030}
   - 61: {fileID: 1476675029}
   - 82: {fileID: 1476675038}
+  - 61: {fileID: 1476675039}
   m_Layer: 20
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -61080,6 +61375,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1476675039
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1476675027}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1476932847
 GameObject:
   m_ObjectHideFlags: 0
@@ -62896,6 +63204,7 @@ GameObject:
   - 212: {fileID: 1541541684}
   - 61: {fileID: 1541541683}
   - 82: {fileID: 1541541692}
+  - 61: {fileID: 1541541693}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -63151,6 +63460,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1541541693
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541541681}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &1543336374
 Prefab:
   m_ObjectHideFlags: 0
@@ -65755,6 +66077,7 @@ GameObject:
   - 114: {fileID: 1581140252}
   - 61: {fileID: 1581140251}
   - 82: {fileID: 1581140260}
+  - 61: {fileID: 1581140261}
   m_Layer: 20
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -66002,6 +66325,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1581140261
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1581140249}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &1582694970
 Prefab:
   m_ObjectHideFlags: 0
@@ -68195,6 +68531,7 @@ GameObject:
   - 212: {fileID: 1625896317}
   - 61: {fileID: 1625896316}
   - 82: {fileID: 1625896325}
+  - 61: {fileID: 1625896326}
   m_Layer: 20
   m_Name: Lady(Clone)
   m_TagString: Enemy
@@ -68339,7 +68676,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .100000001
+  m_Radius: .328765869
 --- !u!50 &1625896323
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -68441,6 +68778,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1625896326
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625896314}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &1626225635
 Prefab:
   m_ObjectHideFlags: 0
@@ -70130,6 +70480,7 @@ GameObject:
   - 114: {fileID: 1680894201}
   - 61: {fileID: 1680894200}
   - 82: {fileID: 1680894209}
+  - 61: {fileID: 1680894210}
   m_Layer: 20
   m_Name: BeardedVikingMan(Clone)
   m_TagString: Enemy
@@ -70377,6 +70728,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1680894210
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1680894198}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1683003906
 GameObject:
   m_ObjectHideFlags: 0
@@ -70677,6 +71041,7 @@ GameObject:
   - 212: {fileID: 1683962895}
   - 61: {fileID: 1683962894}
   - 82: {fileID: 1683962903}
+  - 61: {fileID: 1683962904}
   m_Layer: 20
   m_Name: Lady(Clone)
   m_TagString: Enemy
@@ -70821,7 +71186,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .100000001
+  m_Radius: .328765869
 --- !u!50 &1683962901
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -70923,6 +71288,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1683962904
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1683962892}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1685877697
 GameObject:
   m_ObjectHideFlags: 0
@@ -71258,6 +71636,7 @@ GameObject:
   - 212: {fileID: 1705143188}
   - 61: {fileID: 1705143187}
   - 82: {fileID: 1705143196}
+  - 61: {fileID: 1705143197}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -71513,6 +71892,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1705143197
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1705143185}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1710569369
 GameObject:
   m_ObjectHideFlags: 0
@@ -73824,6 +74216,7 @@ GameObject:
   - 212: {fileID: 1782737312}
   - 61: {fileID: 1782737311}
   - 82: {fileID: 1782737320}
+  - 61: {fileID: 1782737321}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -74079,6 +74472,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1782737321
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782737309}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1787681591
 GameObject:
   m_ObjectHideFlags: 0
@@ -74482,6 +74888,7 @@ GameObject:
   - 212: {fileID: 1799534016}
   - 61: {fileID: 1799534015}
   - 82: {fileID: 1799534025}
+  - 61: {fileID: 1799534026}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -74737,6 +75144,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1799534026
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1799534014}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &1799629719
 Prefab:
   m_ObjectHideFlags: 0
@@ -79440,6 +79860,7 @@ GameObject:
   - 212: {fileID: 1871041776}
   - 61: {fileID: 1871041775}
   - 82: {fileID: 1871041784}
+  - 61: {fileID: 1871041785}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -79695,6 +80116,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1871041785
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1871041773}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &1874235549
 GameObject:
   m_ObjectHideFlags: 0
@@ -85696,6 +86130,7 @@ GameObject:
   - 212: {fileID: 1987315942}
   - 61: {fileID: 1987315941}
   - 82: {fileID: 1987315950}
+  - 61: {fileID: 1987315951}
   m_Layer: 20
   m_Name: Lady(Clone)
   m_TagString: Enemy
@@ -85840,7 +86275,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .100000001
+  m_Radius: .328765869
 --- !u!50 &1987315948
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -85942,6 +86377,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &1987315951
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1987315939}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &1992128654
 Prefab:
   m_ObjectHideFlags: 0
@@ -86875,6 +87323,7 @@ GameObject:
   - 212: {fileID: 2013746479}
   - 61: {fileID: 2013746478}
   - 82: {fileID: 2013746487}
+  - 61: {fileID: 2013746488}
   m_Layer: 20
   m_Name: Lady(Clone)
   m_TagString: Enemy
@@ -87019,7 +87468,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .100000001
+  m_Radius: .328765869
 --- !u!50 &2013746485
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -87121,6 +87570,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &2013746488
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2013746476}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1001 &2015106505
 Prefab:
   m_ObjectHideFlags: 0
@@ -87502,6 +87964,7 @@ GameObject:
   - 212: {fileID: 2018030282}
   - 61: {fileID: 2018030281}
   - 82: {fileID: 2018030290}
+  - 61: {fileID: 2018030291}
   m_Layer: 11
   m_Name: VikingArcher1(Clone)
   m_TagString: Enemy
@@ -87757,6 +88220,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &2018030291
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2018030279}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &2019129839
 GameObject:
   m_ObjectHideFlags: 0
@@ -87932,6 +88408,7 @@ GameObject:
   - 212: {fileID: 2019933744}
   - 61: {fileID: 2019933743}
   - 82: {fileID: 2019933752}
+  - 61: {fileID: 2019933753}
   m_Layer: 20
   m_Name: Lady(Clone)
   m_TagString: Enemy
@@ -88076,7 +88553,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .100000001
+  m_Radius: .328765869
 --- !u!50 &2019933750
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -88178,6 +88655,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!61 &2019933753
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2019933741}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00142496824, y: 1.48728836}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.31378222}
 --- !u!1 &2021425659
 GameObject:
   m_ObjectHideFlags: 0
