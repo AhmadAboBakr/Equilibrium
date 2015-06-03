@@ -22,9 +22,7 @@ public class NewShockwave : MonoBehaviour {
         //If the object is an enemy or rubble then it is added to the list ThrowableObjectsInTrigger:gameobject
         if (other.CompareTag("Enemy"))
         {
-            other.GetComponent<SurfaceMovingObject>().grounded = false;
             other.GetComponent<Rigidbody2D>().AddForce((other.transform.position - this.transform.position).normalized * damage, ForceMode2D.Impulse);
-            
             other.GetComponent<DestructibleEnemy>().Health--;
         }
         if (other.CompareTag("Plane"))
@@ -36,7 +34,7 @@ public class NewShockwave : MonoBehaviour {
             other.GetComponent<DestructableObject>().Health -= damage;
         }
 
-        StartCoroutine("DestroyAfterFinishing");
+        //StartCoroutine("DestroyAfterFinishing");
         //Destroy(gameObject);
     }
     public IEnumerator DestroyAfterFinishing()

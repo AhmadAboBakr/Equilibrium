@@ -2,7 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour
+{
     //Should refactor to have enemy instantiation add the enemy counter instead of checking here for performance sake
     public Text winCounter;
     int enemies;
@@ -19,14 +20,22 @@ public class GameManager : MonoBehaviour {
         objectives = transform.GetComponentsInChildren<Objective>();
         GameState.CurrentNumberOfEnemies = 0;
     }
-   void Start()
+    void Start()
     {
         enemyKillCount = 0;
         gameElapsedTime = 0;
-        
-        totalBuildings = GameObject.FindGameObjectsWithTag("Building").Length;
-        
-        StartCoroutine("checkBuildings");
+        if (GameObject.FindGameObjectsWithTag("Plane").Length > 0)
+        {
+            totalBuildings = GameObject.FindGameObjectsWithTag("Plane").Length;
+            StartCoroutine("checkPlanes");
+        }
+        else
+        {
+            totalBuildings = GameObject.FindGameObjectsWithTag("Building").Length;
+            StartCoroutine("checkBuildings");
+
+        }
+
     }
     IEnumerator checkBuildings()
     {
@@ -34,12 +43,12 @@ public class GameManager : MonoBehaviour {
         {
             //counts all buildings
             buildings = GameObject.FindGameObjectsWithTag("Building").Length;
-            if (buildings <= 0) 
-            {   
+            if (buildings <= 0)
+            {
                 //when buildings are finished start counting enemies
                 enemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
 
-                if(enemies <=0)
+                if (enemies <= 0)
                 {
                     //win state
                     InGameObjectiveUI.instance.gameObject.SetActive(true);
@@ -47,13 +56,38 @@ public class GameManager : MonoBehaviour {
             }
             UpdateCounter();
             //Check Player health for loss condition
-            if(Player.player.HealthPoints <=0)
+            if (Player.player.HealthPoints <= 0)
             {
                 LossUI.instance.gameObject.SetActive(true);
             }
             gameElapsedTime += 0.5f;
             yield return new WaitForSeconds(0.5f);
         }
+    }
+    IEnumerator checkPlanes()
+    {
+        //counts all buildings
+        buildings = GameObject.FindGameObjectsWithTag("Plane").Length;
+        if (buildings <= 0)
+        {
+            //when buildings are finished start counting enemies
+            enemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
+
+            if (enemies <= 0)
+            {
+                //win state
+                InGameObjectiveUI.instance.gameObject.SetActive(true);
+            }
+        }
+        UpdateCounter();
+        //Check Player health for loss condition
+        if (Player.player.HealthPoints <= 0)
+        {
+            LossUI.instance.gameObject.SetActive(true);
+        }
+        gameElapsedTime += 0.5f;
+        yield return new WaitForSeconds(0.5f);
+
     }
 
     public void UpdateCounter()

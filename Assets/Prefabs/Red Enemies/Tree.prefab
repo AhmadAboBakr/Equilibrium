@@ -191,6 +191,7 @@ GameObject:
   - 4: {fileID: 493082}
   - 61: {fileID: 6161848}
   - 114: {fileID: 11431008}
+  - 114: {fileID: 11478232}
   m_Layer: 13
   m_Name: Tree
   m_TagString: Tree
@@ -752,6 +753,8 @@ MonoBehaviour:
   isInGiantMeleeList: 0
   timeToStartFade: 4
   fadeRate: .100000001
+  debris: {fileID: 0}
+  myAudioSource: {fileID: 0}
 --- !u!114 &11437604
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -827,6 +830,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aba3a8c92e3efc94081f091c56dbbbec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11478232
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2b131f76f8a2694f995a71d76fb9d4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11480326

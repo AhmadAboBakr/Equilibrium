@@ -6,7 +6,7 @@ public class GiantMeleeAttack : MonoBehaviour {
     public List<GameObject> attackables;
     public float damagePerHit=1;
     public float attackForce;
-    public float staminaPerHit = .1f;
+    public float staminaPerHit;
     void Awake()
     {
         if (!player) player = this;

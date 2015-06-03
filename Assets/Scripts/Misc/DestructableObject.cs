@@ -35,7 +35,7 @@ public class DestructableObject : MonoBehaviour {
             health = value;
             if (this.gameObject.CompareTag("Building"))
             {
-                Instantiate(debris, this.transform.position, Quaternion.identity);
+                Instantiate(debris, this.transform.position, Quaternion.Euler(-this.transform.position));
                 myAudioSource.Play();
             }
             //GetComponent<Animator>().SetTrigger("Hit");

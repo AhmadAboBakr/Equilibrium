@@ -6,31 +6,36 @@ public class EnemySpawn : MonoBehaviour {
     public GeneralPooling pooler;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+    {
         pooler = GameObject.FindGameObjectWithTag("EnemyPool").GetComponent<GeneralPooling>();
         StartCoroutine("EnemySpawning");
 	}
     void Update()
     {
-        
+        if(this.gameObject.CompareTag("Plane"))
+        {
+            if(this.transform.GetComponent<PlaneScript>().dead)
+            {
+                StopCoroutine("EnemySpawning");
+            }
+        }
 
     }
 	
 	// Update is called once per frame
-	IEnumerator EnemySpawning () {
+    IEnumerator EnemySpawning()
+    {
         while (true)
         {
 
-            if (GameState.CurrentNumberOfEnemies < GameState.maxAllowedEnemies && Vector2.Distance(Player.player.transform.position, this.gameObject.transform.position)< 170f)
+            if (GameState.CurrentNumberOfEnemies < GameState.maxAllowedEnemies && Vector2.Distance(Player.player.transform.position, this.gameObject.transform.position) < 170f)
             {
                 pooler.CreateObject(transform.position, transform.rotation);
                 GameState.CurrentNumberOfEnemies++;
-                
+
             }
             yield return new WaitForSeconds(1f);
         }
-	}
-
-    
-    
+    }  
 }

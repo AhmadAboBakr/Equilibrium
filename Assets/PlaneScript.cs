@@ -66,7 +66,7 @@ public class PlaneScript : MonoBehaviour {
         {
             landed = true;
             explosion.SetActive(true);
-            this.transform.parent.gameObject.GetComponent<EnemySpawn>().enabled = false;
+            this.gameObject.GetComponent<EnemySpawn>().enabled = false;
             StartCoroutine("DieAfterTime");
             
         }
