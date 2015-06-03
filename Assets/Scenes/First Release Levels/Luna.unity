@@ -44443,6 +44443,10 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11491550, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: allSpells.Array.data[1].manaCost
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
   m_IsPrefabParent: 0
