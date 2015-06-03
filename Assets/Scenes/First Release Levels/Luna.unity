@@ -200,6 +200,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &5420026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,7 +289,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 5420020}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c1ee2e3f745f698499d4aa755ab7f285, type: 3}
@@ -632,6 +633,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &6753937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,7 +745,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 6753932}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbc1d700607520b45900f296b1fdfa57, type: 3}
@@ -2485,6 +2487,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &54057935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2588,7 +2591,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 54057930}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5a7211164fb51564a96664382e0de830, type: 3}
@@ -15020,6 +15023,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &406373823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15131,7 +15135,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 406373818}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbc1d700607520b45900f296b1fdfa57, type: 3}
@@ -16851,6 +16855,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &441035933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16939,7 +16944,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 441035927}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c1ee2e3f745f698499d4aa755ab7f285, type: 3}
@@ -17932,6 +17937,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &458582033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18043,7 +18049,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 458582028}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbc1d700607520b45900f296b1fdfa57, type: 3}
@@ -20174,6 +20180,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &513226685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20285,7 +20292,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 513226680}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbc1d700607520b45900f296b1fdfa57, type: 3}
@@ -20691,6 +20698,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &519605347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20802,7 +20810,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519605342}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbc1d700607520b45900f296b1fdfa57, type: 3}
@@ -24501,6 +24509,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &582624616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24589,7 +24598,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 582624610}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c1ee2e3f745f698499d4aa755ab7f285, type: 3}
@@ -24765,6 +24774,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &586254250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24853,7 +24863,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 586254244}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c1ee2e3f745f698499d4aa755ab7f285, type: 3}
@@ -28277,6 +28287,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &660591966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28365,7 +28376,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 660591960}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c1ee2e3f745f698499d4aa755ab7f285, type: 3}
@@ -30208,6 +30219,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &726073539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30319,7 +30331,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 726073534}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbc1d700607520b45900f296b1fdfa57, type: 3}
@@ -38676,6 +38688,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &897956887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38787,7 +38800,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 897956882}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbc1d700607520b45900f296b1fdfa57, type: 3}
@@ -39876,6 +39889,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &913786696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39987,7 +40001,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 913786691}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbc1d700607520b45900f296b1fdfa57, type: 3}
@@ -40418,6 +40432,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &923949508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40521,7 +40536,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 923949503}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5a7211164fb51564a96664382e0de830, type: 3}
@@ -43473,6 +43488,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &1003479891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43584,7 +43600,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1003479886}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbc1d700607520b45900f296b1fdfa57, type: 3}
@@ -44420,30 +44436,6 @@ Prefab:
     - target: {fileID: 454524, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
       propertyPath: m_RootOrder
       value: 73
-      objectReference: {fileID: 0}
-    - target: {fileID: 424768, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: .234873012
-      objectReference: {fileID: 0}
-    - target: {fileID: 424768, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: .97202605
-      objectReference: {fileID: 0}
-    - target: {fileID: 457658, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: .528446019
-      objectReference: {fileID: 0}
-    - target: {fileID: 457658, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: -.848966956
-      objectReference: {fileID: 0}
-    - target: {fileID: 455658, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: .994070053
-      objectReference: {fileID: 0}
-    - target: {fileID: 455658, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: -.108741887
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
@@ -45328,6 +45320,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &1059147275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45416,7 +45409,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1059147269}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c1ee2e3f745f698499d4aa755ab7f285, type: 3}
@@ -48148,7 +48141,7 @@ Transform:
   - {fileID: 1024185596}
   - {fileID: 2002342165}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &1122749088
 GameObject:
   m_ObjectHideFlags: 0
@@ -52360,6 +52353,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &1210527674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52463,7 +52457,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1210527669}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5a7211164fb51564a96664382e0de830, type: 3}
@@ -54352,6 +54346,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &1271636048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54455,7 +54450,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1271636043}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5a7211164fb51564a96664382e0de830, type: 3}
@@ -57046,6 +57041,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &1344590174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57134,7 +57130,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1344590168}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c1ee2e3f745f698499d4aa755ab7f285, type: 3}
@@ -58497,6 +58493,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &1401255489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58600,7 +58597,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1401255484}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5a7211164fb51564a96664382e0de830, type: 3}
@@ -60931,6 +60928,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &1476675033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61019,7 +61017,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1476675027}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c1ee2e3f745f698499d4aa755ab7f285, type: 3}
@@ -62978,6 +62976,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &1541541686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63089,7 +63088,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1541541681}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbc1d700607520b45900f296b1fdfa57, type: 3}
@@ -65851,6 +65850,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &1581140255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65939,7 +65939,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1581140249}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c1ee2e3f745f698499d4aa755ab7f285, type: 3}
@@ -68051,7 +68051,7 @@ Transform:
   - {fileID: 1326376237}
   - {fileID: 203325944}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 8
 --- !u!1 &1619472603
 GameObject:
   m_ObjectHideFlags: 0
@@ -68274,6 +68274,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &1625896319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68377,7 +68378,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1625896314}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5a7211164fb51564a96664382e0de830, type: 3}
@@ -70224,6 +70225,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &1680894204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70312,7 +70314,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1680894198}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c1ee2e3f745f698499d4aa755ab7f285, type: 3}
@@ -70754,6 +70756,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &1683962897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70857,7 +70860,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1683962892}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5a7211164fb51564a96664382e0de830, type: 3}
@@ -71335,6 +71338,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &1705143190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71446,7 +71450,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1705143185}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbc1d700607520b45900f296b1fdfa57, type: 3}
@@ -73900,6 +73904,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &1782737314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74011,7 +74016,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1782737309}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbc1d700607520b45900f296b1fdfa57, type: 3}
@@ -74543,6 +74548,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &1799534018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74668,7 +74674,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1799534014}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbc1d700607520b45900f296b1fdfa57, type: 3}
@@ -79514,6 +79520,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &1871041778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79625,7 +79632,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1871041773}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbc1d700607520b45900f296b1fdfa57, type: 3}
@@ -85768,6 +85775,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &1987315944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85871,7 +85879,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1987315939}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5a7211164fb51564a96664382e0de830, type: 3}
@@ -86946,6 +86954,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &2013746481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87049,7 +87058,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2013746476}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5a7211164fb51564a96664382e0de830, type: 3}
@@ -87573,6 +87582,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &2018030284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87684,7 +87694,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2018030279}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fbc1d700607520b45900f296b1fdfa57, type: 3}
@@ -88001,6 +88011,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 1
 --- !u!114 &2019933746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88104,7 +88115,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2019933741}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5a7211164fb51564a96664382e0de830, type: 3}
@@ -88573,7 +88584,7 @@ MonoBehaviour:
   health: 4
   dead: 0
   isInGiantMeleeList: 0
-  timeToStartFade: 4
+  timeToStartFade: 1
   fadeRate: .100000001
   debris: {fileID: 166518, guid: 460edfb6e0e551b44975033dae510708, type: 2}
   myAudioSource: {fileID: 0}

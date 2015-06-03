@@ -44,7 +44,7 @@ public class AOEDamage : MonoBehaviour
             other.GetComponent<DestructableObject>().Health -= damage;
         }
 
-        Debug.Log(other.name);
+
         StartCoroutine("DestroyAfterFinishing");
         //Destroy(gameObject);
     }

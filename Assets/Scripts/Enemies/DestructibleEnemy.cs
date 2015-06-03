@@ -12,7 +12,7 @@ public class DestructibleEnemy : MonoBehaviour
     public GeneralPooling pooler;
     public bool animationCalled;
     public float deathTimer;
-    float startHealth;
+    public float startHealth;
     
     // Use this for initialization
     void OnEnable()
@@ -20,13 +20,12 @@ public class DestructibleEnemy : MonoBehaviour
         dead = false;
         health = startHealth;
     }
-    void Awake()
-    {
-        startHealth = health;
-    }
+    
     void OnDisable()
     {
         dead = false;
+        health = startHealth;
+        deathTimer = 0;
     }
     void Start()
     {
@@ -58,6 +57,7 @@ public class DestructibleEnemy : MonoBehaviour
         if(deathTimer > 0.8f)
         {
             pooler.ReturnObjectToPool(this.gameObject);
+
         }
     }
 

@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DestructableObject : MonoBehaviour {
+public class DestructableObject : MonoBehaviour
+{
     public float health = 1;
     public bool dead = false;
     public bool isInGiantMeleeList = false;
@@ -31,7 +32,8 @@ public class DestructableObject : MonoBehaviour {
     public float Health
     {
         get { return health; }
-        set { 
+        set
+        {
             health = value;
             if (this.gameObject.CompareTag("Building"))
             {
@@ -49,8 +51,14 @@ public class DestructableObject : MonoBehaviour {
                 {
                     this.transform.GetComponentInChildren<Animator>().enabled = false;
                 }
-                foreach(var component in this.transform.GetComponentsInChildren<DestructableComponent>()){
+                foreach (var component in this.transform.GetComponentsInChildren<DestructableComponent>())
+                {
                     component.SelfDestruct(this.transform);
+                }
+                if (GetComponent<EnemySpawn>())
+                {
+
+                    this.GetComponent<EnemySpawn>().enabled = false;
                 }
 
                 //for (int i = 0; i < transform.childCount; i++)
@@ -67,7 +75,7 @@ public class DestructableObject : MonoBehaviour {
                 //    //Add Rigid body to all rubble objects and enable their disabled box colliders and add Gravity so they fall
                 //    transform.GetChild(i).gameObject.AddComponent<Rigidbody2D>();
                 //    transform.GetChild(i).gameObject.GetComponent<BoxCollider2D>().enabled = true;
-                    
+
                 //    transform.GetChild(i).gameObject.AddComponent<ArtifitialGravity>();
                 //    //Add force to rubble objects 
                 //    transform.GetChild(i).gameObject.GetComponent<Rigidbody2D>().AddForce((transform.GetChild(i).position - Player.player.transform.position) * 40);
@@ -78,35 +86,57 @@ public class DestructableObject : MonoBehaviour {
                 ////GiantMeleeAttack.player.attackables.Remove(this.gameObject);
                 ////Destroy rubble after time
                 //StartCoroutine("DestroyAfterTime");
+                
             }
 
         }
     }
-	
+    void LateUpdate()
+    {
+        if (health <= 0)
+        {
+            GiantMeleeAttack.player.RemoveSelfFromAttackableList(this.gameObject);
+            Destroy(this.gameObject);
+        }
+    }
+
 
     public IEnumerator DestroyAfterTime()
     {
         yield return new WaitForSeconds(timeToStartFade);
         while (true)
         {
-            for (int i = 0; i < transform.childCount; i++)
-            {
+            
 
-                Color c = transform.GetChild(i).GetComponent<SpriteRenderer>().color;
+            foreach (var item in GetComponentsInChildren<SpriteRenderer>())
+            {
+                Color c = item.color;
+                Debug.Log(c);
                 c.a /= 1.05f;
-                transform.GetChild(i).GetComponent<SpriteRenderer>().color = c;
-                if(c.a < 0.04)
+                item.color = c;
+                if (c.a < 0.04)
                 {
-                    Destroy(this.gameObject);   
+                    Destroy(this.gameObject);
                 }
             }
+            //for (int i = 0; i < transform.childCount; i++)
+            //{
+
+            //    Color c = transform.GetChild(i).GetComponent<SpriteRenderer>().color;
+            //    c.a /= 1.05f;
+            //    transform.GetChild(i).GetComponent<SpriteRenderer>().color = c;
+            //    if (c.a < 0.04)
+            //    {
+            //        Destroy(this.gameObject);
+            //    }
+            //}
             yield return new WaitForSeconds(fadeRate);
         }
         //Destroy(this.gameObject);
-        
+
     }
     void OnDestroy()
     {
-       
+
     }
 }

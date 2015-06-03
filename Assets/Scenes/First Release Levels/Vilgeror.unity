@@ -1013,6 +1013,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .400000006
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &59668962
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1453,6 +1454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &87730107
 GameObject:
@@ -1743,6 +1745,7 @@ MonoBehaviour:
   launchingDevice: {fileID: 748917356}
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
+  myAudioSource: {fileID: 0}
 --- !u!50 &101288738
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2200,6 +2203,7 @@ MonoBehaviour:
   launchingDevice: {fileID: 374127818}
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
+  myAudioSource: {fileID: 0}
 --- !u!50 &121146612
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2280,6 +2284,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .200000003
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &121672787
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3104,6 +3109,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .200000003
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &156818526
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3367,6 +3373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &178192655
 GameObject:
@@ -3524,7 +3531,7 @@ Transform:
   - {fileID: 726813482}
   - {fileID: 770157776}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
 --- !u!1001 &184703388
 Prefab:
   m_ObjectHideFlags: 0
@@ -3687,6 +3694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &197532644
 GameObject:
@@ -3942,6 +3950,7 @@ MonoBehaviour:
   launchingDevice: {fileID: 1277082248}
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
+  myAudioSource: {fileID: 0}
 --- !u!50 &202702442
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -5066,6 +5075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
 --- !u!4 &236804646
 Transform:
@@ -6078,6 +6088,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .300000012
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &278481125
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8216,6 +8227,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .200000003
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &377143420
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10020,6 +10032,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .300000012
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &475453532
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10271,6 +10284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &487453027
 GameObject:
@@ -10617,6 +10631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1001 &499855967
 Prefab:
@@ -10856,8 +10871,20 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!1 &510497732
 GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 169308, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
   m_PrefabInternal: {fileID: 510497731}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 510497734}
+  - 114: {fileID: 510497733}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!114 &510497733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10870,6 +10897,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pooler: {fileID: 633783426}
+--- !u!4 &510497734
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 510497731}
+  m_GameObject: {fileID: 510497732}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1423668548}
+  m_RootOrder: 0
 --- !u!1 &511828230
 GameObject:
   m_ObjectHideFlags: 0
@@ -11361,6 +11400,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .200000003
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &518366597
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11609,6 +11649,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .600000024
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!61 &524916499
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12283,6 +12324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1001 &544558832
 Prefab:
@@ -12529,6 +12571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &547655243
 GameObject:
@@ -12655,6 +12698,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .600000024
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!61 &549072302
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13252,6 +13296,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .300000012
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &569053554
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14435,6 +14480,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .200000003
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &612160549
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14628,6 +14674,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .400000006
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &615348209
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15538,6 +15585,7 @@ MonoBehaviour:
   launchingDevice: {fileID: 521360529}
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
+  myAudioSource: {fileID: 0}
 --- !u!50 &635457736
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -18082,6 +18130,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .200000003
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &744314761
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20515,6 +20564,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .400000006
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &838368168
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20939,8 +20989,20 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!1 &852538809
 GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 169308, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
   m_PrefabInternal: {fileID: 852538808}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 852538811}
+  - 114: {fileID: 852538810}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!114 &852538810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20953,6 +21015,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pooler: {fileID: 633783426}
+--- !u!4 &852538811
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 852538808}
+  m_GameObject: {fileID: 852538809}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1596439764}
+  m_RootOrder: 0
 --- !u!1001 &855909532
 Prefab:
   m_ObjectHideFlags: 0
@@ -22218,6 +22292,7 @@ MonoBehaviour:
   launchingDevice: {fileID: 1797693371}
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
+  myAudioSource: {fileID: 0}
 --- !u!50 &916497034
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -23060,6 +23135,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .300000012
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &963274737
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23700,6 +23776,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .400000006
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &982653339
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23961,6 +24038,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .300000012
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &995029352
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24320,6 +24398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &1020391928
 GameObject:
@@ -24748,27 +24827,27 @@ Prefab:
       objectReference: {fileID: 343494580}
     - target: {fileID: 22450950, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22450950, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22476054, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22476054, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22423248, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22423248, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
@@ -24952,6 +25031,54 @@ Prefab:
     - target: {fileID: 454524, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
       propertyPath: m_RootOrder
       value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 424768, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: .235264391
+      objectReference: {fileID: 0}
+    - target: {fileID: 424768, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .971931398
+      objectReference: {fileID: 0}
+    - target: {fileID: 433532, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: .526281953
+      objectReference: {fileID: 0}
+    - target: {fileID: 433532, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -.850310147
+      objectReference: {fileID: 0}
+    - target: {fileID: 457658, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: .528406084
+      objectReference: {fileID: 0}
+    - target: {fileID: 457658, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -.848991752
+      objectReference: {fileID: 0}
+    - target: {fileID: 450930, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: .998943865
+      objectReference: {fileID: 0}
+    - target: {fileID: 450930, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .0459468216
+      objectReference: {fileID: 0}
+    - target: {fileID: 455658, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: .994080126
+      objectReference: {fileID: 0}
+    - target: {fileID: 455658, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -.108649805
+      objectReference: {fileID: 0}
+    - target: {fileID: 422214, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: .243530378
+      objectReference: {fileID: 0}
+    - target: {fileID: 422214, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .969893277
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
@@ -25237,6 +25364,7 @@ MonoBehaviour:
   launchingDevice: {fileID: 108724076}
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
+  myAudioSource: {fileID: 0}
 --- !u!50 &1049783605
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -25666,6 +25794,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .600000024
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!61 &1077485492
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26478,6 +26607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &1101799627
 GameObject:
@@ -27584,6 +27714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &1153474225
 GameObject:
@@ -28554,6 +28685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &1211605753
 GameObject:
@@ -29307,6 +29439,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .400000006
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &1244531218
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29866,6 +29999,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .200000003
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &1267737343
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30267,6 +30401,33 @@ SpriteRenderer:
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300010, guid: f53fb7811aba6ba45bc042d98b85dd7c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1283543720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 585643814}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1283543721}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1283543721
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 585643814}
+  m_GameObject: {fileID: 1283543720}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1 &1284339554
 GameObject:
   m_ObjectHideFlags: 0
@@ -30470,6 +30631,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .200000003
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &1288726313
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31017,6 +31179,7 @@ MonoBehaviour:
   launchingDevice: {fileID: 1022026280}
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
+  myAudioSource: {fileID: 0}
 --- !u!50 &1296730941
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -33515,8 +33678,20 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!1 &1373824452
 GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 169308, guid: f0fc7468d13e5a543903c0accba68857, type: 2}
   m_PrefabInternal: {fileID: 1373824451}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1373824454}
+  - 114: {fileID: 1373824453}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!114 &1373824453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33529,6 +33704,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pooler: {fileID: 633783426}
+--- !u!4 &1373824454
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1373824451}
+  m_GameObject: {fileID: 1373824452}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2013826258}
+  m_RootOrder: 0
 --- !u!1 &1377048223
 GameObject:
   m_ObjectHideFlags: 0
@@ -33715,6 +33902,7 @@ MonoBehaviour:
   launchingDevice: {fileID: 1095090205}
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
+  myAudioSource: {fileID: 0}
 --- !u!50 &1377048233
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -34809,6 +34997,7 @@ MonoBehaviour:
   launchingDevice: {fileID: 841209214}
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
+  myAudioSource: {fileID: 0}
 --- !u!50 &1419536290
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -34878,7 +35067,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
+--- !u!1 &1423668547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 510497731}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1423668548}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1423668548
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 510497731}
+  m_GameObject: {fileID: 1423668547}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 510497734}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!1001 &1433694376
 Prefab:
   m_ObjectHideFlags: 0
@@ -35764,6 +35982,7 @@ MonoBehaviour:
   launchingDevice: {fileID: 20344502}
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
+  myAudioSource: {fileID: 0}
 --- !u!50 &1459599125
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -36065,8 +36284,20 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!1 &1486679877
 GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 130656, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
   m_PrefabInternal: {fileID: 1486679876}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1486679879}
+  - 114: {fileID: 1486679878}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!114 &1486679878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36079,6 +36310,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pooler: {fileID: 633783426}
+--- !u!4 &1486679879
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1486679876}
+  m_GameObject: {fileID: 1486679877}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2070492446}
+  m_RootOrder: 0
 --- !u!1 &1487288866
 GameObject:
   m_ObjectHideFlags: 0
@@ -36171,6 +36414,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .400000006
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &1498027701
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37356,8 +37600,20 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!1 &1541627900
 GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 130656, guid: 9aeceeec428552a459549977adeb50c3, type: 2}
   m_PrefabInternal: {fileID: 1541627899}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1541627902}
+  - 114: {fileID: 1541627901}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!114 &1541627901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37370,6 +37626,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pooler: {fileID: 633783426}
+--- !u!4 &1541627902
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1541627899}
+  m_GameObject: {fileID: 1541627900}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2046929744}
+  m_RootOrder: 0
 --- !u!1 &1550143816
 GameObject:
   m_ObjectHideFlags: 0
@@ -37927,6 +38195,7 @@ MonoBehaviour:
   launchingDevice: {fileID: 896662337}
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
+  myAudioSource: {fileID: 0}
 --- !u!50 &1569435200
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -38362,6 +38631,34 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300052, guid: d09209296c8780e4988c3f3b90134ed0, type: 3}
   m_Color: {r: .352941155, g: 0, b: 0, a: 1}
+--- !u!1 &1596439763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 852538808}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1596439764}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1596439764
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 852538808}
+  m_GameObject: {fileID: 1596439763}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 852538811}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
 --- !u!1 &1599485105
 GameObject:
   m_ObjectHideFlags: 0
@@ -38549,6 +38846,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .600000024
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!61 &1607234644
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38877,6 +39175,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .400000006
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &1616654996
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39218,6 +39517,7 @@ MonoBehaviour:
   launchingDevice: {fileID: 288962375}
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
+  myAudioSource: {fileID: 0}
 --- !u!50 &1621743282
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -39737,6 +40037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1001 &1653510599
 Prefab:
@@ -40613,6 +40914,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .400000006
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &1682988769
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41678,6 +41980,7 @@ MonoBehaviour:
   launchingDevice: {fileID: 278718765}
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
+  myAudioSource: {fileID: 0}
 --- !u!50 &1721266901
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -42245,7 +42548,7 @@ Transform:
   - {fileID: 1504952785}
   - {fileID: 329440638}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 13
 --- !u!1 &1763069325
 GameObject:
   m_ObjectHideFlags: 0
@@ -43185,6 +43488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1001 &1806557393
 Prefab:
@@ -43843,6 +44147,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .400000006
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &1838171143
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44755,6 +45060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &1884332957
 GameObject:
@@ -45051,6 +45357,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .200000003
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &1886853455
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45705,6 +46012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &1910021902
 GameObject:
@@ -46365,6 +46673,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .200000003
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &1942563451
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46545,6 +46854,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .600000024
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!61 &1948690975
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47383,6 +47693,7 @@ MonoBehaviour:
   launchingDevice: {fileID: 178192656}
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
+  myAudioSource: {fileID: 0}
 --- !u!50 &1974756058
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -48020,6 +48331,7 @@ MonoBehaviour:
   launchingDevice: {fileID: 1834654042}
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
+  myAudioSource: {fileID: 0}
 --- !u!50 &1987384893
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -48157,6 +48469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1001 &1994413885
 Prefab:
@@ -48416,6 +48729,34 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300008, guid: d09209296c8780e4988c3f3b90134ed0, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
+--- !u!1 &2013826257
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1373824451}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2013826258}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2013826258
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1373824451}
+  m_GameObject: {fileID: 2013826257}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1373824454}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!1001 &2017901126
 Prefab:
   m_ObjectHideFlags: 0
@@ -48524,6 +48865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &2019298533
 GameObject:
@@ -48941,6 +49283,7 @@ MonoBehaviour:
   attacksEvery: 1.5
   damage: .400000006
   GiantInAttackArea: 0
+  myAudioSource: {fileID: 0}
 --- !u!212 &2029754610
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49191,7 +49534,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: .0199999996
+  explosion: {fileID: 0}
   hit: 0
+--- !u!1 &2046929743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1541627899}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2046929744}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2046929744
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1541627899}
+  m_GameObject: {fileID: 2046929743}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1541627902}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
 --- !u!1 &2048823005
 GameObject:
   m_ObjectHideFlags: 0
@@ -49261,6 +49633,33 @@ SpriteRenderer:
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300012, guid: d09209296c8780e4988c3f3b90134ed0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &2049091437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1930244261}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2049091438}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2049091438
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1930244261}
+  m_GameObject: {fileID: 2049091437}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
 --- !u!1 &2052646162
 GameObject:
   m_ObjectHideFlags: 0
@@ -49487,6 +49886,34 @@ SpriteRenderer:
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300012, guid: d09209296c8780e4988c3f3b90134ed0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &2070492445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1486679876}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2070492446}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2070492446
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1486679876}
+  m_GameObject: {fileID: 2070492445}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1486679879}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
 --- !u!1 &2072932626
 GameObject:
   m_ObjectHideFlags: 0

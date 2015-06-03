@@ -811,7 +811,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 190658}
-  m_LocalRotation: {x: 0, y: 0, z: .979438901, w: .201741189}
+  m_LocalRotation: {x: 0, y: 0, z: .996536851, w: .0831522122}
   m_LocalPosition: {x: .800000012, y: 1.16999996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -825,7 +825,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184446}
-  m_LocalRotation: {x: 0, y: 0, z: .233714923, w: .972305179}
+  m_LocalRotation: {x: 0, y: 0, z: .234123796, w: .972206831}
   m_LocalPosition: {x: -1.1920929e-06, y: 7.21423721, z: 0}
   m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1}
   m_Children:
@@ -1019,7 +1019,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 148420}
-  m_LocalRotation: {x: 0, y: 0, z: .99404031, w: -.10901349}
+  m_LocalRotation: {x: 0, y: 0, z: .994050682, w: -.108918808}
   m_LocalPosition: {x: 2.08999991, y: 6.09000015, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1045,7 +1045,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175098}
-  m_LocalRotation: {x: 0, y: 0, z: .528465033, w: -.848955095}
+  m_LocalRotation: {x: 0, y: 0, z: .528458536, w: -.848959088}
   m_LocalPosition: {x: 7.15255737e-07, y: 5.84251595, z: 0}
   m_LocalScale: {x: .999999762, y: .999999762, z: 1}
   m_Children:
@@ -1083,7 +1083,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 133182}
-  m_LocalRotation: {x: 0, y: 0, z: .189035445, w: .981970251}
+  m_LocalRotation: {x: 0, y: 0, z: .00891960692, w: .999960244}
   m_LocalPosition: {x: -3.57627869e-07, y: 2.35873199, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2485,7 +2485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   editMode: 0
   showBoneInfluence: 1
-  IK_Enabled: 1
+  IK_Enabled: 0
   basePose: {fileID: 11400000, guid: df25dcf4c3e2ab04f9a85a8a53b5ef33, type: 2}
   _flipY: 0
   _flipX: 0

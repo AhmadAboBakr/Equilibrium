@@ -10,6 +10,7 @@ public class EnemySpawn : MonoBehaviour {
     {
         pooler = GameObject.FindGameObjectWithTag("EnemyPool").GetComponent<GeneralPooling>();
         StartCoroutine("EnemySpawning");
+
 	}
     void Update()
     {
@@ -21,6 +22,10 @@ public class EnemySpawn : MonoBehaviour {
             }
         }
 
+    }
+    void OnDisable()
+    {
+        StopCoroutine("EnemySpawning");
     }
 	
 	// Update is called once per frame
