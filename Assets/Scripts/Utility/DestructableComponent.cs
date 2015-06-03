@@ -5,14 +5,26 @@ public class DestructableComponent : MonoBehaviour {
     Rigidbody2D myRigidBody;
     BoxCollider2D collider;
     ArtifitialGravity aGravity;
+    public bool isGiant;
+    PolygonCollider2D giantCollider;
     float timeToStartFade = 4;
     float fadeRate = 0.1f;
     void Awake()
     {
         aGravity = this.GetComponent<ArtifitialGravity>();
-        collider = this.GetComponent<BoxCollider2D>();
+        if(isGiant)
+        {
+            giantCollider = this.GetComponent<PolygonCollider2D>();
+            giantCollider.enabled = false;
+        }
+        else
+        {
+            collider = this.GetComponent<BoxCollider2D>();
+            collider.enabled = false;
+        }
         myRigidBody = this.GetComponent<Rigidbody2D>();
-        collider.enabled = false;
+
+
         myRigidBody.isKinematic = true;
         aGravity.enabled = false;
 
@@ -22,7 +34,10 @@ public class DestructableComponent : MonoBehaviour {
     public void SelfDestruct(Transform parent)
     {
         aGravity.enabled = true;
-        collider.enabled = true;
+        if (isGiant)
+            giantCollider.enabled = true;
+        else
+            collider.enabled = true;
         myRigidBody.isKinematic = false;
         this.myRigidBody.AddForce((parent.position - this.transform.position).normalized*-20,ForceMode2D.Impulse);
         this.transform.parent = null;

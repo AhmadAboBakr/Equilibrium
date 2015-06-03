@@ -72,6 +72,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 0}
+  damage: .100000001
+  pooler: {fileID: 0}
+  explosion: {fileID: 183580, guid: 6689add1214a9ad499dd3d7d22d8e534, type: 2}
 --- !u!114 &11462512
 MonoBehaviour:
   m_ObjectHideFlags: 1

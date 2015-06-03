@@ -1533,7 +1533,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &66995978
 GameObject:
@@ -1784,7 +1785,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &78710673
 GameObject:
@@ -2432,7 +2434,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &107285820
 GameObject:
@@ -2918,7 +2921,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &145846444
 GameObject:
@@ -4210,7 +4214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &233494385
 GameObject:
@@ -11189,7 +11194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1001 &560783405
 Prefab:
@@ -16785,7 +16791,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &742432926
 GameObject:
@@ -18047,7 +18054,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &808216564
 GameObject:
@@ -18891,7 +18899,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &832197921
 GameObject:
@@ -23068,19 +23077,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 454524, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
       propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2018000, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
-      propertyPath: m_BackGroundColor.r
-      value: .349019617
-      objectReference: {fileID: 0}
-    - target: {fileID: 2018000, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
-      propertyPath: m_BackGroundColor.g
-      value: .541176498
-      objectReference: {fileID: 0}
-    - target: {fileID: 2018000, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
-      propertyPath: m_BackGroundColor.b
-      value: .541176498
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
@@ -24482,7 +24479,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &1123981596
 GameObject:
@@ -31707,6 +31705,10 @@ Prefab:
       propertyPath: allSpells.Array.data[1].manaCost
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 143094, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
   m_IsPrefabParent: 0
@@ -32130,7 +32132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1001 &1610306087
 Prefab:
@@ -33842,7 +33845,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &1706533971
 GameObject:
@@ -35566,7 +35570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &1829759839
 GameObject:
@@ -38899,7 +38904,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1001 &1962463963
 Prefab:
@@ -39648,7 +39654,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &1997810280
 GameObject:
@@ -39703,7 +39710,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &2002403351
 GameObject:
@@ -43087,7 +43095,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &2116689476
 GameObject:
@@ -43401,7 +43410,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &2123797480
 GameObject:
@@ -43524,7 +43534,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0
 --- !u!1 &2132330526
 GameObject:
@@ -44120,5 +44131,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c6fee935d83f4da9640eac4b93b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: .0199999996
+  damage: .200000003
+  explosion: {fileID: 0}
   hit: 0

@@ -3,6 +3,7 @@ using System.Collections;
 
 public class EnemyProjectileDamage : MonoBehaviour {
     public float damage;
+    public GameObject explosion;
     /*
      * Hit is for making sure the enemy projectile doesn't damage the player twice. 
      * al mo2men la yoldagh men go7r maretein
@@ -20,6 +21,8 @@ public class EnemyProjectileDamage : MonoBehaviour {
         {
             Player.player.HealthPoints -= damage;
         }
+        if(explosion)
+            Instantiate(explosion, this.transform.position, Quaternion.identity);
         hit = true;
     }
     void OnDisable(){

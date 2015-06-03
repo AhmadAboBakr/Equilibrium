@@ -194,6 +194,7 @@ GameObject:
   - 114: {fileID: 11484952}
   - 50: {fileID: 5077258}
   - 114: {fileID: 11448060}
+  - 114: {fileID: 11443200}
   m_Layer: 14
   m_Name: red planet TREES-01 (1)_53
   m_TagString: Rubble
@@ -231,6 +232,7 @@ GameObject:
   - 4: {fileID: 428530}
   - 61: {fileID: 6103338}
   - 114: {fileID: 11445838}
+  - 114: {fileID: 11489838}
   m_Layer: 13
   m_Name: Tree 3
   m_TagString: Tree
@@ -930,6 +932,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c6e90d7d701cf9489779edf847bc478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11443200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2b131f76f8a2694f995a71d76fb9d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11445838
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -946,6 +959,8 @@ MonoBehaviour:
   isInGiantMeleeList: 0
   timeToStartFade: 4
   fadeRate: .100000001
+  debris: {fileID: 0}
+  myAudioSource: {fileID: 0}
 --- !u!114 &11448060
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1131,6 +1146,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aba3a8c92e3efc94081f091c56dbbbec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11489838
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2b131f76f8a2694f995a71d76fb9d4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11490194

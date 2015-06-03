@@ -54,6 +54,10 @@ public class Player : MonoBehaviour
         set
         {
             healthPoints = value;
+            if(healthPoints <=0)
+            {
+                GiantDeath.instance.Die();
+            }
             healthBar.value = healthPoints / maxHealthPoints;
         }
     }

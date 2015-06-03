@@ -12,11 +12,17 @@ public class DestructibleEnemy : MonoBehaviour
     public GeneralPooling pooler;
     public bool animationCalled;
     public float deathTimer;
+    float startHealth;
     
     // Use this for initialization
     void OnEnable()
     {
         dead = false;
+        health = startHealth;
+    }
+    void Awake()
+    {
+        startHealth = health;
     }
     void OnDisable()
     {
@@ -24,6 +30,7 @@ public class DestructibleEnemy : MonoBehaviour
     }
     void Start()
     {
+        
         deathTimer = 0;
         myAnim = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
