@@ -29,7 +29,7 @@ public class DestructibleEnemy : MonoBehaviour
     }
     void Start()
     {
-        
+        StartCoroutine("checkPosition");
         deathTimer = 0;
         myAnim = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -111,5 +111,17 @@ public class DestructibleEnemy : MonoBehaviour
         dead = false;
         pooler.ReturnObjectToPool(this.gameObject);
         GameManager.instance.enemyKillCount++;
+    }
+    public IEnumerator checkPosition()
+    {
+        while(true)
+        {
+            if(this.transform.position.magnitude < 50)
+            {
+                pooler.ReturnObjectToPool(this.gameObject);
+               
+            }
+            yield return new WaitForSeconds(1);
+        }
     }
 }
