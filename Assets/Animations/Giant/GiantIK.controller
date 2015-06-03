@@ -494,6 +494,23 @@ AnimatorState:
   m_Mirror: 0
   m_Motion: {fileID: 7400000, guid: 3db2264093213f34da6653ead115469f, type: 2}
   m_Tag: 
+--- !u!1102 &110298222
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Running_1
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_Motion: {fileID: 7400000, guid: 1422023e694224644ab51b3eec88f442, type: 2}
+  m_Tag: 
 --- !u!1107 &110756700
 AnimatorStateMachine:
   serializedVersion: 5
@@ -520,6 +537,9 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 110219272}
     m_Position: {x: 420, y: 420, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 110298222}
+    m_Position: {x: 455, y: 485, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
