@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DestructableComponent : MonoBehaviour {
+public class DestructableComponent : MonoBehaviour
+{
     Rigidbody2D myRigidBody;
     BoxCollider2D collider;
     ArtifitialGravity aGravity;
@@ -9,10 +10,11 @@ public class DestructableComponent : MonoBehaviour {
     PolygonCollider2D giantCollider;
     float timeToStartFade = 4;
     float fadeRate = 0.1f;
+    SpriteRenderer item;
     void Awake()
     {
         aGravity = this.GetComponent<ArtifitialGravity>();
-        if(isGiant)
+        if (isGiant)
         {
             giantCollider = this.GetComponent<PolygonCollider2D>();
             giantCollider.enabled = false;
@@ -29,8 +31,11 @@ public class DestructableComponent : MonoBehaviour {
         aGravity.enabled = false;
 
     }
-	void Start () {
-	}
+    void Start()
+    {
+        
+        item = this.GetComponent<SpriteRenderer>();
+    }
     public void SelfDestruct(Transform parent)
     {
         aGravity.enabled = true;
@@ -39,28 +44,53 @@ public class DestructableComponent : MonoBehaviour {
         else
             collider.enabled = true;
         myRigidBody.isKinematic = false;
-        this.myRigidBody.AddForce((parent.position - this.transform.position).normalized*-20,ForceMode2D.Impulse);
+        this.myRigidBody.AddForce((parent.position - this.transform.position).normalized * -20, ForceMode2D.Impulse);
+        this.myRigidBody.angularVelocity = 100*(Random.Range(0,2)*2)-1;
         this.transform.parent = null;
-        StartCoroutine("DestroyAfterTime");
+        if(!isGiant)
+            StartCoroutine("DestroyAfterTime");
     }
+    
+
     public IEnumerator DestroyAfterTime()
     {
-
-        yield return new WaitForSeconds(timeToStartFade);
-        while (true)
+        yield return new WaitForSeconds(3);
+        myRigidBody.Sleep();
+        
+        aGravity.enabled = false;
+        if (collider)
         {
-            for (int i = 0; i < transform.childCount; i++)
-            {
-
-                Color c = transform.GetChild(i).GetComponent<SpriteRenderer>().color;
-                c.a /= 1.05f;
-                transform.GetChild(i).GetComponent<SpriteRenderer>().color = c;
-                if (c.a < 0.04)
-                {
-                    Destroy(this.gameObject);
-                }
-            }
-            yield return new WaitForSeconds(fadeRate);
+            collider.enabled = false;
         }
+        
+        
+        //while (true)
+        //{
+
+
+
+        //    //Color c = item.color;
+
+        //    //c.a /= 1.05f;
+        //    //item.color = c;
+        //    //if (c.a < 0.04)
+        //    //{
+        //    //    Destroy(this.gameObject);
+        //    //}
+
+        //    ////for (int i = 0; i < transform.childCount; i++)
+        //    ////{
+
+        //    ////    Color c = transform.GetChild(i).GetComponent<SpriteRenderer>().color;
+        //    ////    c.a /= 1.05f;
+        //    ////    transform.GetChild(i).GetComponent<SpriteRenderer>().color = c;
+        //    ////    if (c.a < 0.04)
+        //    ////    {
+        //    ////        Destroy(this.gameObject);
+        //    ////    }
+        //    ////}
+        //    //yield return new WaitForSeconds(fadeRate);
+        //}
     }
+
 }

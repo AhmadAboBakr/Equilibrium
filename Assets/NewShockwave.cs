@@ -13,7 +13,7 @@ public class NewShockwave : MonoBehaviour {
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.gameObject.name);
+
         //If the object in the trigger is a static object such as a tree or a building, then it only decreases its health
         if (other.CompareTag("Building"))
         {
@@ -34,7 +34,7 @@ public class NewShockwave : MonoBehaviour {
             other.GetComponent<DestructableObject>().Health -= damage;
         }
 
-        //StartCoroutine("DestroyAfterFinishing");
+        StartCoroutine("DestroyAfterFinishing");
         //Destroy(gameObject);
     }
     public IEnumerator DestroyAfterFinishing()

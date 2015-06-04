@@ -109,3 +109,11 @@ public class GiantMeleeAttack : MonoBehaviour {
         }
     }
 }
+
+/*
+ * InvalidOperationException: Collection was modified; enumeration operation may not execute.
+System.Collections.Generic.List`1+Enumerator[UnityEngine.GameObject].VerifyState () (at /Users/builduser/buildslave/mono-runtime-and-classlibs/build/mcs/class/corlib/System.Collections.Generic/List.cs:778)
+System.Collections.Generic.List`1+Enumerator[UnityEngine.GameObject].MoveNext () (at /Users/builduser/buildslave/mono-runtime-and-classlibs/build/mcs/class/corlib/System.Collections.Generic/List.cs:784)
+GiantMeleeAttack.doAttack () (at Assets/Scripts/Player/GiantMeleeAttack.cs:60)
+
+ */

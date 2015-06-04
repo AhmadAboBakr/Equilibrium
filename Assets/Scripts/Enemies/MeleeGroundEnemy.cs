@@ -86,7 +86,7 @@ public class MeleeGroundEnemy : MonoBehaviour
 
     public void AttackSound()
     {
-        myAudioSource.Play();
+        //myAudioSource.Play();
     }
 
 }

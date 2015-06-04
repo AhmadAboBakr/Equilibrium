@@ -22,6 +22,10 @@ public class EnemySpawn : MonoBehaviour {
         }
 
     }
+    void OnDisable()
+    {
+        StopCoroutine("EnemySpawning");
+    }
 	
 	// Update is called once per frame
     IEnumerator EnemySpawning()

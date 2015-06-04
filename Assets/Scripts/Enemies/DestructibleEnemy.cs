@@ -12,7 +12,7 @@ public class DestructibleEnemy : MonoBehaviour
     public GeneralPooling pooler;
     public bool animationCalled;
     public float deathTimer;
-    float startHealth;
+    public float startHealth;
     
     // Use this for initialization
     void OnEnable()
@@ -20,17 +20,16 @@ public class DestructibleEnemy : MonoBehaviour
         dead = false;
         health = startHealth;
     }
-    void Awake()
-    {
-        startHealth = health;
-    }
+    
     void OnDisable()
     {
         dead = false;
+        health = startHealth;
+        deathTimer = 0;
     }
     void Start()
     {
-        
+        StartCoroutine("checkPosition");
         deathTimer = 0;
         myAnim = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -58,6 +57,7 @@ public class DestructibleEnemy : MonoBehaviour
         if(deathTimer > 0.8f)
         {
             pooler.ReturnObjectToPool(this.gameObject);
+
         }
     }
 
@@ -111,5 +111,17 @@ public class DestructibleEnemy : MonoBehaviour
         dead = false;
         pooler.ReturnObjectToPool(this.gameObject);
         GameManager.instance.enemyKillCount++;
+    }
+    public IEnumerator checkPosition()
+    {
+        while(true)
+        {
+            if(this.transform.position.magnitude < 50)
+            {
+                pooler.ReturnObjectToPool(this.gameObject);
+               
+            }
+            yield return new WaitForSeconds(1);
+        }
     }
 }
