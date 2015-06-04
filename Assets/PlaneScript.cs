@@ -67,6 +67,10 @@ public class PlaneScript : MonoBehaviour {
             landed = true;
             explosion.SetActive(true);
             this.gameObject.GetComponent<EnemySpawn>().enabled = false;
+            foreach (var component in this.transform.GetComponentsInChildren<DestructableComponent>())
+            {
+                component.SelfDestruct(this.transform);
+            }
             StartCoroutine("DieAfterTime");
             
         }

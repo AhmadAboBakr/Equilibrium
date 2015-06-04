@@ -32,7 +32,10 @@ public class SurfaceMovingObject : MonoBehaviour
         collisionLayer[0] = "planetSegments";
 
     }
-
+    void OnEnable()
+    {
+        grounded = false;
+    }
     void Update()
     {
 

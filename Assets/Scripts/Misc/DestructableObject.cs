@@ -61,31 +61,7 @@ public class DestructableObject : MonoBehaviour
                     this.GetComponent<EnemySpawn>().enabled = false;
                 }
 
-                //for (int i = 0; i < transform.childCount; i++)
-                //{
-                //    while (this.transform.GetChild(i).childCount > 0)
-                //    {
-                //        this.transform.GetChild(i).GetChild(0).parent = this.transform;
-
-                //    }
-                //}
-
-                //for (int i = 0; i < transform.childCount; i++)
-                //{
-                //    //Add Rigid body to all rubble objects and enable their disabled box colliders and add Gravity so they fall
-                //    transform.GetChild(i).gameObject.AddComponent<Rigidbody2D>();
-                //    transform.GetChild(i).gameObject.GetComponent<BoxCollider2D>().enabled = true;
-
-                //    transform.GetChild(i).gameObject.AddComponent<ArtifitialGravity>();
-                //    //Add force to rubble objects 
-                //    transform.GetChild(i).gameObject.GetComponent<Rigidbody2D>().AddForce((transform.GetChild(i).position - Player.player.transform.position) * 40);
-                //}
-                ////Remove the gameobject from the attackables list they enter ontriggerenter with the player
-                ////(GameObject.FindGameObjectWithTag("Player") as GameObject).GetComponent<GiantMeleeAttack>().RemoveSelfFromAttackableList(this.gameObject);
-                ////GiantMeleeAttack.player.RemoveSelfFromAttackableList(this.gameObject);
-                ////GiantMeleeAttack.player.attackables.Remove(this.gameObject);
-                ////Destroy rubble after time
-                //StartCoroutine("DestroyAfterTime");
+                
                 
             }
 
@@ -96,11 +72,16 @@ public class DestructableObject : MonoBehaviour
         if (health <= 0)
         {
             GiantMeleeAttack.player.RemoveSelfFromAttackableList(this.gameObject);
-            Destroy(this.gameObject);
+            StartCoroutine("Delay");
         }
     }
 
+    public IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(1);
+        Destroy(this.gameObject);
 
+    }
     public IEnumerator DestroyAfterTime()
     {
         yield return new WaitForSeconds(timeToStartFade);

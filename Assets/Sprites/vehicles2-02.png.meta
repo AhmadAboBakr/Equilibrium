@@ -1,9 +1,19 @@
 fileFormatVersion: 2
 guid: fbf36a2707ae0f441a05d077d5e8649a
-timeCreated: 1432679422
-licenseType: Free
+timeCreated: 1433428618
+licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: vehicles2-02_0
+    21300002: vehicles2-02_1
+    21300004: vehicles2-02_2
+    21300006: vehicles2-02_3
+    21300008: vehicles2-02_4
+    21300010: vehicles2-02_5
+    21300012: vehicles2-02_6
+    21300014: vehicles2-02_7
+    21300016: vehicles2-02_8
+    21300018: vehicles2-02_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,25 +40,125 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 35
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: vehicles2-02_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 401
+        width: 315
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vehicles2-02_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 379
+        width: 224
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vehicles2-02_2
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 358
+        width: 148
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vehicles2-02_3
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 327
+        width: 230
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vehicles2-02_4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 209
+        width: 212
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vehicles2-02_5
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 214
+        width: 166
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vehicles2-02_6
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 77
+        width: 192
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vehicles2-02_7
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 10
+        width: 311
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vehicles2-02_8
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 11
+        width: 222
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vehicles2-02_9
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 23
+        width: 170
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

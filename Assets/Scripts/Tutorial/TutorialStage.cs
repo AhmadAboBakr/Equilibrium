@@ -5,7 +5,6 @@ public class TutorialStage : MonoBehaviour {
     public GameObject CompanioinUIElement;
     void OnEnable()
     {
-        Debug.Log(CompanioinUIElement);
         if (CompanioinUIElement)
         {
             CompanioinUIElement.SetActive(true);
