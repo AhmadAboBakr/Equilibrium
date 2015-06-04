@@ -114,6 +114,6 @@ public class RangedGroundEnemy : MonoBehaviour
     }
     public void AttackSound()
     {
-        myAudioSource.Play();
+        //myAudioSource.Play();
     }
 }

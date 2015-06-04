@@ -56,7 +56,7 @@ public class DestructibleEnemy : MonoBehaviour
         }
         if(deathTimer > 0.8f)
         {
-            pooler.ReturnObjectToPool(this.gameObject);
+            DisableAfterTime();
 
         }
     }
@@ -107,7 +107,7 @@ public class DestructibleEnemy : MonoBehaviour
     }
     public void DisableAfterTime()
     {
-        health = 1;
+        health = startHealth;
         dead = false;
         pooler.ReturnObjectToPool(this.gameObject);
         GameManager.instance.enemyKillCount++;
@@ -118,7 +118,7 @@ public class DestructibleEnemy : MonoBehaviour
         {
             if(this.transform.position.magnitude < 50)
             {
-                pooler.ReturnObjectToPool(this.gameObject);
+                //pooler.ReturnObjectToPool(this.gameObject);
                
             }
             yield return new WaitForSeconds(1);

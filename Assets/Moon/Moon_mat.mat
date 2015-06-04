@@ -18,15 +18,15 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 7a632f967e8ad42f5bd275898151ab6a, type: 3}
-          m_Scale: {x: 9.99999975e-06, y: 9.99999975e-05}
+          m_Texture: {fileID: 2800000, guid: 839b6d7460c3e7d439ff52c7e1bce533, type: 3}
+          m_Scale: {x: .0500000007, y: .0500000007}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _CoreTex
         second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
+          m_Texture: {fileID: 2800000, guid: 839b6d7460c3e7d439ff52c7e1bce533, type: 3}
+          m_Scale: {x: .0500000007, y: .0500000007}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -39,7 +39,7 @@ Material:
       data:
         first:
           name: Radius
-        second: 217.246887
+        second: 216.627396
       data:
         first:
           name: CoreRadius

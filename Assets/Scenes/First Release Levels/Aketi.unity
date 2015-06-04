@@ -656,6 +656,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!61 &33567727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1114,6 +1115,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!61 &53597370
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1666,6 +1668,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!58 &78643495
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3938,6 +3941,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!58 &134570964
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4265,6 +4269,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!58 &144243911
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4533,6 +4538,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &161404896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4828,6 +4834,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &169264566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6476,6 +6483,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!58 &190106441
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6738,6 +6746,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &201144196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7225,6 +7234,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!61 &230570530
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7801,6 +7811,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &258826717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11467,6 +11478,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!58 &398934118
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12151,6 +12163,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &433613231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13939,6 +13952,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!58 &514271732
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14203,6 +14217,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &530078486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14691,6 +14706,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!61 &554292757
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14937,6 +14953,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!58 &564665765
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15719,6 +15736,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!61 &618736128
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16588,6 +16606,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!58 &646206702
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18683,6 +18702,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!61 &769453153
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19983,6 +20003,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!58 &834012798
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20169,6 +20190,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!61 &835826116
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20536,6 +20558,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &857821442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21198,6 +21221,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!61 &888551945
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22409,6 +22433,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!61 &956458462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23691,6 +23716,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!58 &1014696134
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24150,6 +24176,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1023053779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26967,6 +26994,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1165108228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27570,6 +27598,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!58 &1171844823
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29997,6 +30026,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!58 &1250146566
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30476,6 +30506,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1265341551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31161,6 +31192,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!58 &1293113433
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31887,6 +31919,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!61 &1331113790
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32862,6 +32895,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1375168559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33853,6 +33887,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!61 &1424378793
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35683,6 +35718,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!61 &1531543522
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38689,6 +38725,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1644994313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39855,6 +39892,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!61 &1721597490
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40155,6 +40193,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!58 &1727949477
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40714,6 +40753,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!61 &1753777508
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42038,6 +42078,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &1825919330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45043,6 +45084,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!58 &1976660508
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -45382,6 +45424,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!61 &1989506276
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47764,6 +47807,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &2065004732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49347,6 +49391,7 @@ MonoBehaviour:
   pooler: {fileID: 0}
   animationCalled: 0
   deathTimer: 0
+  startHealth: 0
 --- !u!114 &2122332797
 MonoBehaviour:
   m_ObjectHideFlags: 0

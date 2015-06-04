@@ -39,7 +39,7 @@ public class InGameObjectiveUI : MonoBehaviour {
                 GameManager.instance.objectives[i].checkObjective();
                 if(GameManager.instance.objectives[i].checkObjective())
                 {
-                    objectivesImages[i].color = Color.green;
+                    //objectivesImages[i].color = Color.green;
                 }
                 else
                 {
