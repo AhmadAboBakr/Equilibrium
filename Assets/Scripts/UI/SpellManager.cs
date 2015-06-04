@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 public enum spell
@@ -14,6 +15,7 @@ public class SpellManager : MonoBehaviour {
     public List<Spell> allSpells;
     GameObject currentlyEnabledSpell;
     public GameObject giantHead;
+    public Image[] spellIcons;
 	// Use this for initialization
     void Awake()
     {
@@ -112,8 +114,16 @@ public class SpellManager : MonoBehaviour {
     }
     public void SetCurrentSpell(int index)
     {
-        currentSpell = (spell)index;
-
+        
+            currentSpell = (spell)index;
+            foreach (var item in spellIcons)
+            {
+                var color = item.color;
+                color = Color.grey;
+                item.color = color;
+            }
+            spellIcons[index].color = Color.white;
+          
     }
     IEnumerator DestroySpell()
     {

@@ -107,6 +107,7 @@ public class DestructibleEnemy : MonoBehaviour
     }
     public void DisableAfterTime()
     {
+        this.myRigidbody.velocity = Vector2.zero;
         health = startHealth;
         dead = false;
         pooler.ReturnObjectToPool(this.gameObject);

@@ -65,6 +65,7 @@ public class GiantMovementController : MonoBehaviour {
 
     public void MoveRight()
     {
+       
         if (movingLeft == true && grounded)
         {
              Jump();
@@ -122,7 +123,7 @@ public class GiantMovementController : MonoBehaviour {
     public void Move(float force)
     {
         //this.myRigidBody.AddForce(this.transform.right*force,ForceMode2D.Impulse);
-        if (grounded)
+        if (grounded && !GiantDeath.instance.isDead)
         {
             //to make the object face the direction it's moving to
             if (force < 0)
@@ -141,7 +142,7 @@ public class GiantMovementController : MonoBehaviour {
 
     public void Jump()
     {
-        if (grounded)
+        if (grounded && !GiantDeath.instance.isDead)
         {
             myRigidbody.velocity += (Vector2)(this.transform.up * jumpForce);
             grounded = false;

@@ -2815,7 +2815,7 @@ MonoBehaviour:
   attackables: []
   damagePerHit: 1
   attackForce: 0
-  staminaPerHit: .100000001
+  staminaPerHit: .349999994
 --- !u!114 &11462538
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3067,8 +3067,8 @@ MonoBehaviour:
   maxMana: 10
   stamina: 0
   maxStamina: 10
-  healthRegen: .100000001
-  manaRegen: .100000001
+  healthRegen: .300000012
+  manaRegen: .200000003
   staminaRegen: .100000001
   healthBar: {fileID: 0}
   manaBar: {fileID: 0}

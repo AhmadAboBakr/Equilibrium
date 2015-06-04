@@ -49,6 +49,7 @@ GameObject:
   - 114: {fileID: 11429338}
   - 58: {fileID: 5807612}
   - 82: {fileID: 8257264}
+  - 114: {fileID: 11419242}
   m_Layer: 22
   m_Name: BombaBoo
   m_TagString: Untagged
@@ -320,6 +321,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c6e90d7d701cf9489779edf847bc478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11419242
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab580d4a8553b104ca10935c74b7521d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11429338

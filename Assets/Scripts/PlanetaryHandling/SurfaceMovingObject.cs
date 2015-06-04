@@ -46,6 +46,11 @@ public class SurfaceMovingObject : MonoBehaviour
             this.myRigidBody.AddForce(this.transform.up * upForce, ForceMode2D.Impulse);
 
         }
+        if(this.myRigidBody.velocity.magnitude >= 120)
+        {
+
+            this.GetComponent<DestructibleEnemy>().DisableAfterTime();
+        }
 
     }
     //IEnumerator UpdateCouroutine()

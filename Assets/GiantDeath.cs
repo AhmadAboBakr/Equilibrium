@@ -4,10 +4,12 @@ using System.Collections;
 public class GiantDeath : MonoBehaviour {
     public static GiantDeath instance;
     Animator myAnimator;
+    public bool isDead;
     GiantMovementController myMovement;
 	// Use this for initialization
 	void Start () 
     {
+        isDead = false;
         if(!instance)
         {
             instance = this;
@@ -29,6 +31,7 @@ public class GiantDeath : MonoBehaviour {
         foreach (var item in GetComponentsInChildren<DestructableComponent>())
         {
             item.SelfDestruct(this.transform);
+            isDead = true;
         }
     }
 }
