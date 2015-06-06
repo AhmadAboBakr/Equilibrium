@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public int enemyKillCount;
     public float gameElapsedTime;
+    public planet currentPlanet;
     void Awake()
     {
         instance = this;
@@ -37,12 +38,25 @@ public class GameManager : MonoBehaviour
         {
             totalBuildings = GameObject.FindGameObjectsWithTag("Plane").Length;
             StartCoroutine("checkPlanes");
+            currentPlanet = planet.red;
         }
         else
         {
             totalBuildings = GameObject.FindGameObjectsWithTag("Building").Length;
             StartCoroutine("checkBuildings");
+            currentPlanet = planet.viking;
+        }
 
+        switch (currentPlanet)
+        {
+            case planet.viking:
+                winCounterImage.sprite = vikingBuildingSprite;
+                break;
+            case planet.red:
+                winCounterImage.sprite = redBuildingSprite;
+                break;
+            default:
+                break;
         }
 
     }
@@ -56,7 +70,17 @@ public class GameManager : MonoBehaviour
             {
                 //when buildings are finished start counting enemies
                 enemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
-
+                switch (currentPlanet)
+                {
+                    case planet.viking:
+                        winCounterImage.sprite = vikingEnemySprite;
+                        break;
+                    case planet.red:
+                        winCounterImage.sprite = redEnemySprite;
+                        break;
+                    default:
+                        break;
+                }
                 if (enemies <= 0)
                 {
                     //win state
