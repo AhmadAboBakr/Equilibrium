@@ -9,7 +9,7 @@ public class Screenshots : MonoBehaviour
     {
         hamada = 0;
 
-        //StartCoroutine(GetScreen());
+        StartCoroutine(GetScreen());
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class Screenshots : MonoBehaviour
         {
             
             hamada++;
-            Application.CaptureScreenshot("C:\\Users\\SDAndGaming\\Documents\\Bakr\\ssss\\Equilibrium\\Assets\\Hamada\\screenshot"+ hamada+".png");
+            Application.CaptureScreenshot("screenshot"+ hamada+".png");
             yield return new WaitForSeconds(1.5f);
         }
     }
