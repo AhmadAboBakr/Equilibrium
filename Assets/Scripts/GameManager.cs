@@ -99,27 +99,35 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator checkPlanes()
     {
-        //counts all buildings
-        buildings = GameObject.FindGameObjectsWithTag("Plane").Length;
-        if (buildings <= 0)
+        while (true)
         {
-            //when buildings are finished start counting enemies
-            enemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
-
-            if (enemies <= 0)
+            //counts all buildings
+            buildings = GameObject.FindGameObjectsWithTag("Plane").Length;
+            if (buildings <= 0)
             {
-                //win state
-                InGameObjectiveUI.instance.gameObject.SetActive(true);
+                //when buildings are finished start counting enemies
+                enemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
+
+                if (enemies <= 0)
+                {
+                    //win state
+                    InGameObjectiveUI.instance.gameObject.SetActive(true);
+                }
             }
+            UpdateCounter();
+            //Check Player health for loss condition
+            if (Player.player.HealthPoints <= 0)
+            {
+                Debug.Log("dead");
+                LossUI.instance.gameObject.SetActive(true);
+            }
+            else
+            {
+
+            }
+            gameElapsedTime += 0.5f;
+            yield return new WaitForSeconds(1.5f);
         }
-        UpdateCounter();
-        //Check Player health for loss condition
-        if (Player.player.HealthPoints <= 0)
-        {
-            LossUI.instance.gameObject.SetActive(true);
-        }
-        gameElapsedTime += 0.5f;
-        yield return new WaitForSeconds(1.5f);
 
     }
 

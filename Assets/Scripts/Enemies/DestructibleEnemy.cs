@@ -81,10 +81,18 @@ public class DestructibleEnemy : MonoBehaviour
         this.myRigidbody.velocity = Vector2.zero;
         health = startHealth;
         dead = false;
-        if (!gameObject.GetComponent<RangedGroundEnemy>().isInTower)
-            pooler.ReturnObjectToPool(this.gameObject);
+        if(this.gameObject.GetComponent<RangedGroundEnemy>()!= null)
+        {
+            if (!gameObject.GetComponent<RangedGroundEnemy>().isInTower)
+                pooler.ReturnObjectToPool(this.gameObject);
+            else
+                Destroy(this.gameObject);
+        }
         else
-            Destroy(this.gameObject);
+        {
+            pooler.ReturnObjectToPool(this.gameObject);
+        }
+        
         GameManager.instance.enemyKillCount++;
 
     }

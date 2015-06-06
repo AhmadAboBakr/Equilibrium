@@ -73437,26 +73437,26 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11417524, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
-      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2081176831}
-    - target: {fileID: 11417524, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
-      propertyPath: delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2081176831}
-    - target: {fileID: 11471064, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
-      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2081176831}
-    - target: {fileID: 11471064, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
-      propertyPath: delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2081176831}
     - target: {fileID: 11491550, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
       propertyPath: giantHead
       value: 
       objectReference: {fileID: 1702795411}
+    - target: {fileID: 11471064, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2081176831}
+    - target: {fileID: 11471064, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2081176831}
+    - target: {fileID: 11417524, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2081176831}
+    - target: {fileID: 11417524, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2081176831}
     - target: {fileID: 22450950, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
       propertyPath: m_AnchorMax.x
       value: 1
