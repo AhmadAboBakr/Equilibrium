@@ -380,6 +380,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 616804198}
+  - 114: {fileID: 616804199}
   m_Layer: 0
   m_Name: LevelSelectionScreen
   m_TagString: Untagged
@@ -402,6 +403,17 @@ Transform:
   - {fileID: 3470860}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &616804199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 616804197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1de11f04d48a8dd4aa414818181241f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1240806349
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,7 +478,7 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1240806349}
---- !u!224 &1248444906 stripped
+--- !u!224 &1248444906
 RectTransform:
   m_PrefabParentObject: {fileID: 22480800, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd,
     type: 2}
@@ -717,7 +729,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd, type: 2}
   m_IsPrefabParent: 0
---- !u!224 &1954633396 stripped
+--- !u!224 &1954633396
 RectTransform:
   m_PrefabParentObject: {fileID: 22413540, guid: 9a8cfbdfdcb8be34ab8dce6b11216fbd,
     type: 2}
