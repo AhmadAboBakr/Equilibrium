@@ -398,7 +398,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452370, guid: 70bb0040d86a72e44910383fe73d55dc, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 168520, guid: 70bb0040d86a72e44910383fe73d55dc, type: 2}
       propertyPath: m_Name
@@ -811,6 +811,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &12755970
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -903,7 +904,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 433056, guid: 7774be075ce65dd48a042cb3b430dd87, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 165874, guid: 7774be075ce65dd48a042cb3b430dd87, type: 2}
       propertyPath: m_Name
@@ -1167,7 +1168,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 426208, guid: 6d5807b6ad43e4e489ca93ec210ef9fb, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 176018, guid: 6d5807b6ad43e4e489ca93ec210ef9fb, type: 2}
       propertyPath: m_Name
@@ -1281,7 +1282,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 426208, guid: 6d5807b6ad43e4e489ca93ec210ef9fb, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 176018, guid: 6d5807b6ad43e4e489ca93ec210ef9fb, type: 2}
       propertyPath: m_Name
@@ -2566,7 +2567,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452370, guid: 70bb0040d86a72e44910383fe73d55dc, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 168520, guid: 70bb0040d86a72e44910383fe73d55dc, type: 2}
       propertyPath: m_Name
@@ -2674,7 +2675,7 @@ Transform:
   - {fileID: 1050844166}
   - {fileID: 1990157736}
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 44
 --- !u!114 &120105579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3080,12 +3081,76 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 466602, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 11407286, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: pooler
+      value: 
+      objectReference: {fileID: 414724164}
+    - target: {fileID: 11433026, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: pooler
+      value: 
+      objectReference: {fileID: 414724164}
+    - target: {fileID: 11489830, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: pooler
+      value: 
+      objectReference: {fileID: 414724164}
+    - target: {fileID: 11408914, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: pooler
+      value: 
+      objectReference: {fileID: 414724164}
+    - target: {fileID: 11419922, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: pooler
+      value: 
+      objectReference: {fileID: 414724164}
+    - target: {fileID: 11472888, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: pooler
+      value: 
+      objectReference: {fileID: 414724164}
+    - target: {fileID: 11484970, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: pooler
+      value: 
+      objectReference: {fileID: 414724164}
+    - target: {fileID: 11442126, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: pooler
+      value: 
+      objectReference: {fileID: 414724164}
     - target: {fileID: 11434260, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
       propertyPath: pooler
       value: 
       objectReference: {fileID: 633783426}
+    - target: {fileID: 5013920, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004958, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000238, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5026902, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062176, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5073936, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5043542, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096408, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
   m_IsPrefabParent: 0
@@ -3777,7 +3842,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 408770, guid: d47070550ff65ef45a9f8cc97d1129a8, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 151740, guid: d47070550ff65ef45a9f8cc97d1129a8, type: 2}
       propertyPath: m_Name
@@ -4087,7 +4152,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 408770, guid: d47070550ff65ef45a9f8cc97d1129a8, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 151740, guid: d47070550ff65ef45a9f8cc97d1129a8, type: 2}
       propertyPath: m_Name
@@ -6834,7 +6899,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 481056, guid: 12ec86f92a2e0e44f9b48aa88644888c, type: 2}
       propertyPath: m_RootOrder
-      value: 45
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 173060, guid: 12ec86f92a2e0e44f9b48aa88644888c, type: 2}
       propertyPath: m_Name
@@ -7157,7 +7222,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 451098, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 21296456, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
       propertyPath: m_Color.r
@@ -7226,7 +7291,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &364565024 stripped
+--- !u!1 &364565024
 GameObject:
   m_PrefabParentObject: {fileID: 197494, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
   m_PrefabInternal: {fileID: 364565023}
@@ -7346,7 +7411,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 408770, guid: d47070550ff65ef45a9f8cc97d1129a8, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 151740, guid: d47070550ff65ef45a9f8cc97d1129a8, type: 2}
       propertyPath: m_Name
@@ -7827,6 +7892,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &397500692
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -8310,7 +8376,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 493710, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 11491194, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
       propertyPath: pooler
@@ -8319,6 +8385,14 @@ Prefab:
     - target: {fileID: 169308, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
       propertyPath: m_Name
       value: castle4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035572, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5071346, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
@@ -8941,6 +9015,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &427697527
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -9840,6 +9915,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &470374107
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -9973,7 +10049,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 451098, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 21296456, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
       propertyPath: m_Color.r
@@ -10652,6 +10728,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &500027983
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -11136,7 +11213,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 426208, guid: 6d5807b6ad43e4e489ca93ec210ef9fb, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 176018, guid: 6d5807b6ad43e4e489ca93ec210ef9fb, type: 2}
       propertyPath: m_Name
@@ -11334,7 +11411,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 433056, guid: 7774be075ce65dd48a042cb3b430dd87, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 165874, guid: 7774be075ce65dd48a042cb3b430dd87, type: 2}
       propertyPath: m_Name
@@ -14303,7 +14380,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 451098, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
       propertyPath: m_RootOrder
-      value: 19
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 21296456, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
       propertyPath: m_Color.r
@@ -14419,6 +14496,14 @@ Prefab:
       propertyPath: pooler
       value: 
       objectReference: {fileID: 633783426}
+    - target: {fileID: 5035572, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5071346, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
   m_IsPrefabParent: 0
@@ -16127,6 +16212,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &691208386
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -16315,12 +16401,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 493710, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 11460554, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
+      propertyPath: pooler
+      value: 
+      objectReference: {fileID: 414724164}
+    - target: {fileID: 11432336, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
+      propertyPath: pooler
+      value: 
+      objectReference: {fileID: 414724164}
     - target: {fileID: 11491194, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
       propertyPath: pooler
       value: 
       objectReference: {fileID: 633783426}
+    - target: {fileID: 5035572, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5071346, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
   m_IsPrefabParent: 0
@@ -16979,6 +17081,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &730260221
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -17393,7 +17496,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 433056, guid: 7774be075ce65dd48a042cb3b430dd87, type: 2}
       propertyPath: m_RootOrder
-      value: 20
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 165874, guid: 7774be075ce65dd48a042cb3b430dd87, type: 2}
       propertyPath: m_Name
@@ -17931,7 +18034,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 408770, guid: d47070550ff65ef45a9f8cc97d1129a8, type: 2}
       propertyPath: m_RootOrder
-      value: 21
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 151740, guid: d47070550ff65ef45a9f8cc97d1129a8, type: 2}
       propertyPath: m_Name
@@ -18532,7 +18635,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 451098, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
       propertyPath: m_RootOrder
-      value: 22
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 21296456, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
       propertyPath: m_Color.r
@@ -18601,7 +18704,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &810633537 stripped
+--- !u!1 &810633537
 GameObject:
   m_PrefabParentObject: {fileID: 197494, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
   m_PrefabInternal: {fileID: 810633536}
@@ -20800,6 +20903,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &889725369
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -21645,7 +21749,7 @@ Transform:
   - {fileID: 1104083903}
   - {fileID: 729600656}
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 38
 --- !u!114 &948520671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21914,6 +22018,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &959790891
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -22183,7 +22288,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 451098, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
       propertyPath: m_RootOrder
-      value: 42
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 197494, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
       propertyPath: m_Name
@@ -22910,7 +23015,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 451098, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
       propertyPath: m_RootOrder
-      value: 23
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 21296456, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
       propertyPath: m_Color.r
@@ -23237,7 +23342,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 466602, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11434260, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
       propertyPath: pooler
@@ -23246,6 +23351,38 @@ Prefab:
     - target: {fileID: 130656, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
       propertyPath: m_Name
       value: xCastle2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5013920, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004958, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000238, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5026902, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062176, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5073936, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5043542, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096408, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e5722fdace376bc49930d820f6ff7b61, type: 2}
@@ -23410,7 +23547,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 454524, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 461214, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
       propertyPath: m_LocalRotation.z
@@ -23491,11 +23628,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1039876513 stripped
+--- !u!1 &1039876513
 GameObject:
   m_PrefabParentObject: {fileID: 188172, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
   m_PrefabInternal: {fileID: 1039876512}
---- !u!1 &1039876514 stripped
+--- !u!1 &1039876514
 GameObject:
   m_PrefabParentObject: {fileID: 161592, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
   m_PrefabInternal: {fileID: 1039876512}
@@ -25830,7 +25967,7 @@ Transform:
   - {fileID: 87937557}
   - {fileID: 797920150}
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 41
 --- !u!1 &1189648012
 GameObject:
   m_ObjectHideFlags: 0
@@ -26004,7 +26141,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 408770, guid: d47070550ff65ef45a9f8cc97d1129a8, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 151740, guid: d47070550ff65ef45a9f8cc97d1129a8, type: 2}
       propertyPath: m_Name
@@ -28272,7 +28409,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 451098, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
       propertyPath: m_RootOrder
-      value: 25
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 21296456, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
       propertyPath: m_Color.r
@@ -28984,7 +29121,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452370, guid: 70bb0040d86a72e44910383fe73d55dc, type: 2}
       propertyPath: m_RootOrder
-      value: 27
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 168520, guid: 70bb0040d86a72e44910383fe73d55dc, type: 2}
       propertyPath: m_Name
@@ -30199,6 +30336,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &1453665571
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -30484,7 +30622,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 493710, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11491194, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
       propertyPath: pooler
@@ -30493,6 +30631,14 @@ Prefab:
     - target: {fileID: 169308, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
       propertyPath: m_Name
       value: castle5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035572, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5071346, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 112b2e29ac61eab438df08e7219c3c81, type: 2}
@@ -30716,7 +30862,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 409824, guid: 825642b629969194aa9e0b8a7ddde6fa, type: 2}
       propertyPath: m_RootOrder
-      value: 30
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 156212, guid: 825642b629969194aa9e0b8a7ddde6fa, type: 2}
       propertyPath: m_Name
@@ -30898,7 +31044,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452370, guid: 70bb0040d86a72e44910383fe73d55dc, type: 2}
       propertyPath: m_RootOrder
-      value: 28
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 168520, guid: 70bb0040d86a72e44910383fe73d55dc, type: 2}
       propertyPath: m_Name
@@ -31380,6 +31526,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &1508474916
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -32185,7 +32332,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22487006, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
       propertyPath: m_RootOrder
-      value: 26
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 22487006, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -32286,7 +32433,7 @@ Prefab:
         type: 3}
     - target: {fileID: 22497540, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 205
+      value: 205.899994
       objectReference: {fileID: 0}
     - target: {fileID: 22497540, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
       propertyPath: m_SizeDelta.y
@@ -32294,7 +32441,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22497540, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -48.5
+      value: -47.2000008
       objectReference: {fileID: 0}
     - target: {fileID: 22497540, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
       propertyPath: m_SizeDelta.x
@@ -32318,10 +32465,22 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: a3a54f10b35a22046af7e2918c3529f7,
         type: 3}
+    - target: {fileID: 22497540, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .0943973735
+      objectReference: {fileID: 0}
+    - target: {fileID: 22497540, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .0943973809
+      objectReference: {fileID: 0}
+    - target: {fileID: 22497540, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .0943973809
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1590853405 stripped
+--- !u!114 &1590853405
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11453234, guid: 2129cf51a96e42c47a919df6beaa54bf,
     type: 2}
@@ -32787,7 +32946,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 426208, guid: 6d5807b6ad43e4e489ca93ec210ef9fb, type: 2}
       propertyPath: m_RootOrder
-      value: 29
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 176018, guid: 6d5807b6ad43e4e489ca93ec210ef9fb, type: 2}
       propertyPath: m_Name
@@ -33606,6 +33765,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &1670903786
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -33793,7 +33953,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 426208, guid: 6d5807b6ad43e4e489ca93ec210ef9fb, type: 2}
       propertyPath: m_RootOrder
-      value: 31
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 176018, guid: 6d5807b6ad43e4e489ca93ec210ef9fb, type: 2}
       propertyPath: m_Name
@@ -34178,6 +34338,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &1695796828
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -35822,7 +35983,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 449728, guid: e24cda4922955274583f70cd40b482b3, type: 2}
       propertyPath: m_RootOrder
-      value: 41
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 185372, guid: e24cda4922955274583f70cd40b482b3, type: 2}
       propertyPath: m_StaticEditorFlags
@@ -37392,6 +37553,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &1853209635
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -38491,7 +38653,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 433056, guid: 7774be075ce65dd48a042cb3b430dd87, type: 2}
       propertyPath: m_RootOrder
-      value: 32
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 165874, guid: 7774be075ce65dd48a042cb3b430dd87, type: 2}
       propertyPath: m_Name
@@ -42078,6 +42240,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &2039640579
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -43386,7 +43549,7 @@ SpriteRenderer:
   m_SortingOrder: -25
   m_Sprite: {fileID: 21300032, guid: d09209296c8780e4988c3f3b90134ed0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &2081176831 stripped
+--- !u!114 &2081176831
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11443870, guid: 76fd1ff867a8e6244be153af35a47c97,
     type: 2}
@@ -43587,7 +43750,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 451098, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
       propertyPath: m_RootOrder
-      value: 39
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 21296456, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
       propertyPath: m_Color.r
@@ -43656,7 +43819,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &2099016626 stripped
+--- !u!1 &2099016626
 GameObject:
   m_PrefabParentObject: {fileID: 197494, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
   m_PrefabInternal: {fileID: 2099016625}

@@ -21,6 +21,9 @@ public class Player : MonoBehaviour
     public Slider staminaBar;
 
     public Animator animator;
+    public bool attacked;
+
+    public float timer;
 
     void Awake()
     {
@@ -53,6 +56,10 @@ public class Player : MonoBehaviour
         }
         set
         {
+            if(value<healthPoints)
+            {
+                attacked = true;
+            }
             healthPoints = value;
             if(healthPoints <=0)
             {
@@ -92,7 +99,16 @@ public class Player : MonoBehaviour
     
     public void Update()
     {
-        if(healthPoints < maxHealthPoints)
+        if(attacked)
+        {
+            timer += Time.deltaTime;
+            if(timer > 3)
+            {
+                attacked = false;
+                timer = 0;
+            }
+        }
+        if(healthPoints < maxHealthPoints && !attacked)
             HealthPoints += healthRegen * Time.deltaTime;
         if(mana < maxMana)
             Mana += manaRegen * Time.deltaTime;

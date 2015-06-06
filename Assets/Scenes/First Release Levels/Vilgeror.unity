@@ -1757,6 +1757,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &101288738
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2227,6 +2228,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &121146612
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -4010,6 +4012,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &202702442
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -15700,6 +15703,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &635457736
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -22357,6 +22361,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &916497034
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -25492,6 +25497,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &1049783605
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -31390,6 +31396,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &1296730941
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -34105,6 +34112,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &1377048233
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -35212,6 +35220,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &1419536290
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -36181,6 +36190,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &1459599125
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -38354,6 +38364,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &1569435200
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -39684,6 +39695,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &1621743282
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -42171,6 +42183,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &1721266901
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -47964,6 +47977,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &1974756058
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -48614,6 +48628,7 @@ MonoBehaviour:
   enemyAccuracy: .5
   mySurfaceMovingObject: {fileID: 0}
   myAudioSource: {fileID: 0}
+  isInTower: 0
 --- !u!50 &1987384893
 Rigidbody2D:
   m_ObjectHideFlags: 0

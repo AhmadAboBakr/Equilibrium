@@ -13,14 +13,14 @@ public class DestructibleEnemy : MonoBehaviour
     public bool animationCalled;
     public float deathTimer;
     public float startHealth;
-    
+
     // Use this for initialization
     void OnEnable()
     {
         dead = false;
         health = startHealth;
     }
-    
+
     void OnDisable()
     {
         dead = false;
@@ -46,15 +46,15 @@ public class DestructibleEnemy : MonoBehaviour
             myAnim.SetTrigger("die");
 
         }
-        if(health <= 0 && animationCalled == false)
+        if (health <= 0 && animationCalled == false)
         {
             dead = true;
         }
-        if(dead)
+        if (dead)
         {
             deathTimer += Time.deltaTime;
         }
-        if(deathTimer > 1f)
+        if (deathTimer > 1f)
         {
             DisableAfterTime();
 
@@ -81,17 +81,21 @@ public class DestructibleEnemy : MonoBehaviour
         this.myRigidbody.velocity = Vector2.zero;
         health = startHealth;
         dead = false;
-        pooler.ReturnObjectToPool(this.gameObject);
+        if (!gameObject.GetComponent<RangedGroundEnemy>().isInTower)
+            pooler.ReturnObjectToPool(this.gameObject);
+        else
+            Destroy(this.gameObject);
         GameManager.instance.enemyKillCount++;
+
     }
     public IEnumerator checkPosition()
     {
-        while(true)
+        while (true)
         {
-            if(this.transform.position.magnitude < 50)
+            if (this.transform.position.magnitude < 50)
             {
                 //pooler.ReturnObjectToPool(this.gameObject);
-               
+
             }
             yield return new WaitForSeconds(1);
         }
