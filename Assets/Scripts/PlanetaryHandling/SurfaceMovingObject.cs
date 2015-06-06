@@ -201,7 +201,7 @@ public class SurfaceMovingObject : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(0.5f);
-            if (Vector2.Distance(this.transform.position, Player.player.transform.position) < 100)
+            if (Vector2.Distance(this.transform.position, Player.player.transform.position) < 170)
             {
                 idle = false;
                 myArtifitialGravity.enabled = true;

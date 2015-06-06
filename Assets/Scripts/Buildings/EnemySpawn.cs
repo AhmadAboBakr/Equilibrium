@@ -39,7 +39,7 @@ public class EnemySpawn : MonoBehaviour {
                 GameState.CurrentNumberOfEnemies < GameState.maxAllowedEnemies
                 && 
                 (
-                    Vector2.Distance(Player.player.transform.position, this.gameObject.transform.position) < 170f
+                    Vector2.Distance(Player.player.transform.position, this.gameObject.transform.position) < 160f
                     ||
                     spawned<initialSpawn
                 ))
