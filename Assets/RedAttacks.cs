@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RedAttacks : MonoBehaviour {
+public class RedAttacks : SeekingClass {
     public GeneralPooling pooler;
     public Vector2 ArrotVelocity;
     public float attacksEvery = 2f;
@@ -45,15 +45,9 @@ public class RedAttacks : MonoBehaviour {
     {
         float x = (Player.player.transform.position.x - this.transform.position.x) + Random.Range(-enemyAccuracy, enemyAccuracy);
         float y = (Player.player.transform.position.y - this.transform.position.y);
-
-
-        //float x = (Player.player.gameObject.GetComponent<CircleCollider2D>().radius*0.5f - this.transform.position.x) + Random.Range(-enemyAccuracy, enemyAccuracy);
-        //float y = (Player.player.gameObject.GetComponent<CircleCollider2D>().radius * 0.5f - this.transform.position.y);
-
         Vector2 gravity = -((Vector2)this.transform.position).normalized * GameState.gravity;
         float vx = x / timeToReachTarget - .5f * gravity.x * timeToReachTarget;
         float vy = y / timeToReachTarget - .5f * gravity.y * timeToReachTarget;
-
 
         var instance = pooler.CreateObject(launchingDevice.transform.position, Quaternion.identity) as GameObject;
         ArrotVelocity.x = vx;

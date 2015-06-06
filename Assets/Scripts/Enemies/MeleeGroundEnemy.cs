@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MeleeGroundEnemy : MonoBehaviour
+public class MeleeGroundEnemy : SeekingClass
 {
     public float attacksEvery = 1.5f;
     public float damage;

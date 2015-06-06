@@ -9,6 +9,7 @@ public struct pooledObjectData
 public class GeneralPooling : MonoBehaviour
 {
     public List<GameObject> pooledObjects;
+    
     //public GameObject [] objectsToPool;
     public int numberOfObjects;
     

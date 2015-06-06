@@ -4,24 +4,20 @@ using System.Collections.Generic;
 
 public class EnemySpawn : MonoBehaviour {
     public GeneralPooling pooler;
-
+    public int initialSpawn;
+    public int spawned;
+    bool isPlane;
 	// Use this for initialization
+    
 	void Start () 
     {
-        pooler = GameObject.FindGameObjectWithTag("EnemyPool").GetComponent<GeneralPooling>();
-        StartCoroutine("EnemySpawning");
-	}
-    void Update()
-    {
-        if(this.gameObject.CompareTag("Plane"))
-        {
-            if(this.transform.GetComponent<PlaneScript>().dead)
-            {
-                StopCoroutine("EnemySpawning");
-            }
-        }
 
-    }
+        pooler = GameObject.FindGameObjectWithTag("EnemyPool").GetComponent<GeneralPooling>();
+        initialSpawn = (int)(pooler.pooledObjects.Count / (float)(GameManager.instance.buildings+2));
+        spawned = 0;
+        StartCoroutine("EnemySpawning");
+        isPlane=this.gameObject.CompareTag("Plane");
+	}
     void OnDisable()
     {
         StopCoroutine("EnemySpawning");
@@ -32,9 +28,23 @@ public class EnemySpawn : MonoBehaviour {
     {
         while (true)
         {
-
-            if (GameState.CurrentNumberOfEnemies < GameState.maxAllowedEnemies && Vector2.Distance(Player.player.transform.position, this.gameObject.transform.position) < 170f)
+            if (isPlane)
             {
+                if (this.transform.GetComponent<PlaneScript>().dead)
+                {
+                    StopCoroutine("EnemySpawning");
+                }
+            }
+            if (
+                GameState.CurrentNumberOfEnemies < GameState.maxAllowedEnemies
+                && 
+                (
+                    Vector2.Distance(Player.player.transform.position, this.gameObject.transform.position) < 170f
+                    ||
+                    spawned<initialSpawn
+                ))
+            {
+                spawned++;
                 pooler.CreateObject(transform.position, transform.rotation);
                 GameState.CurrentNumberOfEnemies++;
 

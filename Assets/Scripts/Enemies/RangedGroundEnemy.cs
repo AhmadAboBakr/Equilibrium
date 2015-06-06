@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RangedGroundEnemy : MonoBehaviour
+public class RangedGroundEnemy : SeekingClass
 {
     public GeneralPooling pooler;
     public Vector2 ArrotVelocity;

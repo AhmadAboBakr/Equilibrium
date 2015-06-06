@@ -3,6 +3,12 @@ using System.Collections;
 
 public class SurfaceMovingObject : MonoBehaviour
 {
+    //caching
+    Rigidbody2D myRigidBody;
+    Animator myAnimator;
+    CircleCollider2D myCircleCollider;
+    ArtifitialGravity myArtifitialGravity;
+    SeekingClass mySeekingAgent;
     //your Script is bad and you should feel bad
     public bool grounded = true;
     public int layer;
@@ -11,30 +17,37 @@ public class SurfaceMovingObject : MonoBehaviour
     public float moveForce = 0;
     public bool movingRight, MovingLeft;
     public bool needsToGoUp = false;
-    public Transform rayCaster;
-    public int counter;
-    public Rigidbody2D myRigidBody;
-    private Animator myAnimator;
     public float upForce;
     private string[] collisionLayer;
     public LayerMask planet;
+    bool idle = false;
     void Awake()
     {
         myAnimator = this.GetComponent<Animator>();
+        myRigidBody = this.GetComponent<Rigidbody2D>();
+        myArtifitialGravity = this.GetComponent<ArtifitialGravity>();
+        myCircleCollider = this.GetComponent<CircleCollider2D>();
+        mySeekingAgent = this.GetComponent<SeekingClass>();
+
     }
     void Start()
     {
-        myRigidBody = this.GetComponent<Rigidbody2D>();
         //StartCoroutine("UpdateCouroutine");
         movingRight = MovingLeft = false;
         grounded = false;
         collisionLayer = new string[1];
         collisionLayer[0] = "planetSegments";
 
+
     }
     void OnEnable()
     {
+        StartCoroutine("CheckInGiantRange");
         grounded = false;
+    }
+    void OnDisable()
+    {
+        StopAllCoroutines();
     }
     void Update()
     {
@@ -56,49 +69,7 @@ public class SurfaceMovingObject : MonoBehaviour
         }
 
     }
-    //IEnumerator UpdateCouroutine()
-    //{
-    //    while (true)
-    //    {
-    //        yield return new WaitForSeconds(.2f);
-    //        RaycastHit2D right = Physics2D.Raycast(transform.position, rayCaster.localPosition, 1f,planet);//LayerMask.GetMask(collisionLayer));
 
-
-    //        if (right.collider != null)
-    //        {
-    //            Debug.Log(right.collider.gameObject.name);
-
-    //            needsToGoUp = true;
-    //        }
-    //        else
-    //        {
-    //            if(needsToGoUp)
-    //            {
-    //                this.myRigidBody.AddForce(this.transform.right * this.transform.localScale.x * 3, ForceMode2D.Impulse);
-    //            }
-    //            //needsToGoUp = false;
-    //        }
-
-    //    }
-    //}
-    //protected void Update()
-    //{
-    //    //else
-    //    //{
-
-    //    //    //RaycastHit2D down = Physics2D.Raycast(transform.position, -transform.up, 1.5f, 5);
-    //    //    //if (down.collider != null)
-    //    //    //{
-    //    //    //    this.transform.up = down.normal;
-    //    //    //}
-    //    //    //else
-    //    //    //{
-    //    //    //    this.transform.up = this.transform.position;
-    //    //    //}
-
-    //    //}
-
-    //}
     /*
      * this functions takes the force that should be used to move the object and set it to moveForce variable
      *  ----------------------------------------------------------------------
@@ -113,7 +84,7 @@ public class SurfaceMovingObject : MonoBehaviour
     public void Move(float force)
     {
 
-        if (grounded)
+        if (grounded &&!idle)
         {
             //to make the object face the direction it's moving to
             if (force < 0)
@@ -174,12 +145,12 @@ public class SurfaceMovingObject : MonoBehaviour
         {
 
             grounded = true;
-            counter++;
-            if (counter > 1 || counter < 0)
-            {
-                StartCoroutine("DisableEnableCollider");
-                counter = 0;
-            }
+            //counter++;
+            //if (counter > 1 || counter < 0)
+            //{
+            //    StartCoroutine("DisableEnableCollider");
+            //    counter = 0;
+            //}
         }
     }
     void OnCollisionExit2D(Collision2D other)
@@ -187,7 +158,7 @@ public class SurfaceMovingObject : MonoBehaviour
         if (other.gameObject.tag == "Planet")
         {
             grounded = false;
-            counter--;
+            needsToGoUp = false;
             //if (needsToGoUp)
             //{
             //    needsToGoUp = false;
@@ -210,12 +181,51 @@ public class SurfaceMovingObject : MonoBehaviour
             needsToGoUp = false;
         }
     }
-
-    public IEnumerator DisableEnableCollider()
+    public void DisableCollider()
     {
-        grounded = false;
-        this.GetComponent<CircleCollider2D>().enabled = false;
-        yield return null;
-        this.GetComponent<CircleCollider2D>().enabled = true;
+        //grounded = false;
+        this.myCircleCollider.enabled = false;
     }
+    public void EnableCollider()
+    {
+        this.myCircleCollider.enabled = true;
+    }
+    IEnumerator CheckInGiantRange()
+    {
+        for (int i = 0; i < 20; i++)
+        {
+            Move(Random.Range(-8, 8)); 
+            yield return new WaitForSeconds(0.1f);
+        }
+
+        while (true)
+        {
+            yield return new WaitForSeconds(0.5f);
+            if (Vector2.Distance(this.transform.position, Player.player.transform.position) < 100)
+            {
+                idle = false;
+                myArtifitialGravity.enabled = true;
+                myRigidBody.isKinematic = false;
+                mySeekingAgent.enabled = true;
+                myAnimator.enabled = true;
+            }
+            else
+            {
+                idle = true;
+                myArtifitialGravity.enabled = false;
+                myRigidBody.isKinematic = true;
+                mySeekingAgent.enabled = false;
+                myAnimator.enabled = false;
+                myRigidBody.Sleep();
+
+            }
+        }
+    }
+    //public IEnumerator DisableEnableCollider()
+    //{
+    //    //grounded = false;
+    //    //this.GetComponent<CircleCollider2D>().enabled = false;
+    //    //yield return null;
+    //    //this.GetComponent<CircleCollider2D>().enabled = true;
+    //}
 }

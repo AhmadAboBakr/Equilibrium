@@ -2,12 +2,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+public enum planet{
+    viking,red
+}
 public class GameManager : MonoBehaviour
 {
     //Should refactor to have enemy instantiation add the enemy counter instead of checking here for performance sake
     public Text winCounter;
+    public Image winCounterImage;
+    public Sprite vikingBuildingSprite;
+    public Sprite redBuildingSprite;
+    public Sprite vikingEnemySprite;
+    public Sprite redEnemySprite;
+    public planet planetClass;
     int enemies;
-    int buildings;
+    public int buildings;
     int totalBuildings;
     int totalEnemies;
     public Objective[] objectives;
@@ -61,7 +70,7 @@ public class GameManager : MonoBehaviour
                 LossUI.instance.gameObject.SetActive(true);
             }
             gameElapsedTime += 0.5f;
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
         }
     }
     IEnumerator checkPlanes()
@@ -86,7 +95,7 @@ public class GameManager : MonoBehaviour
             LossUI.instance.gameObject.SetActive(true);
         }
         gameElapsedTime += 0.5f;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.5f);
 
     }
 

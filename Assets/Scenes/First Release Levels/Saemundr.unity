@@ -743,9 +743,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 1570633551}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 1
   planet:
     serializedVersion: 2
@@ -2335,9 +2332,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 661266712}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -2680,7 +2674,7 @@ Transform:
   - {fileID: 1050844166}
   - {fileID: 1990157736}
   m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_RootOrder: 45
 --- !u!114 &120105579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5291,9 +5285,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 1930841963}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -5639,9 +5630,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 1043629936}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -6054,9 +6042,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 1814712934}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -7241,7 +7226,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &364565024
+--- !u!1 &364565024 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 197494, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
   m_PrefabInternal: {fileID: 364565023}
@@ -7774,9 +7759,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 1541483184}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 1
   planet:
     serializedVersion: 2
@@ -8891,9 +8873,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 2050116754}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 1
   planet:
     serializedVersion: 2
@@ -9793,9 +9772,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 2004077261}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 1
   planet:
     serializedVersion: 2
@@ -10608,9 +10584,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 1231854519}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 1
   planet:
     serializedVersion: 2
@@ -11710,9 +11683,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 429651252}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -14585,6 +14555,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 633783427}
   - 114: {fileID: 633783426}
+  - 114: {fileID: 633783428}
   m_Layer: 8
   m_Name: EnemyPooler
   m_TagString: EnemyPool
@@ -14695,6 +14666,18 @@ Transform:
   - {fileID: 839596507}
   m_Father: {fileID: 0}
   m_RootOrder: 52
+--- !u!114 &633783428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 633783425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751a7b3a6506f844aad80f12e2c945d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enimies: []
 --- !u!1 &636140024
 GameObject:
   m_ObjectHideFlags: 0
@@ -14898,9 +14881,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 1901035085}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -16079,9 +16059,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 115228568}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 1
   planet:
     serializedVersion: 2
@@ -16549,9 +16526,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 1051177041}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -16937,9 +16911,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 32693707}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 1
   planet:
     serializedVersion: 2
@@ -18169,9 +18140,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 42383625}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -18633,7 +18601,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &810633537
+--- !u!1 &810633537 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 197494, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
   m_PrefabInternal: {fileID: 810633536}
@@ -18837,9 +18805,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 113598944}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -19533,9 +19498,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 2140685911}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -20770,9 +20732,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 145846445}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 1
   planet:
     serializedVersion: 2
@@ -21686,7 +21645,7 @@ Transform:
   - {fileID: 1104083903}
   - {fileID: 729600656}
   m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_RootOrder: 39
 --- !u!114 &948520671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21887,9 +21846,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 890396794}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 1
   planet:
     serializedVersion: 2
@@ -23535,11 +23491,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1039876513
+--- !u!1 &1039876513 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 188172, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
   m_PrefabInternal: {fileID: 1039876512}
---- !u!1 &1039876514
+--- !u!1 &1039876514 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 161592, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
   m_PrefabInternal: {fileID: 1039876512}
@@ -24662,9 +24618,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 931415709}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -25640,7 +25593,7 @@ Transform:
   m_LocalScale: {x: 10.4126759, y: 10.4126778, z: 10.4126778}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 48
+  m_RootOrder: 47
 --- !u!1 &1180491634
 GameObject:
   m_ObjectHideFlags: 0
@@ -25877,7 +25830,7 @@ Transform:
   - {fileID: 87937557}
   - {fileID: 797920150}
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 42
 --- !u!1 &1189648012
 GameObject:
   m_ObjectHideFlags: 0
@@ -26909,9 +26862,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 1441547684}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -27730,9 +27680,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 322704846}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -28077,9 +28024,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 1458284365}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -30187,9 +30131,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 783551837}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 1
   planet:
     serializedVersion: 2
@@ -31371,9 +31312,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 832197922}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 1
   planet:
     serializedVersion: 2
@@ -31973,9 +31911,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 1496035659}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -32369,9 +32304,29 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11480672, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: winCounterImage
+      value: 
+      objectReference: {fileID: 1590853405}
+    - target: {fileID: 11480672, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: vikingBuildingSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ffe91c5b542a4eb4c890cdf6020859a1,
+        type: 3}
+    - target: {fileID: 11480672, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: redBuildingSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a3a54f10b35a22046af7e2918c3529f7,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1590853405 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11453234, guid: 2129cf51a96e42c47a919df6beaa54bf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1590853404}
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &1598669531
 GameObject:
   m_ObjectHideFlags: 0
@@ -33253,9 +33208,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 2033131016}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -33586,9 +33538,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 38001677}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 1
   planet:
     serializedVersion: 2
@@ -34161,9 +34110,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 552908983}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 1
   planet:
     serializedVersion: 2
@@ -36439,9 +36385,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 1135601152}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -36982,9 +36925,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 320136140}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -37384,9 +37324,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 1812280567}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 1
   planet:
     serializedVersion: 2
@@ -39776,9 +39713,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 13390856}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -41192,9 +41126,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 163593959}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -41526,9 +41457,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 257906107}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -42082,9 +42010,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 176021750}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 1
   planet:
     serializedVersion: 2
@@ -42547,9 +42472,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 335505984}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -43277,9 +43199,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 970920214}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
@@ -43467,7 +43386,7 @@ SpriteRenderer:
   m_SortingOrder: -25
   m_Sprite: {fileID: 21300032, guid: d09209296c8780e4988c3f3b90134ed0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &2081176831
+--- !u!114 &2081176831 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11443870, guid: 76fd1ff867a8e6244be153af35a47c97,
     type: 2}
@@ -43737,7 +43656,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &2099016626
+--- !u!1 &2099016626 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 197494, guid: a518f3a51439b2446af0b139f92318fa, type: 2}
   m_PrefabInternal: {fileID: 2099016625}
@@ -44517,9 +44436,6 @@ MonoBehaviour:
   movingRight: 0
   MovingLeft: 0
   needsToGoUp: 0
-  rayCaster: {fileID: 1950929769}
-  counter: 0
-  myRigidBody: {fileID: 0}
   upForce: 0
   planet:
     serializedVersion: 2
