@@ -482,6 +482,14 @@ Prefab:
       propertyPath: m_PreserveAspect
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 22439102, guid: ff254154615578848afcddab2d9a5389, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.33516733e-05
+      objectReference: {fileID: 0}
+    - target: {fileID: 22439102, guid: ff254154615578848afcddab2d9a5389, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 7.62939453e-06
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11493000, guid: ff254154615578848afcddab2d9a5389, type: 2}
     - {fileID: 11438836, guid: ff254154615578848afcddab2d9a5389, type: 2}
