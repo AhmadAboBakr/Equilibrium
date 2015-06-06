@@ -37,7 +37,7 @@ public class CreditsGravity : MonoBehaviour {
         if (clicked)
         {
             Vector2 gravityVec = this.centerOfGravity.GetComponent<Rigidbody2D>().position - myRigidBody.position;
-            myRigidBody.velocity += gravityVec.normalized * 20 * Time.deltaTime;
+            myRigidBody.velocity += gravityVec.normalized * 40 * Time.deltaTime;
         }
         
     }

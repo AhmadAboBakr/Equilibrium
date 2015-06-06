@@ -15,13 +15,16 @@ public class MainMenuStart : MonoBehaviour {
     }
     void Start () 
     {
+        
+	}
+	void OnEnable()
+    {
         this.transform.position = startPoint.transform.position;
         time = Random.Range(1, 3);
         start = false;
         StartCoroutine(Stop());
         StartCoroutine(delay());
-	}
-	
+    }
 	// Update is called once per frame
 	void Update () 
     {
