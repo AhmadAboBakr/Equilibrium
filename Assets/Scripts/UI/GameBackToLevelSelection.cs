@@ -13,7 +13,7 @@ public class GameBackToLevelSelection : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if(panel.active == false)
+            if(panel.active == false && !GameManager.instance.isEnabled)
             {
                 panel.SetActive(true);
                 PauseAndBack.instance.Pause();

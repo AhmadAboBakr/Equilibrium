@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public int enemyKillCount;
     public float gameElapsedTime;
     public planet currentPlanet;
+    public bool isEnabled;
     void Awake()
     {
         instance = this;
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        isEnabled = false;
         enemyKillCount = 0;
         gameElapsedTime = 0;
         if (GameObject.FindGameObjectsWithTag("Plane").Length > 0)
@@ -69,7 +71,7 @@ public class GameManager : MonoBehaviour
             if (buildings <= 0)
             {
                 //when buildings are finished start counting enemies
-                enemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
+                //enemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
                 switch (currentPlanet)
                 {
                     case planet.viking:
@@ -81,17 +83,20 @@ public class GameManager : MonoBehaviour
                     default:
                         break;
                 }
-                if (enemies <= 0)
-                {
-                    //win state
-                    InGameObjectiveUI.instance.gameObject.SetActive(true);
-                }
+                InGameObjectiveUI.instance.gameObject.SetActive(true);
+                //if (enemies <= 0)
+                //{
+                //    //win state
+                //    InGameObjectiveUI.instance.gameObject.SetActive(true);
+                //    isEnabled = true;
+                //}
             }
             UpdateCounter();
             //Check Player health for loss condition
             if (Player.player.HealthPoints <= 0)
             {
                 LossUI.instance.gameObject.SetActive(true);
+                isEnabled = true;
             }
             gameElapsedTime += 0.5f;
             yield return new WaitForSeconds(1f);
