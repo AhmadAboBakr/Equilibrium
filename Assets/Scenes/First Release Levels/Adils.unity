@@ -1552,7 +1552,7 @@ RectTransform:
   m_Children:
   - {fileID: 1319211056}
   m_Father: {fileID: 19060178}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: -54.2974548, y: 168.012939}
@@ -2197,6 +2197,7 @@ GameObject:
   - 222: {fileID: 591228096}
   - 114: {fileID: 591228095}
   - 95: {fileID: 591228094}
+  - 114: {fileID: 591228097}
   m_Layer: 5
   m_Name: Image 1
   m_TagString: Untagged
@@ -2265,6 +2266,54 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 591228092}
+--- !u!114 &591228097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 591228092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1716183313}
+          m_MethodName: MoveLeft
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1716183313}
+          m_MethodName: StoppedMovingLeft
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &601783055
 GameObject:
   m_ObjectHideFlags: 0
@@ -3808,6 +3857,7 @@ GameObject:
   - 222: {fileID: 1088719467}
   - 114: {fileID: 1088719466}
   - 95: {fileID: 1088719465}
+  - 114: {fileID: 1088719468}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -3876,6 +3926,54 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1088719463}
+--- !u!114 &1088719468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1088719463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1716183313}
+          m_MethodName: MoveLeft
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1716183313}
+          m_MethodName: StoppedMovingLeft
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &1106515718
 GameObject:
   m_ObjectHideFlags: 0
@@ -5005,6 +5103,7 @@ GameObject:
   - 222: {fileID: 1130452323}
   - 114: {fileID: 1130452322}
   - 95: {fileID: 1130452321}
+  - 114: {fileID: 1130452324}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -5073,6 +5172,54 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1130452319}
+--- !u!114 &1130452324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1130452319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1716183313}
+          m_MethodName: MoveRight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1716183313}
+          m_MethodName: StoppedMovingRight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1001 &1163002759
 Prefab:
   m_ObjectHideFlags: 0
@@ -5219,6 +5366,90 @@ Prefab:
     - target: {fileID: 11491550, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
       propertyPath: allSpells.Array.data[2].manaCost
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471064, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1716183313}
+    - target: {fileID: 11471064, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471064, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1716183313}
+    - target: {fileID: 11471064, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StoppedMovingRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 11417524, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1716183313}
+    - target: {fileID: 11417524, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 11417524, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1716183313}
+    - target: {fileID: 11417524, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StoppedMovingLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 22492964, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 22467574, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 22493634, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 22497540, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 434266, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22431036, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 22433104, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22446510, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 22419454, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 22475926, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22490198, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 22435048, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 22474726, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2129cf51a96e42c47a919df6beaa54bf, type: 2}
@@ -6858,11 +7089,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 450930, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .99895066
+      value: .998958588
       objectReference: {fileID: 0}
     - target: {fileID: 450930, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .0457993969
+      value: .0456260107
       objectReference: {fileID: 0}
     - target: {fileID: 455658, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
       propertyPath: m_LocalRotation.z
@@ -6898,11 +7129,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 433532, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .526376009
+      value: .526428699
       objectReference: {fileID: 0}
     - target: {fileID: 433532, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -.850251913
+      value: -.85021925
       objectReference: {fileID: 0}
     - target: {fileID: 11433220, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
       propertyPath: IK_Enabled
@@ -6931,11 +7162,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 422214, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .243293524
+      value: .243363023
       objectReference: {fileID: 0}
     - target: {fileID: 422214, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .969952703
+      value: .969935298
       objectReference: {fileID: 0}
     - target: {fileID: 462124, guid: 76fd1ff867a8e6244be153af35a47c97, type: 2}
       propertyPath: m_LocalRotation.z
@@ -7155,6 +7386,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hamada: 0
+--- !u!114 &1716183313
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11443870, guid: 76fd1ff867a8e6244be153af35a47c97,
+    type: 2}
+  m_PrefabInternal: {fileID: 1573983775}
+  m_Script: {fileID: 11500000, guid: eff5c485a13f6974f9b2511c45cf6240, type: 3}
 --- !u!1 &1824232248
 GameObject:
   m_ObjectHideFlags: 0
@@ -7794,7 +8031,7 @@ RectTransform:
   - {fileID: 124923478}
   - {fileID: 239862303}
   m_Father: {fileID: 19060178}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_AnchorMin: {x: .19600001, y: 0}
   m_AnchorMax: {x: .795615315, y: .158000007}
   m_AnchoredPosition: {x: -3, y: 6}
@@ -8305,7 +8542,7 @@ RectTransform:
   - {fileID: 878553437}
   - {fileID: 1343142403}
   m_Father: {fileID: 19060178}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -7.62939453e-06}
@@ -8322,6 +8559,7 @@ GameObject:
   - 222: {fileID: 2111819801}
   - 114: {fileID: 2111819800}
   - 95: {fileID: 2111819799}
+  - 114: {fileID: 2111819802}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -8390,3 +8628,51 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2111819797}
+--- !u!114 &2111819802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2111819797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1716183313}
+          m_MethodName: MoveRight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1716183313}
+          m_MethodName: StoppedMovingRight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null

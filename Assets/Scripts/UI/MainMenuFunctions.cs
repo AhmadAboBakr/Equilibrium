@@ -8,7 +8,7 @@ public class MainMenuFunctions : MonoBehaviour {
     AsyncOperation async;
     public GameObject optionPanel;
     public GameObject creditsPanel;
-
+    
 	
 	// Update is called once per frame
 	void Update () 
@@ -38,7 +38,15 @@ public class MainMenuFunctions : MonoBehaviour {
     }
     IEnumerator Start()
     {
-        async = Application.LoadLevelAsync("Adils");
+        if (!PlayerPrefs.HasKey("FinishedTutorial"))
+        {
+            async = Application.LoadLevelAsync("Adils");
+            PlayerPrefs.SetInt("FinishedTutorial",0);
+        }
+        else
+        {
+            async = Application.LoadLevelAsync("Level Selection Screen");
+        }
         async.allowSceneActivation = false;
         yield return async;
         
