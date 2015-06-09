@@ -46,8 +46,9 @@ public class GiantMeleeAttack : MonoBehaviour {
         //            attackable.GetComponent<DestructibleEnemy>().Health--;
         //        }
         //    }
-        
+        if (Player.player.stamina > 0.45f) {
             Player.player.animator.SetTrigger("attacked");
+        }
     }
 
     public void doAttack()
@@ -55,6 +56,7 @@ public class GiantMeleeAttack : MonoBehaviour {
 
         if (Player.player.stamina > staminaPerHit)
         {
+            Debug.Log(Player.player.stamina + " :   " + staminaPerHit);
             //Decrease stamina based on staminaPerHit
             Player.player.Stamina -= staminaPerHit;
             foreach (var attackable in attackables)
@@ -75,6 +77,10 @@ public class GiantMeleeAttack : MonoBehaviour {
                     attackable.GetComponent<DestructibleEnemy>().Health--;
                 }
             }
+        }
+        else
+        {
+
         }
     }
     

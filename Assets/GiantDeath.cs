@@ -31,6 +31,7 @@ public class GiantDeath : MonoBehaviour {
         foreach (var item in GetComponentsInChildren<DestructableComponent>())
         {
             item.SelfDestruct(this.transform);
+            item.GetComponent<Rigidbody2D>().AddForce((item.transform.position - this.transform.position).normalized * 13, ForceMode2D.Impulse);
             isDead = true;
         }
     }

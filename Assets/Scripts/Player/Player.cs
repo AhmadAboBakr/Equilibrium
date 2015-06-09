@@ -21,7 +21,10 @@ public class Player : MonoBehaviour
     public Slider staminaBar;
 
     public Animator animator;
-    public Text healthText, staminaText, manaText;
+    public bool attacked;
+
+    public float timer;
+
     void Awake()
     {
         if(!player)
@@ -41,9 +44,6 @@ public class Player : MonoBehaviour
         staminaBar = GameObject.FindGameObjectWithTag("StaminaBar").GetComponent<Slider>();
         //animator = transform.GetChild(0).GetComponent<Animator>();
         animator = GetComponent<Animator>();
-        healthText = GameObject.FindGameObjectWithTag("HealthText").GetComponent<Text>();
-        manaText = GameObject.FindGameObjectWithTag("ManaText").GetComponent<Text>();
-        staminaText = GameObject.FindGameObjectWithTag("StaminaText").GetComponent<Text>();
     }
    
     
@@ -56,13 +56,16 @@ public class Player : MonoBehaviour
         }
         set
         {
+            if(value<healthPoints)
+            {
+                attacked = true;
+            }
             healthPoints = value;
             if(healthPoints <=0)
             {
                 GiantDeath.instance.Die();
             }
             healthBar.value = healthPoints / maxHealthPoints;
-            healthText.text = (int)(value / maxHealthPoints*100) + " %";
         }
     }
     public float Mana
@@ -75,8 +78,6 @@ public class Player : MonoBehaviour
         {
             mana = value;
             manaBar.value = mana / maxMana;
-            manaText.text = (int)(value / maxHealthPoints * 100) + " %";
-
         }
     }
     public float Stamina
@@ -89,8 +90,6 @@ public class Player : MonoBehaviour
         {
             stamina = value;
             staminaBar.value = stamina / maxStamina;
-            staminaText.text = (int)(value / maxStamina * 100) + " %";
-
         }
     }
 
@@ -100,7 +99,16 @@ public class Player : MonoBehaviour
     
     public void Update()
     {
-        if(healthPoints < maxHealthPoints)
+        if(attacked)
+        {
+            timer += Time.deltaTime;
+            if(timer > 3)
+            {
+                attacked = false;
+                timer = 0;
+            }
+        }
+        if(healthPoints < maxHealthPoints && !attacked)
             HealthPoints += healthRegen * Time.deltaTime;
         if(mana < maxMana)
             Mana += manaRegen * Time.deltaTime;

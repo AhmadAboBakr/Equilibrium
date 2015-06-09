@@ -2,8 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
-public enum planet{
-    viking,red
+public enum planet
+{
+    viking, red
 }
 public class GameManager : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
     public int enemyKillCount;
     public float gameElapsedTime;
     public planet currentPlanet;
+    public bool isEnabled;
     void Awake()
     {
         instance = this;
@@ -32,6 +34,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        isEnabled = false;
         enemyKillCount = 0;
         gameElapsedTime = 0;
         if (GameObject.FindGameObjectsWithTag("Plane").Length > 0)
@@ -69,7 +72,7 @@ public class GameManager : MonoBehaviour
             if (buildings <= 0)
             {
                 //when buildings are finished start counting enemies
-                enemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
+                //enemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
                 switch (currentPlanet)
                 {
                     case planet.viking:
@@ -81,17 +84,15 @@ public class GameManager : MonoBehaviour
                     default:
                         break;
                 }
-                if (enemies <= 0)
-                {
-                    //win state
-                    InGameObjectiveUI.instance.gameObject.SetActive(true);
-                }
+                InGameObjectiveUI.instance.gameObject.SetActive(true);
+
             }
             UpdateCounter();
             //Check Player health for loss condition
             if (Player.player.HealthPoints <= 0)
             {
                 LossUI.instance.gameObject.SetActive(true);
+                isEnabled = true;
             }
             gameElapsedTime += 0.5f;
             yield return new WaitForSeconds(1f);
@@ -99,30 +100,38 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator checkPlanes()
     {
-        //counts all buildings
-        buildings = GameObject.FindGameObjectsWithTag("Plane").Length;
-        if (buildings <= 0)
+        while (true)
         {
-            //when buildings are finished start counting enemies
-            enemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
-
-                //win state
+            //counts all buildings
+            buildings = GameObject.FindGameObjectsWithTag("Plane").Length;
+            if (buildings <= 0)
+            {
+                //when buildings are finished start counting enemies
+                enemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
                 InGameObjectiveUI.instance.gameObject.SetActive(true);
+            }
+            UpdateCounter();
+            //Check Player health for loss condition
+            if (Player.player.HealthPoints <= 0)
+            {
+                Debug.Log("dead");
+                LossUI.instance.gameObject.SetActive(true);
+            }
+            else
+            {
+
+            }
+            gameElapsedTime += 0.5f;
+            yield return new WaitForSeconds(1.5f);
         }
-        UpdateCounter();
-        //Check Player health for loss condition
-        if (Player.player.HealthPoints <= 0)
-        {
-            LossUI.instance.gameObject.SetActive(true);
-        }
-        gameElapsedTime += 0.5f;
-        yield return new WaitForSeconds(1.5f);
 
     }
 
     public void UpdateCounter()
     {
+        if (buildings > 0)
             winCounter.text = buildings + " / " + totalBuildings;
-     
+        else
+            winCounter.text = enemies.ToString();
     }
 }

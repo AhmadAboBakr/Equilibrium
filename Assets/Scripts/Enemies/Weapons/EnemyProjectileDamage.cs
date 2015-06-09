@@ -8,7 +8,7 @@ public class EnemyProjectileDamage : MonoBehaviour {
      * Hit is for making sure the enemy projectile doesn't damage the player twice. 
      * al mo2men la yoldagh men go7r maretein
      */
-    public bool hit=false;
+    public bool hit = false;
 
 	void Update () 
     {

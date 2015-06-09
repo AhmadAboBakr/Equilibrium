@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class SurfaceMovingObject : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class SurfaceMovingObject : MonoBehaviour
     private string[] collisionLayer;
     public LayerMask planet;
     bool idle = false;
+    List<GameObject> children;
     void Awake()
     {
         myAnimator = this.GetComponent<Animator>();
@@ -32,12 +34,48 @@ public class SurfaceMovingObject : MonoBehaviour
     }
     void Start()
     {
+        children = new List<GameObject>();
         //StartCoroutine("UpdateCouroutine");
         movingRight = MovingLeft = false;
         grounded = false;
         collisionLayer = new string[1];
         collisionLayer[0] = "planetSegments";
+        
+        //******************** remove
+        //for (int i = 0; i < this.gameObject.transform.childCount; i++)
+        //    {
+        //        children.Add(this.gameObject.transform.GetChild(i).gameObject);
+        //    }
 
+        //for (int i = 0; i < children.Count; i++)
+        //{
+        //    for (int j = 0; j < children[i].gameObject.transform.childCount; j++)
+        //    {
+        //        children.Add(children[i].gameObject.transform.GetChild(j).gameObject);
+        //    }
+        //}
+
+        //for (int i = this.gameObject.transform.childCount; i < children.Count; i++)
+        //{
+        //    for(int j = 0; j < children[i].gameObject.transform.childCount; j++)
+        //    {
+        //        if (children[i].gameObject.transform.GetChild(j).gameObject != null)
+        //            children.Add(children[i].gameObject.transform.GetChild(j).gameObject);
+        //    }
+        //}
+
+        //for(int i = 0; i < children.Count; i++)
+        //{
+        //   BoxCollider2D coll = children[i].GetComponent<BoxCollider2D>();
+
+        //    if(coll != null)
+        //    {
+        //        DestroyImmediate(coll);
+        //    }
+        //}
+	
+        
+        //************************
 
     }
     void OnEnable()

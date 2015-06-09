@@ -9,7 +9,7 @@ public class Screenshots : MonoBehaviour
     {
         hamada = 0;
 
-        StartCoroutine(GetScreen());
+        //StartCoroutine(GetScreen());
     }
 
     // Update is called once per frame

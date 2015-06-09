@@ -11,7 +11,7 @@ public class RangedGroundEnemy : SeekingClass
     public float checkRangeEvery = .5f;
     public bool isInRange = false;
     //The ammount of time for the projectile to reach the player from the enemy.
-    public float timeToReachTarget=2;
+    public float timeToReachTarget = 2;
     public GameObject projectile;
     //Position of the object that will instantiate the projectile i.e. Bow, Hand, Cannon, etc...
     public Transform launchingDevice;
@@ -21,8 +21,10 @@ public class RangedGroundEnemy : SeekingClass
     public SurfaceMovingObject mySurfaceMovingObject;
     Animator myanimator;
     public AudioSource myAudioSource;
+    public bool isInTower;
 
-    void Start(){
+    void Start()
+    {
         //pooler = GameObject.FindGameObjectWithTag("ArrowPool").GetComponent<GeneralPooling>();
         mySurfaceMovingObject = this.GetComponent<SurfaceMovingObject>();
         myanimator = GetComponent<Animator>();
@@ -30,6 +32,7 @@ public class RangedGroundEnemy : SeekingClass
         myAudioSource = this.GetComponent<AudioSource>();
 
         OnEnable();
+
     }
     void OnEnable()
     {
@@ -47,7 +50,7 @@ public class RangedGroundEnemy : SeekingClass
 
     public void shootGiant()
     {
-        
+
         float x = (Player.player.transform.position.x - this.transform.position.x) + Random.Range(-enemyAccuracy, enemyAccuracy);
         float y = (Player.player.transform.position.y - this.transform.position.y);
         //float x = (Player.player.gameObject.GetComponent<CircleCollider2D>().radius*0.5f - this.transform.position.x) + Random.Range(-enemyAccuracy, enemyAccuracy);
@@ -62,7 +65,7 @@ public class RangedGroundEnemy : SeekingClass
         myanimator.SetTrigger("Attack");
         instance.GetComponent<Rigidbody2D>().velocity = (new Vector2(vx, vy));
     }
-  
+
     /*
      * This function checks if the player is in range every checksRangeEvery:float seconds
      */
@@ -71,8 +74,9 @@ public class RangedGroundEnemy : SeekingClass
 
         while (true)
         {
-            if (Vector2.Distance(Player.player.transform.position, this.transform.position) < range) {
-                isInRange = true; 
+            if (Vector2.Distance(Player.player.transform.position, this.transform.position) < range)
+            {
+                isInRange = true;
 
             }
             else
@@ -99,17 +103,21 @@ public class RangedGroundEnemy : SeekingClass
     {
         while (true)
         {
-            yield return new WaitForSeconds(0.08f);
-            if (isInRange)
-            {
-                this.transform.localScale = new Vector3(-PlanetMath.ShortestDirection(this.transform.position, Player.player.transform.position), 1, 1);
-                mySurfaceMovingObject.StopMoving();
-            }
-            else
-            {
-                mySurfaceMovingObject.Move(PlanetMath.ShortestDirection(this.transform.position, Player.player.transform.position));
-            }
 
+            yield return new WaitForSeconds(0.08f);
+            if (!isInTower)
+            {
+                if (isInRange)
+                {
+                    this.transform.localScale = new Vector3(-PlanetMath.ShortestDirection(this.transform.position, Player.player.transform.position), 1, 1);
+                    mySurfaceMovingObject.StopMoving();
+                }
+                else
+                {
+                    mySurfaceMovingObject.Move(PlanetMath.ShortestDirection(this.transform.position, Player.player.transform.position));
+                }
+
+            }
         }
     }
     public void AttackSound()
