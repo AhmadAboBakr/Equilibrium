@@ -16,13 +16,13 @@ public class CameraStart : MonoBehaviour {
     }
 	void Start () 
     {
+        myCamera.orthographicSize = startSize;
         
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
-        time = (Time.time - 0) / duration;
-        myCamera.orthographicSize = Mathf.Lerp(startSize, endSize, time);
+        myCamera.orthographicSize = Mathf.Lerp(myCamera.orthographicSize, endSize, Time.deltaTime*2);
 	}
 }

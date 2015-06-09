@@ -381,6 +381,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 616804198}
   - 114: {fileID: 616804199}
+  - 114: {fileID: 616804200}
   m_Layer: 0
   m_Name: LevelSelectionScreen
   m_TagString: Untagged
@@ -412,6 +413,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1de11f04d48a8dd4aa414818181241f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &616804200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 616804197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e1f9eb0c3cfed4b8de5101d54b0fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1240806349
