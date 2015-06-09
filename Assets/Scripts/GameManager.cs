@@ -106,11 +106,8 @@ public class GameManager : MonoBehaviour
             //when buildings are finished start counting enemies
             enemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
 
-            if (enemies <= 0)
-            {
                 //win state
                 InGameObjectiveUI.instance.gameObject.SetActive(true);
-            }
         }
         UpdateCounter();
         //Check Player health for loss condition
@@ -125,9 +122,7 @@ public class GameManager : MonoBehaviour
 
     public void UpdateCounter()
     {
-        if (buildings > 0)
             winCounter.text = buildings + " / " + totalBuildings;
-        else
-            winCounter.text = enemies.ToString();
+     
     }
 }

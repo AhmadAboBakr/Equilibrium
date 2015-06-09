@@ -8,6 +8,8 @@ public class CameraStart : MonoBehaviour {
     public bool start;
     float time;
     public float duration;
+    public float delay=.05f;
+    public float elapsedTime;
 	// Use this for initialization
     void Awake()
     {
@@ -16,13 +18,13 @@ public class CameraStart : MonoBehaviour {
     }
 	void Start () 
     {
-        
+        elapsedTime = 0;
+        myCamera.orthographicSize = startSize;
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
-        time = (Time.time - 0) / duration;
-        myCamera.orthographicSize = Mathf.Lerp(startSize, endSize, time);
+        myCamera.orthographicSize = Mathf.Lerp(myCamera.orthographicSize, endSize, Time.deltaTime);      
 	}
 }

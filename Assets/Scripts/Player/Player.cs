@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     public Slider staminaBar;
 
     public Animator animator;
-
+    public Text healthText, staminaText, manaText;
     void Awake()
     {
         if(!player)
@@ -41,6 +41,9 @@ public class Player : MonoBehaviour
         staminaBar = GameObject.FindGameObjectWithTag("StaminaBar").GetComponent<Slider>();
         //animator = transform.GetChild(0).GetComponent<Animator>();
         animator = GetComponent<Animator>();
+        healthText = GameObject.FindGameObjectWithTag("HealthText").GetComponent<Text>();
+        manaText = GameObject.FindGameObjectWithTag("ManaText").GetComponent<Text>();
+        staminaText = GameObject.FindGameObjectWithTag("StaminaText").GetComponent<Text>();
     }
    
     
@@ -59,6 +62,7 @@ public class Player : MonoBehaviour
                 GiantDeath.instance.Die();
             }
             healthBar.value = healthPoints / maxHealthPoints;
+            healthText.text = (int)(value / maxHealthPoints*100) + " %";
         }
     }
     public float Mana
@@ -71,6 +75,8 @@ public class Player : MonoBehaviour
         {
             mana = value;
             manaBar.value = mana / maxMana;
+            manaText.text = (int)(value / maxHealthPoints * 100) + " %";
+
         }
     }
     public float Stamina
@@ -83,6 +89,8 @@ public class Player : MonoBehaviour
         {
             stamina = value;
             staminaBar.value = stamina / maxStamina;
+            staminaText.text = (int)(value / maxStamina * 100) + " %";
+
         }
     }
 
