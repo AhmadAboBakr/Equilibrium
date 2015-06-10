@@ -2,8 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
-public enum planet{
-    viking,red
+public enum planet
+{
+    viking, red
 }
 public class GameManager : MonoBehaviour
 {
@@ -90,12 +91,7 @@ public class GameManager : MonoBehaviour
                         break;
                 }
                 InGameObjectiveUI.instance.gameObject.SetActive(true);
-                //if (enemies <= 0)
-                //{
-                //    //win state
-                //    InGameObjectiveUI.instance.gameObject.SetActive(true);
-                //    isEnabled = true;
-                //}
+
             }
             UpdateCounter();
             //Check Player health for loss condition
@@ -118,12 +114,7 @@ public class GameManager : MonoBehaviour
             {
                 //when buildings are finished start counting enemies
                 enemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
-
-                if (enemies <= 0)
-                {
-                    //win state
-                    InGameObjectiveUI.instance.gameObject.SetActive(true);
-                }
+                InGameObjectiveUI.instance.gameObject.SetActive(true);
             }
             UpdateCounter();
             //Check Player health for loss condition
