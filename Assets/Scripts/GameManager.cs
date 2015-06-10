@@ -61,6 +61,12 @@ public class GameManager : MonoBehaviour
                 break;
         }
 
+        foreach (var item in GameObject.FindGameObjectsWithTag("Plane"))
+        {
+            Debug.Log(item.name);
+        }
+
+
     }
     IEnumerator checkBuildings()
     {
